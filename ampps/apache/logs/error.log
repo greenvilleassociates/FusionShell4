@@ -1,0 +1,6 @@
+[Thu May 07 02:45:52.503898 2015] [:warn] [pid 2988:tid 316] mod_wsgi: Compiled for Python/2.7.6.
+[Thu May 07 02:45:52.503898 2015] [:warn] [pid 2988:tid 316] mod_wsgi: Runtime using Python/2.7.9.
+[Thu May 07 02:45:52.504899 2015] [mpm_winnt:notice] [pid 2988:tid 316] AH00455: Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.3.29 mod_wsgi/3.5 Python/2.7.9 configured -- resuming normal operations
+[Thu May 07 02:45:52.504899 2015] [mpm_winnt:notice] [pid 2988:tid 316] AH00456: Apache Lounge VC11 Server built: Jan 28 2015 16:48:40
+[Thu May 07 02:45:52.504899 2015] [core:notice] [pid 2988:tid 316] AH00094: Command line: 'apache\\bin\\httpd.exe -d E:/Program Files/AMPPS/apache'
+[Thu May 07 02:45:52.510899 2015] [mpm_winnt:notice] [pid 2988:tid 316] AH00418: Parent: Created child process 3128
