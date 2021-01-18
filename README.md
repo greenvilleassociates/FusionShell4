@@ -1,4 +1,5 @@
-# GsubA - FusionShell Version4 - Windows Appliance Server
+# GsubA - FusionShell Version4 - Windows Appliance Server - ForCleanDedicatedStart - Up and Running in 5mins or less on a new Windows Server or VM
+
 Greenville Associates Fusion Shell 4 - Windows Appliance Server with Apache Web Services & Mysql 5.7 Community & PHP 5.6
 (For Clean Installs - For Existing Platforms and web servers we recommend Version 2)
 
