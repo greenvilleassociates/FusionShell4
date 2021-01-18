@@ -1,0 +1,7 @@
+1. In manual installation for "Temporary file path" create '[[softpath]]/tmp' directory and provide path to this directory.
+2. PHP REQUIREMENT LINK : https://groupoffice.readthedocs.io/en/latest/install/tarball.html#system-requirements
+3. __getPasswordErrorString function is added in edit because while updating password in manual installation, it checks for these restrictions and the same is not checked while installation. Hence this is added only in edit and not in install.php
+4. Few tables are not generated post upgrading from 6.2.x to 6.3.x. They shall generate whenever the specific module will get installed. (Confirmed with vendor)
+5. We configure .htaccess given by vendor since 6.4.70 for authorization and to use some of modules.
+6. We have removed language option for Group office 6.3.x branch(from install.xml), Since language is now not present in the curl call 'POST' parameters. Also after updating language from admin panel's System Settings languages don't work(in manual installation as well).(Since 6.3.60). Check whether languages work fine in next version.
+7. Download zip for PHP 7.1 from sourceforge(Recommended by vendor).

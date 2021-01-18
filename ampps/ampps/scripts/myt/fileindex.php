@@ -1,0 +1,12 @@
+.htaccess
+assets
+attachments
+changelog.txt
+css
+framework
+images
+index-test.php
+index.php
+js
+protected
+themes

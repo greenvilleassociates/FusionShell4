@@ -1,0 +1,9 @@
+HOW_TO_INSTALL.txt
+admin.php
+core
+database
+favicon.ico
+files
+index.php
+plugins
+templates

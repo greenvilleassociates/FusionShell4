@@ -1,0 +1,51 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/LayerBB
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/forums/LayerBB
+	</ratings>
+	<space>
+		37353027
+	</space>
+	<support>
+		https://forum.layerbb.com/forum.php
+	</support>
+	<version>
+		1.1.4
+	</version>
+	<mod>8</mod>
+	<mod_files>1</mod_files>
+	<release_date>15-08-2019</release_date>
+	<admin>members.php/cmd/signin</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.5.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.6.0" />
+	<requirement check="php" type="extension" name="pdo" />
+	<requirement check="php" type="extension" name="curl" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">LayerBB</font> is a small yet feature rich community software which enables you to quickly and easily start your own community. It offers great flexibility and easily customisable.
+		<br /><br />
+		LayerBB is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GNU General Public License v3.0</a>
+		</english-overview>		
+		<english-features>
+		<ul>
+			<li>Great flexibility</li>
+			<li>Easily customisable</li>
+		</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+	</languages>
+</soft>

@@ -1,0 +1,55 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Fusio
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/others/Fusio
+	</ratings>
+	<space>
+		43389746
+	</space>
+	<support>
+		http://www.fusio-project.org/contact
+	</support>
+	<version>
+		1.9.4
+	</version>
+	<mod>34</mod>
+	<release_date>21-06-2020</release_date>
+	<admin>apps/fusio/#!/login</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.2.0" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Fusio</font> is an open source API management platform which helps to build and manage REST APIs. Fusio provides all tools to quickly build an API from different data sources yet it is possible to create complete customized responses.
+		<br /><br />
+		Fusio is released under <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">GNU AFFERO GENERAL PUBLIC LICENSE
+Version 3</a>.
+		</english-overview>		
+		<english-features>
+		<ul>
+			<li><b>Action handling</b> : Fusio provides a simple way to develop data driven API endpoints. I.e. to execute SQL queries or send data into a message queue.</li>
+			<li><b>API Analytics</b> : Fusio monitors all API activities and shows them on a dashboard so you always know what is happening with your API.</li>
+			<li><b>Documentation generation</b> : Fusio generates automatically a documentation of the API endpoints based on the provided schema definitions.</li>
+			<li><b>JSON Schema</b> : Fusio gives you the option to describe the data schema of the request and response in the flexible JsonSchema format.</li>
+			<li><b>OAuth2 authorization</b> : Fusio uses OAuth2 for API authorization. Each app can be limited to scopes to request only specific endpoints of the API.</li>
+			<li><b>Rate limiting</b> : Fusio provides a way to rate limit every API endpoint to a specific amount of requests per interval.</li>
+			</ul>
+		</english-features>
+		<english-err_passascii>Password must contain only ascii characters in the range of 0x21-0x7E .</english-err_passascii>
+		<english-err_passchar>Password must have at least one alphabetic character (a-z, A-Z)</english-err_passchar>
+		<english-err_passspchar>Password must have at least one special character i.e. (!#$%&amp;*@_~)</english-err_passspchar>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

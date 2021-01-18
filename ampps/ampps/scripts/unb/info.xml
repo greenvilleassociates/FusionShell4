@@ -1,0 +1,54 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/UnclassifiedNewsBoard
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/forums/UnclassifiedNewsBoard
+	</ratings>
+	<space>
+		2539254
+	</space>
+	<support>
+		http://newsboard.unclassified.de/contact
+	</support>
+	<version>
+		20150713
+	</version>
+	<mod>1</mod>
+	<mod_files>3</mod_files>
+	<release_date>13-07-2015</release_date>
+	<admin>forum.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="extension" name="gd" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Unclassified NewsBoard</font> (short UNB) is an open-source, PHP-based internet bulletin board system, mostly like those you may already know. But the difference is in a lot of details that make your life with this board, both as administrator and user, much easier. You&#39;ll be surprised how easy things can be and how fast you can work with such a system!
+		<br /><br />
+		Unclassified NewsBoard is available under the <a href="http://www.gnu.org/licenses/gpl.html" target="_blank">GNU General Public License</a>.
+		</english-overview>
+		<english-features>
+			<ul>
+				<li>Native real-time Jabber IM notification on new posts</li>
+				<li>Detailed access rights management with an Access Control List</li>
+				<li>Intuitive usage: commands are where you expect them to be</li>
+				<li>Real unread posts selection, without cookies</li>
+				<li>Robust BB code parser with syntax checking and nesting tags support</li>
+				<li>Good scalability: Everything you need - nothing less and nothing more</li>
+				<li>Full Unicode support (i18n), multiple designs and languages</li>
+				<li>Compatible with any operating system that supports PHP and MySQL</li>
+				<li>XHTML 1.0 and CSS 2.1 compliant</li>
+			</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

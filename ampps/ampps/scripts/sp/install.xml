@@ -1,0 +1,131 @@
+<softinstall xmlns="http://www.softaculous.com">
+	<settings>
+		<group>
+			<heading>{{db_set}}</heading>
+			<input type="text" name="dbprefix" size="30" value="sp_">
+				<head>{{db_pre}}</head>
+				<optional>true</optional>
+			</input>
+		</group>
+		<group>
+			<heading>{{site_set}}</heading>
+			<input type="text" name="site_name" size="30" value="My Site">
+				<head>{{site_name}}</head>
+			</input>
+			<input type="text" name="site_desc" size="30" value="My SitePad Blog">
+				<head>{{site_desc}}</head>
+			</input>
+			<input type="text" name="admin_email" size="30" value="admin" softmail="true">
+				<head>{{ad_email}}</head>
+				<handle>__email_address</handle>
+			</input>
+			<input type="select">
+				<select name="language">
+					<option value="en">English</option>
+					<option value="ar">Arabic</option>
+					<option value="sq">Albanian</option>
+					<option value="bg_BG">Bulgarian</option>
+					<option value="ca">Catalan</option>
+					<option value="zh_CN">Chinese(Simplified)</option>
+					<option value="zh_TW">Chinese(Traditional)</option>
+					<option value="hr">Croatian</option>	
+					<option value="cs_CZ">Czech</option>
+					<option value="da_DK">Danish</option>
+					<option value="nl_NL">Dutch</option>
+					<option value="fi">Finnish</option>
+					<option value="fr_FR">French</option>
+					<option value="de_DE">German</option>
+					<option value="el">Greek</option>
+					<option value="he_IL">Hebrew</option>
+					<option value="hu_HU">Hungarian</option>	
+					<option value="id_ID">Indonesian</option>
+					<option value="it_IT">Italian</option>	
+					<option value="ja">Japanese</option>
+					<option value="ko_KR">Korean</option>
+					<option value="nb_NO">Norwegian</option>
+					<option value="fa_IR">Persian</option>
+					<option value="pl_PL">Polish</option>	
+					<option value="pt_PT">Portuguese</option>
+					<option value="pt_BR">Portuguese-BR</option>
+					<option value="ro_RO">Romanian</option>
+					<option value="ru_RU">Russian</option>
+					<option value="sl_SI">Slovenian</option>
+					<option value="sk_SK">Slovak</option>
+					<option value="es_ES">Spanish</option>
+					<option value="sv_SE">Swedish</option>
+					<option value="th">Thai</option>
+					<option value="tr_TR">Turkish</option>
+					<option value="uk">Ukrainian</option>
+					<option value="vi">Vietnamese</option>
+					<option value="zh_HK">Chinese (Hong Kong)</option>
+				</select>
+				<head>{{select_lang}}</head>
+			</input>
+			<input type="text" name="theme_slug" size="30" value="">
+				<head>{{choose_theme}} ({{optional}})</head>
+				<optional>true</optional>
+			</input>
+			<input type="text" name="license_key" size="30" value="" placeholder="SITEP-XXXXX-XXXXX-XXXXX-XXXXX">
+				<head>{{license_key}} ({{optional}})</head>
+				<exp>{{license_key_exp}}</exp>
+				<optional>true</optional>
+			</input>
+		</group>
+		<group>
+			<heading><span id="social_profiles"></span>{{social_profiles}}</heading>
+			<collapsed>1</collapsed>
+			<input type="text" name="pagelayer_cf_to_email" size="30" value="" placeholder="mail@examle.com">
+				<head>{{email_address}}</head>
+				<exp>{{used_contact_page}}</exp>
+				<optional>true</optional>
+			</input>
+			<input type="text" name="pagelayer-phone" size="30" value="" placeholder="+1(123)456-7890">
+				<head>{{phone}}</head>
+				<exp>{{used_contact_page}}</exp>
+				<optional>true</optional>
+			</input>
+			<input type="text" name="pagelayer-address" size="30" value="" placeholder="123, Street name, City, State, Pin, Country">
+				<head>{{address}}</head>
+				<exp>{{used_contact_page}}</exp>
+				<optional>true</optional>
+			</input>
+			<input type="text" name="pagelayer-facebook-url" size="30" value="" placeholder="https://facebook.com/yourhandle">
+				<head>{{facebook}}</head>
+				<exp>{{facebook_exp}}</exp>
+				<optional>true</optional>
+			</input>
+			<input type="text" name="pagelayer-twitter-url" size="30" value="" placeholder="https://twitter.com/yourhandle">
+				<head>{{twitter}}</head>
+				<exp>{{twitter_exp}}</exp>
+				<optional>true</optional>
+			</input>
+			<input type="text" name="pagelayer-instagram-url" size="30" value="" placeholder="https://instagram.com/yourhandle">
+				<head>{{instagram}}</head>
+				<exp>{{instagram_exp}}</exp>
+				<optional>true</optional>
+			</input>
+			<input type="text" name="pagelayer-linkedin-url" size="30" value="" placeholder="https://linkedin.com/yourhandle">
+				<head>{{linkedin}}</head>
+				<exp>{{linkedin_exp}}</exp>
+				<optional>true</optional>
+			</input>
+			<input type="text" name="pagelayer-youtube-url" size="30" value="" placeholder="https://youtube.com/yourchannel">
+				<head>{{youtube}}</head>
+				<exp>{{youtube_exp}}</exp>
+				<optional>true</optional>
+			</input>
+			<input type="text" name="pagelayer-gplus-url" size="30" value="" placeholder="https://plus.google.com/yourhandle">
+				<head>{{gplus}}</head>
+				<exp>{{gplus_exp}}</exp>
+				<optional>true</optional>
+			</input>
+		</group>
+		<group>
+			<heading>hidden</heading>
+			<input type="hidden" name="login_token" value="">
+				<optional>true</optional>
+			</input>
+		</group>
+	</settings>
+	<db>mysql</db>
+</softinstall>

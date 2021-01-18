@@ -1,0 +1,27 @@
+1. Have added following code to .htaccess to redirect to public directory :
+<IfModule mod_alias.c>
+RedirectMatch 301 ^[[relativeurl]]/$ [[softurl]]/public
+</IfModule>
+
+Not required since 3.1.1 becuase they have handled this in their package and the code same as below :
+(check in all future versions as well). We have removed sconfigure.
+
+# redirect to public page
+  <IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_URI} !^public$
+    RewriteRule ^(.*)$ %{REQUEST_URI}public/ [R=301,L]
+  </IfModule>
+
+
+2. We have not added upgrade in 3.0.0 because there is huge changes in directory structure and its upgrade notes are not properly given. Try to add in next version.
+
+3. Download long name zip for manual installation. (Confirmed with vendor via github issues since version 3.1.0)
+
+4. PHP REQUIREMENT LINK : https://github.com/jekkos/opensourcepos#server-requirements
+
+5. We have changed .htaccess to redirect public folder
+
+6. Please take sql dump after running migrations in manual installation.
+
+7. Upgrade notes are given here https://github.com/opensourcepos/opensourcepos/blob/master/UPGRADE.txt . Also in every upgrade check upgrade notes in tagged releases on Github as well.

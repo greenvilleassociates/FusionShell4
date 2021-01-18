@@ -1,0 +1,5 @@
+1. Choose defaultTimezone America/New_York
+2. PHP REQUIREMENT LINK: https://www.kimai.org/download/
+3. Install Composer and create zip for package and Remove "var/cache/prod" from package
+4. Add following entry in kimai2_configuration table : (2, 'defaults.user.language', '[[language]]'); and in kimai2_user_preferences : (3, 1, 'language', '[[language]]');
+5. Steps for installation https://www.kimai.org/documentation/installation.html from command line.

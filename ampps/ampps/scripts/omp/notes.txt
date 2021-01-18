@@ -1,0 +1,13 @@
+1)Primary locale english
+2)Don't install additional locales
+3)client character set -utf8 
+connection character set -utf8
+database character set-utf8
+4)pass encryption (sha1)(default)
+5)Select Mysqli in manual installation
+6) "enableBeacon" check this option from 1.2.0
+7) Always check and modify config.inc.php to the latest and keep installed = Off as it is required in upgrade. Take config.inc.php of manual installation as it has some changes compare to config.inc.php of downloaded package.
+8) Min_requirement for upgrade is set to 1.2.0.0 because in OMP version < 1.2.0.0 collation is latin1 and in latest version it is utf8. So it is giving error "Illegal mix of collations" while upgrading to 3.1.0.0
+9) PHP REQUIREMENT LINK: https://pkp.sfu.ca/omp/omp_download/
+10) We have kept PHP requirement as PHP 7.1.0 in info.xml as there was Parse error: syntax error, unexpected '?' while starting manual installation on PHP 7.0.0. Check if it works on PHP 7.0.0 in next version.(Since 3.1.2.2). Not working on PHP 7.0(checked in version 3.1.2.3).
+11) Please check symlinks every time by checking difference in the original zip and ground zip.

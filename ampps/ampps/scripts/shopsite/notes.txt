@@ -1,0 +1,4 @@
+1. Download both 32 bit and 64 bit packages (shopsite.zip - 64 bit) (shopsite_32.zip - 32 bit)
+2. make shopsite.zip with installation files in "shop_install" directory and blank sc and ss folders
+3. choose 'Legacy via Web Server' while manual installation
+4. Release date : https://forums.shopsite.com/viewforum.php?f=2&sid=9885856500eed8d23ca4526b3e68a1d6

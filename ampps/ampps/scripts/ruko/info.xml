@@ -1,0 +1,71 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Rukovoditel
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/projectman/Rukovoditel
+	</ratings>
+	<space>
+		90870090
+	</space>
+	<support>
+		https://www.rukovoditel.net/
+	</support>
+	<version>
+		2.7.2
+	</version>
+	<mod>25</mod>
+	<min_require>1.7</min_require>
+	<release_date>03-09-2020</release_date>
+	<admin>index.php?module=users/login</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.2.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.0.0" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Rukovoditel</font> is your own unique application, which you create yourself, based on your needs! Using a variety of settings, in half an hour you will be able to deploy on your server project management system, personnel or other (CRM, ERP, HRM, WMS, etc.).
+		<br /><br />
+		Versatility and flexibility of customization is the main feature of the system. The Rukovoditel can replace a whole set of decisions and make your work easier and more transparent. That is why, the Rukovoditel can be used in various fields of activity.
+		<br /><br />
+		In the standard part of the Rukovoditel you will be available a full set of necessary tools. You can create an unlimited number of Entities and Fields, customize the appearance of lists and forms, flexibly distribute access rights to groups of users, quickly import data from an Excel file.
+		<br /><br />
+		Rukovoditel is released under the <a href="https://www.gnu.org/licenses/gpl-2.0.html" target="_blank">GNU General Public License v2</a>.
+		</english-overview>		
+		<english-features>
+			<ul>
+				<li>Build your application : Rukovoditel allows you build your own database by adding new entities and relationships.</li>
+				<li>Create the necessary fields : For each entity, you can add fields with different types.</li>
+				<li>Display Fields Rules : For fields of type Drop Down you have the ability to customize the display of fields, depending on the selected list values.</li>
+				<li>Automatic status : A special field type to track the progress/stages of the project, task, or any other entity.</li>
+				<li>Configure view : You can customize the view of the form and a list of items.</li>
+				<li>Item Page Configuration : For each entity, you can customize your own display of the Item Page.</li>
+				<li>Use Comments : Comments are used if necessary to keep a history of changes.</li>
+				<li>Create Reports : With reports, you can filter the data by any field.</li>
+				<li>Configure Access : You have the ability to configure access to each entity, fields and comments.</li>
+				<li>Maps Integration : The features of the map editor allow you to select a area on the map, draw a route or put a marker.</li>
+				<li>Data Export : The system will allow to export data to Excel / PDF format.</li>
+				<li>Data Import : You have the ability to import data from Excel file.</li>
+				<li>Users Notification : Assigned users will be notified when new record created.</li>
+				<li>Easily search and filters : In Rukovoditel, you can search Records by any Text field.</li>
+				<li>Related records : You have the ability to link records between different entities.</li>
+				<li>Barcode and QR Code : The ability to attach Barcodes and QR codes to the record and print them out according to the preset settings.</li>
+				<li>Multilingual : Rukovoditel supports multilingual.</li>
+				<li>Skins : Rukovoditel offers several color schemes.</li>
+				<li>Database Backup : You can configure a daily backup of the database.</li>
+				<li>Security : Protect your website from abuse while letting only real people use your application.</li>
+			</ul>		
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+	</languages>
+</soft>

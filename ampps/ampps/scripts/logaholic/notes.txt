@@ -1,0 +1,13 @@
+1. Add following lines in database [[dbprefix]]_logaholic_GlobalSettings (this is to enable login system)
+
+('UserAuthenticationType', '', 'logaholic'),
+('UserAuthenticationType_Var', '', '');
+
+Check if any of the above already exists then do not add it.
+
+2. Download Self Hosted Edition logaholic_she_XXX.tar.gz 
+3. PHP REQUIREMENT LINK: http://www.logaholic.com/download/
+4. We have deleted reports/ in upgrade since 7.0.1 as requested by vendor via email.
+5. Release date: http://www.logaholic.com/download/
+6. Add following line in "('upload_dir', '', '[[softdatadir]]/');" in [[dbprefix]]_logaholic_GlobalSettings table because it gives warning : The upload directory is within the web server's document root in "Data Storage > Change Upload Directory" and "global.php" is configured at document root, Create data.zip from files folder content. I.e only index.html
+7. Move sql function to end of sql file

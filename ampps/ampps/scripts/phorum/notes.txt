@@ -1,0 +1,2 @@
+1)Getting error on PHP 5.2 while installing. So we have changed the php requirement to 5.3.0 since version 5.2.22.
+2)Release date : https://www.phorum.org/downloads.php 

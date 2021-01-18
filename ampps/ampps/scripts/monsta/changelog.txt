@@ -1,0 +1,25 @@
+Version 2.10.3 - Released 9 November, 2020 (no extended notes for release)
+
+    Third-party Javascript libraries updated
+
+Version 2.10.2 - Released 17 August, 2020 (no extended notes for release)
+
+    Addressed fixes for the security vulnerabilities detailed here.
+    Resolved an issue with uploading recursive folders
+    Incremental improvement to file upload dialog
+
+Version 2.10.1 - Released 14 December, 2019
+
+    Resolved issue with unzipping files on upload
+    Add a right-click "Create Zip Archive" feature to zip up files on server
+    FIle upload progress now working properly for chunked uploads
+
+Version 2.10 - Released 12 November, 2019
+
+    Files now uploaded in chunks
+    Added action logging
+    Bug fixes
+
+Version 2.9.3 - Released August 19, 2019
+
+    Reverted codebase to v2.9.1 due to bugs found in 2.9.2

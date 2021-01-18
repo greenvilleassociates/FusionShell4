@@ -1,0 +1,203 @@
+Version: 4.1
+Date: 24th October 2020
+
+[Feature] Adds headline field
+[Feature] Adds setting to change comment wording
+[Feature] Clear cache tool
+[Improvement] PHP 7.4 compatibility
+[Improvement] Comment preview shows image upload
+[Improvement] Comment preview gravatar links to gravatar site
+[Improvement] Allows direct upgrade from v2.5 and above
+[Improvement] iFrame cookies samesite none and secure
+[Improvement] Layout settings combined to one page
+[Improvement] Dashboard checks system settings
+[Improvement] Dashboard detects if BitNinja installed
+[Improvement] Displays version on dashboard
+[Improvement] Adds setting to disable guest rating
+[Improvement] Adds extra admin page messages
+[Improvement] Styling of iFrame loading spinner
+[Improvement] One click upgrade deletes install folder
+[Improvement] Download the version check report
+[Improvement] Allows config file to override settings
+[Improvement] Loads countries using ajax
+[Improvement] Removes the ability to rate when replying
+[Improvement] Translatable dashboard admin tips
+[Improvement] Translatable dashboard quick links
+[Improvement] Clear template cache when changing theme
+[Improvement] Clear all cache after upgrade
+[Improvement] Adds admin detection info modal
+[Improvement] Show overall result in permissions report
+[Improvement] Show real folder in permissions report
+[Improvement] iFrame ignores empty integration values
+[Improvement] Simplifies comment management
+[Improvement] Adds FAQ link to no site found error
+[Improvement] Improvements to template engine
+[Improvement] Improvements to fixCase() method
+[Improvement] Improvements to default styling
+[Improvement] Moves repeat language strings to general file
+[Improvement] jQuery '$' changed to 'jQuery'
+[Improvement] Improvements to theme preview
+[Improvement] Add custom outer comment text
+[Improvement] Upgrades jQuery script
+[Improvement] Upgrades Summernote script
+[Improvement] Upgrades iFrame Resizer script
+[Bug Fix] Removes ambiguous captcha characters
+[Bug Fix] Fix for importing emails
+[Bug Fix] Clearing cache of replies
+[Bug Fix] No captcha questions after switching language
+[Bug Fix] Position of comment messages
+[Bug Fix] Ajax not working after first comment
+[Bug Fix] Fix for getimagesizefromstring() not available
+[Bug Fix] Fix admin restrictions briefly showing
+[Bug Fix] Fix for no states when editing comment
+[Bug Fix] Fix page count on manage sites page
+[Bug Fix] Fix plural wording for dashboard stats
+[Bug Fix] Fix auto detect if optimize setting disabled
+[Bug Fix] Fix for having to click into filled fields
+[Other] Removes check for 'admin' folder
+[Other] Removes styling from backend templates
+[Other] Changes default prefilled field to hide
+[Other] Increases default flooding to 10 per hour
+
+Version 4.0
+Date: 25th January 2020
+Details:
+
+    [Feature] Multisite
+    [Feature] Database caching
+    [Feature] Online viewers
+    [Improvement] PHP 7.3 compatibility
+    [Improvement] Replaces jQuery.filer with custom solution
+    [Improvement] Removes jQuery UI
+    [Improvement] Detect admin by backend session
+    [Improvement] Only generate modification cache once
+    [Improvement] Upgrades jQuery from v1.12.4 to v3.4.1
+    [Improvement] Logs any issues with version check
+    [Improvement] Use labels on admin spam page
+    [Improvement] Don't get states if no country selected
+    [Improvement] Allow redirects for website exists check
+    [Improvement] General performance improvements
+    [Improvement] Updates ReCaptcha options
+    [Improvement] Updates Gravatar options
+    [Improvement] Upgrades chart script
+    [Improvement] Upgrades highlight script
+    [Improvement] Upgrades htmLawed script
+    [Improvement] Upgrades Summernote script
+    [Improvement] Upgrades Timeago script
+    [Bug Fix] Display of upgrade link on dashboard
+    [Bug Fix] Styling fix for comment field
+    [Bug Fix] Slow loading of large error log
+    [Bug Fix] Modal appearing behind overlay
+    [Bug Fix] Admin referrer check
+    [Bug Fix] Deleting a page should delete ratings
+    [Bug Fix] Fix for HTML if default states are loaded
+    [Bug Fix] Admin pagination when sorting certain columns
+    [Bug Fix] Infinite scroll on permalink
+    [Bug Fix] Fix for ReCaptcha IP address parameter
+    [Bug Fix] Fix for rating field after posting
+    [Other] Allow repeat ratings by default
+    [Other] Viewers feature disabled by default
+    [Other] Image captcha easier by default
+    [Other] Removes read more feature
+    [Other] Removes RSS logo setting
+	
+Version: 3.4
+Date: 31st January 2019
+
+[Feature] One click upgrade
+[Feature] Export / Import tool
+[Feature] Infinite scroll
+[Improvement] Admin receives new version email
+[Improvement] Translatable countries
+[Improvement] Set language from integration code
+[Improvement] Disable form from integration code
+[Improvement] Template parsing
+[Improvement] Adds schema.org markup
+[Improvement] Accessibility improvements
+[Improvement] Moves all JavaScript to JS file
+[Improvement] Waits for jQuery to load
+[Improvement] Combine and minify CSS and JS
+[Improvement] Replaces Mcrypt with OpenSSL
+[Improvement] Email note on edit comment page
+[Improvement] Run task system only once a day
+[Improvement] User page styling
+[Improvement] PSR coding standard
+[Improvement] CSS linting
+[Improvement] Updates social links
+[Improvement] General styling changes
+[Improvement] Disables referrer if settings incorrect
+[Improvement] Upgrades chart script
+[Improvement] Upgrades htmLawed script
+[Improvement] Upgrades ReadMore script
+[Improvement] Upgrades Securimage script
+[Improvement] Upgrades Timeago script
+[Improvement] Replaces TinyMCE with Summernote
+[Bug Fix] Styling fix for question captcha field
+[Bug Fix] Modification fix for handling glob error
+[Bug Fix] Gravatar hover fix for mobile
+[Bug Fix] Encoding of HTML email
+
+*************************************************************************
+
+Version: 3.3
+Date: 24th March 2018
+
+[Improvement] Email field optional
+[Improvement] Adds settings for badges
+[Improvement] Moves JavaScript to JS file
+[Improvement] Easier theme editing
+[Improvement] Bootstrap compatibility
+[Improvement] Styling improvements
+[Bug Fix] Fixes hardcoded lang text
+[Bug Fix] Fix for admin flooding
+[Bug Fix] Fix uploads when gravatar disabled
+[Bug Fix] Fix preview when smilies disabled
+[Bug Fix] Fix clicking smilies in comments
+[Bug Fix] Fix for multiple search fields
+[Bug Fix] Fix for multiple sort by fields
+[Bug Fix] Session fixes
+[Other] Adds licencing
+[Other] Removes mysqldump
+[Other] Removes frontend CSRF check
+[Other] Removes cURL follow location
+
+*************************************************************************
+
+Version: 3.2
+Date: 7th May 2017
+
+[Feature] Extension installer
+[Feature] Preview comment
+[Improvement] Database query optimization
+[Improvement] Mobile improvements
+[Improvement] Admin area view links
+[Improvement] Admin area menu icons
+[Improvement] Bootstrap compatibility
+[Improvement] Foundation compatibility
+[Improvement] Adds delete installer setting
+[Improvement] Refactors language loading
+[Improvement] Database error handling
+[Improvement] Return to all comments link
+[Improvement] Shows list of sponsors
+[Improvement] Ability to load extra CSS
+[Improvement] Adds check CSRF setting
+[Improvement] Displays theme preview
+[Improvement] Upgrades chart script
+[Improvement] Upgrades Colorbox script
+[Improvement] Upgrades Font Awesome
+[Improvement] Upgrades highlight script
+[Improvement] Upgrades htmLawed script
+[Improvement] Upgrades Swift Mailer script
+[Improvement] Upgrades Timeago script
+[Improvement] Upgrades TinyMCE script
+[Bug Fix] Akismet setting
+[Bug Fix] Admin permissions
+[Bug Fix] Fixes engine loading
+[Bug Fix] Htaccess indexignore
+[Bug Fix] Modification clear cache
+[Bug Fix] Comment positions error
+[Bug Fix] Session expiration fixes
+[Bug Fix] Session multiple pages
+[Other] Lowers min MySQL version
+
+*************************************************************************

@@ -1,0 +1,25 @@
+INSTALLATION METHOD Since 5.1.11
+--------------------------------------------------------------------------------
+1. Download "seeddms-quickstart-version.tar.gz" ("https://sourceforge.net/projects/seeddms/files/")
+2. Move "data" folder to "datadirectory"
+3. Move content of "seeddms-version" to "softpath"
+4. Move "pear" folder into "softpath" folder
+5 . Move "www/ext" folder into "softpath" folder
+6 . Download "Log-version.tgz.gz" ("http://pear.php.net/package/Log/download/")
+7 . Extract "Log-version.tgz.gz" in "pear" folder "Log.php" file should be in "Pear" folder
+8 . Rename "conf.template" to "conf"
+9 . Rename "conf/settings.xml.template" to "conf/settings.xml" and  configure
+10. create blank file "conf/ENABLE_INSTALL_TOOL"
+11. launch <rootdir>/install/install.php
+12. PHP REQUIREMENT LINK : doc\README.Install.md
+
+OLD METHOD : 
+1. Download SeedDMS_Preview-version.tgz and Download SeedDMS_Core-version.tgz ("https://sourceforge.net/projects/seeddms/files/")
+2. Download Log-version.tgz.gz ("http://pear.php.net/package/Log/download/")
+3. Download Mail-version.tgz.gz ("http://pear.php.net/package/Mail/download/")
+4. Download Net_Socket-version.tgz ("https://pear.php.net/package/Net_Socket/download/")
+5. Download Net_SMTP-version.tgz ("https://pear.php.net/package/Net_SMTP/download/")
+6. Create "SeedDMS" folder and Extract "SeedDMS_Core-version.tgz", "SeedDMS_Preview-version.tgz", "Log-version.tgz.gz", "Mail-version.tgz.gz", Net_Socket-version.tgz and Net_SMTP-version.tgz in it.
+7. Configure "conf/settings.xml" and make it writable.
+8. Update "require_once("Mail.php")" to "require_once("<rootdir>/SeedDMS/Mail.php")" in "inc\inc.ClassEmailNotify.php"
+9. Update "include("Log.php")" to "include("<rootdir>/SeedDMS/Log.php");" in "inc\inc.LogInit.php"

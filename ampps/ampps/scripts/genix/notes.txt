@@ -1,0 +1,2 @@
+1. Add slogan while installing
+2. PHP REQUIREMENT LINK : https://github.com/semplon/GeniXCMS/#requirements

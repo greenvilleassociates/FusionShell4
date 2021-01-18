@@ -1,0 +1,68 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Omeka_S
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/others/Omeka_S
+	</ratings>
+	<space>
+		51411650
+	</space>
+	<support>
+		https://forum.omeka.org/c/omeka-s/8
+	</support>
+	<version>
+		3.0.1
+	</version>
+	<mod>3</mod>
+	<release_date>21-10-2020</release_date>
+	<admin>login</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.1.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.6.4" />
+	<requirement check="php" type="extension" name="pdo" />
+	<requirement check="php" type="extension" name="pdo_mysql" />
+	<requirement check="php" type="extension" name="xml" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Omeka S</font> is a next-generation web publishing platform for institutions interested in connecting digital cultural heritage collections with other resources online.
+		<br /><br />
+		Omeka S is licensed under <a href="http://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GNU GPL v3</a>.
+		</english-overview>
+		<english-features>
+		<h5>Create : </h5>
+			<ul>
+			  <li>Create relationships between your resources - items, item sets, and media.</li>
+			  <li>Share resources between sites and users.</li>
+			  <li>Choose from three metadata vocabularies and the ability to add more to meet the needs for your projects.</li>
+			  <li>Build templates for your content, drawing from all possible vocabularies, and then share your templates with colleagues or on the open web.</li>
+			</ul>
+		<h5>Design and Build : </h5>
+			<ul>
+			  <li>Use mobile-ready themes to customize the look of each site.</li>
+			  <li>Create sites to publish and contextualize your items.</li>
+			  <li>Build and publish pages, exhibits, or digital stories by adding and mixing different content blocks.</li>
+			  <li>Manage specific settings for the distinct needs of each site.</li>
+			</ul>
+		<h5>Extend : </h5>
+			<ul>
+			  <li>Use importers to bring in content from a spreadsheet or an Omeka Classic site.</li>
+			  <li>Geolocate your content and display maps on sites usingMapping.</li>
+			  <li>Connect your installation with Fedora and DSpace repositories, with the ability to update content periodically.</li>
+			</ul>
+		<h5>Manage : </h5>
+			<ul>
+			  <li>Install, activate, and configure modules for all sites from a single administrative panel</li>
+			  <li>Easily update multiple sites from a single installation</li>
+			</ul>
+		</english-features>
+	</languages>
+</soft>

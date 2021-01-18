@@ -1,0 +1,18 @@
+1. We add "admin_login::setup" in the below line in _blesta.php in our package.
+Configure::set("Blesta.csrf_bypass", array("admin_login::setup"));
+
+2. We have purposely kept one blank line in "blesta_install.input" and in "blesta_install2.input" files because since version 4.8.0 'port' => '{database_port}' has become compulsory input parameter for install and this value may vary from server to server hence we have kept it blank.
+
+3. Blesta releases Patch for different PHP versions to support ioncube encoding. Kindly check and update in every version.
+	if(sversion_compare(sphpversion(), '7.0', '>=')){
+		if(file_exists($software['path'].'/patch/php7hotfix.zip')){
+			if(!sunzip($software['path'].'/patch/php7hotfix.zip', $__settings['softpath'].'/app/')){
+					$error[] = 'Could not unzip the php7hotfix.zip';
+			}
+		}
+	}
+*Please note that, Since Blesta 4.6.0 the above patches are needed only if Ioncube version is less than 10.1.0.(We have handled this in install.php)
+
+4. PHP REQUIREMENT LINK: https://docs.blesta.com/display/user/Requirements
+
+5. Json extension requirement added because blesta installer needs json_decode function.

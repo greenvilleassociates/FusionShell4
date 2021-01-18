@@ -1,0 +1,15 @@
+.htaccess
+_cmsimpleAdmin.php
+cmsimple
+content
+css
+disabled_plugins.txt
+index.php
+license.txt
+plugins
+readme.php
+setup
+setup.php
+setupControl.php
+templates
+userfiles

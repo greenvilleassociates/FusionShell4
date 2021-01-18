@@ -1,0 +1,82 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Reader_Self
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/rss/Reader_Self
+	</ratings>
+	<space>
+		6656399
+	</space>
+	<support>
+		https://github.com/readerself/readerself/issues
+	</support>
+	<version>
+		3.5.6
+	</version>
+	<mod>3</mod>
+	<mod_files>3</mod_files>
+	<release_date>25-08-2016</release_date>
+	<admin>home</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.3.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.1.0" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Reader Self</font> Import OPML - Responsive desktop, tablet and mobile - Main keyboard shortcuts from Google Reader - Automatic tags - Shared items with public feed
+		<br /><br />
+		Reader Self is released under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GNU GENERAL PUBLIC LICENSE Version 3</a>.
+		</english-overview>		
+		<english-features>
+		<ul>
+			<li>Built-in or LDAP authentication</li>
+			<li>Support https (proxy to get http images)</li>
+			<li>Responsive desktop, tablet and mobile</li>
+			<li>Multilingual (English, French and Simplified Chinese available)</li>
+			<li>Add a feed or website url (feed detection)</li>
+			<li>Get feed from Facebook Pages</li>
+			<li>Get medias from Instagram users</li>
+			<li>Import and export OPML</li>
+			<li>Organize subscriptions and list items in folders (optional)</li>
+			<li>List items by subscription</li>
+			<li>List priority items (flag important subscriptions)</li>
+			<li>Automatic tags from item feed categories (optional)</li>
+			<li>List items by tag and tags cloud (optional)</li>
+			<li>List items by author and authors cloud</li>
+			<li>Main keyboard shortcuts from Google Reader</li>
+			<li>Switch Unread only / Read and unread</li>
+			<li>Expand / Collapse items</li>
+			<li>Live unread counter in title bar / tab</li>
+			<li>Get enclosures (image, audio and video)</li>
+			<li>Get video iframes from Dailymotion, Vimeo and Youtube as enclosures</li>
+			<li>Starred items with export (optional)</li>
+			<li>Import starred items from Google Takeout (starred.json)</li>
+			<li>Shared items with public feed (optional)</li>
+			<li>Public profile (optional Gravatar)</li>
+			<li>Multi-users (optional)</li>
+			<li>List members with public profile (optional)</li>
+			<li>Share on Facebook, Google+, LinkedIn, Shaarli, Twitter and Wallabag (optional)</li>
+			<li>Share by email (optional)</li>
+			<li>Search subscriptions and items</li>
+			<li>Global statistics and statistics by subscription and by folder (activity by tag, by folder, by day, by month, by time of day, by day of the week...)</li>
+			<li>Display geolocation with Google Static Maps (and distance from current user position)</li>
+			<li>List Feedly essentials</li>
+			<li>Custom text direction by subscription (left to right / right to left)</li>
+			<li>Full content from Readability</li>
+			<li>Send article to Evernote (retrieve content with Readability if enabled, cleanup html and create a note)</li>
+		</ul>		
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_email>Please provide the email to reset the password</english-err_no_email>
+		<english-err_no_such_email>The Admin email is incorrect and does not exist!</english-err_no_such_email>
+	</languages>
+</soft>

@@ -1,0 +1,6 @@
+1)Choose login method : md5 in manual installation
+2)While manual installation don't use a trailing slash for absolute url(i.e[[softurl]]) in '* Root' path 
+(script adds it while detection and we don't use it in settings.php file).
+3)PHP REQUIREMENT LINK : https://github.com/phpcollab/phpcollab/releases
+(Check this in next version, as vendor has mentioned in the link regarding version 2.6.4 i.e: this release required php 5.6+.There may be issues with lower versions of php).
+4)we have configured .htaccess to comment php_value, as it causes 500 internal server error on panels.

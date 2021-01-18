@@ -1,0 +1,2 @@
+PHP REQUIREMENT LINK : https://github.com/eventum/eventum/wiki/Prerequisites
+Release date : https://github.com/eventum/eventum/releases

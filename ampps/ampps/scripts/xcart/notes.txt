@@ -1,0 +1,13 @@
+1) install with demo data.
+2) Select Timezone : America/New_York
+3) When you download the X-Cart package for making update please check if the package has our affiliate code. The code should be in the following file :
+xcart/etc/config.personal.php
+4) Take the database dump using mysqldump utility because the database has some ALTER queries do not work when dumped from phpMyAdmin
+5) PHP REQUIREMENT LINK : http://kb.x-cart.com/en/general_setup/installation_guide.html
+6) In version 5.3.4.4 apache crashed on windows, with "mpm_winnt:notice" in error log, Added the following to apache's httpd.conf to solve this issue.
+<IfModule mpm_winnt_module>
+    ThreadStackSize 8888888
+</IfModule>
+
+This problem often happens in Windows because of smaller Apache’s default stack size. And it usually happens when working with php code that allocates a lot of stacks.
+https://stackoverflow.com/questions/1138269/apache-error-notice-parent-child-process-exited-with-status-3221225477-res

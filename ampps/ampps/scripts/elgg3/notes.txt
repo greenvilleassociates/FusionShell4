@@ -1,0 +1,7 @@
+1) Add the elggdata folder to data.zip BUT delete all files of root folders of that elggdata
+2) Take the data.zip after logging in the manual installation.
+3) Timezone = America/New_York
+4) PHP REQUIREMENT LINK: http://learn.elgg.org/en/stable/intro/install.html#requirements
+5) Upgrade Documents http://learn.elgg.org/en/3.x/admin/upgrading.html (Try to add in next version)
+6) Since there is no diff in sql from version 3.0.x to 3.0.x versions we have disabled third link i.e (setupcontinue='') in upgrade.php. Check this in next version and comment this to enable third link.(Added in Elgg 3.0.5)
+7)We have enabled upgrade for Elgg versions 3.0.x (with minimum requirement 3.0.1). We haven't enabled upgrade for versions 2.3.x to 3.0.x, We have commented the code for the same in upgrade.php as we need to check for utf8mb4 collation conversion issue post upgrade.(Note added since 3.0.5)

@@ -1,0 +1,71 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Atlantis_CMS
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/cms/Atlantis_CMS
+	</ratings>
+	<space>
+		55727792
+	</space>
+	<support>
+		http://forum.atlantis-cms.com/
+	</support>
+	<version>
+		2.0.4
+	</version>
+	<mod>5</mod>
+	<release_date>26-03-2019</release_date>
+	<admin>admin</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.0.0" />
+	<requirement check="php" type="extension" name="openssl" />
+	<requirement check="php" type="extension" name="PDO" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="tokenizer" />
+	<requirement check="php" type="extension" name="xml" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Atlantis CMS</font> is open source web software that you can install on your web server to create your website, blog, community or network.
+		<br /><br />
+		Atlantis CMS is released under the <a href="http://www.atlantis-cms.com/license" target="_blank">Apache 2 License</a>.
+		</english-overview>		
+		<english-features>
+		<ul>
+			<li><b>Agencies &amp; Marketers</b>
+				<ul>
+					<li>Visual layout, template and menu building</li>
+					<li>Snappy, real time on-page editing</li>
+					<li>Rapid codeless page creation</li>
+					<li>Intuitive CMS search and content discovery</li>
+					<li>Simple image upload and management</li>
+					<li>Instant image optimization for responsive and mobile</li>
+					<li>Integrated SEO tools and free-form URLs</li>
+					<li>Streamlined version control and content authoring</li>
+					<li>Available support from actual CMS developers</li>
+				</ul>
+			</li>
+			<li><b>Developers</b>
+				<ul>
+					<li><b>Modules </b>: Extend and enrich your projects with modules.</li>
+					<li><b>Powerful Framework </b>: Atlantis is built on top of Laravel 5.x, world's leading PHP Framework.</li>
+					<li><b>Themes </b>: Skin your projects with a custom theme using your favorite css framework!</li>
+					<li><b>Community </b>: You can join our Slack channel for community support.</li>
+				</ul>
+			</li>
+		</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+	</languages>
+</soft>

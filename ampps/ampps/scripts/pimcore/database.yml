@@ -1,0 +1,2 @@
+doctrine:
+    dbal: { connections: { default: { host: [[softdbhost]], port: 3306, user: [[softdbuser]], password: "[[softdbpass]]", dbname: [[softdb]] } } }

@@ -1,0 +1,113 @@
+Version 1.2.18 (December 28, 2020)
+----------------------------------
+
+* Sqlite migrations should have foreign keys disabled outside the transaction
+    => Existing behavior could lead to data loss if schema is changed
+    => If you are using Sqlite, skip version 1.2.17, upgrade directly to v1.2.18
+* Use more secure default Nginx SSL configuration in Docker image
+* Update vendor folder
+* Add missing pt_br translations
+* Update ja_JP translations
+
+Version 1.2.17 (December 27, 2020)
+----------------------------------
+
+* Fix grammatical errors
+* Add autocomplete attribute to HTML forms
+* Added "Mexican Peso" to the list of currencies
+* Added an option to send a copy of all generated e-mails to a BCC address
+* Don't force role of users if no LDAP groups defined
+* Keep the tags when converting a subtask to task
+* Bump symfony/stopwatch from 5.1.8 to 5.2.0
+* Bump pimple/pimple from 3.3.0 to 3.3.1
+* Bump symfony/stopwatch from 5.2.0 to 5.2.1
+* Publish Docker images to GitHub container registry in addition to Docker Hub
+* Use Github Actions to publish Docker images
+* Check if the user is assigned to any role in the project
+* Fix tasks.swimlane_id foreign key for Sqlite
+* Remove unused namespaces
+* Add mk_MK (Macedonian) translation
+* Update translations
+
+Version 1.2.16 (October 9, 2020)
+--------------------------------
+
+* Update Composer dependencies
+* Update translations
+* Add link to toggle column scrolling in board view
+* Add missing environment variables in php-fpm config
+* Add setting that makes possible any new LDAP user to be Manager by default
+* Add ARIA label to modal link with title attribute
+* Add ARIA label to user mention
+* Add ARIA label to letter avatars
+* Add ARIA label to project select role without label
+* Add ARIA label to dropdown autocomplete without label 
+* Add ARIA label to form text editor without label
+* Add ARIA label to icons with title attributes
+* Add ARIA label for form inputs without labels
+* Add ARIA label for elements with titles
+* Add hidden accessible form input labels
+* Add hidden accessible titles
+* Hide user name from screen readers
+* Correct table collapsed column titles
+* Prevent the original page from being modified by the opened link
+* Allow email to be retrieve by SSO ReverseProxy
+* Fix grammatically incorrect error message
+* Add option to configure SMTP HELO name
+* Add new config parameter SESSION_HANDLER
+* Fix clearing of all Javascript storage
+* Added standard notification footer to comment email template
+
+Version 1.2.15 (June 19, 2020)
+------------------------------
+
+* Update dependencies
+* Added PUT method using CURLOPT_CUSTOMREQUEST
+* Run integration tests on Github Actions
+* Fixed capitalization of sAMAccountName for LDAP_USER_ATTRIBUTE_USERNAME example
+* Added missing closing HTML tag in template
+* Update Docker image to Alpine 3.12
+* Removed paragonie/random_compat (not required for PHP 7)
+* Setup Dependabot on GitHub
+* Allow use of the user's DN as the group filter substitution
+* Add subtask events to ProjectModificationDateSubscriber
+* Update Vagrantfile to Ubuntu 20.04
+* Open large modal when clicking on edit category link
+* Set margin-bottom at 0 only for the last child of a tooltip element
+* Prevent last swimlane to be hidden if there is only one
+* Execute tooltip listeners only once when the DOM is ready
+* Use Ajax request for Markdown preview
+* Make tooltip events bubble
+* Keep newlines in markdown
+* Show the color dropdown when creating a new automatic action
+* Update translations
+* Correct duration calculation
+* Copy subtask assignee when duplicating a task
+* Save task list order in user session
+* Add action to assign a user when the swimlane change
+
+Version 1.2.14 (April 15, 2020)
+-------------------------------
+
+* Update translations
+* Add new event subtask.create_update
+* Replace Travis CI by GitHub Actions
+* Add option to enable or disable global tags per projects
+* Show group membership(s) in user summary and user list
+* Docker: use real hostname instead of "localhost"
+* Add new task/project image hooks
+* Fix invalid RSS feed encoding
+* Add new plugin hooks
+* Rename "private" projects to "personal"
+* Add per-project and per-swimlane task limits
+* Use parent task color when converting a subtask to task
+* Add environment variables support to configure the application
+* Add the possibility to make project tags global from project settings
+* Fix regex to detect external links with attachments
+* Use KANBOARD_URL to build URIs if specified
+* Make time_spent and time_estimated fields editable for updateTask and createTask API calls
+* Kanboard now requires PHP >= 7.2 since other versions are deprecated
+* Avoid page shrinking when drag and drop cards on iOS devices
+* Added a hover color to i elements inside the "dropdown-submenu-open" class
+* Avoid duplicating Dockerfiles for each architecture
+

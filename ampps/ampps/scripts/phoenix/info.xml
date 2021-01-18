@@ -1,0 +1,64 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/CE_Phoenix
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/ecommerce/CE_Phoenix
+	</ratings>
+	<space>
+		6887925
+	</space>
+	<support>
+		https://phoenixcart.org/forum/index.php
+	</support>
+	<version>
+		1.0.7.13
+	</version>
+	<mod>12</mod>
+	<release_date>12-01-2021</release_date>
+	<admin>admin</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.1.0" />
+	<requirement check="php" type="version" operator="lt" value="7.4.1" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">CE Phoenix</font> is a powerful ecommerce shop ready to use out of the box, putting you online and in full control of your business right from the start.
+		<br /><br />
+		Your customers will love the modern, responsive design that will not only make your website look great on all mobile viewing devices but also perform at speed whilst giving you the power to create an individual and unique look to your shop with just a few clicks!
+		<br /><br />
+		CE Phoenix is packed with many first class utilities as standard but its modular software design lets you add many more with no programming skills required. The full suite of product, shipping and payment options included will let you sell thousands of products in any number of categories worldwide in any currency or language providing a seamless customer experience.
+		<br /><br />
+		CE Phoenix is released under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GNU General Public Licence</a>.
+		</english-overview>		
+		<english-features>
+			<ul>
+				<li>Compatible with and 100% responsive on all major browsers and devices using Bootstrap.</li>
+				<li>Intuitive and responsive full featured Administration Dashboard.</li>
+				<li>Multi-lingual, set up as many languages as you wish.</li>
+				<li>Multi-currency support including currency updating via European Central Bank.</li>
+				<li>Unlimited number of products and categories.</li>
+				<li>Product page layouts limited only by your imagination.</li>
+				<li>Sell physical and virtual products.</li>
+				<li>Automatic setup of Paypal and other payment systems.</li>
+				<li>Shipping modules including weight-based and zone-based.</li>
+				<li>Easy to set up SSL Support.</li>
+				<li>Full tax functionality.</li>
+				<li>Easy module installations with just a few clicks.</li>
+				<li>Hook listeners for extra flexibility for developers.</li>
+				<li>Hundreds of modules available including PRO code.</li>
+			</ul>
+		</english-features>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

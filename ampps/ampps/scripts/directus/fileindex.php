@@ -1,0 +1,15 @@
+.github
+.gitignore
+CODE_OF_CONDUCT.md
+LICENSE.md
+README.md
+SECURITY.md
+bin
+composer.json
+config
+logs
+migrations
+public
+src
+vendor
+.htaccess

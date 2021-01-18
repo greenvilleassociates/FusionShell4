@@ -1,0 +1,23 @@
+*** It cannot be installed on Webuzo. CSS dosnt work. (Do not prefer Webuzo for Manual Installation). It works from 3.9.3
+1) Install Composer and create zip for package and delete extra content of var folder from package (v5.8.0 check for the vendor folder in next version)
+2) Install with Sample data
+
+3) Install in www folder i.e rename your www folder and create new blank www and install in that www because Fork is installed only in root dir
+
+4) Add these files from manual www to zip
+check and move /bundles and its sub files and folders to zip
+
+frontend/files/Users/avatars/32x32/god.jpg to frontend/files/Users/avatars/32x32
+frontend/files/Users/avatars/64x64/god.jpg to frontend/files/Users/avatars/64x64
+frontend/files/Users/avatars/128x128/god.jpg to frontend/files/Users/avatars/128x128
+frontend/files/Users/avatars/source/god.jpg to frontend/files/Users/avatars/source
+
+5) The version in the __requirements() in Upgrade.php should be increased when there is a Major Upgrade because it is not possible to upgrade to a Major version. This is now handled by info.xml <min_require> tag so we do not need to make changes in upgrade.php
+
+6) check and update version in upgrade.php if it upgrade requires to delete appProdProjectContainer.php (Not required since version 4.0.0)
+
+7) <requirement check="php" type="extension" name="pcre" version="8" operator="ge"><![CDATA[ PCRE Library Version => (.*?)\s ]]></requirement> Add this entry in info.xml once softaculous bug is fixed and launched. Also update <softversion>
+8) PHP REQUIREMENT LINK : https://github.com/forkcms/forkcms/blob/master/docs/01.%20installation/03.%20minimum_requirements.md
+9) ckfinder_license_key in modules_settings table is hardcoded in src\Backend\Core\Installer\CoreInstaller.php files no need to configure
+10)Check and change scopy code if required for i.e @scopy($__settings['softpath'].'/src/Backend/Core/Installer/Data/images/1.jpg', $__settings['softpath'].'/src/Frontend/Files/Pages/images/source/'.$__settings['timestamp'].'.jpg');.as the image created with timestamp name might be either of 
+/src/Backend/Core/Installer/Data/images/1.jpg or src/Backend/Core/Installer/Data/images/2.jpg, or src/Backend/Core/Installer/Data/images/3.jpg.

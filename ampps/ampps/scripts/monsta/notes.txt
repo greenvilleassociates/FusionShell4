@@ -1,0 +1,4 @@
+1. PHP REQUIREMENT LINK : https://www.monstaftp.com/guides/how-to-install-monsta-ftp
+2. In package affiliate.php should be available in /application/api/
+3. Download package from affiliate link.
+4. Download Language package from https://github.com/MonstaApps/Monsta-FTP-Languages and update. Don't add en_us.json downloaded from github lang package to $software['path'].'/languages/', as it is already present in /application/languages/ folder, only add when it is not present.

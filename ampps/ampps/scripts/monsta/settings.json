@@ -1,0 +1,7 @@
+{
+    "language": "[[language]]",
+    "hideProUpgradeMessages": false,
+    "connectionRestrictions": {
+        "types": ["ftp","sftp"]
+    }
+}

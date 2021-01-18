@@ -1,0 +1,2 @@
+1) Make zip from manual but configure the file as required.
+2) Release date : http://www.phpalbum.net/files/

@@ -1,0 +1,1 @@
+1. PHP REQUIREMENT LINK : http://glpi-install.readthedocs.io/en/latest/prerequisites.html#php

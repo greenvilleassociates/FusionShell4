@@ -1,0 +1,158 @@
+Changes since 3.3.1
+Bug
+
+    [PHPBB3-16366] - Language dictionaries other than common.php are unavailable to BBCode templates in feeds
+    [PHPBB3-16488] - ACP build_cfg_template does not support 0 as minimum value
+    [PHPBB3-16512] - make_clickable() function does not apply custom classes
+    [PHPBB3-16525] - Database backup generates a general error with PostgreSQL 12+
+    [PHPBB3-16526] - Not proper handled comma-separated ACP configuration values
+    [PHPBB3-16532] - Example post is stored as invalid XML
+    [PHPBB3-16544] - topic_notify.txt is wrongly used for forum subscriptions
+    [PHPBB3-16565] - Circular dependencies when cron task depends on controller.helper
+    [PHPBB3-16568] - Problem with drop-down menu
+    [PHPBB3-16569] - Massive margin between posts when zoomed out in browser
+    [PHPBB3-16583] - Reset button in create search index not working
+    [PHPBB3-16588] - Update docs links from 3.2.x to 3.3.x
+    [PHPBB3-16593] - Undefined properties in create_search_index install task
+    [PHPBB3-16597] - Doctum can't build docs on branches older than 3.3.x
+    [PHPBB3-16602] - phpBB cannot be installed and/or run without iconv or mbstring
+    [PHPBB3-16605] - SQL Registration errors do not trigger an error correctly
+
+Improvement
+
+    [PHPBB3-15300] - Maximum attachment filesize is nowhere mentioned
+    [PHPBB3-16208] - No option for email for "Notify me" when a reported post is dealt with
+    [PHPBB3-16430] - Permission ordering
+    [PHPBB3-16472] - Remove PhantomJS UI tests
+    [PHPBB3-16527] - Add role_exists to migration tools
+    [PHPBB3-16533] - Add core and template events to customize UCP login keys management module
+    [PHPBB3-16556] - Remove purposeless <Files "*"> from .htaccess
+    [PHPBB3-16557] - Support piping tracker XML to build_changelog.php
+    [PHPBB3-16562] - Add explanation for password complexity when resetting password
+    [PHPBB3-16604] - Display error message if avatar upload folder is not writable
+    [PHPBB3-16608] - Modernize README
+    [PHPBB3-16612] - Restructure HTML for agreement, coppa, terms etc.
+
+Task
+
+    [PHPBB3-15594] - The deprecated AOL contact field should be removed
+    [PHPBB3-16571] - Update s9e TextFormatter
+    [PHPBB3-16580] - Update rendering tests to match actual Prosilver
+    [PHPBB3-16616] - Update composer dependencies to latest versions
+
+Changes since 3.3.1-RC1
+Bug
+
+    [PHPBB3-16524] - General error (SQL ERROR) on adding emoji character to the profile field
+    [PHPBB3-16543] - Update querystring in stylesheet.css to hashes
+    [PHPBB3-16550] - compact(): Undefined variable: url - in PMs
+    [PHPBB3-16552] - Roll back FontAwesome 5 changes.
+    [PHPBB3-16559] - Undefined event variables in MCP queue
+
+Improvement
+
+    [PHPBB3-16554] - Align all .htaccess files to support Apache 2.4 mod_authz_core directives
+    [PHPBB3-16555] - Update to the latest version of jQuery
+
+Security Issue
+
+    [SECURITY-259] - Server-Side Request Forgery via FastImageSize in s9e textformatter
+
+Hardening
+
+    [SECURITY-257] - Potential RCE via Phar Deserialization through Legacy BBCode Parser
+
+Changes since 3.3.0-RC1
+Bug
+
+    [PHPBB3-15592] - "Place inline" button appears when BBcode is disabled (Post settings)
+    [PHPBB3-15902] - Out of range error with Sphinx search
+    [PHPBB3-16209] - Nginx example configuration file blocks an image in the ACP
+    [PHPBB3-16230] - Check phrasing of FILESYSTEM_CANNOT_* lang keys
+    [PHPBB3-16257] - Typo in Email Settings section
+    [PHPBB3-16260] - Missing check whether the index exists in ACP - PHP 7.4
+    [PHPBB3-16261] - Missing check whether the index exists in install - PHP 7.4
+    [PHPBB3-16262] - php 7.3 compact() calls with undefined variables causing error page
+    [PHPBB3-16263] - Apache auth provider test fails on bamboo
+    [PHPBB3-16266] - Error on clean install with PHP 7.4
+    [PHPBB3-16267] - Check whether the index exists in ACP BBcodes - PHP 7.4
+    [PHPBB3-16273] - Trying to access array offset on value of type bool in Memberlist
+    [PHPBB3-16274] - compact() calls with undefined variables in search.php
+    [PHPBB3-16276] - Undefined $mode property in bbcode_firstpass class
+    [PHPBB3-16278] - Update instructions (INSTALL.html)
+    [PHPBB3-16281] - Extensions' Tab does not show up automatically
+    [PHPBB3-16282] - Default jQuery CDN URL is outdated on new installs
+    [PHPBB3-16285] - Missing sanity checks in migrations for 3.3
+    [PHPBB3-16287] - At first ACP screen after install, error message regarding statistics submission
+    [PHPBB3-16293] - Update hashes cron produces invalid hashes while updating from 3.0
+
+Improvement
+
+    [PHPBB3-16221] - ACP statistics are ugly
+    [PHPBB3-16277] - Move from each() function
+    [PHPBB3-16279] - Add permission for Emojii in topic title
+    [PHPBB3-16283] - Update requirements for 3.3.0
+    [PHPBB3-16290] - Update to new SVG logo in package docs
+
+Security
+
+    [SECURITY-249] - Group avatar overwrite on invalid submit
+    [SECURITY-250] - Group leader can be tricked into approving user
+
+Hardening
+
+    [SECURITY-251] - Unwanted move of PMs to folders
+    [SECURITY-252] - PMs of unsuspecting users can be marked as important
+    [SECURITY-253] - PM export without proper validation
+
+Changes since 3.3.0-b2
+Bug
+
+    [PHPBB3-16056] - JPEG dimensions undetectable for some kind of jpeg files
+    [PHPBB3-16211] - COPPA should not be skippable
+    [PHPBB3-16226] - Cron Tasks are not running on some Apache Server
+    [PHPBB3-16227] - If click login or acp login add errors
+    [PHPBB3-16228] - BBCode definitions with an optional attribute and a non-TEXT content are not merged correctly
+    [PHPBB3-16235] - Ignore patterns in ext-sniff.sh are not processed
+    [PHPBB3-16242] - Redirect loop when install folder doesn't exist
+    [PHPBB3-16255] - PHP 7.4 Deprecation warning on curly braces offsets
+    [PHPBB3-16258] - Sample Sphinx configuration file causes delta index to only include the most recent post
+
+Improvement
+
+    [PHPBB3-15294] - Server slowed down when having high session count
+    [PHPBB3-16203] - Enable Emojis and rich text in sent Emails
+    [PHPBB3-16223] - Remove no longer supported memcache
+    [PHPBB3-16236] - Bump phpBB 3.3 maximum PHP version requirement to PHP 7.4
+    [PHPBB3-16239] - Remove deprecated phpbb\db\tools
+    [PHPBB3-16247] - Quote PM has no identifier.
+    [PHPBB3-16248] - update to new svg version of logo
+
+Task
+
+    [PHPBB3-16224] - Update composer dependencies
+    [PHPBB3-16241] - Color Palette Syntax Breaks Backwards Compatibility
+    [PHPBB3-16246] - Prettify and update README Automated Testing section
+
+Changes since 3.3.0-b1
+Bug
+
+    [PHPBB3-16008] - oAuth does not respect custom server settings
+    [PHPBB3-16167] - phpbb_email_hash creates false duplicates
+    [PHPBB3-16188] - Statistics Panel in ACP
+    [PHPBB3-16192] - Installing Extensions Via CLI Broken
+    [PHPBB3-16205] - Undefined variable 'zebra' in search.php
+    [PHPBB3-16210] - Terms of use should not be skippable
+
+Improvement
+
+    [PHPBB3-12539] - Live Member Search Improvements
+    [PHPBB3-12559] - Add forum setting to limit subforums legend to direct children only
+    [PHPBB3-12574] - Don't require the passwords_manager in the constructor of the auth plugins
+    [PHPBB3-15958] - Created forums and default forum created during install have diferent options
+    [PHPBB3-16187] - Correctly display registration using external services
+    [PHPBB3-16189] - Deprecate inet_ntop and inet_pton wrappers
+    [PHPBB3-16190] - Deprecate phpbb's checkdnsrr wrapper
+    [PHPBB3-16195] - Copy forum permissions missing paragraph
+    [PHPBB3-16196] - Remove random_compat
+    [PHPBB3-16206] - Remove offsetExists reimplementation in service_collection

@@ -1,0 +1,5 @@
+1)script requires two javascript files to be added to 'js' folder i.e CalendarPopup.js and ColorPicker2.js which needs to be downloaded from http://supercali.inforest.com/downloads.php
+So before starting manual installation , make the zip by adding these two files in the package. (Not required since 1.1.0)
+2)While manual installation , while entering admin details ,enter admin email(not username).
+3) We have updated PHP requirement to 7.0.0 in v1.1.0. This is because it was throwing error post manual installation on 5.3, 5.4, etc :
+Fatal error: Cannot redeclare mysql_result() in /{PATH}/{TO}/includes/start.php on line 33

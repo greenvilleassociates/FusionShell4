@@ -1,0 +1,7 @@
+1. Select mysqli for database setup
+2. Email configuration -> send immediately and Other SMTP Server
+3. In local.php 'install_source' => 'Softaculous', (has to be Softaculous)
+4. We have excluded files "appProdProjectContainer.php","appProdProjectContainer.php.meta" from "app/cache/prod/" directory in install.xml because these file have default database details and does not get updated via Softaculous hence we have excluded it and it should get generated at first visit of installation.
+5. PHP REQUIREMENT LINK : https://www.mautic.org/download/requirements/
+6. Upgrade is not possible since the vendor himself is not recommending us to do it via CURL as it may not complete the upgrade process and corrupt the installation. Hence he is insisting on to use CLI or the internal upgrade(chat is done via email) since 2.12.1.
+7. Make manual installation on cpanel if it doesn't work on webuzo(non-suphp) It requires to delete app/cache/prod multiple time during manual installation to complete the installation on non-suphp server.

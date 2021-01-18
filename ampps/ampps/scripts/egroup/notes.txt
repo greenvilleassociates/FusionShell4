@@ -1,0 +1,24 @@
+1) Download the egw-pear package from sourceforge and add it to the zip (Not required from 14.2+)
+
+2) (Not Required) add error_reporting(E_PARSE); in following files and then make a zip
+
+index.php
+
+/phpgwapi/inc/class.egw_cache_files.inc.php
+
+/phpgwapi/inc/class.translation.inc.php
+
+3) Select this check box "Give admin access to all installed apps"
+
+4) SQL encryption type for passwords: to ssha
+
+5) Add -> "POP/IMAP mail server hostname or IP address[:port]:" as imap.gmail.com
+
+6) Download package from github and install composer to install all dependencies, then make a zip for our package.
+Keep downloaded vendor folder user as root:root in manual installation.
+
+7) Download packages from https://github.com/EGroupware/egroupware/releases since 16.1.002 and download package named like "egroupware-epl-16.1.20160801.tar.gz" since other packages does not have dependencies included.(NA)
+
+8) Untar on webuzo, then download the untared folder and then make the zip for our package on localhost.(NA)
+
+9) PHP REQUIREMENT LINK : setup\inc\class.setup.inc.php $required_php_version

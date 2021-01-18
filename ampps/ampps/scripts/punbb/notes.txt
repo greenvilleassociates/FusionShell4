@@ -1,0 +1,4 @@
+1. install with mysql Improved
+2. Use Extended Inserts
+3. Release date : http://punbb.informer.com/
+4. PHP REQUIREMENT LINK: admin/install.php

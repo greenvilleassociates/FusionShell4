@@ -1,0 +1,86 @@
+<softinstall xmlns="http://www.softaculous.com">
+	<settings>
+		<group>
+			<heading>{{site_set}}</heading>
+			<input type="text" name="site_name" size="30" value="SilverStripe">
+				<head>{{site_name}}</head>
+			</input>
+			<input type="text" name="site_desc" size="30" value="My SilverStripe Site">
+				<head>{{site_desc}}</head>
+			</input>
+		</group>
+		<group>
+			<heading>{{ad_act}}</heading>
+			<input type="text" name="admin_email" size="30" value="admin" softmail="true">
+				<head>{{ad_email}}</head>
+				<handle>__email_address</handle>
+			</input>
+			<input type="text" name="admin_pass" size="30" value="pass">
+				<head>{{ad_pass}}</head>
+				<handle>__ad_pass</handle>
+			</input>
+		</group>
+		<group>
+			<heading>{{ad_lang}}</heading>
+			<input type="select">
+				<select name="language">
+					<option value="en_US">English (United States)</option>
+					<option value="en_GB">English (United Kingdom)</option>
+					<option value="af_ZA">Afrikaans</option>
+					<option value="ar_EG">Arabic</option>
+					<option value="ast_ES">Asturian</option>
+					<option value="az_AZ">Azerbaijani</option>
+					<option value="bs_BA">Bosnian</option>
+					<option value="bg_BG">Bulgarian</option>
+					<option value="ca_ES">Catalan</option>
+					<option value="zh_CN">Chinese (China)</option>
+					<option value="zh_TW">Chinese (Taiwan)</option>
+					<option value="hr_HR">Croatian</option>
+					<option value="cs_CZ">Czech</option>
+					<option value="da_DK">Danish</option>
+					<option value="nl_NL">Dutch</option>
+					<option value="eo_XX">Esperanto</option>
+					<option value="et_EE">Estonian</option>
+					<option value="fo_FO">Faroese</option>
+					<option value="fi_FI">Finnish</option>
+					<option value="fr_FR">French</option>
+					<option value="de_DE">German</option>
+					<option value="el_GR">Greek</option>
+					<option value="he_IL">Hebrew</option>
+					<option value="hu_HU">Hungarian</option>
+					<option value="is_IS">Icelandic</option>
+					<option value="id_ID">Indonesian</option>
+					<option value="it_IT">Italian</option>
+					<option value="ja_JP">Japanese</option>
+					<option value="km_KH">Khmer</option>
+					<option value="lv_LV">Latvian</option>
+					<option value="lt_LT">Lithuanian</option>
+					<option value="ms_MY">Malay</option>
+					<option value="ne_NP">Nepali</option>
+					<option value="nb_NO">Norwegian</option>
+					<option value="fa_IR">Persian</option>
+					<option value="pl_PL">Polish</option>
+					<option value="pt_BR">Portuguese</option>
+					<option value="pa_IN">Punjabi</option>
+					<option value="ro_RO">Romanian</option>
+					<option value="ru_RU">Russian</option>
+					<option value="sr_RS">Serbian</option>
+					<option value="si_LK">Sinhalese</option>
+					<option value="sk_SK">Slovak</option>
+					<option value="sl_SI">Slovenian</option>
+					<option value="es_ES">Spanish</option>
+					<option value="th_TH">Thai</option>
+					<option value="tr_TR">Turkish</option>
+					<option value="uk_UA">Ukrainian</option>
+					<option value="uz_UZ">Uzbek</option>
+					<option value="vi_VN">Vietnamese</option>
+				</select>
+				<head>{{select_lang}}</head>
+			</input>
+		</group>
+	</settings>
+	<db>mysql</db>
+	<files>
+		<exclude>install.php</exclude>
+	</files>
+</softinstall>

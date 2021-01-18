@@ -1,0 +1,2 @@
+1) PHP REQUIREMENT LINK : http://www.typesettercms.com/Docs/Installation
+2) Release date : https://github.com/Typesetter/Typesetter/releases

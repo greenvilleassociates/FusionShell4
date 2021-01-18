@@ -1,0 +1,2 @@
+1. installer dont ask for dbprefix but asign random dbprefix
+2. PHP REQUIREMENT LINK : https://akaunting.com/docs/requirements

@@ -1,0 +1,4 @@
+1. We rename admin folder as it is strongly recommended to do so and it is mentioned at the last step of installation. Also we do not save admin_folder name in install.xml because we do not want admin url to update. (Added since 8.0.5).
+2. Keep default values in Genreral Settings.
+3. We have set PHP requirement to 5.5 because since version 9.0.0 script uses PHP 5.5's syntax.
+4. We install with non-sample data(So keep Fill the database option : 'No' while manual installation) and we have removed sample data option from install.xml, Since sample data has issues while loading some frontend links,after renaming admin folder(in manual install as well). 

@@ -1,0 +1,58 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Pagekit
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/cms/Pagekit
+	</ratings>
+	<space>
+		22782094
+	</space>
+	<support>
+		https://pagekit.com/
+	</support>
+	<version>
+	   1.0.18
+	</version>
+	<mod>13</mod>
+	<release_date>20-01-2020</release_date>
+	<admin>admin/login</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.5.9" />
+	<requirement check="php" type="extension" name="json" />
+	<requirement check="php" type="extension" name="session" />
+	<requirement check="php" type="extension" name="ctype" />
+	<requirement check="php" type="extension" name="tokenizer" />
+	<requirement check="php" type="extension" name="SimpleXML" />
+	<requirement check="php" type="extension" name="dom" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="pcre" />
+	<requirement check="php" type="extension" name="zip" />
+	<requirement check="php" type="extension" name="pdo_mysql" />
+ 	<languages>
+	<english-overview>
+    <font size="5" color="#182e7a">Pagekit</font> is a modular and lightweight CMS built with modern technologies. It gives you the tools to create beautiful websites. All wrapped up in a clean and intuitive user inteface.<br/><br/>
+	 Pagekit is released under the <a href="https://pagekit.com/about" target="_blank">MIT License</a>.
+	</english-overview>		
+    <english-features>
+	  <ul>
+		  <li><b>Build sites easily</b> : The central place to manage your content is the Site Tree. Set up your menu structure, edit your pages and manage widgets. All in one interface, with simple drag and drop.</li>
+		  <li><b>All stats in one place</b> : The configurable dashboard provides an overview of your project and allows for quick access to your content. Explore your Google Analytics statistics and track visitors in real-time.</li>
+		  <li><b>Start blogging now</b> : Pagekit’s blog provides you with the tools to start creating content and to share your stories right away. The built-in comment system allows you to involve your users.</li>
+		  <li><b>Organize your mess</b> : The file manager is a handy tool to upload media and manage your file and folder structure. You can toggle between list and thumbnail view, whatever suits you best. It is always right within your reach as part of the editor.</li>
+		  <li><b>Collaborate with your team</b> : Our user and permission system is simply powerful and encourages you to involve team members in your project. Permissions have speaking names and you can control exactly what users may or may not do on your site.</li>
+	  </ul>
+	</english-features>
+	<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+	<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+	<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

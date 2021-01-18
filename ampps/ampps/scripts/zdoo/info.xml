@@ -1,0 +1,54 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Zdoo
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/erp/Zdoo
+	</ratings>
+	<space>
+		26467853 
+	</space>
+	<support>
+		http://www.zdoo.org/forum/c9.html
+	</support>
+	<version>
+		6.0
+	</version>
+	<mod>11</mod>
+	<release_date>01-03-2020</release_date>
+	<admin>www/sys/index.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.1.0" />
+	<requirement check="php" type="extension" name="pdo_mysql" />
+	<requirement check="php" type="extension" name="pcre" />
+	<requirement check="php" type="extension" name="json" />
+	<requirement check="php" type="extension" name="pdo" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Zdoo</font> is a management application for small/medium organizations. It is consist of five features, including CRM, OA, CASH, TEAM and App Navigation. It is a more integrated and simplified solution, compared to other similar products.
+		<br /><br />
+		Zdoo is released under the <a href="http://www.zdoo.org/book/zdoomanual/zdoolicense-6.html" target="_blank">Z PUBLIC LICENSE</a>.
+		</english-overview>		
+		<english-features>
+			<ul>
+				<li><b>Customer Relationship Management</b> : , CRM for short, is to automate enterprise marketing, sales and service activities. It enables enterprises to be more efficient in providing customers with satisfactory service, and to improve customer satisfaction and loyalty..</li>
+				<li><b>Office Automation (OA)</b> : As a typical enterprise management software, Office Automation(OA) plays an important role in improving enterprise management and office efficiency. Zdoo team refer to enterprise daily work process and aim to develop to help companies improve the efficiency of the office management system. Zdoo collaborative system is open source and free, and easy to extent, which has been accepted by the majority of enterprises.</li>
+				<li><b>Project Management</b> : Zdoo has built in simple and practical project management module, which can meet the daily management of your team and make the team more structured and efficient.</li>
+				<li><b>To-Do Management</b> : Reasonable scheduled tasks can make the work process in order. Zdoo has built-in powerful to-do manangement, through which employees can plan their daily work in details and get an intuitive overview of their work progress.</li>
+				<li><b>Cashflow</b> : Cash flow is the basis for a business to survive. To do a good job in the accounting is essential for any business. Zdoo has CASH accounting module which is developed according to the features of financial management within small and medium enterprises.  It helps companies to understand every income and expenditure and the monthly profit or loss.</li>
+				<li><b>Team Sharing</b> : Customer management, CASH accounting and to-do management are closely related in daily business. In addition to these functions, Zdoo team also developed a TEAM module to facilitate the sharing and communication within a company. The TEAM module integrates the company, colleagues, forums, and blog blocks.</li>
+			</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

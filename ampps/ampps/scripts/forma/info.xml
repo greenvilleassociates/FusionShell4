@@ -1,0 +1,59 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Forma_Lms
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/educational/Forma_Lms
+	</ratings>
+	<space>
+		68141082
+	</space>
+	<support>
+		http://www.elearningcommunity.net/forum/index.php
+	</support>
+	<version>
+	   2.3.0
+	</version>
+	<mod>6</mod>
+	<mod_files>1</mod_files>
+	<release_date>03-12-2019</release_date>
+	<admin>index.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.4.0" />
+	<requirement check="php" type="version" operator="lt" value="7.1.0" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="openssl" />
+	<languages>
+	<english-overview>
+	<font size="5" color="#182e7a">Forma LMS</font> is an open-source, web-based elearning platform (Learning Management System - LMS), used to manage and deliver online training courses. Designed for corporate training,  born to fit your company needs and processess. Easy integration with any intranet software, extend functionalities with a wide range of plugins. Forma is developed by a network of companies, with a strong and active community.
+	<br /><br />
+	Forma LMS is released under the <a href="http://www.gnu.org/licenses/gpl-2.0.html" target="_blank">GPL v2.0 LICENSE</a>.
+	</english-overview>		
+	<english-features>
+	<ul>
+		<li><b>Engaging user experience : </b>Modern and responsive layout for a great user experience.</li>
+		<li><b>Extensive elearning features : </b>Manage courses, materials, learning and collaboration with a wide set of options.</li>
+		<li><b>Flexible User Management : </b>Easily organize your users in unlimited groups and customizable fields.</li>
+		<li><b>Outstanding Report System : </b>Build extensive reports with the built in wizard to export in different formats or send with the email scheduler.</li>
+		<li><b>Talent Management : </b>Organize company roles, manage competencies, monitor your users growth with built-in skill gap analysis.</li>
+		<li><b>Multi clients : </b>Manage multiple-clients-or-brands from a single installation, with different administrators.</li>
+		<li><b>Classroom management : </b>Ability to manage classroom courses, student attendance, locations (many classroom per location), calendars, manage different locations for each date of a course</li>
+		<li><b>Sell Your courses online : </b>Native ecommerce functionalities with cart and paypal integration.</li>
+		<li><b>Integrated Certificate System : </b>Automatic creation of dynamic pdf certificates.</li>
+		<li><b>Extend with plugins : </b>Expand your LMS with unlimited features using the new plugin system.</li>
+		<li><b>API Integration : </b>Easily integrate your LMS with any other system through powerful APIs and connectors.</li>
+	</ul>
+	</english-features>
+	<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+	<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+	<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

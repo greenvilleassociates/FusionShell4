@@ -1,0 +1,2 @@
+1. make DB with utf8_unicode_ci collate
+2. PHP REQUIREMENT LINK: https://github.com/croogo/croogo/blob/master/README.mdown

@@ -1,0 +1,8 @@
+central time US/CANADA
+We have changed the PHP requirements to 5.4.0, Since the script wasn't working on PHP versions 5.2.0 and 5.3.0.
+PHP REQUIREMENT LINK: http://codiad.com/
+Release date : https://github.com/Codiad/Codiad
+
+LANGUAGE
+Do not ask while install, No option to change language internally through login
+https://github.com/Codiad/Codiad/issues/858

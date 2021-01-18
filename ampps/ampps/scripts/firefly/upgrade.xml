@@ -1,0 +1,21 @@
+<softupgrade xmlns="http://www.softaculous.com">
+	<setuplocation>public/login</setuplocation>
+	<settings>		
+		<group>
+			<heading>hidden</heading>
+			<input type="hidden" name="dummy" value="">
+			</input>
+		</group>
+	</settings>
+	<files>
+		<exclude>.env</exclude>
+		<exclude>storage/upload/*</exclude>
+		<exclude>storage/upload/*/*</exclude>
+		<exclude>storage/upload/*/*/*</exclude>
+		<exclude>storage/upload/*/*/*/*</exclude>
+		<exclude>storage/export/*</exclude>
+		<exclude>storage/export/*/*</exclude>
+		<exclude>storage/export/*/*/*</exclude>
+		<exclude>storage/export/*/*/*/*</exclude>
+	</files>
+</softupgrade>

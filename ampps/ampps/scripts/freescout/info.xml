@@ -1,0 +1,68 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/FreeScout
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/customersupport/FreeScout
+	</ratings>
+	<space>
+		36782569
+	</space>
+	<support>
+		https://freescout.net
+	</support>
+	<version>
+	   1.6.13
+	</version>
+	<mod>55</mod>
+	<release_date>16-01-2021</release_date>
+	<admin>login</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.0.0" />
+	<requirement check="php" type="extension" name="mysqli" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="xml" />
+	<requirement check="php" type="extension" name="imap" />
+	<requirement check="php" type="extension" name="json" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="fileinfo" />
+	<requirement check="php" type="extension" name="openssl" />
+	<requirement check="php" type="extension" name="zip" />
+	<requirement check="php" type="extension" name="tokenizer" />
+	<requirement check="php" type="extension" name="curl" />
+ 	<languages>
+	<english-overview>
+    <font size="5" color="#182e7a">FreeScout</font> is the super lightweight free open source help desk and shared inbox written in PHP7 (Laravel 5.5 framework). <br/><br/>
+	FreeScout is released under the <a href="https://opensource.org/licenses/AGPL-3.0" target="_blank">GNU Affero General Public License v3.0</a>.
+	</english-overview>		
+    <english-features>
+		<ul>
+			<li>100% Mobile-friendly.</li>
+			<li>Seamless email integration.</li>
+			<li>Starred conversations.</li>
+			<li>Forwarding conversations.</li>
+			<li>Push notifications.</li>
+			<li>Auto reply.</li>
+			<li>Notes.</li>
+			<li>Pasting screenshots from the clipboard into the reply area.</li>
+			<li>Configuring notifications on a per user basis.</li>
+			<li>Open tracking.</li>
+			<li>Editing/hiding threads.</li>
+			<li>Search.</li>
+			<li>Phone conversations.</li>
+			<li>Sending new conversations to multiple recipients at once.</li>
+		</ul>
+	</english-features>
+	<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+	<english-err_no_email>Please provide the email to reset the password</english-err_no_email>
+	<english-err_no_such_email>The Admin email is incorrect and does not exist!</english-err_no_such_email>
+	</languages>
+</soft>

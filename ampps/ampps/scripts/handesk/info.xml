@@ -1,0 +1,57 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right; margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Handesk 
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/customersupport/Handesk 
+	</ratings>
+	<space>
+		38660995
+	</space>
+	<support>
+		http://handesk.io/
+	</support>
+	<version>
+		1.4.2
+	</version>
+	<mod>3</mod>
+	<mod_files>2</mod_files>
+	<release_date>25-07-2018</release_date>
+	<admin>public/login</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.1.0" />
+	<requirement check="php" type="version" operator="lt" value="7.4.0" />
+	<requirement check="php" type="extension" name="openssl" />
+	<requirement check="php" type="extension" name="pdo_mysql" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="iconv" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Handesk</font> is a powerful yet simple Ticketing system, a system that allows to have multiple teams, with multiple users, easy and efficient reporting by all/team/user as well as lead management.
+		<br /><br />
+		Handesk is licensed under the  <a href="https://opensource.org/licenses/MIT" target="_blank">MIT</a>.
+		</english-overview>
+		<english-features>
+			<ul>
+				<li><b>Multiple</b> : teams You can handle multiple teams with just one account.</li>
+				<li><b>Rest API</b> : Easy Api to integrate with your projects.</li>
+				<li><b>Issue tracker</b> : You can escalate the tickets and create issues to your code issue tracker..</li>
+				<li><b>Email polling</b> : Get your tickets directly from an inbox account.</li>
+				<li><b>Multilanguage</b> : With a multilanguage UI.</li>
+				<li><b>Reports</b> : See each of your team analytics.</li>
+			</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_email>Please provide the email to reset the password</english-err_no_email>
+		<english-err_no_such_email>The Admin email is incorrect and does not exist!</english-err_no_such_email>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+	</languages>
+</soft>

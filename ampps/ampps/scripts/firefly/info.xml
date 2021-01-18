@@ -1,0 +1,85 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Firefly_III
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/others/Firefly_III
+	</ratings>
+	<space>
+		80987607
+	</space>
+	<support>
+		https://firefly-iii.org/
+	</support>
+	<version>
+		5.4.6
+	</version>
+	<mod>48</mod>
+	<mod_files>1</mod_files>
+	<release_date>07-11-2020</release_date>
+	<admin>public/login</admin>
+	<min_require>4.7.2</min_require>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.4.0" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="intl" />
+	<requirement check="php" type="extension" name="zip" />
+	<requirement check="php" type="extension" name="openssl" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Firefly III</font> is a self-hosted financial manager. It can help you keep track of expenses, income, budgets and everything in between. It even supports credit cards, shared household accounts and savings accounts. It’s pretty fancy. You should use it to save and organise money. 
+		<br /><br />
+		Firefly III is released under the <a href="https://www.gnu.org/licenses/gpl.html" target="_blank">GNU GENERAL PUBLIC LICENSE Version 3</a>.
+		</english-overview>
+		<english-features>
+		<ul>
+			<li>Firefly can import any CSV file, so migrating from other systems is easy.</li>
+			<li>Firefly runs on your own server, so you are fully in control of your data.</li>
+			<li>If you feel you’re missing something you can just ask me and I’ll add it!</li>
+			<li>A double-entry bookkeeping system;</li>
+			<li>You can store, edit and remove withdrawals, deposits and transfers. This allows you full financial management;</li>
+			<li>You can manage different types of accounts;
+				<ul>
+					<li>Asset accounts</li>
+					<li>Shared asset accounts (household accounts)</li>
+					<li>Saving accounts</li>
+					<li>Credit cards</li>
+				</ul>
+			</li>
+			<li>It’s possible to create, change and manage money using budgets;</li>
+			<li>Organize transactions using categories;</li>
+			<li>Save towards a goal using piggy banks;</li>
+			<li>Predict and anticipate bills;</li>
+			<li>View income / expense reports;</li>
+			<li>Rule based transaction handling with the ability to create your own rules.</li>
+			<li>The ability to export data so you can move to another system.</li>
+			<li>The ability to import data so you can move from another system.</li>
+			<li>Organize expenses using tags;</li>
+			<li>2 factor authentication for extra security ;</li>
+			<li>Supports any currency you want, including crypto currencies such as Bitcoin .</li>
+			<li>Lots of help text in case you don’t get it.</li>
+			<li>Clear views that should show you how you’re doing;</li>
+			<li>Easy navigation through your records;</li>
+			<li>Browse back and forth to see previous months or even years;</li>
+			<li>Lots of charts because we all love them;</li>
+			<li>Financial reporting showing you how well you are doing;</li>
+			<li>Lots of math because we all love it.</li>
+		</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_email>Please provide the email to reset the password</english-err_no_email>
+		<english-err_no_such_email>The Admin email is incorrect and does not exist!</english-err_no_such_email>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+		<english-err_passlen16>The password length should be 16 or more characters.</english-err_passlen16>
+	</languages>
+</soft>

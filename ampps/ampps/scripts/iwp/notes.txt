@@ -1,0 +1,4 @@
+1. (17, 'installedEmail', '[[admin_email]]'); -> [[admin_email]] is the email which we provide at the time of downloading the package from their website, so do replace it.
+2. PHP REQUIREMENT LINK : https://support.infinitewp.com/support/solutions/articles/225668-requirements-for-iwp
+Release date : https://infinitewp.com/change-log/
+3. Important : Append install/index.php?softaculous=1 to URL while manual installation. This was required to skip account registration at IWP's site which can be skipped now by using these query params, which confirm that request is from softaculous, confirmed with vendor via email (These changes were done by vendor inside their zip, after our request to skip the IWP account registration process).

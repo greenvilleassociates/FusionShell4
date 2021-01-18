@@ -1,0 +1,10 @@
+.htaccess.dist
+.php_cs.dist
+README.md
+assets
+index.php
+protected
+robots.txt
+static
+themes
+uploads

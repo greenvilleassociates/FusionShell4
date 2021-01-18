@@ -1,0 +1,2 @@
+1. We have disbled this script for windows because Login does not work on Windows even in Manual installation.
+2. Release date : http://ricargbook.adrielmedia.com/download.php

@@ -1,0 +1,7 @@
+1. Don't convert sql to UTF8 (The images for the front end link won't get rendered).
+2. scopy .htaccess and comment php_flags to work on su php. 
+3. For every installation, let the value of "module_description_hash" in table "[[dbprefix]]site_settings" be the default one. (Since 7.4.0)
+4. We have disabled zenario on AMPPS because script requires mysql 5.5.3 or later and AMPPS detects it incorrectly (mysqlnd 5.0.12). Ask AMPPS team to solve this issue and enable it again if working. (Since 7.6)
+5. PHP REQUIREMENT LINK: http://zenar.io/system-requirements
+6. if you are getting error in zenario then please check apache version, zenario only works with apache 2.4 or later.
+7. Select Timezone "(UTC -4.00) Eastern Time (US & Canada)" while install.

@@ -1,0 +1,5 @@
+1. Download package from github https://github.com/miniflux/miniflux/releases
+2. By default, Miniflux uses Sqlite, To use MySQL you will have to modify your config.php file. 
+3. Database will be created after login. (The default login and password is admin/admin )
+4. PHP REQUIREMENT LINK : https://github.com/miniflux/miniflux-legacy/blob/master/docs/installation.markdown
+5. Version 2.0.0 is written in golang and works only with postgresql hence we wont be able to provide.

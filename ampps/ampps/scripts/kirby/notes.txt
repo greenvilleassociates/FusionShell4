@@ -1,0 +1,6 @@
+1.PHP REQUIREMENT LINK : https://getkirby.com/docs/guide/installation#requirements
+2.Set "c::set('panel.install', true);" in site/config/config.php to start manual installation. 
+3.We can not provide upgrade from V2 to V3 because it requires migration.
+https://getkirby.com/docs/cookbook/migration/sites
+4.Upgrade enabled for version 3.x.x to 3.x.x with minimum version 3.0.0.(since version 3.1.3).
+5.We have added 'media' folder (in version 3.3.0) in our package zip, as it was not present in the original zip and gave error while manual installation. Check this in next update.(not present in 3.3.1)

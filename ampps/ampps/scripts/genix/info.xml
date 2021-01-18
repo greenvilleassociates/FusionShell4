@@ -1,0 +1,48 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/GeniXCMS 
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/cms/GeniXCMS 
+	</ratings>
+	<space>
+		57727833
+	</space>
+	<support>
+		https://github.com/semplon/GeniXCMS
+	</support>
+	<version>
+		1.1.8
+	</version>
+	<mod>3</mod>
+	<release_date>20-09-2020</release_date>
+	<admin>login.php?backto=gxadmin</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.2.5" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="openssl" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">GeniXCMS</font> is a PHP Based Content Management System and Framework (CMSF). It's a simple and lightweight of CMSF. Very suitable for Intermediate PHP developer to Advanced Developer.<br/><br/> 
+		GeniXCMS released under <a href="https://github.com/semplon/GeniXCMS/blob/master/LICENSE" target="_blank">MIT License</a>.
+		</english-overview>		
+		<english-features>
+			<ul>
+				<li><b>Mobile Friendly</b> : GeniXCMS ready for mobile devices. We are using Twitter Bootstrap for mobile friendly page.</li>
+				<li><b>Fast and Light</b> : GeniXCMS was built for Speed and Stability. Developed only for necessary needs.</li>
+			</ul>		
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

@@ -1,0 +1,5 @@
+1) We dont change "jrElastic2_css_version" and "jrElastic2_javascript_version" in sql, as its same for all installation.
+2) Take sql dump after creating account.
+3) Release date can be found here : "https://www.jamroom.net/the-jamroom-network/networkmarket/32/system-core"
+4) PHP REQUIREMENT LINK: https://www.jamroom.net/the-jamroom-network/documentation/getting-started/553/installation
+5) zlib.output_compression needs to be off ( output handler 'ob_gzhandler' conflicts with 'zlib' output compression ) Observed on PHP 5.3

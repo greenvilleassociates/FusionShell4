@@ -1,0 +1,59 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.png" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/PyroCMS
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/cms/PyroCMS
+	</ratings>
+	<space>
+		103042066
+	</space>
+	<support>
+		http://www.pyrocms.com/
+	</support>
+	<version>
+		3.0.1
+	</version>
+	<mod>22</mod>
+	<mod_files>3</mod_files>
+	<release_date>23-06-2016</release_date>
+	<admin>public/admin/login</admin>
+	<min_require>1.3.0</min_require>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.5.9" />
+	<requirement check="php" type="function_exists" name="mb_get_info" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="openssl" />
+	<requirement check="php" type="extension" name="PDO" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="fileinfo" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="tokenizer" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">PyroCMS</font> is an easy to use, powerful, and modular CMS and development platform built with Laravel 5. 
+		<br /><br />
+		PyroCMS is an MVC PHP Content Management System built to be easy to use, theme and develop with. It is used by individuals and organizations of all sizes around the world. 
+		<br /><br />
+		PyroCMS <a href="https://opensource.org/licenses/MIT" target="_blank">The MIT License</a>.
+		</english-overview>		
+		<english-features>
+<font size="2" color="#61259E"><b>Automated:</b></font><br />Pyro can generate your schema, models, addons, routes, controllers, tables, forms, UI and more for you. All you have to do is customize them as desired.<br /><br />
+<font size="2" color="#61259E"><b>Integrative:</b></font><br />Integrated support for Twig, Blade, SCSS, CoffeeScript, Bower, Elixir, image editing, srcsets, asset management and more. Build what you want with what you want.<br /><br />
+<font size="2" color="#61259E"><b>Easy To Use:</b></font><br />The entire control panel is consistent, clean, and straight forward. You will feel instantly at home and familiar managing all of your content.<br /><br />
+<font size="2" color="#61259E"><b>Rapid:</b></font><br />Because of Pyro's automation and intuitive guesswork, you can quickly deliver simple or complex projects custom tailored to your clients needs.<br /><br />
+<font size="2" color="#61259E"><b>Powerhouse:</b></font><br />Peel back the automation and simple interfaces and dive deep. Pyro provides plenty of horsepower and versatility to deploy big elegant projects super fast.<br />
+		</english-features>
+		<english-app_name>Application Name</english-app_name>
+		<english-app_ref>Application Reference</english-app_ref>
+		<english-spaces>Spaces are not allowed in </english-spaces>
+	</languages>
+</soft>

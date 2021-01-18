@@ -1,0 +1,11 @@
+1.5.1 (2016-08-21)
+Bug Fixes
+	- Wrong Avatar Path on Installation
+	- Error "Prefix "PRJ" has already been taken" when attempting to edit existing project
+	- Cannot delete project
+	- User avatar disappear on user edit
+	- Error on Reset Password
+
+Improvements
+	- Changed Removed Filter Icon on all grid
+	- Project can be deleted only if hasn't project or task pending

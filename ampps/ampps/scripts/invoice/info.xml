@@ -1,0 +1,62 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/InvoicePlane
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/ecommerce/InvoicePlane
+	</ratings>
+	<space>
+		37273086
+	</space>
+	<support>
+		https://community.invoiceplane.com/
+	</support>
+	<version>
+		1.5.11
+	</version>
+	<mod>17</mod>
+	<release_date>19-04-2020</release_date>
+	<admin>index.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.0.0" />
+	<requirement check="php" type="extension" name="mcrypt" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="hash" />
+	<requirement check="php" type="extension" name="json" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="mysqli" />
+	<requirement check="php" type="extension" name="openssl" />
+	<requirement check="php" type="extension" name="zlib" />
+	<requirement check="php" type="extension" name="xmlrpc" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">InvoicePlane</font> is a self-hosted open source application for managing your quotes, invoices, clients and payments.
+		<br /><br />
+		InvoicePlane is an open source software which was built to offer a free application for client management, invoicing and payment tracking.
+		 <br /><br />
+		<a href="https://wiki.invoiceplane.com/en/1.0/general/license" target="_blank">License for InvoicePlane.</a>
+		</english-overview>		
+		<english-features>
+		<font size="3" color="#429AE1">Easy Invoicing</font>
+		<br />InvoicePlane makes it easy to create new invoices with some simple clickss: dd saved products, set taxrates and send the invoice via email to the customer from within the app.<br /><br />
+		<font size="3" color="#429AE1">Manage your Customers</font>
+		<br />The application provides CRM-like management for your customers. Enter contact details, notes or add custom fields for your own details like project identiefiers.<br /><br />
+		<font size="3" color="#429AE1">Quotes for Customers</font>
+		<br />Send a quote to your client. He can approve it with a single click from the InvoicePlane web-panel so you can start to work on the project or deliver the listed items.<br /><br />
+		<font size="3" color="#429AE1">Customize InvoicePlane</font>
+		<br />You can customize InvoicePlane to make sure it will fit your needs: currencies, application interface, email templates, invoice groups, taxes and quote or invoice templates.<br /><br />
+		<font size="3" color="#429AE1">Track all Payments</font>
+		<br />Enter Payments for Invoices in InvoicePlane and keep track of the clients balance. All payments can be linked to an invoice to track the payments with different payment methods for them.<br /><br />
+		<font size="3" color="#429AE1">Let your Clients use PayPal</font>
+		<br />Register your merchant account at PayPal.com, enter your credentials and InvoicePlane is ready to provide easy and one-click online payments via PayPal to your clients.<br /><br />
+		</english-features>
+	</languages>
+</soft>

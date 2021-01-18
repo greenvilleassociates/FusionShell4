@@ -1,0 +1,4 @@
+Choose mysql Improved InnoDB while installation
+changelog -> http://fluxbb.org/development/core/changelog
+Download link for languages : https://fluxbb.org/resources/translations/
+(Check and update language in every version)

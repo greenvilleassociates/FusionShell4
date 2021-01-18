@@ -1,0 +1,12 @@
+VERSION
+app
+bin
+config
+db
+doc
+framework
+index.html
+lib
+tmp
+www
+.htaccess

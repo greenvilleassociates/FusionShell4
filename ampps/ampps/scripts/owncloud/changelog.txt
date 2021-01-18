@@ -1,0 +1,851 @@
+Changelog for ownCloud Core [10.6.0] (2020-11-25)
+=======================================
+The following sections list the changes in ownCloud core 10.6.0 relevant to
+ownCloud admins and users.
+
+[10.6.0]: https://github.com/owncloud/core/compare/v10.5.0...v10.6.0
+
+Summary
+-------
+
+* Bugfix - Cleaning up `autocapitalize="off"` in files: [#15399](https://github.com/owncloud/core/issues/15399)
+* Bugfix - Google Drive file modifications should not create duplicate files: [#25826](https://github.com/owncloud/core/issues/25826)
+* Bugfix - Fix exit codes of security:certificates commands: [#35364](https://github.com/owncloud/core/issues/35364)
+* Bugfix - Translate public link sharing email subject: [#37321](https://github.com/owncloud/core/issues/37321)
+* Bugfix - Only allow http/https protocol on CORS: [#38101](https://github.com/owncloud/core/pull/38101)
+* Bugfix - Fix problem with the market app installing an app using OpenIDConnect: [#37715](https://github.com/owncloud/core/pull/37715)
+* Bugfix - Fix expiring a wrong share entry problem: [#37729](https://github.com/owncloud/core/pull/37729)
+* Bugfix - Fix decoding of calendars uri: [#37750](https://github.com/owncloud/core/pull/37750)
+* Bugfix - Add openid client secret to the sensitive values list: [#37782](https://github.com/owncloud/core/pull/37782)
+* Bugfix - Show all shares in the "shared with you" section: [#37786](https://github.com/owncloud/core/pull/37786)
+* Bugfix - Reshares using files:transfer-ownership cannot be transferred: [#4121](https://github.com/owncloud/enterprise/issues/4121)
+* Bugfix - "Passwords do not match" message was not being translated: [#37826](https://github.com/owncloud/core/pull/37826)
+* Bugfix - Fix federated share accepting problem which occurs with some apps enabled: [#37719](https://github.com/owncloud/core/issues/37719)
+* Bugfix - Allow federated share name up to 255 character: [#36730](https://github.com/owncloud/core/issues/36730)
+* Bugfix - Fix application id used for sharing settings translation: [#37846](https://github.com/owncloud/core/pull/37846)
+* Bugfix - Add metrics shared secret to the sensitive values list: [#37848](https://github.com/owncloud/core/pull/37848)
+* Bugfix - Fix list of apps returned by OCS Provisioning API apps endpoint: [#37884](https://github.com/owncloud/core/issues/37884)
+* Bugfix - Add very minimal empty ODF files: [#37896](https://github.com/owncloud/core/pull/37896)
+* Bugfix - Checksums will be kept when a file is uploaded or a version is created: [#37934](https://github.com/owncloud/core/pull/37934)
+* Bugfix - Fix invisible notification container blocking mouse events: [#37941](https://github.com/owncloud/core/pull/37941)
+* Bugfix - Fix display of public link shares in case avatars are disabled: [#37945](https://github.com/owncloud/core/pull/37945)
+* Bugfix - Clean the user's preferences only if they exist during user sync: [#37947](https://github.com/owncloud/core/pull/37947)
+* Bugfix - OCS and Public WebDAV Apis should handle LoginException: [#112](https://github.com/owncloud/brute_force_protection/issues/112)
+* Bugfix - Properly exit and log during error in user sync command: [#37951](https://github.com/owncloud/core/pull/37951)
+* Bugfix - Add a configurable number of retries on unsuccessful mountpoint move: [#37956](https://github.com/owncloud/core/pull/37956)
+* Bugfix - Fix icon alignment when avatars are disabled: [#37964](https://github.com/owncloud/core/pull/37964)
+* Bugfix - Fix file target in the accept share API call: [#37973](https://github.com/owncloud/core/pull/37973)
+* Bugfix - Fix for Google Docs not syncing with error "server reported no size": [#37997](https://github.com/owncloud/core/issues/37997)
+* Bugfix - Do not emit "share.failedpasswordcheck" events for authenticated links: [#138](https://github.com/owncloud/brute_force_protection/issues/138)
+* Bugfix - Fix request token check for ocs requests: [#38019](https://github.com/owncloud/core/pull/38019)
+* Bugfix - Fix logging when loading an apps fails: [#38037](https://github.com/owncloud/core/pull/38037)
+* Bugfix - Properly handle StorageNotAvailableException in share external: [#38042](https://github.com/owncloud/core/pull/38042)
+* Bugfix - Avoid retrieving user root iteratively in share controller: [#4107](https://github.com/owncloud/enterprise/issues/4107)
+* Bugfix - Pick the translations from templates included from other apps: [#38072](https://github.com/owncloud/core/pull/38072)
+* Bugfix - Override browser Accept-Language header in ajax requests: [#38073](https://github.com/owncloud/core/pull/38073)
+* Bugfix - Prevent server error when loading invalid/corrupt translations: [#37799](https://github.com/owncloud/core/issues/37799)
+* Bugfix - SSL check when adding a public link to your ownCloud: [#4241](https://github.com/owncloud/enterprise/issues/4241)
+* Bugfix - Fix translations of some strings in settings: [#38119](https://github.com/owncloud/core/pull/38119)
+* Change - Update deepdiver/zipstreamer (1.1.1 => 2.0.0): [#37159](https://github.com/owncloud/core/issues/37159)
+* Change - Update sabre dependencies: [#37684](https://github.com/owncloud/core/pull/37684)
+* Change - Update google/apiclient from 2.5.0 to 2.6.0 and related dependencies: [#37687](https://github.com/owncloud/core/pull/37687)
+* Change - Update symfony/polyfill (1.17.0 => 1.18.0): [#37694](https://github.com/owncloud/core/pull/37694)
+* Change - Update icewind/smb from 3.2.5 to 3.2.6 in files_external: [#37712](https://github.com/owncloud/core/pull/37712)
+* Change - Add settings checkbox to enable manual file locking: [#37720](https://github.com/owncloud/core/pull/37720)
+* Change - Update Symfony components to 4.4.11: [#37727](https://github.com/owncloud/core/pull/37727)
+* Change - Update league/flysystem (1.0.69 => 1.0.70): [#37730](https://github.com/owncloud/core/pull/37730)
+* Change - Make core/signature.json and core/skeleton/ inaccessible: [#37734](https://github.com/owncloud/core/issues/37734)
+* Change - Update google/apiclient from 2.6.0 to 2.7.0 and related dependencies: [#37739](https://github.com/owncloud/core/pull/37739)
+* Change - Add values to the invalid uid list: [#37765](https://github.com/owncloud/core/issues/37765)
+* Change - Update doctrine/event-manager (1.1.0 => 1.1.1): [#37768](https://github.com/owncloud/core/pull/37768)
+* Change - Update symfony/polyfill (1.18.0 => 1.18.1): [#37772](https://github.com/owncloud/core/pull/37772)
+* Change - Update egulias/email-validator (2.1.18 => 2.1.19): [#37790](https://github.com/owncloud/core/pull/37790)
+* Change - Update opis/closure (3.5.5 => 3.5.6): [#37804](https://github.com/owncloud/core/pull/37804)
+* Change - Add system config to load a different license implementation: [#37827](https://github.com/owncloud/core/pull/37827)
+* Change - Update laminas/laminas-zendframework-bridge (1.0.4 => 1.1.0): [#37843](https://github.com/owncloud/core/pull/37843)
+* Change - Use a debug log level if a share download is aborted: [#37856](https://github.com/owncloud/core/pull/37856)
+* Change - Add command to troubleshoot transfer ownership runs for issues: [#37950](https://github.com/owncloud/core/pull/37950)
+* Change - Update Symfony components to 4.4.12: [#37862](https://github.com/owncloud/core/pull/37862)
+* Change - Update doctrine/dbal (2.10.2 => 2.10.3): [#37870](https://github.com/owncloud/core/pull/37870)
+* Change - Update Symfony components to 4.4.13: [#37876](https://github.com/owncloud/core/pull/37876)
+* Change - Update opis/closure (3.5.6 => 3.5.7): [#37892](https://github.com/owncloud/core/pull/37892)
+* Change - Update egulias/email-validator (2.1.19 => 2.1.20): [#37892](https://github.com/owncloud/core/pull/37892)
+* Change - Update phpseclib/phpseclib (2.0.28 => 2.0.29): [#37893](https://github.com/owncloud/core/pull/37893)
+* Change - Update icewind/smb from 3.2.6 to 3.2.7 in files_external: [#37894](https://github.com/owncloud/core/pull/37894)
+* Change - Update doctrine/dbal (2.10.3 => 2.10.4): [#37904](https://github.com/owncloud/core/pull/37904)
+* Change - Update symfony/translation-contracts (v1.1.9 => v1.1.10): [#37904](https://github.com/owncloud/core/pull/37904)
+* Change - Reduce the log level of locked exceptions: [#37907](https://github.com/owncloud/core/pull/37907)
+* Change - Update google/apiclient from 2.7.0 to 2.7.1 and related dependencies: [#37912](https://github.com/owncloud/core/pull/37912)
+* Change - Update sabre/event (5.1.0 => 5.1.1): [#37921](https://github.com/owncloud/core/pull/37921)
+* Change - Update laminas/laminas-zendframework-bridge (1.1.0 => 1.1.1): [#37921](https://github.com/owncloud/core/pull/37921)
+* Change - New defaults for phoenix app switcher icon and label: [#37923](https://github.com/owncloud/core/pull/37923)
+* Change - Update pear/archive_tar (1.4.9 => 1.4.10): [#37926](https://github.com/owncloud/core/pull/37926)
+* Change - Update egulias/email-validator (2.1.20 => 2.1.21): [#37926](https://github.com/owncloud/core/pull/37926)
+* Change - Update egulias/email-validator (2.1.21 => 2.1.22): [#37949](https://github.com/owncloud/core/pull/37949)
+* Change - Update Symfony components to 4.4.14: [#37949](https://github.com/owncloud/core/pull/37949)
+* Change - DropOldTables repair job won't show a progress bar: [#37953](https://github.com/owncloud/core/pull/37953)
+* Change - Update sabre dependencies: [#37975](https://github.com/owncloud/core/pull/37975)
+* Change - Update Symfony components to 4.4.15: [#37975](https://github.com/owncloud/core/pull/37975)
+* Change - Update opis/closure (3.5.7 => 3.6.0): [#38004](https://github.com/owncloud/core/pull/38004)
+* Change - Update symfony/polyfill (1.18.1 => 1.19.0): [#38032](https://github.com/owncloud/core/pull/38032)
+* Change - Update symfony/polyfill (1.19.0 => 1.20.0): [#38033](https://github.com/owncloud/core/pull/38033)
+* Change - Update google/apiclient from 2.7.1 to 2.8.0 and related dependencies: [#38043](https://github.com/owncloud/core/pull/38043)
+* Change - Update dg/composer-cleaner (v2.1 => v2.2): [#38044](https://github.com/owncloud/core/pull/38044)
+* Change - Update Symfony components to 4.4.16: [#38046](https://github.com/owncloud/core/pull/38046)
+* Change - Update egulias/email-validator (2.1.22 => 2.1.23): [#38061](https://github.com/owncloud/core/pull/38061)
+* Change - Update sabre/vobject (4.3.2 => 4.3.3): [#38091](https://github.com/owncloud/core/pull/38091)
+* Change - Update opis/closure (3.6.0 => 3.6.1): [#38091](https://github.com/owncloud/core/pull/38091)
+* Change - Update sabre/dav (4.1.2 => 4.1.3): [#38092](https://github.com/owncloud/core/pull/38092)
+* Change - Update egulias/email-validator (2.1.23 => 2.1.24): [#38116](https://github.com/owncloud/core/pull/38116)
+* Change - Update pear/archive_tar (1.4.10 => 1.4.11): [#38137](https://github.com/owncloud/core/pull/38137)
+* Change - Rename phoenix to web: [#38199](https://github.com/owncloud/core/pull/38199)
+* Enhancement - Cleanup encryption config values on disabling encryption: [#35980](https://github.com/owncloud/core/pull/35980)
+* Enhancement - Add support for date expiration on remote shares: [#37548](https://github.com/owncloud/core/pull/37548)
+* Enhancement - Support pre-signed urls: [#37634](https://github.com/owncloud/core/pull/37634)
+* Enhancement - Add capability for the favorite files feature: [#37673](https://github.com/owncloud/core/pull/37673)
+* Enhancement - Add Support for SGI Image Previews: [#37758](https://github.com/owncloud/core/pull/37758)
+* Enhancement - Allow getting the share list filtered by share type via API: [#38000](https://github.com/owncloud/core/pull/38000)
+* Enhancement - GetShare API request's "subfiles" parameter allows new interactions: [#38053](https://github.com/owncloud/core/pull/38053)
+* Enhancement - Add new method in the PHP API interface: [#38054](https://github.com/owncloud/core/pull/38054)
+
+Details
+-------
+
+* Bugfix - Cleaning up `autocapitalize="off"` in files: [#15399](https://github.com/owncloud/core/issues/15399)
+
+   All instances of deprecated `autocapitalize="off"` HTML attributes were replaced with
+   `autocapitalize="none"` in the parent <form> tag.
+
+   https://github.com/owncloud/core/issues/15399
+   https://github.com/owncloud/core/pull/37965
+
+* Bugfix - Google Drive file modifications should not create duplicate files: [#25826](https://github.com/owncloud/core/issues/25826)
+
+   Change: Allow Storage backends to explicitly opt-in/opt-out of marking file as partial while
+   uploading
+
+   Existing files in Google Drive that were modified and saved (uploaded) would result in
+   duplicate files of the same name. The root cause was appending .part to filenames for upload.
+   This update first allows Storage to opt-out of .part filenames during upload and second opts
+   out of .part filenames for Google Storage backend specifically.
+
+   https://github.com/owncloud/core/issues/25826
+   https://github.com/owncloud/core/pull/37062
+
+* Bugfix - Fix exit codes of security:certificates commands: [#35364](https://github.com/owncloud/core/issues/35364)
+
+   If there is an error when doing occ security:certificates:import or occ
+   security:certificates:remove then the command will exit with status 1. This allows the
+   caller to reliably detect if there was a problem.
+
+   https://github.com/owncloud/core/issues/35364
+   https://github.com/owncloud/core/pull/37783
+
+* Bugfix - Translate public link sharing email subject: [#37321](https://github.com/owncloud/core/issues/37321)
+
+   https://github.com/owncloud/core/issues/37321
+   https://github.com/owncloud/core/pull/37322
+
+* Bugfix - Only allow http/https protocol on CORS: [#38101](https://github.com/owncloud/core/pull/38101)
+
+   Adding a white-listed domain allowed strange protocols like ftp://owncloud.com,
+   restricted to http/https
+
+   https://github.com/owncloud/core/pull/38101
+
+* Bugfix - Fix problem with the market app installing an app using OpenIDConnect: [#37715](https://github.com/owncloud/core/pull/37715)
+
+   The OpenIDConnect app uses an in-memory cache to store an OpenID session in order to avoid
+   hitting the OpenID provider too much. After an app was installed, the prefix used to store
+   information in the cache was changing. This was causing problems because the OpenIDConnect
+   app thought the OpenID session was no longer valid and, as a consequence, it was logging out the
+   user. In practice, installing an new app with the market app having logged in via OpenIDConnect
+   would cause the user to logout.
+
+   Now, the cache prefix only changes after an ownCloud upgrade. Installing an app won't cause the
+   cache prefix to change, so this will fix the problem. The OpenIDConnect app will still find the
+   stored session information after the new apps are installed.
+
+   https://github.com/owncloud/core/pull/37715
+
+* Bugfix - Fix expiring a wrong share entry problem: [#37729](https://github.com/owncloud/core/pull/37729)
+
+   If multiple links exist for the same node and, non-expired share created before expired share,
+   expiredSharesJob was deleting non-expired share. This problem has been resolved. Also,
+   ExpireSharesJob now handles user and group shares.
+
+   https://github.com/owncloud/core/pull/37729
+
+* Bugfix - Fix decoding of calendars uri: [#37750](https://github.com/owncloud/core/pull/37750)
+
+   In case an user had calendars uri containing special characters, for instance "persönlich",
+   and this user was then invited to a calendar event, the event could not be created and a 404 was
+   shown in the stack trace. Reason for this was the uri not being properly decoded. The behavior
+   has now been fixed.
+
+   https://github.com/owncloud/core/pull/37750
+
+* Bugfix - Add openid client secret to the sensitive values list: [#37782](https://github.com/owncloud/core/pull/37782)
+
+   Openid client secret was printed as is in the config report. Now it is masked.
+
+   https://github.com/owncloud/core/pull/37782
+
+* Bugfix - Show all shares in the "shared with you" section: [#37786](https://github.com/owncloud/core/pull/37786)
+
+   Previously, when a user received some shares from multiple remote servers and one of them was
+   removed, the "shared with you" section didn't show any share even though the user still had
+   other shares that were accessible in other remote servers.
+
+   This is now fixed by ignoring those non-accessible remote shares. The rest of the shares will be
+   shown.
+
+   https://github.com/owncloud/core/pull/37786
+
+* Bugfix - Reshares using files:transfer-ownership cannot be transferred: [#4121](https://github.com/owncloud/enterprise/issues/4121)
+
+   Received shares that have been reshared further now will not be transferred using
+   files:transfer-ownership. Fixes issue with mismatching ownership after executing
+   transfer.
+
+   https://github.com/owncloud/enterprise/issues/4121
+   https://github.com/owncloud/core/pull/37791
+
+* Bugfix - "Passwords do not match" message was not being translated: [#37826](https://github.com/owncloud/core/pull/37826)
+
+   This message is now able to be translated.
+
+   https://github.com/owncloud/core/pull/37826
+
+* Bugfix - Fix federated share accepting problem which occurs with some apps enabled: [#37719](https://github.com/owncloud/core/issues/37719)
+
+   Filesystem may not set already for shared user in some cases when accepting a federated share.
+   This situation broke accept federated share api. This problem has been resolved.
+
+   https://github.com/owncloud/core/issues/37719
+   https://github.com/owncloud/music/issues/778
+   https://github.com/owncloud/core/pull/37834
+
+* Bugfix - Allow federated share name up to 255 character: [#36730](https://github.com/owncloud/core/issues/36730)
+
+   Receiving a federated share of a file with name greater than 63 characters was not possible.
+   This problem has been resolved by extending related column length of database to 255.
+
+   https://github.com/owncloud/core/issues/36730
+   https://github.com/owncloud/core/pull/37835
+
+* Bugfix - Fix application id used for sharing settings translation: [#37846](https://github.com/owncloud/core/pull/37846)
+
+   "Owner language" and permission titles "Create", "Change", "Delete", "Share" were not being
+   translated. Now it is translated.
+
+   https://github.com/owncloud/core/pull/37846
+
+* Bugfix - Add metrics shared secret to the sensitive values list: [#37848](https://github.com/owncloud/core/pull/37848)
+
+   The metrics api shared secret was printed as is in the config report. Now it is masked.
+
+   https://github.com/owncloud/core/pull/37848
+
+* Bugfix - Fix list of apps returned by OCS Provisioning API apps endpoint: [#37884](https://github.com/owncloud/core/issues/37884)
+
+   Requests to ocs/v1.php/cloud/apps without any filter now return all apps, including the
+   always-enabled apps.
+
+   https://github.com/owncloud/core/issues/37884
+   https://github.com/owncloud/core/pull/37901
+
+* Bugfix - Add very minimal empty ODF files: [#37896](https://github.com/owncloud/core/pull/37896)
+
+   These files contain no data at all. This guarantees that when the user opens a new document in the
+   richdocuments app, the language of paragraph, page size, cell date format, currency, etc.
+   will be according to the current locale.
+
+   Previous files were in German. E.g. document language (spellcheck language) was set to
+   German, spreadsheet tab name was "Tabelle", etc. It was incorrect for non-German users.
+
+   https://github.com/owncloud/core/pull/37896
+
+* Bugfix - Checksums will be kept when a file is uploaded or a version is created: [#37934](https://github.com/owncloud/core/pull/37934)
+
+   Previously, reuploading the same file caused the checksum of the file to be reset. In addition,
+   the checksum weren't being carried away when a new version of the file was created. This means
+   that the versions didn't have a checksum.
+
+   Both problems are now solved.
+
+   https://github.com/owncloud/core/pull/37934
+
+* Bugfix - Fix invisible notification container blocking mouse events: [#37941](https://github.com/owncloud/core/pull/37941)
+
+   https://github.com/owncloud/core/pull/37941
+
+* Bugfix - Fix display of public link shares in case avatars are disabled: [#37945](https://github.com/owncloud/core/pull/37945)
+
+   In case avatars were disabled through config.php and a public link was created for some file, a
+   "sharing is not allowed" message was displayed when leaving the sharing panel and trying to
+   access it again for that specific file. The behavior has now been fixed.
+
+   https://github.com/owncloud/core/pull/37945
+
+* Bugfix - Clean the user's preferences only if they exist during user sync: [#37947](https://github.com/owncloud/core/pull/37947)
+
+   Previously, the user's preferences were cleaned during the user:sync command. This was done
+   regardless of the preferences existance, which was causing the
+   "userpreference.afterDeleteValue" event to be triggered always, and then, as consequence,
+   the admin_audit app was logging those events. Basically, this bug was causing a log flood by the
+   admin_audit app even if those preferences weren't there in the first place.
+
+   Now we check first if those preferences exist before attempting to delete them. If they exist,
+   the admin_audit app will still log that deletion, but if not nothing happens because the
+   deletion won't be attempted.
+
+   https://github.com/owncloud/core/pull/37947
+
+* Bugfix - OCS and Public WebDAV Apis should handle LoginException: [#112](https://github.com/owncloud/brute_force_protection/issues/112)
+
+   OCS api and new public webdav api was not handle LoginException. This situation was causing
+   HTTP 500 error in response. This bug has been resolved.
+
+   https://github.com/owncloud/brute_force_protection/issues/112
+   https://github.com/owncloud/core/pull/37948
+
+* Bugfix - Properly exit and log during error in user sync command: [#37951](https://github.com/owncloud/core/pull/37951)
+
+   If there is an error when doing occ user:sync then the command will exit with return 1 and
+   properly log the error.
+
+   https://github.com/owncloud/enterprise/issues/4218
+   https://github.com/owncloud/core/pull/37951
+
+* Bugfix - Add a configurable number of retries on unsuccessful mountpoint move: [#37956](https://github.com/owncloud/core/pull/37956)
+
+   Handling of conflicting mountpoints across different share backends was improved by adding a
+   configurable number of the mountpoint rename attempts. Now when the mountpoint rename has
+   been failed on the user filesystem initialization due to internal backend-specific reasons
+   the used mountpoint name is considered to be taken, a new name is generated and the rename
+   operation could be repeated several times until it either succeeds or rename attempts limit is
+   reached.
+
+   https://github.com/owncloud/core/pull/37956
+
+* Bugfix - Fix icon alignment when avatars are disabled: [#37964](https://github.com/owncloud/core/pull/37964)
+
+   Action icons for the sharee list view, when you want to know who are you sharing to, where being
+   pushed to the left when the avatars were disabled, breaking part of the layout.
+
+   Those icons are now aligned.
+
+   https://github.com/owncloud/core/pull/37964
+
+* Bugfix - Fix file target in the accept share API call: [#37973](https://github.com/owncloud/core/pull/37973)
+
+   If you had a custom share_folder set in the config.php file and the auto-accept feature for the
+   internal user sharing was disabled, when a user accepted the user share, the file target in the
+   API response contained the share_folder duplicated. This was limited to the API response.
+
+   Now the API responds correctly, and the file target doesn't have the share_folder duplicated
+
+   https://github.com/owncloud/core/pull/37973
+
+* Bugfix - Fix for Google Docs not syncing with error "server reported no size": [#37997](https://github.com/owncloud/core/issues/37997)
+
+   Users with Google Drive connected external storage were previously subjected to a "server
+   reported no size" error in desktop sync client for every Google Doc that attempted to sync.
+   Additionally, the Google Doc would not be downloaded.
+
+   https://github.com/owncloud/core/issues/37997
+   https://github.com/owncloud/core/pull/37993
+
+* Bugfix - Do not emit "share.failedpasswordcheck" events for authenticated links: [#138](https://github.com/owncloud/brute_force_protection/issues/138)
+
+   ShareManager was checking password of already authenticated public links. This situation
+   led to wrong "share.failedpasswordcheck" events emitting in already authenticated links.
+   This problem has been resolved by first checking link already authenticated.
+
+   https://github.com/owncloud/brute_force_protection/issues/138
+   https://github.com/owncloud/core/pull/38016
+
+* Bugfix - Fix request token check for ocs requests: [#38019](https://github.com/owncloud/core/pull/38019)
+
+   Since the OCS_APIREQUEST header was removed we needed to either implement the header again or
+   implement another way to properly check cookie authenticated ocs requests.
+
+   https://github.com/owncloud/core/pull/38019
+
+* Bugfix - Fix logging when loading an apps fails: [#38037](https://github.com/owncloud/core/pull/38037)
+
+   Some apps use the variable $app in app.php - this overwrites the variable in requireAppFile and
+   causes the error
+
+   https://github.com/owncloud/core/pull/38037
+
+* Bugfix - Properly handle StorageNotAvailableException in share external: [#38042](https://github.com/owncloud/core/pull/38042)
+
+   Users with Federated Shares of which storage was unavailable, were encountering issues when
+   working with the shares (e.g. unsharing or listing). It was caused by unhandled exception.
+
+   https://github.com/owncloud/enterprise/issues/4217
+   https://github.com/owncloud/enterprise/issues/4117
+   https://github.com/owncloud/enterprise/issues/2721
+   https://github.com/owncloud/core/pull/38042
+
+* Bugfix - Avoid retrieving user root iteratively in share controller: [#4107](https://github.com/owncloud/enterprise/issues/4107)
+
+   There was a performance problem that with many shares, the "share tab" was slow to display
+   entries. Now the performance of displaying that tab should be better as we avoid retrieving the
+   same information for all the shares
+
+   https://github.com/owncloud/enterprise/issues/4107
+   https://github.com/owncloud/core/pull/38055
+
+* Bugfix - Pick the translations from templates included from other apps: [#38072](https://github.com/owncloud/core/pull/38072)
+
+   Some apps can include template parts from a different app, normally from core. From example,
+   the activity app can include content from the core templates to be used in the activity email.
+
+   The translated strings were picked from the original app even though the template was within
+   core space. As a result, some string weren't translated because of the missing translation for
+   those strings in the original app. Note that core had the strings correctly translated.
+
+   Now the translations are picked from the requested app template as intended, instead of
+   looking for them in the original app.
+
+   https://github.com/owncloud/core/pull/38072
+
+* Bugfix - Override browser Accept-Language header in ajax requests: [#38073](https://github.com/owncloud/core/pull/38073)
+
+   A default Accept-Language header sent by browser in Ajax requests made OCS API to respond in a
+   wrong language sometimes. Now this header is set globally to match the current user language.
+
+   https://github.com/owncloud/core/pull/38073
+
+* Bugfix - Prevent server error when loading invalid/corrupt translations: [#37799](https://github.com/owncloud/core/issues/37799)
+
+   This fix prevents server errors when loading invalid or corrupt translations from Transifex.
+   This is critical as every user is able to contribute to the ownCloud translations.
+
+   https://github.com/owncloud/core/issues/37799
+   https://github.com/owncloud/core/pull/38103
+
+* Bugfix - SSL check when adding a public link to your ownCloud: [#4241](https://github.com/owncloud/enterprise/issues/4241)
+
+   Prior to this fix, a SSL certificate check was performed when adding a public link to your
+   ownCloud. As this check was done on the base URL of the server, it could cause some issues, for
+   example endless redirect loops. This fix gets rid of the SSL check because the storage-check
+   afterwards also checks the validity of the server's SSL certificate. This check is being made
+   on /status.php, thus it likely wont end up in a redirect loop.
+
+   https://github.com/owncloud/enterprise/issues/4241
+   https://github.com/owncloud/core/pull/38107
+
+* Bugfix - Fix translations of some strings in settings: [#38119](https://github.com/owncloud/core/pull/38119)
+
+   https://github.com/owncloud/core/pull/38119
+
+* Change - Update deepdiver/zipstreamer (1.1.1 => 2.0.0): [#37159](https://github.com/owncloud/core/issues/37159)
+
+   https://github.com/owncloud/core/issues/37159
+   https://github.com/owncloud/core/pull/37718
+
+* Change - Update sabre dependencies: [#37684](https://github.com/owncloud/core/pull/37684)
+
+   This change updates: - sabre/dav (4.1.0 => 4.1.1) - sabre/vobject (4.3.0 => 4.3.1)
+
+   https://github.com/owncloud/core/pull/37684
+
+* Change - Update google/apiclient from 2.5.0 to 2.6.0 and related dependencies: [#37687](https://github.com/owncloud/core/pull/37687)
+
+   This change updates the 3rd-party dependencies of files_external: - google/apiclient
+   (v2.5.0 => v2.6.0) - google/auth (v1.9.0 => v1.10.0) - phpseclib/phpseclib (2.0.27 =>
+   2.0.28)
+
+   https://github.com/owncloud/core/pull/37687
+
+* Change - Update symfony/polyfill (1.17.0 => 1.18.0): [#37694](https://github.com/owncloud/core/pull/37694)
+
+   The following symfony/polyfill components have been updated to version 1.18.0:
+
+   Symfony/polyfill-ctype symfony/polyfill-iconv symfony/polyfill-intl-idn
+   symfony/polyfill-intl-normalizer symfony/polyfill-mbstring symfony/polyfill-php70
+   symfony/polyfill-php72 symfony/polyfill-php73 symfony/polyfill-php80
+
+   https://github.com/owncloud/core/pull/37694
+
+* Change - Update icewind/smb from 3.2.5 to 3.2.6 in files_external: [#37712](https://github.com/owncloud/core/pull/37712)
+
+   https://github.com/owncloud/core/pull/37712
+
+* Change - Add settings checkbox to enable manual file locking: [#37720](https://github.com/owncloud/core/pull/37720)
+
+   A checkbox to enable manual file locking on clients has been added to admin settings,
+   additional, manual file locking. This checkbox is an alternative way to enable manual file
+   locking on clients that support it. The occ command can also still be used - occ config:app:set
+   files enable_lock_file_action --value yes
+
+   https://github.com/owncloud/core/pull/37720
+
+* Change - Update Symfony components to 4.4.11: [#37727](https://github.com/owncloud/core/pull/37727)
+
+   The following Symfony components have been updated to version 4.4.11 - console -
+   event-dispatcher - process - routing - translation
+
+   https://github.com/owncloud/core/pull/37727
+   https://symfony.com/blog/symfony-4-4-11-released
+
+* Change - Update league/flysystem (1.0.69 => 1.0.70): [#37730](https://github.com/owncloud/core/pull/37730)
+
+   https://github.com/owncloud/core/pull/37730
+
+* Change - Make core/signature.json and core/skeleton/ inaccessible: [#37734](https://github.com/owncloud/core/issues/37734)
+
+   https://github.com/owncloud/core/issues/37734
+
+* Change - Update google/apiclient from 2.6.0 to 2.7.0 and related dependencies: [#37739](https://github.com/owncloud/core/pull/37739)
+
+   This change updates the 3rd-party dependencies of files_external: - google/apiclient
+   (v2.6.0 => v2.7.0) - google/apiclient-services (v0.139 => v0.141) - google/auth (v1.10.0 =>
+   v1.11.1) - monolog/monolog (2.1.0 => 2.1.1)
+
+   https://github.com/owncloud/core/pull/37739
+
+* Change - Add values to the invalid uid list: [#37765](https://github.com/owncloud/core/issues/37765)
+
+   Enhancement of the invalid uid list added by
+   https://github.com/owncloud/core/pull/37268.
+
+   https://github.com/owncloud/core/issues/37765
+
+* Change - Update doctrine/event-manager (1.1.0 => 1.1.1): [#37768](https://github.com/owncloud/core/pull/37768)
+
+   https://github.com/owncloud/core/pull/37768
+
+* Change - Update symfony/polyfill (1.18.0 => 1.18.1): [#37772](https://github.com/owncloud/core/pull/37772)
+
+   The following symfony/polyfill components have been updated to version 1.18.1:
+
+   Symfony/polyfill-ctype symfony/polyfill-iconv symfony/polyfill-intl-idn
+   symfony/polyfill-intl-normalizer symfony/polyfill-mbstring symfony/polyfill-php70
+   symfony/polyfill-php72 symfony/polyfill-php73 symfony/polyfill-php80
+
+   https://github.com/owncloud/core/pull/37772
+
+* Change - Update egulias/email-validator (2.1.18 => 2.1.19): [#37790](https://github.com/owncloud/core/pull/37790)
+
+   https://github.com/owncloud/core/pull/37790
+
+* Change - Update opis/closure (3.5.5 => 3.5.6): [#37804](https://github.com/owncloud/core/pull/37804)
+
+   https://github.com/owncloud/core/pull/37804
+
+* Change - Add system config to load a different license implementation: [#37827](https://github.com/owncloud/core/pull/37827)
+
+   The default license implementation can now be replaced.
+
+   https://github.com/owncloud/core/pull/37827
+
+* Change - Update laminas/laminas-zendframework-bridge (1.0.4 => 1.1.0): [#37843](https://github.com/owncloud/core/pull/37843)
+
+   https://github.com/owncloud/core/pull/37843
+
+* Change - Use a debug log level if a share download is aborted: [#37856](https://github.com/owncloud/core/pull/37856)
+
+   If a client was downloading a file through a public link share and he decided to disconnect and
+   abort the download, ownCloud was logging that exception. Now ownCloud will log a message with a
+   debug level instead of logging the exception in order to reduce the noise.
+
+   https://github.com/owncloud/core/pull/37856
+
+* Change - Add command to troubleshoot transfer ownership runs for issues: [#37950](https://github.com/owncloud/core/pull/37950)
+
+   https://github.com/owncloud/enterprise/issues/4121
+   https://github.com/owncloud/core/pull/37950
+   https://github.com/owncloud/core/pull/37860
+
+* Change - Update Symfony components to 4.4.12: [#37862](https://github.com/owncloud/core/pull/37862)
+
+   The following Symfony components have been updated to version 4.4.12 - console -
+   event-dispatcher - process - routing - translation
+
+   https://github.com/owncloud/core/pull/37862
+   https://symfony.com/blog/symfony-4-4-12-released
+
+* Change - Update doctrine/dbal (2.10.2 => 2.10.3): [#37870](https://github.com/owncloud/core/pull/37870)
+
+   https://github.com/owncloud/core/pull/37870
+
+* Change - Update Symfony components to 4.4.13: [#37876](https://github.com/owncloud/core/pull/37876)
+
+   The following Symfony components have been updated to version 4.4.13 - console -
+   event-dispatcher - process - routing - translation
+
+   https://github.com/owncloud/core/pull/37876
+   https://symfony.com/blog/symfony-4-4-13-released
+
+* Change - Update opis/closure (3.5.6 => 3.5.7): [#37892](https://github.com/owncloud/core/pull/37892)
+
+   https://github.com/owncloud/core/pull/37892
+
+* Change - Update egulias/email-validator (2.1.19 => 2.1.20): [#37892](https://github.com/owncloud/core/pull/37892)
+
+   https://github.com/owncloud/core/pull/37892
+
+* Change - Update phpseclib/phpseclib (2.0.28 => 2.0.29): [#37893](https://github.com/owncloud/core/pull/37893)
+
+   https://github.com/owncloud/core/pull/37893
+
+* Change - Update icewind/smb from 3.2.6 to 3.2.7 in files_external: [#37894](https://github.com/owncloud/core/pull/37894)
+
+   https://github.com/owncloud/core/pull/37894
+
+* Change - Update doctrine/dbal (2.10.3 => 2.10.4): [#37904](https://github.com/owncloud/core/pull/37904)
+
+   https://github.com/owncloud/core/pull/37904
+
+* Change - Update symfony/translation-contracts (v1.1.9 => v1.1.10): [#37904](https://github.com/owncloud/core/pull/37904)
+
+   https://github.com/owncloud/core/pull/37904
+
+* Change - Reduce the log level of locked exceptions: [#37907](https://github.com/owncloud/core/pull/37907)
+
+   Log level of locked exceptions will be "debug" by default instead of "fatal"
+
+   https://github.com/owncloud/core/pull/37907
+
+* Change - Update google/apiclient from 2.7.0 to 2.7.1 and related dependencies: [#37912](https://github.com/owncloud/core/pull/37912)
+
+   This change updates the 3rd-party dependencies of files_external: - google/apiclient
+   (v2.7.0 => v2.7.1) - google/apiclient-services (v0.141 => v0.146) - google/auth (v1.11.1 =>
+   v1.12.0)
+
+   https://github.com/owncloud/core/pull/37912
+
+* Change - Update sabre/event (5.1.0 => 5.1.1): [#37921](https://github.com/owncloud/core/pull/37921)
+
+   https://github.com/owncloud/core/pull/37921
+
+* Change - Update laminas/laminas-zendframework-bridge (1.1.0 => 1.1.1): [#37921](https://github.com/owncloud/core/pull/37921)
+
+   https://github.com/owncloud/core/pull/37921
+
+* Change - New defaults for phoenix app switcher icon and label: [#37923](https://github.com/owncloud/core/pull/37923)
+
+   When phoenix is configured (phoenix.baseUrl in config.php), the app switcher has a menu item
+   for Phoenix. This now has a new and configurable default icon and default label.
+
+   https://github.com/owncloud/product/issues/227
+   https://github.com/owncloud/core/pull/37923
+
+* Change - Update pear/archive_tar (1.4.9 => 1.4.10): [#37926](https://github.com/owncloud/core/pull/37926)
+
+   https://github.com/owncloud/core/pull/37926
+
+* Change - Update egulias/email-validator (2.1.20 => 2.1.21): [#37926](https://github.com/owncloud/core/pull/37926)
+
+   https://github.com/owncloud/core/pull/37926
+
+* Change - Update egulias/email-validator (2.1.21 => 2.1.22): [#37949](https://github.com/owncloud/core/pull/37949)
+
+   https://github.com/owncloud/core/pull/37949
+
+* Change - Update Symfony components to 4.4.14: [#37949](https://github.com/owncloud/core/pull/37949)
+
+   The following Symfony components have been updated to version 4.4.14 - console -
+   event-dispatcher - process - routing - translation
+
+   https://github.com/owncloud/core/pull/37949
+   https://symfony.com/blog/symfony-4-4-14-released
+
+* Change - DropOldTables repair job won't show a progress bar: [#37953](https://github.com/owncloud/core/pull/37953)
+
+   The "DropOldTables" repair job that happens during upgrade won't show a progress bar any
+   longer.
+
+   https://github.com/owncloud/core/pull/37953
+
+* Change - Update sabre dependencies: [#37975](https://github.com/owncloud/core/pull/37975)
+
+   This change updates: - sabre/dav (4.1.1 => 4.1.2) - sabre/event (5.1.1 => 5.1.2) - sabre/http
+   (5.1.0 => 5.1.1) - sabre/uri (2.2.0 => 2.2.1) - sabre/vobject (4.3.1 => 4.3.2) - sabre/xml
+   (2.2.1 => 2.2.3)
+
+   https://github.com/owncloud/core/pull/37975
+
+* Change - Update Symfony components to 4.4.15: [#37975](https://github.com/owncloud/core/pull/37975)
+
+   The following Symfony components have been updated to version 4.4.15 - console -
+   event-dispatcher - process - routing - translation
+
+   https://github.com/owncloud/core/pull/37975
+   https://symfony.com/blog/symfony-4-4-15-released
+
+* Change - Update opis/closure (3.5.7 => 3.6.0): [#38004](https://github.com/owncloud/core/pull/38004)
+
+   https://github.com/owncloud/core/pull/38004
+
+* Change - Update symfony/polyfill (1.18.1 => 1.19.0): [#38032](https://github.com/owncloud/core/pull/38032)
+
+   The following symfony/polyfill components have been updated to version 1.19.0:
+
+   Symfony/polyfill-ctype symfony/polyfill-iconv symfony/polyfill-intl-idn
+   symfony/polyfill-intl-normalizer symfony/polyfill-mbstring symfony/polyfill-php70
+   symfony/polyfill-php72 symfony/polyfill-php73 symfony/polyfill-php80
+
+   https://github.com/owncloud/core/pull/38032
+
+* Change - Update symfony/polyfill (1.19.0 => 1.20.0): [#38033](https://github.com/owncloud/core/pull/38033)
+
+   The following symfony/polyfill components have been updated to version 1.20.0:
+
+   Symfony/polyfill-ctype symfony/polyfill-iconv symfony/polyfill-intl-idn
+   symfony/polyfill-intl-normalizer symfony/polyfill-mbstring symfony/polyfill-php72
+   symfony/polyfill-php73 symfony/polyfill-php80
+
+   https://github.com/owncloud/core/pull/38033
+
+* Change - Update google/apiclient from 2.7.1 to 2.8.0 and related dependencies: [#38043](https://github.com/owncloud/core/pull/38043)
+
+   This change updates the 3rd-party dependencies of files_external: - google/apiclient
+   (v2.7.1 => v2.8.0) - google/apiclient-services (v0.146 => v0.152) - google/auth (v1.12.0 =>
+   v1.14.3) - guzzlehttp/psr7 (1.6.1 => 1.7.0)
+
+   https://github.com/owncloud/core/pull/38043
+
+* Change - Update dg/composer-cleaner (v2.1 => v2.2): [#38044](https://github.com/owncloud/core/pull/38044)
+
+   https://github.com/owncloud/core/pull/38044
+
+* Change - Update Symfony components to 4.4.16: [#38046](https://github.com/owncloud/core/pull/38046)
+
+   The following Symfony components have been updated to version 4.4.16 - console -
+   event-dispatcher - process - routing - translation
+
+   https://github.com/owncloud/core/pull/38046
+   https://symfony.com/blog/symfony-4-4-16-released
+
+* Change - Update egulias/email-validator (2.1.22 => 2.1.23): [#38061](https://github.com/owncloud/core/pull/38061)
+
+   https://github.com/owncloud/core/pull/38061
+
+* Change - Update sabre/vobject (4.3.2 => 4.3.3): [#38091](https://github.com/owncloud/core/pull/38091)
+
+   https://github.com/owncloud/core/pull/38091
+
+* Change - Update opis/closure (3.6.0 => 3.6.1): [#38091](https://github.com/owncloud/core/pull/38091)
+
+   https://github.com/owncloud/core/pull/38091
+
+* Change - Update sabre/dav (4.1.2 => 4.1.3): [#38092](https://github.com/owncloud/core/pull/38092)
+
+   https://github.com/owncloud/core/pull/38092
+
+* Change - Update egulias/email-validator (2.1.23 => 2.1.24): [#38116](https://github.com/owncloud/core/pull/38116)
+
+   https://github.com/owncloud/core/pull/38116
+
+* Change - Update pear/archive_tar (1.4.10 => 1.4.11): [#38137](https://github.com/owncloud/core/pull/38137)
+
+   https://github.com/owncloud/core/pull/38137
+
+* Change - Rename phoenix to web: [#38199](https://github.com/owncloud/core/pull/38199)
+
+   Phoenix has been renamed to Web. You can now set these keys in config.php to control Web:
+
+   - web.baseUrl - web.icon - web.label
+
+   https://github.com/owncloud/core/pull/38199
+   https://github.com/owncloud/core/pull/38201
+   https://github.com/owncloud/core/pull/38212
+
+* Enhancement - Cleanup encryption config values on disabling encryption: [#35980](https://github.com/owncloud/core/pull/35980)
+
+   Occ encryption:disable command was changed to delete some encryption-specific config
+   key-value pairs that made reenabling encryption not possible. A safety check was added to
+   prevent disabling encryption until all files are decrypted. The occ encryption:disable
+   command exits with an error code and message if the system still has any encrypted files.
+
+   https://github.com/owncloud/core/pull/35980
+
+* Enhancement - Add support for date expiration on remote shares: [#37548](https://github.com/owncloud/core/pull/37548)
+
+   An expiration date can be set now for shares originating in your server. This feature behaves
+   the same as the expiration for user, group and link shares.
+
+   The expiration is controlled in the source server (server A). The target server (server B)
+   won't know about the expiration. Once the share expires, the target server (server B) won't be
+   able to access to those shares and it will remove them automatically
+
+   This feature won't work for shares that are grabbed from a public link: if source server (server
+   A) shares a file / folder via link, and an user from the target server (server B) adds that link to
+   his ownCloud; in this case, this "remote share expiration" won't apply.
+
+   In addition, the same as happens with user, group and link shares, the share recipient won't
+   have control over the expiration date.
+
+   https://github.com/owncloud/core/pull/37548
+
+* Enhancement - Support pre-signed urls: [#37634](https://github.com/owncloud/core/pull/37634)
+
+   Ocis-web (Phoenix) doesn't use cookies for authentication but the "Bearer" header.
+
+   This means that we can only fetch data using XHR or the fetch API but cannot use URLs directly in
+   image tags, also cannot download files directly.
+
+   To solve this, we now support pre-signed URLs. This means that before creating an image tag or
+   starting a download, we send an authenticated request to the server (OC 10 or OCIS) to ask for a
+   pre-signed URL pointing at a specific resource. Then said URL can be forwarded either to an
+   image tag (for thumbnails) or to another browser window to trigger a download.
+
+   https://github.com/owncloud/core/pull/37634
+   https://github.com/owncloud/core/pull/38029
+   https://github.com/owncloud/phoenix/pull/3797
+   https://github.com/owncloud/owncloud-sdk/pull/504
+   https://github.com/owncloud/owncloud-sdk/pull/616
+   https://github.com/owncloud/ocis-proxy/pull/75
+
+* Enhancement - Add capability for the favorite files feature: [#37673](https://github.com/owncloud/core/pull/37673)
+
+   The server is now exposing a new capability to advertise that the server supports the favorite
+   files feature.
+
+   https://github.com/owncloud/ocis-reva/issues/354
+   https://github.com/owncloud/core/pull/37673
+
+* Enhancement - Add Support for SGI Image Previews: [#37758](https://github.com/owncloud/core/pull/37758)
+
+   We added support for Silicone Graphics images previews. The following file extensions will be
+   supported: .sgi, .rgb, .rgba, .bw, .int, .inta. These files will be associated with the
+   mimetype image/sgi. This mimetype is not officially registered. This needs the imagick php
+   extension to be installed.
+
+   https://github.com/owncloud/core/pull/37758
+   https://en.wikipedia.org/wiki/Silicon_Graphics_Image
+   https://www.iana.org/assignments/media-types/media-types.xhtml
+   https://www.php.net/manual/en/book.imagick.php
+
+* Enhancement - Allow getting the share list filtered by share type via API: [#38000](https://github.com/owncloud/core/pull/38000)
+
+   Previously, the share API returned all the shares. There were some filters, but you weren't
+   able to filter by share type. You couldn't get only your link shares.
+
+   Now the API allows filtering by share type, along with the filters previously available. The
+   web UI is using this filtering now.
+
+   https://github.com/owncloud/core/pull/38000
+
+* Enhancement - GetShare API request's "subfiles" parameter allows new interactions: [#38053](https://github.com/owncloud/core/pull/38053)
+
+   Previously, the "subfiles" parameter required only the "path" parameter, and the rest of the
+   parameters were ignored.
+
+   Now, the "subfiles" parameter still requires the "path" parameter, but it also interacts with
+   the "reshares" parameter as well as the "share_types" parameter to provide additional
+   filtering capabilities
+
+   https://github.com/owncloud/core/pull/38053
+
+* Enhancement - Add new method in the PHP API interface: [#38054](https://github.com/owncloud/core/pull/38054)
+
+   The share manager interface in the PHP API has a new "getSharesByPath" method available
+
+   https://github.com/owncloud/core/pull/38054

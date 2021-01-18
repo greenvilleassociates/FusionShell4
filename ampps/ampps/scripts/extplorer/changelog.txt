@@ -1,0 +1,31 @@
+****************************
+Changelog for eXtplorer
+Version $Id: CHANGELOG.txt 249 2016-12-11 16:11:03Z soeren $
+****************************
+--- version 2.1.13 ---
+- fixed various security issues reported by Mario Korth:
+  * potential XSS 
+  * Arbitrary file read
+  * Path traversal in listing directory contents
+  * Path traversal in archive feature
+- added new turkish translations 
+
+--- version 2.1.12 ---
+- fixed wrong version display
+- fixed empty language selector
+
+--- version 2.1.11 ---
+- fixed "text.js not found" message on server when editing text files
+- fixed PHP 7.2 incompatibility in Tar.php
+- PHP 5.3 compatibility fixes
+
+--- version 2.1.10 ---
+- fixed vulnerability discovered by ADLab of Venustech (command injection, but requires admin access)
+- webdav display UPPER/CASE/FULL/PATH with some webdav client
+- standalone extplorer webdav does not work with PHP7
+- CVE-2016-4313: archive path traversal vulnerability in extplorer 2.1.9
+- #202 Users with read only permissions should not be able to extract archives.
+- added indonesian language files
+
+--- version 2.1.9 ---
+- fixed PHP 7 compatibility issues

@@ -1,0 +1,58 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Zsite
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/cms/Zsite
+	</ratings>
+	<space>
+		36140237
+	</space>
+	<support>
+		http://www.zsite.net/forum
+	</support>
+	<version>
+		8.6.1
+	</version>
+	<mod>20</mod>
+	<release_date>20-10-2020</release_date>
+	<admin>admin.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.1.0" />
+	<requirement check="php" type="extension" name="pdo_mysql" />
+	<requirement check="php" type="extension" name="pcre" />
+	<requirement check="php" type="extension" name="json" />
+	<requirement check="php" type="extension" name="pdo" />
+	<requirement check="php" type="extension" name="gd" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Zsite</font> is an enterprise marketing system developed by Qingdao Nature Easy Soft for small/medium organizations. You can use it to build your official marketing portal to do publicization, business and customer service.
+		<br /><br />
+		Zsite has featured modules, such as article, product, forum, comment, member, blog, help. It is comprehensive and practical with simple backend. It can also do SEO by keywords, summary, etc., so it can build a website that can be easily found by search engines.
+		<br /><br />
+		Zsite is released under the <a href="http://www.zsite.net/book/zsitemanual/zsitelicense-5.html" target="_blank">Z PUBLIC LICENSE 1.2</a>.
+		</english-overview>		
+		<english-features>
+			<ul>
+				<li>CMS</li>
+				<li>Mall</li>
+				<li>Membership</li>
+				<li>Design</li>
+				<li>SEO</li>
+				<li>Security</li>
+				<li>Localization</li>
+			</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

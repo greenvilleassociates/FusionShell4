@@ -1,4 +1,4 @@
-#!"{$path}\perl\bin\perl.exe"
+#!"C:/web/capitoltechnology.us/www/fusionshell4/ampps\perl\bin\perl.exe"
 
 use HTML::Perlinfo;
 use CGI qw(header);

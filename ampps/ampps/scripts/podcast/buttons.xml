@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PodcastGenerator>
+    <button>
+        <name>RSS</name>
+        <href>feed.xml</href>
+        <class>btn btn-warning</class>
+    </button>
+    <button>
+        <name>iTunes</name>
+        <href>feed.xml</href>
+        <class>btn btn-primary</class>
+        <protocol>itpc</protocol>
+    </button>
+</PodcastGenerator>

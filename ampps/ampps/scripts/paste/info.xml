@@ -1,0 +1,51 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/PASTE
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/others/PASTE
+	</ratings>
+	<space>
+		19165078 
+	</space>
+	<support>
+		http://sourceforge.net/projects/phpaste/support
+	</support>
+	<version>
+		2.2
+	</version>
+	<mod>6</mod>
+	<release_date>12-02-2020</release_date>
+	<admin>admin</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.3.7" />
+	<requirement check="php" type="extension" name="gd" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">PASTE</font> is an open source pastebin forked from the original pastebin.com script.
+		<br /><br />
+		It's complete with a brand new design and features such as password protected pastes, archives, custom templates and much more still to come.
+		<br /><br />
+		PASTE is released under the <a href="http://www.gnu.org/licenses/gpl.html" target="_blank">GNU GENERAL PUBLIC LICENSE</a>.
+		</english-overview>		
+		<english-features>
+<ul>
+<li>Password protected pastes</li>
+<li>Archives</li>
+<li>Custom templates</li>
+</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+	</languages>
+</soft>

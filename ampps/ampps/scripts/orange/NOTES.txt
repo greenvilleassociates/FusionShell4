@@ -1,0 +1,7 @@
+1) Move USING BTREE to work on strict MySQL environments.
+2) Remove DEFINER=`root`@`localhost` from SQL file
+3) When converting preg_replace to soft_preg_replace check the database details properly it should not have test_
+4) PHP REQUIREMENT LINK: /installer/environmentCheck/system_requirements.yml
+5) Release date : https://sourceforge.net/projects/orangehrm/files/stable/
+6) If you getting error "Database connection problem" while installing manually select "127.0.0.1" instead of "localhost". (Since 4.1) https://github.com/orangehrm/orangehrm/issues/221 (Not required since 4.3.1)
+7) Script is asking for resetting of password post first login (even in manual since 4.1). It requires too many files to be included for password strength checking. Hence we have not included as it is allowing in manual installation also.

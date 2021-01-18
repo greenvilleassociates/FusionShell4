@@ -1,0 +1,2 @@
+1. PHP REQUIREMENT LINK : https://github.com/ampache/ampache#requirements
+2. Uncomment this symlink in install.php i.e symlink($__settings['softpath'].'/lib/vendor/php-tmdb/api/build/coverage', $__settings['softpath'].'/lib/vendor/php-tmdb/api/examples/phpunit'); if user fixes this in next version. This is a broken symlink(Since 4.0.3).

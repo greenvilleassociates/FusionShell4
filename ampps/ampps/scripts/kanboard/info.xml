@@ -1,0 +1,63 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Kanboard
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/projectman/Kanboard
+	</ratings>
+	<space>
+		13568767
+	</space>
+	<support>
+		https://kanboard.org
+	</support>
+	<version>
+	   1.2.18
+	</version>
+	<mod>36</mod>
+	<release_date>28-12-2020</release_date>
+	<admin>?controller=AuthController&amp;action=login</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.2.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.6.0" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="pdo_mysql" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="openssl" />
+	<requirement check="php" type="extension" name="json" />
+	<requirement check="php" type="extension" name="hash" />
+	<requirement check="php" type="extension" name="ctype" />
+	<requirement check="php" type="extension" name="session" />
+ 	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Kanboard</font> is a project management software that uses the Kanban methodology. Kanboard is not for everybody, it's made for people who want to manage their projects efficiently and simply.	
+		<br /><br />
+		Kanboard is released under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
+		</english-overview>		
+		<english-features>
+		<ul>
+			<li><b>Simple</b> : There is no fancy user interface, Kanboard focus on simplicity and minimalism. The number of features is voluntary limited.</li>
+			<li><b>Visual and clear overview of your tasks</b> : The Kanban board is the best way to know the current status of a project because it's visual. It's very easy to understand, there is nothing to explain.</li>
+			<li><b>Search and filter tasks</b> : Kanboard have a very simple query language that offer the flexibility to find tasks in no time.</li>
+			<li><b>Single dashboard for all projects</b> : Get all important information in one place, your projects, you calendar, your assigned tasks and subtasks.</li>
+			<li><b>Work in team or alone</b> : Kanboard is designed for small teams but you can also work alone. For each project, you can add members and project managers with more privileges.</li>
+			<li><b>Tasks, subtasks, attachments and comments</b> : Break down a task into subtasks, estimate the time or the complexity. Describe your task by using the Markdown syntax. Add comments, documents, change the color, the category, the assignee, the due date.</li>
+			<li><b>Automated actions</b> : Don't repeat yourself! Automate your workflow. Stop doing again and again the same thing manually. Change automatically the assignee, colors, categories and almost anything based on events.</li>
+			<li><b>Swimlanes</b> : Swimlanes are horizontal separations in your board. You can divide the board into several sections to manage software releases or anything else.</li>
+			<li><b>Gantt charts</b> : Visualize the timeline of your projects. Allocate resources effectively. Plan your projects in minutes.</li>
+			<li><b>Analytics and reports</b> : Analyze and improve your workflow by using the cumulative flow diagram or the burndown chart. Visualize the lead and cycle time of your projects.</li>
+		</ul>
+	</english-features>
+	<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+	<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+	<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>	
+	</languages>
+</soft>

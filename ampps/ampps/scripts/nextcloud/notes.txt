@@ -1,0 +1,14 @@
+1. Manual installation on any suPHP server only.
+2. Remove inserts from oc_authtoken, oc_filecache, oc_file_locks, it gets created after login
+3. "1|" is added in hashed password in "lib\private\security\hasher.php". In case password changes check "1" constant from this file.
+4. Delete "appdata_********" folder from data directory, it gets created after login
+5. Delete "configvalue" for 'scss.variables' or "theming.variables" in `oc_appconfig` table as it generates itself on visiting. (Since 12.0.0)
+6. Check and move apps/bruteforcesettings from manual to zip and to cross check compare with https://github.com/nextcloud/bruteforcesettings (Since 12.0.0) (Not required since 13.0.0) (Again required since 17.0.1)
+7. Always check https://docs.nextcloud.com/server/19/admin_manual/maintenance/manual_upgrade.html in major versions and set "$allowed_ver" accordingly in upgrade.php
+8. PHP REQUIREMENT LINK: https://docs.nextcloud.com/server/19/admin_manual/installation/source_installation.html
+9. We have added "admin_email" in "oc_preferences" table since 16.0.4. ( In Forget password it asks for Email ID ).
+10. Take database dump while First run wizard page is loaded(i.e before the dashboard page is loaded). Taking dump on dashboard page would add the entry '('[[admin_username]]', 'firstrunwizard', 'show', '0')' in oc_preferences table which would disable the run wizard.
+11. We have set PHP requirement to 7.2 because manual installation doesn't start on PHP 7.1. Also, they have mentioned on their installer that PHP 7.2 is required.
+12. Uncheck "install recommended apps" option in manual installation.
+13. Changelog : https://nextcloud.com/changelog/#latest20
+14. PRIMARY keys are not generated while upgrading to 20.0.2, to generate these keys manually, user can run following command. sudo -u [[USER]] [[PATH to PHP]] [[SOFTPATH]]/occ db:add-missing-primary-keys

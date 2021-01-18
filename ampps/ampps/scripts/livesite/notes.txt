@@ -1,0 +1,2 @@
+1. Compare and Move all the files of "livesite\files" and "livesite\layouts" from manual to zip ( Compare with origional zip livesite\install\files and livesite\install\layouts)
+2. PHP REQUIREMENT LINK: https://livesite.com/download

@@ -1,0 +1,20 @@
+Keep root writable while installing manually.
+TAKE SQL DUMP WHEN INSTALLATION COMPLETES AND FILE DUMP ON ADMIN PANEL
+
+1. If it is asked for country choose "United States" and Shop timezone as "US/Eastern"
+2. check and 
+	copy app/Resources/translations/en-US/*
+	copy config/themes/* (Except config/themes/classic/shop1.json, need to configure this file) (Not required from 1.7.1.0)
+	copy config/xml/*
+	copy img/*
+	copy mails/en/* except files which uses softurl
+	copy modules/* except files which uses softurl
+	copy translations/*	from manual installation
+3. Copy bootstrap.php from config folder and create _bootstrap.php and make following changes to get new_cookie_key : 
+"echo '<new_cookie_key>'.$key.'</new_cookie_key>';"
+This is our change to generate the new_cookie_key, Also create clone_bootstrap.php and make changes to unset new_cookie_key>
+4. PHP REQUIREMENT LINK: https://devdocs.prestashop.com/1.7/basics/installation/system-requirements/
+5. No Documentation provided to upgrade prestashop 1.7.x.x hence we have not provided the same. http://doc.prestashop.com/dashboard.action
+6. We have removed mcrypt extension because a user reported this via ticket.
+7. We have deleted extra space from all the .htaccess files from the original package because that was a syntax error in .htaccess files due to which frontlink css was not loading on apache 2.2 (Since 1.7.4.1)(Not required now)
+8. config.php generates on visiting frontlink in manual installation.

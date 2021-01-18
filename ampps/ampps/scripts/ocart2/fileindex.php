@@ -1,0 +1,11 @@
+.htaccess.txt
+.idea
+admin
+catalog
+config-dist.php
+image
+index.php
+install
+php.ini
+system
+config.php

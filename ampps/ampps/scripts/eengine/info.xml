@@ -1,0 +1,86 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.png" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/ExpressionEngine
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/cms/ExpressionEngine
+	</ratings>
+	<space>
+		39931147
+	</space>
+	<support>
+		https://expressionengine.com/forums
+	</support>
+	<version>
+		6.0.0
+	</version>
+	<mod>3</mod>
+	<release_date>17-12-2020</release_date>
+	<admin>admin.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.0.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.6.0" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="fileinfo" />
+	<requirement check="php" type="extension" name="iconv" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">ExpressionEngine</font> is a flexible, feature-rich, free open-source content management platform that empowers hundreds of thousands of individuals and organizations around the world to easily manage their web site.
+		<br /><br />
+		With ExpressionEngine, you can build full-featured websites, create a web app, or serve content to mobile applications. All without requiring complex programming skills.
+		<br /><br />
+		ExpressionEngine is licensed under <a href="https://expressionengine.com/license" target="_blank">Apache License Version 2.0</a>.
+		</english-overview>
+		<english-features>
+		<ul>
+			<li><b>Channels. Your Content</b>
+				<br/>In ExpressionEngine, your site content is stored in channels—flexible data containers with fields for any type of information. Create channels for blogs, news, team bios, product or service descriptions, document downloads, you name it! Once your information is in a channel, it can be served anywhere on your site.
+			</li>
+			<li><b>Templates. Your Playground</b>
+				<br/>In ExpressionEngine, a page (or a page component such as a header or footer) is called a Template. A Template may contain ANYTHING that a webpage might contain: HTML, JavaScript, PHP, whatever. Templates also usually contain ExpressionEngine Tags. These Tags are incredibly easy to learn, and they give you the power to create amazing, dynamic experiences.
+			</li>
+			<li><b>Run Multiple Sites</b>
+				<br/>From a single ExpressionEngine installation you can manage all your websites. Each website can be 100% unique, or you can share design, content, and members across your sites. How freaking cool is that?!
+			</li>
+			<li><b>Live Preview</b>
+				<br/>For content editors, Live Preview displays your content as you type, shown in your site's design. No guesswork. No reloading pages. Just create!
+			</li>
+			<li><b>User Management Done Right.</b>
+				<br/>ExpressionEngine's incredible member management features let you build fantastic user experiences.
+					<ul>
+						<li>
+							<b>Member Roles and Permissions</b>
+							<br/>ExpressionEngine's member permission tools allow total control over user privileges for every area of your site and control panel.
+						</li>
+						<li>
+							<b>Member Fields</b>
+							<br/>
+							ExpressionEngine not only lets you manage members, but store any member-related information you need.
+						</li>
+						<li>
+							<b>Accounts, Profiles, And More!</b>
+							<br/>Create login and registration forms, profile pages, and even add a discussion forum to your site.
+						</li>
+					</ul>
+			</li>
+			<li><b>Build a Community</b>
+				<br/>ExpressionEngine comes with a full featured discussion forum module so you can keep the conversation going!
+			</li>
+			<li><b>Publish Anywhere</b>
+				<br/>ExpressionEngine works on any device so you can publish anywhere. On the couch, at the beach, at your desk, or on the toilet. ExpressionEngine is ready to go where you go.
+			</li>
+		</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

@@ -1,0 +1,4 @@
+1)Rename the default config file(config.default.php) to config.php and Change database details. manually import the sql schema which is in (/app/Schema/Sql/mysql.sql)(as specified in docs). Not required since 1.2.10 because it populates db when you access admin link
+2)Default username and password(admin/admin). Log in through the admin panel change password and then compare the dump.
+3)In sql under settings table api_token and webhook_token values are hard coded in sql of the script. Check in every version for the same. (We create these values with __getToken() function in install.php)
+4)PHP REQUIREMENT LINK : https://docs.kanboard.org/en/latest/admin_guide/requirements.html

@@ -1,0 +1,4 @@
+1. select timezone America/New_York
+2. install/get_updates_list needs permissions to render the frontend,else it throws error.
+3. We don't delete the install folder as it is required for further use.(confirmed with vendor in email).
+4. We exclude the config-setup.php as it is unlinked by the installer after installation and keeping it throws error.

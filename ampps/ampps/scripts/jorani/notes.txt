@@ -1,0 +1,4 @@
+1. Remove "DEFINER=`root`@`localhost`" from mysql function
+2. Copy all mysql function and paste at the end of sql file and before "/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;"
+3. PHP REQUIREMENT LINK : http://jorani.org/recommended-php-version-benchmark.html
+4. During manual installation of 1.0.0, while importing SQL script was giving error "DELIMITER $$ CREATE FUNCTION `GetFamilyTree`(`GivenID` INT)........" To rectify that vendor has suggested to import another SQL "GetFamilyTree_mysql5.6.sql" (Confirmed over email)

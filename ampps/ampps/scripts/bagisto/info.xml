@@ -1,0 +1,59 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Bagisto
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/ecommerce/Bagisto
+	</ratings>
+	<space>
+		93933864
+	</space>
+	<support>
+		https://forums.bagisto.com/
+	</support>
+	<version>
+		1.2.0
+	</version>
+	<mod>6</mod>
+	<release_date>08-09-2020</release_date>
+	<admin>public/admin/login</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.2.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.7.23" />
+	<requirement check="php" type="extension" name="openssl" />
+	<requirement check="php" type="extension" name="pdo" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="tokenizer" />
+	<requirement check="php" type="extension" name="json" />
+	<requirement check="php" type="extension" name="curl" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Bagisto</font> is a hand tailored E-Commerce framework designed on some of the hottest opensource technologies such as Laravel a PHP framework, Vue.js a progressive Javascript framework.<br /><br />
+		Bagisto is viable attempt to cut down your time, cost and workforce for building online stores or migrating from physical stores to the ever demanding online world. Your business whether small or huge it suits all and very simple to set it up.	Built on top of Laravel, it is coupled with easy product information management. The framework is very flexible and easy to use even for non-tech users.
+		<br /><br />
+		Bagisto is released under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
+		</english-overview>		
+		<english-features>
+			<ul>
+				<li><b>Marketplace</b><br/>Convert your store into the marketplace where multiple vendors can sell their products on your website. It will be a one-stop solution for your buyers to get different purchase options from multiple vendors so as to increase conversions on your website.</li>
+				<li><b>Multi Store Inventory</b><br/>Connect your store with multiple inventory source to manage multi-channel inventories from a single website and easily track your product stock in a particular inventory.</li>
+				<li><b>Product SEO</b><br/>Enrich your product with meta description, title, keywords and further enhance your product SEO to make sure that they appear on top of the search directly to your audience.</li>
+				<li><b>Access Control Level</b><br/>Create multiple access level for your eCommerce store as an admin or agents and assign dedicated roles with permission to run the day to day business operations.</li>
+				<li><b>Insights Report</b><br/>Get detailed insights into your customers, orders and product sales to create an effective marketing campaign and track your progress.</li>
+			</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_email>Please provide the email to reset the password</english-err_no_email>
+		<english-err_no_such_email>The Admin email is incorrect and does not exist!</english-err_no_such_email>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+		<english-err_dbprefix_bagisto>Table Prefix should contain only alphanumeric characters!</english-err_dbprefix_bagisto>
+	</languages>
+</soft>

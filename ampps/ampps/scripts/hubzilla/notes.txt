@@ -1,0 +1,6 @@
+1. Choose timezone = America/New_York in manual installation.
+2. After populating database, execute "php util/config system.verify_email 0" command to skip email validation in manual installation.
+3. Encryption keys are not getting generated on windows in manual installation due to oppenssl issue, hence we have disabled hubzilla on windows.
+4. PHP REQUIREMENT LINK: https://framagit.org/hubzilla/core/blob/master/install/INSTALL.txt
+5. No GUI upgrade docs are available on official website. CLI command is given but it gives error "unable to update [[softpath]]". 
+https://zotadel.net/channel/support/&mid=49d1dc4e614e253eddbdaccc7d3b4c38bfc4c1a2f50ee66be901375f4d73e6ab@zotadel.net&mid=49d1dc4e614e253eddbdaccc7d3b4c38bfc4c1a2f50ee66be901375f4d73e6ab@zotadel.net&jsdisabled=0&jsdisabled=0

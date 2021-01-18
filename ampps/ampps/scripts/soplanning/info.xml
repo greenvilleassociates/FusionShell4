@@ -1,0 +1,69 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/SOPlanning
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/projectman/SOPlanning
+	</ratings>
+	<space>
+		29598540
+	</space>
+	<support>
+		http://www.soplanning.org/en/index.php
+	</support>
+	<version>
+		1.47.01
+	</version>
+	<mod>14</mod>
+	<release_date>26-10-2020</release_date>
+	<admin>index.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.3.0" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">SOPlanning</font> is a Simple Online Planning tool. Allows you to plan working periods for each person of your team, in a visual / printable result. Shows a line by person and the corresponding working days.
+		<br /><br />
+		SOPlanning is used in many domains/activity : IT project management, production plant, sickness and vacation management, hardware availabilities, booking system, etc.
+		<br /><br />
+		SOPlanning is released under the <a href="http://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GNU General Public License version 3</a>.
+		</english-overview>
+		<english-features>
+		<ul>
+			<li>online planning accessible from <b>any browser</b> : Chrome, Firefox, Internet Explorer, Safari, etc</li>
+			<li><b>Project management</b> : assign tasks to users for each project. Adjust tool structure to your need (teams / groups of projects).</li>
+			<li>Project categories and colors for better visibility</li>
+			<li><b>Users</b> management, with <b>simple rights</b></li>
+			<li>Compact display in the planning : <b>who work on what, for how many time</b></li>
+			<li>Monthly or daily display</li>
+			<li>Display by project or by user</li>
+			<li>Can plan for several days, one day, or only some hours/minutes</li>
+			<li>Can repeat tasks</li>
+			<li>Projects and tasks statuses : to do, in progress, done, abandoned</li>
+			<li>Milestones</li>
+			<li>Teams management</li>
+			<li>Project groups management for better sorting</li>
+			<li>Several filters available : by projects, users, statuses, full text search</li>
+			<li>Several sorting options</li>
+			<li><b>Summary</b> at bottom of the planning, condensed view</li>
+			<li>Public holidays included for many countries</li>
+			<li><b>Printable version</b> for the planning</li>
+			<li><b>Drag and drop</b> for task moving</li>
+			<li>Export : <b>PDF</b>, <b>CSV</b>, <b>Gantt</b>, calendar</li>
+			<li>Templating system for <b>customization</b> (texts/translations/screens)</li>
+			<li><b>Available languages</b> : english, french, italian, spanish, dutch, german, portuguese, hungarian, danish. Propose your translation !</li>
+			<li><b>Active Directory</b> and <b>LDAP</b> login support</li>
+		</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

@@ -1,0 +1,68 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/EC-CUBE
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/ecommerce/EC-CUBE
+	</ratings>
+	<space>
+		35144442
+	</space>
+	<support>
+		http://en.ec-cube.net/forum/
+	</support>
+	<version>
+		2.12.6
+	</version>
+	<mod>1</mod>
+	<mod_files>5</mod_files>
+	<release_date>19-11-2013</release_date>
+	<admin>html/admin123</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="mysql" type="version" operator="le" value="5.7.0" />
+	<requirement check="php" type="version" operator="lt" value="7.0.0" />
+	<requirement check="php" type="extension" name="mysql" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="zlib" /> 
+	<requirement check="php" type="extension" name="spl" />
+	<requirement check="php" type="extension" name="json" /> 
+	<requirement check="php" type="extension" name="xml" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="hash" />
+	<requirement check="php" type="extension" name="mcrypt" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">EC-CUBE</font> is an all-in-one shopping cart suite. Connecting to payment gateways and other services is easy. Build, customize and download plug-ins to make a truly unique shopping experience.
+		<br /><br />
+		EC-CUBE is released under the <a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html" target="_blank">GNU GENERAL PUBLIC LICENSE</a>.
+		</english-overview>		
+		<english-features>
+		<ul>
+			<li>Point-system for product purchase<br/> Customers can purchase items using points accumulated from other purchases.</li>
+			<li>Multiple-delivery destination settings<br/> Customers can designate multiple delivery addresses for a single order.</li>
+			<li>Downloaded products<br/> Products can also be sold as downloadable content. </li>
+			<li>Smartphone<br/> The mobile version is automatically generated at launch. </li>
+			<li>Administrator registration<br/> Register multiple administrators with their own unique ID and password. </li>
+			<li>Sales tabulation<br/> Display aggregate sales by term, product, age group, etc. in a graph and list. </li>
+			<li>Mail magazine delivery<br/> Create, designate delivery dates/time and deliver HTML/TEXT mail magazines. </li>
+			<li>Design management<br/> Drag-and-drop functionality makes it easy to alter the layout.	</li>
+		</ul>
+		</english-features>
+		<english-ad_dir>Admin Folder</english-ad_dir>
+		<english-err_user_alphanumeric>Admin Username should be Alphanumeric and greater than 4 character</english-err_user_alphanumeric>
+		<english-err_ad_folder_alphanumeric>Admin Folder should be Alphanumeric and greater than 4 character</english-err_ad_folder_alphanumeric>
+		<english-err_pass_alphanumeric>Password should be Alphanumeric and greater than 4 character</english-err_pass_alphanumeric>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

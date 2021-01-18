@@ -1,0 +1,149 @@
+LiteCart 2.2.7
+Download
+
++ Add support for optimizing MariaDB Aria database tables
++ Ability to download reports as CSV
+* Fix PHP 8 zero conditions
+* Fix adjust quantity
+* Allow setting either quantity adjustment or actual quantity
+* Optimize and consisity CSV tools
+* Dedicate a common view for error documents
+* Minor adjustments
+- Remove register_guests as a totally bad user experience
+Released Jan 3 2021
+
+LiteCart 2.2.6
+Download
+
+This is a release for compatibility PHP 8 (released nov 26).
+
++ Commit missing file printable packing slip
++ Display an out of stock notice and remove the buy now button
++ Enable ref_manufacturer to return products and num_products tied to manufacturer
++ Also match keywords during products search
+* Always grab the latest campaign price if multiple active campaigns
+* Use exceptions for order process
+* Prioritize country by TLD due to Googlebot problems
+* Don't refresh vQmod cache upon nocache header. Some bots are just giving us a hard time wasting resources
+* Better responsive cart in checkout
+* Better decimals formatting for amount in currency field
+* Upgrade jQuery to 3.51
+* Always return a float value from get_price()
+* Don't serialize empty order item options
+* Count all descending products for category
+* Don't count hidden products and only show count if there are products
+* Adjust stock instead of overwriting it
+* Fix canonical link on product page for default category
+* Fix PHP 5.4 compatibility
+* Fix set charset for non-default database connections
+* Don't output 0 values in form number fields
+* Fix missing in order success page
+* Fix printable links in backend orders
+* Fix copy missing column sort
+* Fix scan translations
+* Fix url redirect issue
+* Fix notice if amount has no fractions
+* Fix products query where it sometimes did not return all products
+* Assign settings to module. Handy for invoking with install(), update(), and uninstall() events
+* Limit the comments field and display remaining characters allowed
+* Use default category for link if an unmounted category is given in url
+- Remove traces of POST token in checkout
+
+[-] LiteCart 2.2.5
+Download
+
++ Add Animated PNG, WebP and JPEG2000 support for Featherlight
++ Add Recommended Price / MSRP
++ Add a JavaScript event for cookie consent
++ Add store postcode to settings (Good for shipping add-ons)
++ Attempt to detect Western and Middlle-Eastern week calendars for week graph
++ Display an out of stock notice and remove the buy now button
++ Add product picker input field
+* Adjust search query to match more details
+* Always use frontend components for printable order copy and packing slip
+* Auto detect module type instead of defining it when loading modules
+* Change decimal columns from 10,4 to 11,4 for database consistency
+* Define attribute group id for product options
+* Display deprecated notices for autoload
+* Detect currency by country TLD before browser locale (Solves GoogleBot issue)
+* Disable autofill for ajax search fields
+* Don't honour DNT for functional cookies as too agressive
+* Don't include country in inherited link query parameters
+* Fall back to normal cookie use if no cookie policy is set
+* Fix boolean interpretation in toggle
+* Fix combination of colon and tab in technical data
+* Fix copy option priority
+* Fix new line for HTML email body
+* Fix currency price in JSON schema
+* Fix import CSV file of customers
+* Fix option group and values priority
+* Fix issue #242 - Wrong variable name
+* Fix issue #239 - Output webp image
+* Fix issue #236 - Typos
+* Fix issue where campaigns percentage calculation was broken by a previous commit
+* Fix output detection from order actions
+* Fix trim fractions if no decimals
+* Count all descending products
+* Load routing modules for backend to support rewritten URLs
+* Don't rely on float to always show fractions
+* Don't count hidden products and only show count if there are products
+* Limit the comments field and display remaining characters allowed
+* Make sure username or email does not already exist when making changes to a user
+* Optimize attributes in catalog query (Vast speed improvement)
+* Use default category for link if an unmounted category is given in url
+* Show indication if attribute values are used by product options
+* Raise the amount of characters stored for order update email message
+* Add support for hyphens for resolved route path
+* Support initating customer entity by email address
+* Support initating user entity by username or email
+* Wrap a panel around graphs
+- Remove DIGEST-MD5 SMTP authentication (We are not ready for it yet)
+- Remove multiple maintenance mode notices being displayed for checkout ajax components
+Released Nov 12 2020
+
+[-] LiteCart 2.2.4
+Download
+
+! Fix issue #234 - Failed to identify stock option
++ AJAX category picker (for better performance)
++ Add DIGEST-MD5 authentication
++ Format currency amount in HTML
++ Ability to return number of subcategories
++ Add price operator "=" for the ability to insert equal price
++ Validate postcode and tax id if provided
+* Fix issue #233 - Leave out decimals if there are none to display
+* Fix issue #232 - Statistics typo
+* Fix issue #230 - CSS class .active on wrong element
+* Fix wrong variable name for set password
+* Fix CRAM-MD5 authentication
+* Fix default address_type preset for tax rate
+* Fix email header removal
+* Fix attribute name length from 64 to 128 characters
+* Fix run() for specific given module
+* Fix set zone setting
+* Don't hide archived orders when a search query is provided
+* Display 3 years graphs instead of 2
+* Trim numerical values
+* Automatically delete thumbnails that are older than original
+* Don't show category image for small devices
+* Return to orders page if no output returned from action
+- Remove loader opacity
+- Remove PHP warning for invalid sort method (Too many bad bots hitting it)
+- Remove orphan method before_process()
+
+[-] LiteCart 2.2.3.6
+
+! Fix unique index for option value
+! Fix issue where multiple custom values only returned last
++ CLI command help
+* Fix missing option id causing a reinsertion of values to database on save
+* Fix forbidden characters in custom value
+* Fix setting set zone
+* Fix issue #227 - Comments and terms agreed state not remembered after AJAX refresh
+* Force HTTPS for webfont resources
+* Remove empty options in cart
+* Adjust captcha padding
+* Sort attribute values
+* Update Twitter link
+* Minor adjustments
+Released Aug 13 2020

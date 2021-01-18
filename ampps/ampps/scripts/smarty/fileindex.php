@@ -1,0 +1,16 @@
+CHANGELOG.md
+COMPOSER_RELEASE_NOTES.txt
+INHERITANCE_RELEASE_NOTES.txt
+LICENSE
+NEW_FEATURES.txt
+README
+README.md
+SMARTY_2_BC_NOTES.txt
+SMARTY_3.0_BC_NOTES.txt
+SMARTY_3.1_NOTES.txt
+composer.json
+demo
+lexer
+libs
+index.php
+smarty

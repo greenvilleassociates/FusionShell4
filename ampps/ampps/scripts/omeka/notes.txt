@@ -1,0 +1,5 @@
+1) First change the details in the db.ini and then go to /install for manual installation
+2) Always check condition in upgrade.php
+3) We have enabled Auto upgrade. Please check and make changes if required in next version.
+4) As per its installation process select database charset as "utf8_unicode_ci" for manual installation
+5) PHP REQUIREMENT LINK : http://omeka.org/codex/Preparing_to_Install

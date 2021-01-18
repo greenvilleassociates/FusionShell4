@@ -1,0 +1,25 @@
+<softinstall xmlns="http://www.softaculous.com">
+	<settings>	
+		<group>
+			<heading>{{site_set}}</heading>
+			<input type="text" name="admin_loginURL" size="30" value="loginURL" save="true" quick_install="1">
+				<head>{{admin_loginURL}}</head>
+			</input>
+			<input type="text" name="site_name" size="30" value="WonderCMS">
+				<head>{{site_name}}</head>
+			</input>
+		</group>
+		<group>
+			<heading>{{ad_act}}</heading>
+			<input type="text" name="admin_pass" size="30" value="password">
+				<head>{{ad_pass}}</head>
+				<handle>__ad_pass</handle>
+			</input>
+		</group>
+		<group>
+			<heading>hidden</heading>
+			<input type="hidden" name="admin_folder" value="" save="true">
+			</input>
+		</group>	
+	</settings>
+</softinstall>

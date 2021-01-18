@@ -1,0 +1,5 @@
+1. Set Environment to "production" and Timezone to "America/New_york" in manual install
+2. leave blank "Database Admin user name" and "database Admin pass" in manual install
+3. PHP REQUIREMENT LINK : http://whatacart.com/installation
+4. Copy images from "resources\images" from manual install to our package exclude "thumbs" folder
+5. Install with Demo Data 

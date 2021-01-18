@@ -1,0 +1,80 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/thirty_bees
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/ecommerce/thirty_bees
+	</ratings>
+	<space>
+		116576494
+	</space>
+	<support>
+		https://forum.thirtybees.com/
+	</support>
+	<version>
+	   1.1.0
+	</version>
+	<mod>10</mod>
+	<mod_files>3</mod_files>
+	<release_date>25-07-2019</release_date>
+	<admin>admin123</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.6.0" />
+	<requirement check="php" type="extension" name="openssl" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="pdo_mysql" />
+	<requirement check="php" type="extension" name="bcmath" />
+	<requirement check="php" type="extension" name="zip" />
+	<requirement check="php" type="extension" name="xml" />
+	<requirement check="php" type="extension" name="json" />
+	<languages>
+	<english-overview>
+	<font size="5" color="#182e7a">thirty bees</font> is a state of the art e-commerce platform that empowers users to easily start and maintain an e-commerce. We have designed thirty bees around speed and ease of use. We currently have over 170 compatible payment gateways with more coming soon. 
+	<br /><br />
+	thirty bees is released under the <a href="https://opensource.org/licenses/OSL-3.0" target="_blank">Open Software License (OSL 3.0)</a>.
+	</english-overview>		
+	<english-features>
+	thirty bees front office comes with every feature you will need to successfully run an ecommerce site. From a quick light-weight front office designed around bootstrap, to an easy to use intuitive back office.
+	<h4>Front-office</h4>
+		<ul>
+		<li>Featured products on the home page</li>
+		<li>Customer contact form</li>
+		<li>Customer account management with order history</li>
+		<li>Sales, specials, price reductions, and free product support</li>
+		<li>Out of stock order capability</li>
+		<li>Powerful product search</li>
+		<li>Shipment tracking</li>
+		<li>MailChimp e-commerce integration</li>
+		<li>Over 170 available payment gateways</li>
+		<li>Sell customized products</li>
+		<li>Totally clean url structure</li>
+		<li>And many more standard features</li>
+		</ul>
+	<h4>Back-office</h4>
+		<ul>
+		<li>Easy to use and intuitive</li>
+		<li>Support for multiple warehouses and shipping locations</li>
+		<li>Have an unlimited number of products</li>
+		<li>Multiple shipping options and shipping restrictions</li>
+		<li>Advanced caching for performance</li>
+		<li>Ability to easily edit or add</li>
+		<li>Compatible with unlimited currencies</li>
+		<li>Translated into over 20 languages</li>
+		<li>User roles for the back office</li>
+		<li>Import products easily via CSV</li>
+		<li>And many more features</li>
+		</ul>
+	</english-features>
+	<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+	<english-err_no_email>Please provide the email to reset the password</english-err_no_email>
+	<english-err_no_such_email>The Admin email is incorrect and does not exist!</english-err_no_such_email>
+	</languages>
+</soft>

@@ -1,0 +1,2 @@
+PHP REQUIREMENT LINK : http://codeigniter.com/user_guide/intro/requirements.html
+Download the package using composer. (Since 4.0.4)

@@ -1,0 +1,13 @@
+1. If the following error is coming after installing in manual (this bug is coming due to PHP version): 
+	
+Parse error: syntax error, unexpected T_PAAMAYIM_NEKUDOTAYIM in {WINDOWS_PATH}\{TO}\eyeos-2.4\eyeos\system\kernel\services\Meta\implementations\MetaDataConverter.php on line 53
+
+	Than 
+	Please repalce it with :
+		return eval('$handlerToLoad::getInstance()');//return $handlerToLoad::getInstance();
+	 on line number 53 
+
+2. Release date : https://sourceforge.net/projects/eyeos25opensour/files/
+3. eyeOS only works with php version 5.3.x
+because php 7.0 above class name can not be same as constructor name
+and 5.4 and above childclass and parentclass must have same arguments, or a same access level

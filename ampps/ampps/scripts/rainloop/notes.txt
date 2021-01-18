@@ -1,0 +1,7 @@
+1. Default login username : admin and password : 12345
+2. For mysql Go to admin panel ->contact and add it's entries.
+3. PHP REQUIREMENT LINK : https://www.rainloop.net/docs/system-requirements/
+4. In v1.11.2 the config file needs to be updated for upgrade and the same needs permission as well. We have added a small code in upgrade.php for the same. Check if this is required in the next version.
+5. Rainloop gives warning if RainLoop data folder is accessible, .htaccess is added in data folder to deny data( https://www.rainloop.net/docs/installation )
+6. We have added imap and smtp settings explicitly, because a user had asked for the same from 1.12.1
+7. upgrade.php need to revert after softaculous launch. i.e need to remove $remove_fileindex part.

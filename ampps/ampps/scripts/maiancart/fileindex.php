@@ -1,0 +1,13 @@
+admin
+checkout
+content
+control
+docs
+favicon.ico
+htaccess_COPY.txt
+index.php
+install
+licence.lic
+logs
+product-downloads
+robots.txt

@@ -1,0 +1,4 @@
+1. PHP REQUIREMENT LINK : https://github.com/bludit/bludit
+2. We have disabled upgrade from 1.x to 2.x and 2.x to 3.x , since upgrade requires root directory permissions , for migrate tool to run.(Check and enable upgrade for 3.x to 3.x and change minimum requirement in info.xml accordingly).
+3. We have added .htaccess to our package, since it is required while upgrade.(since version 2.3)
+4. Upgrade enabled with minimum version 3.0.0(since version 3.2).

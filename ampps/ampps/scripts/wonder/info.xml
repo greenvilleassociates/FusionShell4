@@ -1,0 +1,55 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		https://www.wondercms.com/demo
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/cms/WonderCMS
+	</ratings>
+	<space>
+		78001
+	</space>
+	<support>
+		https://www.wondercms.com/forum/
+	</support>
+	<version>
+		3.1.4
+	</version>
+	<mod>26</mod>
+	<release_date>02-12-2020</release_date>
+	<admin>loginURL</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.2.0" />
+	<requirement check="php" type="extension" name="curl" /> 
+	<requirement check="php" type="extension" name="mbstring" /> 
+	<requirement check="php" type="extension" name="zip" />
+	<languages>
+	<english-overview>
+	<font size="5" color="#182e7a">WonderCMS</font> is a completely free open source Content Management System, or in other words, a free website builder.
+	<br /><br />
+	WonderCMS is released under the <a href="https://www.wondercms.com/license" target="_blank">MIT License</a>.
+		</english-overview>
+		<english-features>
+			<ul>
+				<li>simple click and edit functionality</li>
+				<li>lightweight - runs on a couple hundred lines of code and 5 files</li>
+				<li>custom login URL</li>
+				<li>custom homepage</li>
+				<li>better password protection</li>
+				<li>highlighted current page</li>
+				<li>mobile responsive, easy to theme, 404 pages, clean URLs</li>
+				<li>easy page creating and deleting</li>
+				<li>better SEO support - custom title, keywords and description for each page</li>
+			</ul>
+		</english-features>
+		<english-admin_loginURL>Admin Login URL</english-admin_loginURL>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+	</languages>
+</soft>

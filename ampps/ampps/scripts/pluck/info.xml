@@ -1,0 +1,51 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Pluck
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/cms/Pluck
+	</ratings>
+	<space>
+		5051038
+	</space>
+	<support>
+		http://www.pluck-cms.org
+	</support>
+	<version>
+		4.7.15
+	</version>
+	<mod>9</mod>
+	<release_date>03-12-2020</release_date>
+	<admin>login.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.0.0" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Pluck</font> is your small and simple content management system, written in php. With pluck, you can easily manage your own website without knowledge of programming languages.
+		<br /><br />
+		Pluck focuses on ease of use and enables everyone to manage his own website. This makes pluck an excellent choice for every small website.<br /><br />
+		Pluck is available under the terms of the <a href="http://www.gnu.org/licenses/gpl.html" target="_blank">GNU General Public License</a>.
+		</english-overview>		
+		<english-features>
+<font size="2" color="#1281B6"><b>Pluck is packed with some nice features, from which we've listed the most important ones on this page</b></font><br /><br />
+<ul><font size="2">
+<li>create an unlimited amount of pages</li>
+<li>create your own blog</li>
+<li>automatic sitemap generations;</li>
+<li>create an album to show images or photos to your visitors</li>
+<li>include a contact form in your page(s)</li>
+</font></ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_email>Please provide the email to reset the password</english-err_no_email>
+		<english-err_no_such_email>The Admin email is incorrect and does not exist!</english-err_no_such_email>
+	</languages>
+</soft>

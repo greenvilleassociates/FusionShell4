@@ -1,0 +1,81 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/ZenTao
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/projectman/ZenTao
+	</ratings>
+	<space>
+		42873012
+	</space>
+	<support>
+		http://www.zentao.pm
+	</support>
+	<version>
+		12.5.3
+	</version>
+	<mod>52</mod>
+	<release_date>12-01-2021</release_date>
+	<admin>www/index.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.5.0" />
+	<requirement check="php" type="extension" name="pdo" />
+	<requirement check="php" type="extension" name="json" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">ZenTao</font> is a leading Open Source project management software, which offers Lifetime Free Upgrade, focuses on software development projects management, and supports Story management, Sprint and task, bug tracking, Scrum, Waterfall, Roadmap, Self-Hosted, Your FREE project management too!
+		<br /><br />
+		ZenTao is released under the <a href="http://zpl.pub/page/zplv12.html" target="_blank">Z PUBLIC LICENSE</a>.
+		</english-overview>		
+		<english-features>
+		<ul>
+			<li><b>Leading</b>
+				<ul>30,000+ team</ul>
+				<ul>200,000+ project</ul>
+				<ul>800,000+ developer</ul>
+				<ul>53% market share in local country</ul>
+			</li>
+			<li><b>Free &amp; Open</b>
+				<ul>Open source and Not limited to commercial</ul>
+				<ul>Powerful extension mechanism and various plug-ins</ul>
+				<ul>Convenient customized development</ul>
+				<ul>Open on Github</ul>
+			</li>
+			<li><b>Professional</b>
+				<ul>All lifecycle management of R&amp;D project</ul>
+				<ul>Fine managed stories, cases and defects</ul>
+				<ul>Zero downtime upgrades</ul>
+				<ul>Integrate Git and Svn (pro)</ul>
+				<ul>Word and Excel import/Export (pro)</ul>
+			</li>
+			<li><b>Guaranteed</b>
+				<ul>ZenTao team engaged in open source from 2004, up to now</ul>
+				<ul>Rapid version iterations and free upgrade forever(even private host)</ul>
+				<ul>Instant and powerful support for 20000+ companies</ul>
+			</li>
+			<li><b>Agile</b>
+				<ul>Best practice that fully supports Scrum</ul>
+				<ul>Features including test, document, release, plan and backlog</ul>
+				<ul>Agile based but not limited to agile</ul>
+			</li>
+			<li><b>Flexible</b>
+				<ul>Applicable for different sized team</ul>
+				<ul>Applicable for agile/waterfall management</ul>
+				<ul>Management modules can be used in any combination</ul>
+				<ul>Offer both private deployment and Cloud Apps</ul>
+			</li>
+		</ul>
+	</english-features>
+	<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+	<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+	<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

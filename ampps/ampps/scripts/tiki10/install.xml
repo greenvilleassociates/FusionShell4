@@ -1,0 +1,142 @@
+<softinstall xmlns="http://www.softaculous.com">
+	<settings>
+		<group>
+			<heading>{{site_set}}</heading>
+			<input type="text" name="site_name" size="30" value="My TikiWiki">
+				<head>{{site_name}}</head>
+			</input>
+		</group>
+		<group>
+			<heading>{{ad_act}}</heading>
+			<input type="text" name="admin_username" size="30" disabled="disabled" value="admin">
+				<head>{{ad_name}}</head>
+				<optional>true</optional>
+				<handle>__admin_username</handle>
+			</input>
+			<input type="text" name="admin_pass" size="30" value="password">
+				<head>{{ad_pass}}</head>
+				<handle>__admin_pass</handle>
+			</input>
+			<input type="text" name="admin_email" size="30" value="admin" softmail="true">
+				<head>{{ad_email}}</head>
+				<handle>__email_address</handle>
+			</input>
+		</group>
+		<group>
+			<heading>{{ad_lang}}</heading>
+			<input type="select">
+				<select name="admin_language">
+					<option value="en">English</option>
+					<option value="sq">Albanian</option>
+					<option value="ar">Arabic</option>
+					<option value="pt-br">Brazilian Portuguese</option>
+					<option value="bg">Bulgarian</option>
+					<option value="ca">Catalan</option>
+					<option value="hr">Croatian</option>
+					<option value="cs">Czech</option>
+					<option value="da">Danish</option>
+					<option value="nl">Dutch</option>
+					<option value="fa">Farsi</option>
+					<option value="fj">Fijian</option>
+					<option value="fi">Finnish</option>
+					<option value="fr">French</option>
+					<option value="fy-NL">Frisian Netherlands</option>
+					<option value="gl">Galician</option>
+					<option value="de">German</option>
+					<option value="el">Greek</option>
+					<option value="he">Hebrew</option>
+					<option value="hu">Hungarian</option>
+					<option value="is">Icelandic</option>
+					<option value="id">Indonesian</option>
+					<option value="iu">Inuktitut</option>
+					<option value="it">Italian</option>
+					<option value="ja">Japanese</option>
+					<option value="ko">Korean</option>
+					<option value="lt">Lithuanian</option>
+					<option value="nds">Low German</option>
+					<option value="no">Norwegian</option>
+					<option value="sb">Pijin Solomon</option>
+					<option value="pl">Polish</option>
+					<option value="pt">Portuguese</option>
+					<option value="ro">Romanian</option>
+					<option value="rm">Romansh</option>
+					<option value="ru">Russian</option>
+					<option value="sr-latn">Serbian Latin</option>
+					<option value="cn">Simplified Chinese</option>
+					<option value="si">Sinhala</option>
+					<option value="sk">Slova</option>
+					<option value="sl">Slovene</option>
+					<option value="es">Spanish</option>
+					<option value="sw">Swahili</option>
+					<option value="sv">Swedish</option>
+					<option value="th">Thai</option>
+					<option value="tw">Traditional Chinese</option>
+					<option value="tr">Turkish</option>
+					<option value="tv">Tuvaluan</option>
+					<option value="uk">Ukrainian</option>
+					<option value="ur">Urdu</option>
+					<option value="vi">Vietnamese</option>
+					<option value="cy">Welsh</option>
+				</select>
+				<head>{{select_adm_lang}}</head>
+			</input>
+			<input type="select">
+				<select name="end_language">
+					<option value="en">English</option>
+					<option value="sq">Albanian</option>
+					<option value="ar">Arabic</option>
+					<option value="pt-br">Brazilian Portuguese</option>
+					<option value="bg">Bulgarian</option>
+					<option value="ca">Catalan</option>
+					<option value="hr">Croatian</option>
+					<option value="cs">Czech</option>
+					<option value="da">Danish</option>
+					<option value="nl">Dutch</option>
+					<option value="fa">Farsi</option>
+					<option value="fj">Fijian</option>
+					<option value="fi">Finnish</option>
+					<option value="fr">French</option>
+					<option value="fy-NL">Frisian Netherlands</option>
+					<option value="gl">Galician</option>
+					<option value="de">German</option>
+					<option value="el">Greek</option>
+					<option value="he">Hebrew</option>
+					<option value="hu">Hungarian</option>
+					<option value="is">Icelandic</option>
+					<option value="id">Indonesian</option>
+					<option value="iu">Inuktitut</option>
+					<option value="it">Italian</option>
+					<option value="ja">Japanese</option>
+					<option value="ko">Korean</option>
+					<option value="lt">Lithuanian</option>
+					<option value="nds">Low German</option>
+					<option value="no">Norwegian</option>
+					<option value="sb">Pijin Solomon</option>
+					<option value="pl">Polish</option>
+					<option value="pt">Portuguese</option>
+					<option value="ro">Romanian</option>
+					<option value="rm">Romansh</option>
+					<option value="ru">Russian</option>
+					<option value="sr-latn">Serbian Latin</option>
+					<option value="cn">Simplified Chinese</option>
+					<option value="si">Sinhala</option>
+					<option value="sk">Slova</option>
+					<option value="sl">Slovene</option>
+					<option value="es">Spanish</option>
+					<option value="sw">Swahili</option>
+					<option value="sv">Swedish</option>
+					<option value="th">Thai</option>
+					<option value="tw">Traditional Chinese</option>
+					<option value="tr">Turkish</option>
+					<option value="tv">Tuvaluan</option>
+					<option value="uk">Ukrainian</option>
+					<option value="ur">Urdu</option>
+					<option value="vi">Vietnamese</option>
+					<option value="cy">Welsh</option>
+				</select>
+				<head>{{select_end_lang}}</head>
+			</input>
+		</group>
+	</settings>
+	<db>mysql</db>
+</softinstall>

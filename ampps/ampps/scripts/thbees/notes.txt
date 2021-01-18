@@ -1,0 +1,14 @@
+1. While manual installation select main activity default, country: United states(default), shop timezone: US/Eastern(default)
+2. Install with Sample Data.
+3. check and 
+	copy img/*
+	copy translations/en
+	copy modules/*
+	copy en.php from other module folders
+	copy mails/*
+	copy cache/sandbox/11us.xml
+	copy themes/community-theme-default/lang/en.php OR themes/niara/lang/en.php
+	from manual installation
+4. PHP REQUIREMENT LINK: https://thirtybees.com/download/
+we have set PHP requirement to 5.6 because manual installation doesn't work on php 5.5. Gives syntax error.
+5. Check "PS_CIPHER_ALGORITHM" in database. It should be by default set to "2" in order to generate "_PHP_ENCRYPTION_KEY_" with openssl. If it's value is changed, then check how to generate _PHP_ENCRYPTION_KEY_ in install/model/install.php

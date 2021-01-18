@@ -1,0 +1,61 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/OctoberCMS
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/cms/OctoberCMS
+	</ratings>
+	<space>
+		54733746
+	</space>
+	<support>
+		http://octobercms.com/support
+	</support>
+	<version>
+		1.0.471
+	</version>
+	<mod>22</mod>
+	<release_date>22-11-2020</release_date>
+	<admin>backend</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.2.0" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="pdo" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="openssl" />
+	<requirement check="php" type="extension" name="zip" />
+	<requirement check="php" type="extension" name="gd" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">OctoberCMS</font> is a free, open-source, self-hosted CMS platform based on the Laravel PHP Framework. A simple and modular CMS that grows with you, with a precise and beautiful interface that comes as second nature.
+		<br /><br />
+		OctoberCMS is license under <a href="https://opensource.org/licenses/MIT" target="_blank">MIT license.</a>
+		</english-overview>
+		<english-features>
+		<ul>
+			<li><b>Simple modern template engine</b> : Twig is a simple template language, created specifically for web designers. It won't slow you down and it automatically takes care of escaping and other tedious tasks. We have documented all the details of this beautiful language to simplify your learning process.</li>
+			<li><b>Best tools from the PHP world</b> : October is built on Laravel, the best existing PHP framework. The framework includes all of the tools and classes that are necessary for building quality websites and applications. October adds even more power to Laravel with a collection of simple and flexible features.</li>
+			<li><b>Page components</b> : Components are building blocks for Pages. Just add a component to the Page to add new functionality and configure it with the Inspector. Inspector is a visual tool for managing component properties.</li>
+			<li><b>Extensible platform</b> : Extend the platform with Plugins that seamlessly integrate with October’s back-end and front-end. Plugin classes are very simple, you just describe the Plugin and register the features that you want.</li>
+			<li><b>Easy administrative interfaces</b> : Effortlessly create back-end interfaces for your plugins. Back-end pages require minimal PHP coding and use simple configuration files. The power and flexibility is hidden behind a mask of simplicity!</li>
+			<li><b>Simple AJAX framework</b> : The AJAX framework lets you easily bind an AJAX request to a form or a button. These requests can be handled by components or by your own code in the Page or Layout. Try it yourself!</li>
+			<li><b>Quick scaffolding</b> : With the free Builder plugin you can create a fully functional plugin scaffold in a matter of minutes. Builder can manage the plugin's database structure, create back-end user interface and do much more without breaking your usual development workflow.	</li>
+			<li><b>Manage the website without programming</b> : Non-technical users can manage page contents with the WYSIWYG editor, manage images, videos and other files, and even edit website menus with a simple visual interface.</li>
+		</ul>
+		</english-features>
+		<english-ad_dir>Admin Folder</english-ad_dir>
+		<english-err_passlen4>The password length should be 4 or more characters.</english-err_passlen4>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+	</languages>
+</soft>

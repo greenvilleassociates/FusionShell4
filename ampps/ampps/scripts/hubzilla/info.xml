@@ -1,0 +1,58 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Hubzilla
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/socialnetworking/Hubzilla
+	</ratings>
+	<space>
+		72033284
+	</space>
+	<support>
+		https://framagit.org/hubzilla/core
+	</support>
+	<version>
+		5.2.1
+	</version>
+	<mod>22</mod>
+	<release_date>16-01-2021</release_date>
+	<admin>admin</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.2.0" /> 
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="openssl" />	
+	<requirement check="php" type="extension" name="PDO" />	
+	<requirement check="php" type="extension" name="mysqli" /> 
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="xml" />
+	<requirement check="php" type="extension" name="zip" />
+	<requirement check="php" type="extension" name="curl" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Hubzilla</font> is a powerful platform for creating interconnected websites featuring a decentralized identity, communications, and permissions framework built using common webserver technology. 
+		<br /><br />
+		Hubzilla is licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT license</a>.
+		</english-overview>		
+		<english-features>
+		<ul>
+			<li><b>PLUGINS</b> : Hubzlla is extensible. Build entire web apps as plugins and leverage the power of the grid to handle access control and data distribution.</li>
+			<li><b>WEB BUILDING TOOLKIT</b> : Use the comanche webpage description language and the Webpages tool to build modular, identity-aware, and shareable web page elements. </li>
+			<li><b>SOCIAL NETWORKING</b> : Social networking is in Hubzilla's DNA, baked into its core. Use a channel to represent yourself and make connections (i.e., "friends") to share with others. Support for federation with Diaspora, Friendica and others via plugins. </li>
+			<li><b>CLOUD FILE STORAGE</b> : Connect your channel's file storage to your local file system using standard WebDAV. Share or publish your files with the ubiquitous fine-grained access control. </li>
+			<li><b>Themes</b> : The web interface is highly customizable, with native support for theme development. Brand your hubs for your community or business.</li>
+			<li><b>Events</b> : Coordinate and share calendar events with anyone using the native calendar functionality. Import/export between popular calendar formats.</li>
+		</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_email>Please provide the email to reset the password</english-err_no_email>
+		<english-err_no_such_email>The Admin email is incorrect and does not exist!</english-err_no_such_email>
+	</languages>
+</soft>

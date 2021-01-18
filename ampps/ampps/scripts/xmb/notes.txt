@@ -1,0 +1,4 @@
+1.PHP REQUIREMENT LINK : https://docs.xmbforum2.com/index.php?title=Requirements
+2.We have changed PHP  requirement to PHP 5.4 in version 1.9.11.15 , as it was not working on PHP 5.2 ,5.3(installer halts in PHP 5.3 and there is parse error in PHP 5.2 
+ i.e Parse error: syntax error, unexpected '[' in /{{path}}/{{to}}/{{xmbdir}}/db/mysqli.php on line 302).
+3.Release date : https://sourceforge.net/projects/xmb-forum/files/?source=navbar

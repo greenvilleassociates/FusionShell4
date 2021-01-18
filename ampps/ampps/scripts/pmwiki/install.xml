@@ -1,0 +1,64 @@
+<softinstall xmlns="http://www.softaculous.com">
+	<settings>
+		<group>
+			<heading>{{wiki_settings}}</heading>
+			<input type="text" name="sn" size="30" value="My PmWiki">
+				<head>{{wiki_name}}</head>
+				<exp>{{wiki_name_exp}}</exp>
+			</input>
+		</group>
+		<group>
+			<heading>{{ad_act}}</heading>
+			<input type="text" name="admin_pass" size="30" value="pass">
+				<head>{{ad_pass}}</head>
+				<handle>__admin_pass</handle>
+			</input>
+		</group>
+		<group>
+			<heading>{{ad_lang}}</heading>
+			<input type="select">
+				<select name="language">
+					<option value="en-PmWikiEn">English</option>
+					<option value="ar-PmWikiAr">Arabic</option>
+					<option value="bg-PmWikiBg">Bulgarian</option>
+					<option value="ca-PmWikiCa">Catalan</option>
+					<option value="cs-PmWikiCs">Czech</option>
+					<option value="da-PmWikiDa">Dansk</option>
+					<option value="de-PmWikiDe">Deutsch</option>
+					<option value="el-PmWikiEl">Greek</option>
+					<option value="eo-PmWikiEo">Esperanto</option>
+					<option value="es-PmWikiEs">Spanish</option>
+					<option value="fa-PmWikiFa">Farsi(Persian)</option>
+					<option value="fi-PmWikiFi">Suomi</option>
+					<option value="fr-PmWikiFr">French</option>
+					<option value="hu-PmWikiHu">Magyar(Hungarian)</option>
+					<option value="id-PmWikiId">Indonesian</option>
+					<option value="it-PmWikiIt">Italiano</option>
+					<option value="ja-PmWikiJa">Japanese</option>
+					<option value="kr-PmWikiKr">Korean</option>
+					<option value="lt-PmWikiLt">Lithuanian</option>
+					<option value="lv-PmWikiLv">Latvian</option>
+					<option value="mk-PmWikiMk">Macedonian</option>
+					<option value="nl-PmWikiNl">Nederlands</option>
+					<option value="no-PmWikiNo">Norsk</option>
+					<option value="pl-PmWikiPl">Polski</option>
+					<option value="pt-PmWikiPt">Portuguese</option>
+					<option value="ptbr-PmWikiPtBr">Portuguese(Br)</option>
+					<option value="ro-PmWikiRo">Romanian</option>
+					<option value="ru-PmWikiRu">Russian</option>
+					<option value="si-PmWikiSi">Slovenian</option>
+					<option value="sk-PmWikiSk">Slovak</option>
+					<option value="sq-PmWikiSq">Shqip</option>
+					<option value="sv-PmWikiSv">Svenska</option>
+					<option value="ta-PmWikiTa">Tamil</option>
+					<option value="tr-PmWikiTr">Turkish</option>
+					<option value="uk-PmWikiUk">Ukrainian</option>
+					<option value="vi-PmWikiVi">Vietnamese</option>
+					<option value="zhcn-PmWikiZhCn">Chinesesimplified</option>
+					<option value="zhtw-PmWikiZhTw">Chinese(Traditional)</option>
+				</select>
+				<head>{{select_lang}}</head>
+			</input>
+		</group>
+	</settings>
+</softinstall>

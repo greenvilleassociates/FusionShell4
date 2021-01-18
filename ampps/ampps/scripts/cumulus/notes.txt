@@ -1,0 +1,5 @@
+1. while manual installation provide this path as ftp path:
+   /public_html/.../.../...
+2. Remove ftp details from config file
+3. PHP REQUIREMENT LINK : http://cumulusclips.org/docs/requirements/
+4. We need to add __post_load_settings_upgrade() in upgrade.php if we add upgrade in future. This is because if there is a huge file in the package hence pclzip uses temp dir so we need to define it as we just did in install.php

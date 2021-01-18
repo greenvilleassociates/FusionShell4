@@ -1,0 +1,2 @@
+1. change "use_database" to "true" to use database
+2. PHP REQUIREMENT LINK : http://www.net2ftp.com/homepage/help-administrator.html

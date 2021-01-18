@@ -1,0 +1,15 @@
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=[[softdbhost]];port=3306;dbname=[[softdb]];charset=utf8mb4'
+      username: [[softdbuser]]
+      password: [[softdbpass]]
+      attributes: { export: tables }
+test:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=[[softdbhost]];port=3306;dbname=test_[[softdb]];charset=utf8mb4'
+      username: [[softdbuser]]
+      password: [[softdbpass]]

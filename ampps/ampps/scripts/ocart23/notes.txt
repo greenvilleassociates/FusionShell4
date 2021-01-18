@@ -1,0 +1,3 @@
+1. Change the value of config_error_display to "0" in ocart.sql
+2. Have disabled upgrade in 2.1.0.1 due to Errors in 2.0.3.1 to 2.1.0.1 upgarde and few tables are not generating after upgrade. ( same issue for 2.1.0.2, In next release plz check upgrade from 2.0.3.1 and check DB changes. ). Have mailed vendor.
+3. Try to add upgrade from 2.2.0.0 to 2.3.X.X. We have disabled it in 2.3.0.2 because front link is not loading due to change in extention path. http://forum.opencart.com/viewtopic.php?f=183&t=165958

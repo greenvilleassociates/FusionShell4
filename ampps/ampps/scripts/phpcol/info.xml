@@ -1,0 +1,42 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/phpCollab
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/projectman/phpCollab
+	</ratings>
+	<space>
+		34508312
+	</space>
+	<support>
+		http://www.phpcollab.com/
+	</support>
+	<version>
+		2.8.2
+	</version>
+	<mod>12</mod>
+	<release_date>25-09-2020</release_date>
+	<admin>administration/admin.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.1.0" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">phpCollab</font> is an open source internet-enabled system for use in projects that require collaboration over the internet. Those organizations, such as consulting firms, that rely on a division between firm-side and client-side information will benefit most from use of phpCollab <br /><br />
+		phpCollab is released under the <a href="http://www.gnu.org/licenses/gpl.html">GNU/GPL</a>.
+		</english-overview>		
+		<english-features>
+	<i>No Info</i>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

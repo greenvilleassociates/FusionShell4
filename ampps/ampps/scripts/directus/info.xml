@@ -1,0 +1,62 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Directus
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/cms/Directus
+	</ratings>
+	<space>
+		45890108
+	</space>
+	<support>
+		https://getdirectus.com/
+	</support>
+	<version>
+		8.8.1
+	</version>
+	<mod>16</mod>
+	<release_date>04-08-2020</release_date>
+	<admin>public/admin</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.2.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.7.0" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="xml" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="fileinfo" />
+	<requirement check="php" type="extension" name="pdo_mysql" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Directus</font> is an API-driven content management framework for custom databases. It decouples content for use in apps, websites, or any other data-driven projects. 
+		<br /><br />
+		Directus makes no assumptions about how you should architect your database – giving you complete freedom to optimize structure and performance for projects of any size or complexity. Built on top of the API is our feature-rich admin webapp (CMS) which dynamically maps to your database's schema, instantly providing your users/clients with an intuitive interface for managing content.
+		<br /><br />
+		Directus is released under the <a href="https://www.gnu.org/copyleft/gpl.html" target="_blank">GNU GENERAL PUBLIC LICENSE</a>.
+		</english-overview>		
+		<english-features>
+		<ul>
+			<li><b>Branding &amp; Style</b> : The framework is void of any fixed Directus branding or styling – it instead offers a minimal, desaturated GUI that fits beautifully within any organization's aesthetic. Top it off by adding your project logo and/or tweaking our SASS files.</li>
+			<li><b>Users &amp; Permissions</b> : One area that always warrants granular customization is access-control. Directus users are each assigned to a user-group with fully customizable privileges for tables, columns, and workflow status or creator.</li>
+			<li><b>Asset Management</b> : Files are not typically handled by the database directly, so Directus adds the ability to upload and manage files or referenced embed videos (eg YouTube/Vimeo). Storage adapters exist for the file-system and common CDNs such as S3 or Rackspace.</li>
+			<li><b>Messages &amp; Comments</b> : Sometimes it is useful to attach a note or reminder to certain items. With Directus' commenting system you can do just that – even @mention other CMS users. Beyond commenting, an integrated messaging system allows for internal communication.</li>
+			<li><b>Filtering &amp; Bookmarks</b> : Some datasets can be vast and unwieldy – that's when advanced column-based filtering becomes a necessity. And with view bookmarking, those complex or tailored results are only a click away.</li>
+			<li><b>Revision History</b> : All activity within Directus is tracked giving system-wide accountability. With revision roll-backs and the optional "soft-delete policy," you'll never irreversibly lose data again.</li>
+			<li><b>Schema &amp; Datatypes</b> : Your data's organization is paramount – that is why Directus doesn't make assumptions about how you should architect your schema. Use Directus or your preferred DBA tool to curate table and column names, datatypes, relationships, junctions, indexes, etc.</li>
+			<li><b>Extensibility</b> : Of course, there are many more features than we can outline here. However, you can rest assured that with adjustable user workflows, custom input UIs, and completely open-ended extension pages at your disposal, your project will never outgrow Directus.</li>
+		</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_email>Please provide the email to reset the password</english-err_no_email>
+		<english-err_no_such_email>The Admin email is incorrect and does not exist!</english-err_no_such_email>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+	</languages>
+</soft>

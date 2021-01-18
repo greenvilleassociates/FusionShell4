@@ -1,0 +1,14 @@
+.editorconfig
+.env.example
+.gitignore
+.htaccess
+README.md
+app
+composer.json
+composer.lock
+phpcs.xml.dist
+public
+themes
+vendor
+web.config
+.env

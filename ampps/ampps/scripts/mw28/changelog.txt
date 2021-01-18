@@ -1,0 +1,67 @@
+== MediaWiki 1.31.12 ==
+
+This is a maintenance release of the MediaWiki 1.31 branch.
+
+=== Changes since MediaWiki 1.31.11 ===
+* Fixed issues relating to User::isRegistered() not existing in 1.31.
+
+== MediaWiki 1.31.10 ==
+
+This is a maintenance release of the MediaWiki 1.31 branch.
+
+== MediaWiki 1.31.8 ==
+
+This is a security and maintenance release of the MediaWiki 1.31 branch.
+
+=== Changes since MediaWiki 1.31.7 ===
+* (T199809) Don't invalidate BotPasswords if a password reset email is sent.
+* (T247017) PasswordReset performance improvements.
+* (T250568) Work around change in SimpleXMLElement behavior introduced in PHP
+  7.3.17.
+* Remove some rotten and out of date documentation.
+* (T252311) Improvements to some older SQLite update patches.
+* (T240307) Minor fixes to extension.schema.v2.json and extension.schema.v1.json.
+* (T199474) Set rc_patrolled to 2 for autopatrolled changes in
+  rebuildrecentchanges.php.
+* (T229461) Update the change_tag table in rebuildrecentchanges.php.
+* (T206476) Call ob_start() before running tests.
+* (T234450) Per-user concurrency in SpecialContributions can now be limited by
+  setting $wgPoolCounterConf['SpecialContributions'] appropriately.
+* (T248947) SECURITY: img_auth.php may leak private extension images into the
+  public cache.
+
+== MediaWiki 1.31.7 ==
+
+This is a security and maintenance release of the MediaWiki 1.31 branch.
+
+=== Changes since MediaWiki 1.31.6 ===
+* (T193565, T234022) Re-add DB domain sanity checks to LoadBalancer.
+* Use proper SemVer comparison in CheckComposerLockUpToDate.
+* (T212738) Add the MW_VERSION constant, global $wgVersion is soft deprecated.
+* Update comment about PHP versions supported by The PHP Group.
+* (T247215) Fix output of RecountCategories::doWork().
+* Add check for page existence to view.php maintenance script.
+* (T247580) Disable some broken Selenium tests.
+* (T236509) SECURITY: Fix HTML escaping in UserGroupMembership::getLink().
+* (T246602) SECURITY: jquery.makeCollapsible allows applying event handler to any
+  CSS selector.
+
+== MediaWiki 1.31.6 ==
+
+This is a security and maintenance release of the MediaWiki 1.31 branch.
+
+=== Changes since MediaWiki 1.31.5 ===
+* (T181658) Do not insert page titles into querycache.qc_value.
+* (T206013) Suppress errors when reading invalid XML file properties.
+* (T237931) Remove references to pg_attrdef.adsrc in Postgres code.
+* Use correct value for 'sslmode' in DatabasePostgres.
+* (T232866) Fix support for HTTP/2 in MultiHttpClient.
+* (T227461) Stop calling deprecated Redis delete functions.
+* (T239561) Mark options as requiring parameters in addSite.php.
+* (T239734) Replace deprecated lSize with lLen in Redis code.
+* (T192134) SECURITY: Do not allow user scripts on Special:PasswordReset.
+* (T239428) ApiEditPage: Test for bad redirect targets.
+* (T233342) rdbms: Log debug message traces as 'exception.trace' instead of
+  'trace'.
+* (T226751) media: Log and fail gracefully on invalid EXIF coordinates.
+* (T212067) Work around PHP bug in parse_url.

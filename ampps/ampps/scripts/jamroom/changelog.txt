@@ -1,0 +1,45 @@
+Jamroom System Core change log
+
+Version 6.5.9:
+ - New: Added hourly maintenance function to cleanup expired Live Search result temp database entries
+ - New: Form Designer updated with new "Group" column to show which groups fields are visible to
+ - Bug Fix: More than $max_entries queue entries were being created under some circumstances
+ - Bug Fix: "datetime" and "time" fields were not displaying correctly if given a "timezone" key
+ - Bug Fix: jrCore_format_time() was not handling the "adjust" for timezone parameter correctly
+ - Bug Fix: Drop down calendar chooser in form fields could show incorrect weekday order in header
+ - Bug Fix: "Stuck" queue entries may not be cleaned up correctly when exceeding allowed work time
+ - Bug Fix: Some BBCode code blocks may not be parsed correctly if they contain embedded "code" words
+ 
+Version 6.5.8:
+ - Change: Updated delete profile to work in "chunks" for very large profiles when moving to recycle bin
+ - Change: Updated bundled jQuery to version 3.5.1
+ - Bug Fix: Possible SQL error when searching items with a page value greater than the result set size
+ - Bug Fix: jrCore_delete_local_cache_key() may not correctly delete the local APCu cache key
+ - Bug Fix: "detected" site URL during install may be incorrect on sites installing in a sub directory
+ - Bug Fix: Phone numbers in datastores may show as dates in the Data Browser when viewing Keys
+ - Bug Fix: The form designer "Field Options" could show incorrect if the first character was a zero (0)
+ - Bug Fix: Sleeping a queue entry more than 9 times would delete queue_id for "failing 10 times"
+ 
+Version 6.5.7:
+ - New: "timezone" is now supported as a parameter on the "datetime" form field
+ - Change: Live Search field value must be longer than 2 characters to initiate search
+ - Change: Name of file to be downloaded added to "download_file" event
+ - Bug Fix: User Data variables were not always being made available for use in email templates
+ - Bug Fix: Live Search form fields could trigger search on empty value
+ - Bug Fix: Exporting matched CSV entries from the Dashboard -> Data Browser may not include all entries
+ 
+Version 6.5.6:
+ - New: "email_info" event trigger added that is fired with email info before sending
+ - Change: Updated form validation functions to make them more flexible for module use
+ - Change: Updated activity log history delete function to run every 10 minutes + be lighter on the system
+ - Change: Updated Integrity Check form to indicate the options that are not normally required
+ - Change: Updated debug popup to better display HTML email when logging sent email to Activity Log
+ - Bug Fix: Updating a Form Designer field could show incorrect language strings for "sublabel" and "help"
+
+Version 6.5.5:
+ - New: Ability to define an event listener as a "priority" listener that is called first
+ - New: Support added for "form_validate = false" to jrCore_form_create() to bypass Core form validation
+ - New: "section_header" element added to Form Designer to allow a section header to be added to a form
+ - Bug Fix: "live_search" fields had double class attributes in the output HTML
+ - Bug Fix: "Repair Module DB" queue was created even if "Repair Modules" was not checked in Integrity Check
+ - Bug Fix: Ordering by "display order" could be incorrect for lists made on items outside the profile

@@ -1,0 +1,29 @@
+Changes in Traq v3.7.1
+---------------------------
+
+	Invalid min/max length values
+	Unable to create Milestones
+	Undefined index on Timeline
+	Unable to create Wiki pages
+
+Changes in Traq v3.7.0
+---------------------------
+
+    Ticket time management
+    Password migration prompt
+
+Changes in Traq v3.6.0 
+---------------------------
+    User pruning
+    Unique email address required during registration
+
+Changes in Traq v3.5.2:
+---------------------------
+    Fixed issue when creating projects without a display order.
+
+Changes in Traq v3.5.1:
+---------------------------
+    Added ability to link to wiki pages with [[page-slug]] and [[page-slug|Some text]]
+    Ticket ID is displayed with the other ticket properties
+    Disabled the loading of the latest news in the AdminCP when using HTTPS (this is temporary)
+    Fixed issue with custom fields being displayed for certain ticket types when they shouldn't have

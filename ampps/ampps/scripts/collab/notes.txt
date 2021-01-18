@@ -1,0 +1,2 @@
+1. Installer is at /install.php
+2. PHP REQUIREMENT LINK : https://github.com/philippK-de/Collabtive/blob/master/README.md#requirements

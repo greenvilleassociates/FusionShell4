@@ -1,0 +1,201 @@
+v20.0.00
+--------
+    Headlines
+        Messenger emails now send faster by using a background process
+        View Logs feature to browse Gibbon event logs
+        Added Español - Mexico as an available locale
+        Compatible with PHP 7.4
+
+    Significant Changes
+        Students: added a Withdraw Student page with the option to notify staff
+        Reports: added an option to bulk upload existing report PDFs
+
+    Tweaks & Additions
+        System: added Argentine Peso and Ukrainian Hryvna as currency options
+        System: updated Tailwind 1.2.0 dependencies via npm
+        System: updated SessionTimeout with translation support and jQuery/jQuery UI dependency removed
+        System: added target option to Alert Bar
+        System: added a DetailsView table for displaying data
+        System: updated the pre-login homepage to use a card layout
+        System: added a comment editor and code editor to the Form library
+        System: improved translation support in forms and tables throughout the system
+        Departments: added drag-drop ordering to Departments in School Admin
+        Finance: added Student ID, where set, to invoices and receipts
+        Finance: applied email template to invoices, receipts, and reminders
+        Messenger: added Parent and Student options to Applicants target in New Message
+        Planner: enhanced Smart Block display in Lesson Planner
+        Planner: removed bold from Chat comment in lesson plan view
+        Reports: added a Proof Read by Form Group option
+        Reports: added an option to select the PDF rendering library in Template Builder
+        Reports: added hooks for custom criteria types in the report writing screen
+        Reports: added the ability to select fonts in Template Builder
+        Reports: added the option to generate single reports for Left students
+        Reports: added alerts to student details in Write Reports
+        Reports: added auto resize to comment text boxes in Write Reports
+        Reports: changed criteria status to Locked/Unlocked for better clarity
+        Reports: added a progress bar to the sidebar in Write Reports
+        Reports: added himself/herself to the pronoun checker
+        Reports: added a live-reload to report generating progress bar
+        School Admin: changed names in Edit Attendance Code to readonly
+        Staff: added an option to edit or delete staff coverage dates
+        Staff: added Family and Activities subpages to Staff Profile
+        Staff: added notificaton events for New and Left staff
+        Students: added an Exclude Left Students checkbox to Student Enrolment Trends, off by default
+        Students: added option allowing the referee email field in the Application Form to be set to option
+        Students: added a grid view of student's teachers to Student Profile
+        Timetable: added Bookings into View Available Facilities report
+        User Admin: added rich text editors to the Application Form Settings
+        User Admin: added an option to enter a departure reason for final year students in Rollover
+        User Admin: added an option to create a linked staff record for new users
+        User Admin: added no record warning to View Role
+        User Admin: switched from warning to message in Edit User
+
+    Bug Fixes
+        System: fixed module uninstall to also remove notification events
+        System: fixed Quick File Upload trimming filename by first period
+        System: fixed paragraph spacing in copy-pasted Messenger emails
+        System: fixed hourly cache refresh for pinned messages
+        System: fixed the first and last day of the selected school year
+        Activities: fixed Attendance History by Activity table scroll
+        Attendance: fixed Attendance Summary by Date displaying "no results" before form submitted
+        Finance: fixed fee name bug in issued Invoices where fee name changed
+        Finance: fixed invoices not viewable by student
+        Planner: changed spelling of Publically to Publicly
+        Planner: removed debug code from homework submission
+        Planner: removed ability for students and parents to be granted Lesson Planner_viewAllEditMyClasses
+        Staff: fixed Left staff appearing in Weekly Absences report
+        Staff: fixed Staff Directory only exporting first 50 staff members
+        Staff: fixed staff directory export when viewing grid or card view
+        Students: fixed emergency data report not showing parents column
+        Students: fixed Tutors and EAs set to Left showing on Student Profile
+        Students: fixed past enrolments showing up in Students by Form Group
+        Students: adjusted Add Student Enrolment to allow Full and Expected students to be selected and enroled
+        Students: ensure alert bar in Student Profile does not display for Parents or Students
+        Reports: fixed Course scope Per Group criteria not saving per-class
+        Reports: suppressed TCPDF deprecation messages when generating PDFs
+        Reports: fixed pronoun switching not applied globally in some browsers
+        Reports: fixed Student Info template to omit empty student photos
+        Reports: fixed AttendanceByCycle data source and updated it to apply countClassAsSchool setting
+        Reports: fixed grade scale drown-downs for Per Group reporting criteria
+        Reports: fixed bug in Internal Assessment data source
+        Reports: adjusted student lists to honour Reportable flag
+        Reports: applied gibbonCourseClassPerson reportable flag to queries
+        Reports: fixed uniqueness check in Manage Reports to include school year
+        Reports: fixed stylesheet missing when generating batch PDFs
+        Roll Groups: fixed link to print action from Roll Group details page
+        System Admin: fixed File Permission display issue in System Check
+        System Admin: fixed issue causing string replacement preventing update highlighting in Manage Modules
+        Timetable: escaped calendar event names in timetable tooltips
+        Timetable: incremented gibbonTTImport course and class name field lengths
+        Timetable Admin: implemented bulk Tie Days to Dates duplicate checking
+        Timetable Admin: fixed Course Enrolment by Class unable to delete duplicate entries
+        Timetable Admin: fixed missing Back to Search links in course enrolment pages
+
+v19.0.00
+--------
+    Headlines
+        Reports module enables users to write reports, proof read comments, generate PDFs, and view report archives
+        Individual Needs Investigations functionality allows data gathering around students with individual needs
+        Messages can now be pinned to the top of the message wall, and optionally displayed above the dashboard
+        Expanded Staff Directory replaces View Staff Profiles
+        Activated German as an available language
+
+    Changes With Important Notices
+        System: added a redirect to the Update page when database updates are required
+        System: split Daily Attendance CLI into separate form group and class scripts
+        System: upgrade path limited to v14.0.00 and higher
+
+    Significant Changes
+        System: added Year Switcher to staff homepage sidebar
+        Planner: added "View Only" sub-action to Lesson Planner
+        User Admin: added a View Role page in Manage Roles to display all actions and users per role
+
+    Tweaks & Additions
+        System: added Maldivian Rufiyaa and Malagasy Ariary as a currency options
+        System: updated DatePicker to use gibboni18n date format
+        System: updated SpreadsheetRenderer to write cell contents as plain text
+        System: updated TinyMCE allowable HTML to include details, summary and code blocks
+        System: improved the display of checkbox and radio list items in forms
+        System: added Malagasy and Maldivian as selectable languages
+        System: added a sticky header to refactored data tables
+        System: refactored the Sound Alarm system
+        System: added a setting to toggle background processing
+        System: added a general-purpose DiscussionGateway class
+        Activities: added a Year Group filter in Manage Activities
+        Attendance: added an option to record the first class attendance in a day as school-wide attendance
+        Attendance: added an option to disable prefilling by attendance code, applied to Present - Late by default
+        Attendance: added Consecutive Absence report to list all students who have been absent for the last N school days
+        Attendance: updated Student History to still display class attendance when countClassAsSchool in N
+        Attendance: added a Students Not In Class report
+        Behaviour: added a Copy To Notes feature
+        Behaviour: added settings to toggle notifications for Tutors and Education Assistants
+        Form Groups: added staff-only summary of Year Groups after Form Group listing
+        Messenger: added a Copy to Next Year bulk-option for Manage Groups
+        Messenger: eliminated non-recipient siblings from Send Report
+        Messenger: addition of student name(s) to emails sent to parents
+        Messenger: adjusted the default sending options for non-staff users
+        Messenger: low SMS credit notification when fewer than 1,000 credits remain
+        Messenger: added ability to pin messages to the top of the message wall
+        Messenger: added a setting to display pinned messages above the dashboard
+        Messenger: allow access to View Message Wall for roles with category Other
+        School Admin: renamed IN Settings to Individual Needs Settings
+        School Admin: removed the prefix Manage from settings pages
+        Staff: added a Weekly View and Daily View to Substitute Availability report
+        Staff: added a Substitute Information setting for displaying text on My Coverage page
+        Staff: added a Staff Coverage Summary report with total days covered per substitute
+        Staff: added template setting for Absence Comment field
+        Students: improved display of Teachers' emails in student profile
+        Students: added extra permission allowing editing and deleting of all Notes
+        Students: adjusted Privacy options to display even if blurb is not set
+        Students: adjusted Application Form to allow showing of Language Selection blurb without fields
+        Students: added template setting for Description field in First Aid Record
+        Students: turned First Aid Record Followup into a non-editable log
+        Timetable Admin: included student reportable flag in student enrolment
+        Timetable Admin: enabled users who can search All Users to also see Left students
+        User Admin: increased Student ID field max length to 15
+        User Admin: added Citizenship 1 and Citizenship 2 Passport Expiry date fields
+        User Admin: added a Login Troubleshooting section to Reset Password page
+
+    Bug Fixes
+        System: fixed installer bug where passwords are unnecessarily encoded
+        System: fixed date picker validation error for Polish language
+        System: fixed Notification Events to only send to users who have status Full
+        System: adjusted date formats for German language
+        System: fixed translatability issue of Public Registration text
+        System: fixed pagination setting so it correctly controls table size
+        System: fixed Dashboard error for users with role category Other
+        System: fixed Fast Finder bug on mobile when entering search text
+        Activities: improved interface string advising users of disabled external activity registration
+        Activities: fixed bug preventing viewing activity details in Activity Choices by Student when listing closed
+        Activities: fixed permission error for View action in Activity Choices By Student and Student Profile
+        Attendance: fixed missing data in printable view of Student History
+        Attendance: fixed Set Future Absence to only allow future dates
+        Departments: fixed permission check causing Export to Excel to fail
+        Departments: fixed Export to Excel to work on iOS devices
+        Finance: fixed missing payment info in invoice receipt email for multiple partial payments
+        Finance: fixed missing Other category for installs with no demo data
+        Finance: fixed Manage Invoices bulk actions not refreshing after changing filters
+        Finance: fixed inactive fees showing up in dropdown lists
+        Library: set Bookable to No by default on Add record screen
+        Library: fixed Status field not being set when not borrowable
+        Markbook: implemented unit ordering and date ordering for unit and lesson fields
+        Messenger: fixed bug when sending parent and student SMS for Attendance status
+        Messenger: fixed bug where users could create a message with no available delivery options
+        Planner: fixed non-functional Smart Block Template setting
+        Planner: fixed Unit Planner bug causing actions to appear in Classes table for newly created units
+        Planner: implemented unit ordering field in Lesson Planner
+        Rubrics: fixed bug where non-english locales displayed rubric visualization as gray
+        School Admin: fixed Browse Library BG Image field length bug
+        School Admin: fixed typo to use instead instead of isntead
+        Staff: fixed Cancel Coverage button not available for future coverage
+        Staff: fixed Delete Staff Absence to also delete any related coverage
+        Staff: limited open coverage requests to the type of sub requested
+        Staff: fixed staff coverage date not removed when deleting absence date
+        Staff: fixed multi-day coverage only showing one day on the timetable
+        Staff: fixed View Absences to only show the current year by default
+        Staff: fixed Left staff not accessible from View Staff Profiles page
+        Students: adjusted official name size in ID card for long-named students
+        Students: fixed timetable chooser not working on student profile pages
+
+    Deprecations
+        System: removed Smart Workflow Help feature

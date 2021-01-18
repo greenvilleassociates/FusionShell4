@@ -1,0 +1,3 @@
+1. We are not passing Company Name and Company URL using the API as used in table 'setting'. Need to confirm the parameters to be passed in the API with the vendor. (Try to add in next version, if confirmed) - Added in 5.5.1
+2. PHP REQUIREMENT LINK : https://www.clientexec.com/members/knowledge-base/getting-started~81/system-requirements~497
+3. 6.2.x does not work with MySQL 8.0. It will be supported after 6.3.x release. Enable it once 6.3 is released. 

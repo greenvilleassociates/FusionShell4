@@ -1,0 +1,56 @@
+## Version 4.1.1 - Mar 27, 2020
+
+BUG: TActiveFileUpload: avoid warning in browser console by removing usage of an empty page as initial content (ctrlaltca)
+BUG: TExpression: fix naming conflict of class variable (ctrlaltca)
+BUG TActiveRecordConfig: fixed bug in default manager class (LCSKJ)
+ENH: Added compatibility with Php 7.4 (ctrlaltca)
+ENH: issue #708 Add support for PostgreSQL 12 (ganiuszka)
+CHG: Deprecated / ported method using attributes obsoleted in html5 (ctrlalta)
+
+## Version 4.1.0 - Nov 18, 2019
+
+BUG: Issue #694 - Undefined variable: conn notice in Active Record Scaffold (ganiuszka)
+BUG: Issue #696 - SQL error when trying to disable PDO::ATTR_EMULATE_PREPARES option for MySQL (ganiuszka)
+BUG: Issue #698 - TActiveFileUpload - multi upload always shows a red X for incomplete upload (ctrlaltca)
+ENH: Added ClientSide.RetryLimit to retry timeout out ajax requests (ctrlaltca)
+
+Version 4.0.2 - Apr 12, 2019
+
+BUG: Issue #669 - Wrong Gettext class filename (gani)
+BUG: Issue #671 - THtmlArea4 in TActiveRepeater (ctrlaltca)
+BUG: Issue #674 - Fix TValidationSummary when no validator has an ErrorMessage set and js is disabled (ctrlaltca)
+BUG: Issue #675 - TDatePicker position problems with jQuery 3.3 (ctrlaltca)
+BUG: Issue #683 - TRequiredFieldValidator doesn't work with TActiveListBox (gani, ctrlaltca)
+BUG: Issue #533 - Mitigate CVE-2011-4718 by regenerating the session id when TAuthManager swiches user (david0)
+BUG: Issue #439 - Remove internal I18n data; use php's intl instead (ctrlaltca)
+ENH: Added support for igbinary serializator (ctrlaltca)
+ENH: Added TGlobalizationAutoDetect::AvailableLanguages property to set the list of available cultures on the website (ctrlaltca)
+ENH: Make TableColumnClass in TMysqlMetaData variable (LCSKJ)
+
+## Version 4.0.1 - Apr 1, 2018
+
+CHG: Removed all deprecated code (ctrlaltca) CHG: Removed deprecated components based on the prototype jajascript library (ctrlaltca) 
+CHG: Removed bundled copy of JSMin-php library, get it from composer instead (ctrlaltca) 
+ENH: Added composer script commands to run phpunit and apigen (ctrlaltca) 
+BUG: Issue #660 - Wsat redirect broken (ctrlaltca) 
+ENH: Added html5 charset attribute to meta (frkinta) 
+BUG: Issue #662 - External links to API manual doesn't work anymore (frkinta) 
+BUG: Issue #663 - PHP 7.2 warning messages break active controls (ctrlaltca)
+
+Version 4.0.0 - November 20, 2017
+
+CHG: Add native php namespace support on all classes (ctrlaltca, david0, LCSKJ)
+CHG: Add native composer autoloader support (ctrlaltca, david0, LCSKJ)
+CHG: Drop bundled dependencies and use composer instead (ctrlaltca, david0, LCSKJ)
+CHG: Split demos in another repo (ctrlaltca, david0, LCSKJ)
+BUG: Issue #625 - IIS: The url tag produce an extra directory separator before the result (ctrlaltca)
+BUG: Issue #610 - IIS: Page redirect dosn't work (ctrlaltca)
+BUG: Issue #642 - Firefox restores hidden field value after callback on F5-Reload (LCSKJ, ctrlaltca)
+BUG: Fix missing language file in TJuiDatePicker when regional default is set (LCSKJ)
+BUG: Issue #651 TFileUpload doesn't work if rendered on callback (ctrlaltca)
+BUG: Issue #652 - TActiveFileUpload problem on files containing a single quote (ctrlaltca)
+ENH: Issue #633 - Added two new controls TActiveHtmlArea and TActiveHtmlArea4 (LCSKJ)
+ENH: Issue #635 - Added HTML5 multiple file upload support in TFileUpload and TActiveFileUpload (LCSKJ)
+ENH: Added two new cache modules based on key-value stores: Redis and etcd (LCSKJ)
+ENH: Issue #93 - Translation storage in php array (ctrlaltca)
+ENH: Issue #139 - Add support for xdebug (ctrlaltca)

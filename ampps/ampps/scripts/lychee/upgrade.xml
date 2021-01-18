@@ -1,0 +1,20 @@
+<softupgrade xmlns="http://www.softaculous.com">
+	<setuplocation>public/install/migrate</setuplocation>
+	<settings>		
+		<group>
+			<heading>hidden</heading>
+			<input type="hidden" name="dummy" value="">
+			</input>
+		</group>
+	</settings>
+	<files>
+		<exclude>public/uploads/*</exclude>
+		<exclude>public/uploads/*/*</exclude>
+		<exclude>public/uploads/*/*/*</exclude>
+		<exclude>public/uploads/*/*/*/*</exclude>
+		<exclude>public/uploads/*/*/*/*/*</exclude>
+		<exclude>public/dist/user.css</exclude>
+		<exclude>.env</exclude>
+		<exclude>.htaccess</exclude>
+	</files>
+</softupgrade>

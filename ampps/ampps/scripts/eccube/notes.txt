@@ -1,0 +1,2 @@
+comment the php_value and php_flag from html\.htaccess in package.
+PHP REQUIREMENT LINK: https://www.ec-cube.net/developers/#developers_requirements

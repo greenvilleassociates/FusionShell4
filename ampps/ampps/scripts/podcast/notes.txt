@@ -1,0 +1,4 @@
+1. We configure feed.xml as its needed for script to save feeds. Script requires root writable if we do not configure feed.xml
+2. take config.php dump after login because podcast update config.php on first login(Not required now)
+3. PHP REQUIREMENT LINK : http://www.podcastgenerator.net/documentation/installation#manual
+4. Minimum requirement for upgrade is set to 2.7. It's mention on thier github release.

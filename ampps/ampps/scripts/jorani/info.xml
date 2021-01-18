@@ -1,0 +1,67 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Jorani
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/erp/Jorani
+	</ratings>
+	<space>
+		79729718
+	</space>
+	<support>
+		http://jorani.org/nobots/contact.html
+	</support>
+	<version>
+		1.0.0
+	</version>
+	<mod>9</mod>
+	<release_date>11-10-2020</release_date>
+	<admin>index.php/session/login</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.0.0" />
+	<requirement check="php" type="extension" name="openssl" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="ldap" />
+	<requirement check="php" type="extension" name="zip" />
+	<requirement check="php" type="extension" name="xml" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="mysqli" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Jorani</font> is a Leave Management System developed in PHP/MySQL. Jorani is designed to provide simple leave and overtime request workflows for small organizations.
+		<br /><br />
+		Jorani is released under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GPL v3 license</a>.
+		</english-overview>		
+		<english-features>
+		<ul>
+			<li>Comprehensive online documentation (French and English).</li>
+			<li>Notifications by e-mail (requested, accepted, rejected and new user).</li>
+			<li>Leave request approval workflow (1 validator).</li>
+			<li>Overtime request approval workflow (1 validator).</li>
+			<li>Leave balance report (filtered by department).</li>
+			<li>Monthly presence report.</li>
+			<li>Export to XLSX (Excel, LibreOffice) in a click (almost all pages of the application).</li>
+			<li>HR users can edit any leave or overtime request.</li>
+			<li>Set your own contracts and leave types.</li>
+			<li>Calendars of leaves (individual, team, collaborators, etc.).</li>
+			<li>Describe your organization in a tree structure and attach employees to entities, define a supervisor per entity.</li>
+			<li>Non working days (weekends and day offs) can be defined on a contract so as to automatically calculate the duration of a leave and to display them in the calendar.</li>
+			<li>REST API (OAuth2) fully documented and examples with PHP clients.</li>
+			<li>LDAP Authentication (OpenLDAP, AD, etc.).</li>
+			<li>OAuth2 Authentication (only Google+ at the moment).</li>
+			<li>Available in English, French, Spanish, Italian, German, Dutch, Russian, Ukrainian, Persian, Khmer, Vietnamese, and Turkish.</li>
+		</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

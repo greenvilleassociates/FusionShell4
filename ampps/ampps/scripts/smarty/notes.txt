@@ -1,0 +1,1 @@
+PHP REQUIREMENT LINK : https://www.smarty.net/docs/en/installation.tpl#installation.requirements

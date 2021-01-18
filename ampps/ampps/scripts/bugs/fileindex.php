@@ -1,0 +1,12 @@
+.gitignore
+.htaccess
+README.md
+app
+config.app.example.php
+favicon.ico
+index.php
+install
+license.txt
+uploads
+web.config
+config.app.php

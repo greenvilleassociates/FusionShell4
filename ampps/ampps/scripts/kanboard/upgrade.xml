@@ -1,0 +1,20 @@
+<softupgrade xmlns="http://www.softaculous.com">
+	<settings>
+	<setuplocation>?controller=AuthController&amp;action=login</setuplocation>	
+		<group>
+			<heading>hidden</heading>
+			<input type="hidden" name="dummy" value="">
+			</input>
+		</group>
+	</settings>
+	<auto_upgrade>1</auto_upgrade>
+	<files>
+		<exclude>config.php</exclude>
+		<exclude>data/*</exclude>
+		<exclude>data/*/*</exclude>
+		<exclude>data/*/*/*</exclude>
+		<exclude>data/*/*/*/*</exclude>
+		<exclude>data/*/*/*/*/*</exclude>
+		<exclude>data/*/*/*/*/*/*</exclude>
+	</files>
+</softupgrade>

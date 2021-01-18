@@ -1,0 +1,5 @@
+1. Default Timezone: America/Los_Angeles
+2. PHP REQUIREMENT LINK: ../INSTALL
+3. The values for 'cipher', 'mode', and 'options' in lepton.ini.php are hardcoded in /install/save.php, so keep them as it is.
+4. Since 4.3.0 2FA has been introduces. Uncheck this and then make the manual installation.
+(Since 4.4.0 this cannot be unchecked. Hence to disable 2FA we keep column value of 'tfa' as 'false' in `[[dbprefix]]settings` table in sql. To check this in manual installation take sql dump on installation sucessful page and then, visit admin panel's Menu->Settings->Default Settings and uncheck 'Two factor authentication' and take another dump and compare these two dumps). Since 4.5.0 2FA can be disabled at time of installation by unchecking it.

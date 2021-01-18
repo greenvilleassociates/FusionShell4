@@ -1,0 +1,17 @@
+base
+changelog.txt
+config.xml.php
+data
+extensions
+favicon.ico
+files
+images
+index.php
+install.php
+license.txt
+metadata.xml
+package.json
+sites
+tables.sql
+templates
+upgrade.php

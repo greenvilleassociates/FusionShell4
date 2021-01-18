@@ -1,0 +1,4 @@
+1) Set timezone "America/New_York" in manual installation.
+2) Tick "Yes, your server is support to .htccess and mod_rewrite."
+3) PHP REQUIREMENT LINK: https://www.cszcms.com/download
+4) requires root writable in manual installtion

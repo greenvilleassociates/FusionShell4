@@ -1,0 +1,63 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/CSZ_CMS
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/cms/CSZ_CMS
+	</ratings>
+	<space>
+		21004514
+	</space>
+	<support>
+		https://gitlab.com/cszcms/cszcms
+	</support>
+	<version>
+		1.2.9
+	</version>
+	<mod>11</mod>
+	<release_date>31-05-2020</release_date>
+	<admin>admin/login</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.5.0" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="gd" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">CSZ CMS</font> is an open source web application that allows to manage all content and settings on the websites. CSZ CMS was built on the basis of Codeigniter and design the structure of Bootstrap, this should make your website fully responsive with ease.
+		<br /><br />
+		CSZ CMS is is open-source Content Management System. And all is free under the <a href="https://www.cszcms.com/LICENSE.md" target="_blank">Astian Develop Public License (ADPL)</a>.
+		</english-overview>		
+		<english-features>
+		<ul>
+			<li>Easy to edit content with TinyMCE Text Editor.</li>
+			<li>Bootstrap Templates Structure.</li>
+			<li>Automatic Sitemap Generator on backend system with one click.</li>
+			<li>Search Engine Optimization support.</li>
+			<li>Database and file backups on backend system.</li>
+			<li>Statistic for all link in content.</li>
+			<li>Upload tools file manager on backend.</li>
+			<li>Article plugin build-in system.</li>
+			<li>Gallery plugin build-in system (Images and Youtube).</li>
+			<li>Brute Force Protection.</li>
+			<li>Error logs download on backend system.</li>
+			<li>Cache system for performance.</li>
+			<li>User management for Admin, Editor, Member.</li>
+			<li>Group and Permission Management.</li>
+			<li>Widget system for content.</li>
+			<li>Banner Manager.</li>
+		</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_email>Please provide the email to reset the password</english-err_no_email>
+		<english-err_no_such_email>The Admin email is incorrect and does not exist!</english-err_no_such_email>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+	</languages>
+</soft>

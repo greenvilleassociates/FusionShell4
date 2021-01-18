@@ -1,0 +1,57 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.png" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Kopage
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/cms/Kopage
+	</ratings>
+	<space>
+		20860309
+	</space>
+	<support>
+		http://kopage.com/faq
+	</support>
+	<version>
+		3.1.9
+	</version>
+	<mod>8</mod>
+	<release_date>26-09-2020</release_date>
+	<admin>admin</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.6.0" />
+	<requirement check="php" type="version" operator="lt" value="7.2.0" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Kopage</font> is a Website Builder for Webhosts and Webhosting Industry, compatible with cPanel, DirectAdmin, Parallels Plesk and other hosting control panels. 
+		<br /><br />
+		Kopage's license allows redistribution. Please read the <a href="http://www.kopage.com/terms" target="_blank">license</a>.
+		</english-overview>
+		<english-features>
+<font color="#1281B6"><b>Powerful Website Themes</b></font><br />
+Themes are fully customizable: easily replace existing text, images with your own, related to your website subject.<br />
+Each Template has predefined 6 different theme layouts to choose from (with sidebar, with menu on top, with different styles), 6 menu styles, 3 menu/logo aligns, 60 color schemes and over 100 hand-picked premium fonts provided by Google Fonts.<br />
+If you prefer to choose ready theme, there's built-in themes catalog: changing a template doesn't break website structure or contents, only website design is being changed.<br /><br />
+<font color="#1281B6"><b>SEO Functions</b></font><br />
+Website Building is fun. But it's more fun when website is popular!<br />
+Make sure you get as many visitors coming from Google and other Search Engines as possible with built-in SEO (Search Engine Optimization) features built-in.<br />
+Custom, website wide and per-subpage Metatags, SEO Friendly menu links and more!<br /><br />
+<font color="#1281B6"><b>Files Manager</b></font><br />
+Easily upload your own files from your computer or access over 500,000 professional photos for free with single client, right in your Files Manager.<br /><br />
+<font color="#1281B6"><b>Social Media (Facebook, Twitter &amp; more)</b></font><br />
+Easily add link to your Facebook Fanpage, Twitter Profile and other social networks to your website Header and Footer.<br />
+Use predefined Social Networking Content Blocks to add links or share buttons to any other place on your website content area.<br />
+Add Facebook, Twitter, LinkedIn, Google+ and more!<br /><br />
+<font color="#1281B6"><b>Custom Code (HTML, CSS, JavaScript)</b></font><br />
+Don't limit yourself to sitebuilder's built-in tools, if you're familiar with HTML, CSS or JavaScript code, you can easily add your own, custom code to any part of your website.<br />
+Additionally HEAD content is also editable with your own scripts or META tags<br /><br />
+		</english-features>
+	</languages>
+</soft>

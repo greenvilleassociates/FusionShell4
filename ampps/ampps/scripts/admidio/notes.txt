@@ -1,0 +1,5 @@
+1. we have disabled auto upgrade because upgrade utility asks for login details to update the database. Enable it later if it works
+2. Select Timezone : America/New_York
+3. PHP REQUIREMENT LINK : https://www.admidio.org/download.php
+4. We don't exclude the installation folder i.e /adm_program/installation/ from install.xml, as the script needs some files from installation folder. 
+Also it's not mentioned in their documentation to do so.

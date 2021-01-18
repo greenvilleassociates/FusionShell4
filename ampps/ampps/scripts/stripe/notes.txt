@@ -1,0 +1,18 @@
+1. We use __config.php to reset the theme to the previous one if the version is less than 3.0
+2. PHP REQUIREMENT LINK: https://docs.silverstripe.org/en/4/getting_started/server_requirements/
+3. We have disabled upgrade in 4.0.0 because it requires migration with composer. https://docs.silverstripe.org/en/4/upgrading/#manual
+Try to add from next version.
+4. Select MySQL 5.0+ (using MySQLi) in manual installation.
+5. Download package through composer because vendor sometimes give large package through their website downloads.
+
+curl -sS https://getcomposer.org/installer | php
+
+php composer.phar create-project silverstripe/installer {{path to stripe}} {{version}}
+6. Install with following command as "soft" user from CLI because script has removed it's UI installation since 4.5.0 version.
+vendor/bin/sake dev/build
+7. We have disabled install on windows because symlink issue since 4.4.1
+8. We have kept version 4.5.2 in info.xml, because version released was 4.5.2 but however inside admin panel it shows 4.5.1, because they have changed their versioning scheme and its mentioned in the link below. They have different module versions for framework , recipe and cms and in admin panel the version indicator used is of cms which has 4.5.1 version. 
+Also we have used 'silverstripe/recipe-cms' version i.e 4.5.2 in composer.lock to import version as 4.5.2, instead of 'silverstripe/cms' which holds version 4.5.1.
+https://github.com/silverstripe/silverstripe-installer/issues/276
+(Version 4.5.2)
+9. Keep SS_ENVIRONMENT_TYPE="live" before running command i.e vendor/bin/sake dev/build

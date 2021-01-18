@@ -1,0 +1,10 @@
+1. Make manual installation where MySQL is >= 5.7.7
+2. While manual installation : "Config Manager" -> Save Config and then move to Authentication/Accounts
+3. Create data directory with "tmp" and "files" directory and add respective paths during manual installation.
+4. Check and compare data directory everytime with Addressbook/Export/templates/*, Sales/Export/templates/*, Crm/Export/templates/*, Timetracker/Export/templates/*, Calendar/Export/templates/* of original zip. These files should match with "tmp" and "files" directory files.
+5. PHP REQUIREMENT LINK: https://wiki.tine20.org/System_requirements MySQL requirement since 2019.02.2 https://github.com/tine20/tine20/releases  https://github.com/tine20/tine20/wiki/EN%3ASystem-requirements
+6. We have set MySQL requirement to 5.6.4 because Some features are not available for MySQL < 5.6. Vendor has recommended to use MySQL 5.6.4 https://www.tine20.org/forum/viewtopic.php?f=8&t=18724&p=68100#p68100
+7. Setup.php was not accessible via web browser in tine 2018.8.3/4/5 hence we have made manual installation through command line with following command given by vendor. https://github.com/tine20/tine20/issues/6906
+php setup.php --config /home/soft/public_html/manual/tine202085/config.inc.php --install
+8. Download All-in-One Package from github. i.e http://packages.tine20.org/source/2018.08.7/tine20-allinone_2018.08.7.zip
+9. Language can be changed from login page

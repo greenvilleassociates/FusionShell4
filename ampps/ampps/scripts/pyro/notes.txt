@@ -1,0 +1,20 @@
+1. Manual install with Application Reference = softaculous_ref.
+2. Check and move public/app/default/assets folder from manual to zip.
+3. Check and move public/app/softaculous_ref folder from manual to zip.
+4. Check and move storage/streams/softaculous_ref folder from manual to zip.
+5. Exclude the following files while moving the above folders from manual to zip :
+ public/app/default/assets/admin/theme.css
+ public/app/softaculous_ref/assets/admin/theme.css
+ public/app/softaculous_ref/assets/public/theme.css
+ storage/streams/softaculous_ref/search/zend/default/{All .cfs, .sti and .del files}
+6. Remove the following entry from composer.json
+anomaly/installer-module
+This is to disable the warning that the installer still exists.
+
+Guide to install Composer :
+https://getcomposer.org/doc/00-intro.md
+
+curl -sS https://getcomposer.org/installer | php
+
+php composer.phar install
+7. Update from 2.2.x is not possible as confirmed by vendor via email.

@@ -1,0 +1,64 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/ProjeQtOr
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/projectman/ProjeQtOr
+	</ratings>
+	<space>
+		125724835
+	</space>
+	<support>
+		https://www.projeqtor.org/en/forum
+	</support>
+	<version>
+		8.6.6
+	</version>
+	<mod>51</mod>
+	<release_date>07-12-2020</release_date>
+	<admin>view/main.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.4.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.0.0" />
+	<requirement check="mysql" type="version" operator="ne" value="8.0.20" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="mysqli" /> 
+	<requirement check="php" type="extension" name="pdo_mysql" />
+	<requirement check="php" type="extension" name="imap" />
+	<requirement check="php" type="extension" name="openssl" /> 
+	<requirement check="php" type="extension" name="xml" />
+	<requirement check="php" type="extension" name="zip" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">ProjeQtOr</font> is an open source project management software grouping in a single tool all the features needed to organize your projects. It is simple, easy to use daily while covering a maximum of project management features. 
+Its particularity, in addition to its completeness, is to be quality oriented.
+		<br /><br />
+		ProjeQtOr is released under the <a href="http://www.projeqtor.org/index.php/en/home/26-home/slider/19-opensource" target="_blank">GNU Affero General Public License</a>.
+		</english-overview>		
+		<english-features>
+		<ul>
+			<li><b>Planning management</b> : ProjeQtOr  provides all the elements needed to build a planning from workload, constraints between tasks and resources availability.</li>
+			<li><b>Resource management</b> : ProjeQtOr  manages the availability of resources that can be affected to multiple projects. Tool calculates a reliable, optimized and realistic planning.</li>
+			<li><b>Tickets management</b> : ProjeQtOr  includes a Bug Tracker to monitor incidents on your projects, with possibility to include work on planned tasks of your projects.</li>
+			<li><b>Costs management</b> : All elements related to delays can also be followed as costs (from resources work) and managing other expenses all costs of the project are monitored and can generate invoices.</li>
+			<li><b>Quality management</b> : The specificity of ProjeQtOr  is that it is Quality Oriented : it integrates the best practices that can help you meet the quality requirements on your projects.</li>
+			<li><b>Risks management</b> : ProjeQtOr  includes a comprehensive risks and opportunities management, including the action plan necessary to mitigate or treat them and monitoring occurring problems.</li>
+			<li><b>Perimeter management</b> : ProjeQtOr  allows you to monitor and record all events on your projects and helps you in managing of deviations, to control the perimeter of projects.</li>
+			<li><b>Commitments management</b> : ProjeQtOr  allows you to follow the requirements on your projects and measure at any time coverage progress, making it easy to reach your commitments.</li>
+			<li><b>Tools</b> : ProjeQtOr includes some tools to generate alerts, automatically send emails on chosen events, import or export data in various formats.</li>
+		</ul>		
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

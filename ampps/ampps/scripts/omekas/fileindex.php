@@ -1,0 +1,15 @@
+.htaccess
+LICENSE
+README.md
+application
+bootstrap.php
+cli-config.php
+composer.json
+composer.lock
+config
+files
+index.php
+logs
+modules
+themes
+vendor

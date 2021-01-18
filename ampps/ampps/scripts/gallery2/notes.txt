@@ -1,0 +1,4 @@
+1. Download both the zips. i.e typical and full package and install twice.
+2. Do not change the column prefix while installing manually
+3. Empty the cache and smarty folder in the data.zip and install.log file from data_full.zip (if any)
+Release date : http://galleryproject.org/gallery_3_0_3_and_gallery_2_3_2

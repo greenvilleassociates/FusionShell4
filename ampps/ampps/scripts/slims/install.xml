@@ -1,0 +1,45 @@
+<softinstall xmlns="http://www.softaculous.com">
+	<settings>
+		<group>
+			<heading>{{ad_act}}</heading>
+			<input type="text" name="admin_username" size="30" value="admin">
+				<head>{{ad_name}}</head>
+			</input>
+			<input type="text" name="admin_pass" size="30" value="pass">
+				<head>{{ad_pass}}</head>
+				<handle>__ad_pass</handle>
+			</input>
+		</group>
+		<group>
+			<heading>{{ad_lang}}</heading>
+			<input type="select">
+				<select name="language">
+					<option value="en_US">English</option>
+					<option value="ar_SA">Arabic</option>
+					<option value="bn_BD">Bangla</option>
+					<option value="de_DE">German</option>
+					<option value="id_ID">Indonesian</option>
+					<option value="ja_JP">Japanese</option>
+					<option value="my_MY">Malay</option>
+					<option value="fa_IR">Persian</option>
+					<option value="pt_BR">Portuguese</option>
+					<option value="ru_RU">Russian</option>
+					<option value="es_ES">Spanish</option>
+					<option value="th_TH">Thai</option>
+					<option value="tr_TR">Turkish</option>
+					<option value="ur_PK">Urdu</option>
+				</select>
+			<head>{{select_lang}}</head>
+			</input>
+		</group>
+	</settings>
+	<db>mysql</db>
+	<files>
+		<exclude>install/*</exclude>
+		<exclude>install/*/*</exclude>
+		<exclude>install/*/*/*</exclude>
+		<exclude>install/*/*/*/*</exclude>
+		<exclude>install/*/*/*/*/*</exclude>
+		<exclude>install/*/*/*/*/*/*</exclude>
+	</files>
+</softinstall>

@@ -1,0 +1,106 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/HuMo-gen
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/others/HuMo-gen
+	</ratings>
+	<space>
+		27282864
+	</space>
+	<support>
+		https://humogen.com/index.php/forum
+	</support>
+	<version>
+		5.6.1
+	</version>
+	<mod>11</mod>
+	<release_date>29-11-2020</release_date>
+	<admin>admin/index.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.5.0" />
+	<requirement check="php" type="extension" name="pdo_mysql" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">HuMo-genealogy</font> is a free, open-source and multilingual server-side program that makes it very easy to publish your genealogical data on the internet as a dynamic and searchable family tree website.
+		<br /><br />
+		HuMo-genealogy is licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GNU-GPL license</a>.
+		</english-overview>		
+		<english-features>
+	<ul>
+	<li>Genealogy Features:
+		<ul>
+			<li>Family view (includes Individual view, spouse and children)</li>
+			<li>Ancestor Report</li>
+			<li>Descendant Report</li>
+			<li>Outline Report</li>
+			<li>Fanchart</li>
+			<li>Ancestor Chart</li>
+			<li>Ancestor Sheet</li>
+			<li>Descendant Chart - horizontal/vertical</li>
+			<li>Y-DNA and mtDNA charts</li>
+			<li>Hourglass Chart</li>
+			<li>PDF export of ancestor, descendant and outline reports and of ancestor sheet</li>
+			<li>RTF export of ancestor and descendant reports</li>
+			<li>Relationship Calculator / Relation finder (new: now finds marital relations even through multiple marriages)</li>
+			<li>Timeline Report</li>
+			<li>Google Map integration</li>
+			<li>Birthday calendar</li>
+			<li>Advanced search</li>
+			<li>Bookmarking favorites</li>
+		</ul>
+	</li>
+	<li>
+	Display Features:
+		<ul>
+			<li>Multiple skins (themes)</li>
+			<li>An adjusted interface for use on smartphones</li>
+			<li>Photos/Pictures (gallery and display by individuals)</li>
+			<li>Video and audio (recording) attachments</li>
+			<li>Sources (a sophisticated new source system was added in version 4.8)</li>
+			<li>Professions</li>
+			<li>Aliases</li>
+			<li>Notes</li>
+			<li>Places</li>
+			<li>Full UTF-8 support (for display of foreign characters as used in French, German etc.)</li>
+			<li>RSS feed for birthday notifications</li>
+			<li>Statistics</li>
+			<li>Color codes with individuals</li>
+		</ul>
+	</li>
+	<li>
+	Administration Features:
+		<ul>
+			<li>NEW! The admin section contains a CMS (Content Management System) that allows you to build your own web pages with background information, research material etc. You can also build your own welcome front page.</li>
+			<li>This feature also makes it possible to add "Histories". In the CMS section you can place extensive histories about people or families and link from there to the persons involved. And in reverse, in the person/family display you can place a link to the relevant history pages.</li>
+			<li>Backup and restore feature to backup you database</li>
+			<li>Display can be customized by selecting options in the admin screen, including default skin/theme, default language etc.</li>
+			<li>Managing multiple trees</li>
+			<li>Privacy filter</li>
+			<li>Create user accounts with specific privileges.</li>
+			<li>Online Editing!</li>
+			<li>You can now edit your genealogical data online with HuMo-genealogy. You can even build up an entirely new family tree online, without ever importing a gedcom file. With the editor you can also add custom events, photos etc.</li>
+			<li>Gedcom Export!</li>
+			<li>You can now export your online HuMo-genealogy genealogical data into a Gedcom file that can be used by other genealogical programs. With version 4.8 you can now also export parts of trees.</li>
+			<li>Merge Gedcom files and use the sophisticated merge system to resolve all duplicates</li>
+			<li>HuMo-genealogy is compatible with the Gedcom files exported by all major genealogy programs (such as Brothers Keeper, Legacy Family Tree, PAF - Personal Ancestral File, Roots Magic and many more). If you use another program, don't worry - if it complies with the Gedcom standards, HuMo-genealogy will most likely handle it. And in the rare case your program should not classify , all chances are that this can be fixed too. HuMo-genealogy is being constantly developed.</li>
+			<li>Your HuMo-genealogy website is easily updated with new material you collected. All that is needed is to upload an updated Gedcom file, read it in - and your site will show the new data.</li>
+			<li>New HuMo-genealogy versions are published all the time. HuMo-genealogy is easily upgraded. In just a few minutes you will be up and running.</li>
+		</ul>
+	</li>
+</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+	</languages>
+</soft>

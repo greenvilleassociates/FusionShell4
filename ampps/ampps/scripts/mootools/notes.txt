@@ -1,0 +1,3 @@
+Download the following zip:
+MooTools Core 1.5.x with compatibility Uncompressed
+Release date : https://github.com/mootools/mootools-core/releases

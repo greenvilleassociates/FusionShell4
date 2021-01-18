@@ -1,0 +1,60 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Invoice_Ninja
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/ecommerce/Invoice_Ninja
+	</ratings>
+	<space>
+		438728578
+	</space>
+	<support>
+		https://www.invoiceninja.com/knowledge-base/
+	</support>
+	<version>
+		4.5.30
+	</version>
+	<mod>101</mod>
+	<release_date>18-01-2021</release_date>
+	<admin>public/login</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.0.0" />
+	<requirement check="php" type="extension" name="fileinfo" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Invoice Ninja</font> is a complete suite of apps, Invoice Ninja is the 1 open-source platform to create &amp; email invoices &amp; proposals, track payments history &amp; expenses, and time billable tasks &amp; projects for clients.<br /><br />
+		Invoice Ninja is released under the <a href="http://opensource.org/licenses/AAL" target="_blank">Attribution Assurance License</a>.
+		</english-overview>		
+		<english-features>
+<ul>
+<li><b>Create &amp; Email Invoices &amp; Quotes in Real-Time</b> : View your invoice come to life in real-time as you add client and project details.</li>
+<li><b>Additional Users &amp; Set Permissions</b> : Add up to 20 users and set permissions for what each user can edit or view.</li>
+<li><b>Create Recurring Invoicing &amp; Auto-Bill Clients</b> : Save time by automatically billing long-term clients with recurring invoices.</li>
+<li><b>Proposals Creation Tool</b> : Easily create and send beautiful proposals to your customers.</li>
+<li><b>Attach 3rd Party Files to Invoices &amp; Expenses</b> : Combine important files with your invoice document. All in one email delivery.</li>
+<li><b>Create Project Tasks &amp; Track Time</b> : Log every task. Record every second. Then simply click to add the data to your invoice.</li>
+<li><b>Kanban Boards to Manage Projects</b> : Organize and plan your client work with our visual project management tool. </li>
+<li><b>Client-Side Portal &amp; Invoices History</b> : Allow your clients to see all their transactions with you in one glance. </li>
+<li><b>Fully Customizable Invoice Design</b> : Match the look of your invoice with the design of your brand. </li>
+<li><b>Invoice Payment Auto-Reminder Emails</b> : Use a pre-written auto-reminder email sequence to remind clients your invoice needs to be paid. </li>
+<li><b>Alerts When Client Views &amp; Pays Invoices</b> : Receive notifications when a client views and pays your invoice. </li>
+<li><b>Item &amp; Product Library System</b> : Quickly select from potentially thousands of predefined service and product descriptions. </li>
+<li><b>Create Reports, Accounts Aging &amp; Client Statements</b> : Understand the bigger financial picture with our advanced report features. </li>
+<li><b>Multiple Currencies and Languages Supported</b> : Adjust invoicing settings to better reflect your location and preferred currency. </li>
+</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_email>Please provide the email to reset the password</english-err_no_email>
+		<english-err_no_such_email>The Admin email is incorrect and does not exist!</english-err_no_such_email>
+		<english-exp_license_key>Click <a href="https://app.invoiceninja.com/license?affiliate_key=D8XR37" target="_blank">here</a> to Buy license.</english-exp_license_key>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+	</languages>
+</soft>

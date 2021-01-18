@@ -1,0 +1,11 @@
+1. Installation Method using "http://octobercms.com/docs/setup/installation#wizard-installation"
+2. Download Link is "http://octobercms.com/api/core/get" mentioned in "install_files\php\installer.php" line no 309
+for Dowbnlod the zip make a post on link direct access from browser Doesn't work
+Create html file a click on get button for download file
+<html><form action="http://octobercms.com/api/core/get" method="POST" ><input type="submit" value="get" /></form></html>
+
+Or By Command : php -r "eval('?>'.file_get_contents('https://octobercms.com/api/installer'));"
+
+3. system core hash of table "system_parameters" is constant for all installation of 1.0.4.18 version
+4. select scratch for installation
+5. PHP REQUIREMENT LINK : install.php

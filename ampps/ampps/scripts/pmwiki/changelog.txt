@@ -1,0 +1,30 @@
+Version 2.2.134 (2020-11-30) ↑
+
+    Update documentation.
+	
+Version 2.2.133 (2020-10-25) ↑
+
+    Escape unintended variable evaluation in link tooltip titles, reported by Finar.
+    Responsive skin css: remove ul/ol forced padding (clips numbered list markers in long lists, reported by Colin Cody; complex to override cross-browser).
+    Add image extensions WEBP and APNG (PITS:01454) and upload extensions.
+    Fix potential vulnerability to CWE-384: Session Fixation, reported by Dominique Faure. Add $EnableAuthPostRegenerateSID default enabled.
+    RecipeCheck - only inject CSS when the action is called.
+    Update documentation. 
+
+Version 2.2.132 (2020-09-30) ↑
+
+    Update documentation. 
+
+Version 2.2.131 (2020-08-30) 
+
+    Update documentation.
+	
+Version 2.2.130 (2020-07-04) ↑
+
+    Update documentation. 
+
+Version 2.2.129 (2020-05-21) ↑
+
+This version adds the styles for the "simpletable" class of tables from the "pmwiki-responsive" skin into the old "pmwiki" skin, and the documentation was updated. 
+
+Version 2.2.128 (2020-04-26) ↑

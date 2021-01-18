@@ -1,0 +1,11 @@
+1. Select Initial Schema : None Clean Database (Not Required since 7.0.4)
+2. access_token creates on first login in users table (Not Required since 7.0.4)
+3. writable permission is given to "customs" because it creates some folder inside (Not Required since 7.0.4)
+4. Download Link : https://github.com/directus/directus/releases/download/6.4.8/directus-build-6.4.8-20180228003950.zip (Not Required since 7.0.4)
+5. We have used php.net function v4() to generate "public_key" because directus's function were using ramsey class which further requires few more files to be included. Hence we have not used.
+
+http://www.php.net/manual/en/function.uniqid.php#94959
+6. .htaccess is our file to redirect it to /public/admin
+7. We have removed version fetch in import since 7.0.4 because they are not going to retain version henceforth as they have dettached its API and CMS app.
+8. PHP REQUIREMENT LINK: https://docs.directus.io/getting-started/installation.html#requirements
+9. install is restricted on HTTP because it doesn't work properly on HTTP, check and update if works in next update.

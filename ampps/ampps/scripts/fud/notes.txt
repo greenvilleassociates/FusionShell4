@@ -1,0 +1,127 @@
+1. While installation use this 'fud30_' as dbprefix
+2. We configure .htaccess to remove the php_value and php_flag
+3. take "_GLOBALS.php" dump after 2nd step that is "System setting and Directory path".
+4. use this function for extract "fudforum_archive" file.
+
+	create data_root,web_root folder and execute file
+
+	function died(){
+		 print_r(error_get_last());
+	}
+
+	register_shutdown_function('died');
+
+	mkdir("data_root");
+	mkdir("web_root");
+	
+	decompress_archive('./data_root/', './web_root/');
+
+	function decompress_archive($data_root, $web_root)
+	{
+		$clean = array('PHP_OPEN_TAG'=>'<?', 'PHP_OPEN_ASP_TAG'=>'<%');
+
+		// CLI doesn't automatically change the CWD to the one the started script resides in.
+		chdir(dirname(__FILE__));
+
+		/* Install from './fudforum_archive' file. */
+		$fp = fopen('./fudforum_archive', 'rb');
+		$checksum = fread($fp, 32);
+		$tmp = fread($fp, 20000);
+		fseek($fp, (ftell($fp) - 20000), SEEK_SET);
+		if (strpos($tmp, 'RAW_PHP_OPEN_TAG') !== FALSE) {	/* No compression. */
+			unset($clean['PHP_OPEN_TAG']); $clean['RAW_PHP_OPEN_TAG'] = '<?';
+			$data = '';
+			while (($tmp = fgets($fp))) {
+				$data .= strtr($tmp, $clean);
+			}
+		} else {
+			$data_len = (int) fread($fp, 10);
+			// Data should be @ least 100k.
+			if ($data_len < 100000) {
+				exit('Failed getting archive size from '. htmlentities(fread($fp, 10)));
+			}
+			$data = gzuncompress(strtr(fread($fp, $data_len), $clean), $data_len);
+		}
+		fclose($fp);
+
+		if (md5($data) != $checksum) {
+			exit("Archive did not pass the checksum test, it is corrupt!<br />\nIf you've encountered this error it means that you've:<ul><li>downloaded a corrupt 'fudforum_archive' file</li><li>uploaded the archive to your server in ASCII and not BINARY mode</li><li>your FTP Server/Decompression software/Operating System added un-needed cartrige return ('\r') characters to the archive, resulting in archive corruption.</li></ul>\n");
+		}
+
+		$pos = 0;
+
+		do {
+			$end = strpos($data, "\n", $pos+1);
+			$meta_data = explode('//',  substr($data, $pos, ($end-$pos)));
+			$pos = $end;
+
+			if (!isset($meta_data[3]) || $meta_data[3] == '/install') {
+				continue;
+			}
+
+			if (!strncmp($meta_data[3], 'install/forum_data', 18)) {
+				$path = $data_root . substr($meta_data[3], 18);
+			} else if (!strncmp($meta_data[3], 'install/www_root', 16)) {
+				$path = $web_root . substr($meta_data[3], 16);
+			} else {
+				continue;
+			}
+			$path .= '/'. $meta_data[1];
+
+			$path = str_replace('//', '/', $path);
+
+			if (isset($meta_data[5])) {
+				$file = substr($data, ($pos + 1), $meta_data[5]);
+				if (md5($file) != $meta_data[4]) {
+					exit('ERROR: file '. $meta_data[1] .' was not read properly from archive');
+				}
+
+				if ($path == $web_root .'.htaccess' && @file_exists($path)) {
+					define('old_htaccess', 1);
+					continue;
+				}
+
+				if (defined('fud_debug')) echo "Extracting $path\n";
+				$fp = @fopen($path, 'wb');
+				if (!$fp) {
+					if (basename($path) != '.htaccess') {
+						exit('Couldn\'t open '. $path .' for write.');
+					}
+				}
+	// TODO: Good place for substitutions before we write the file.
+				fwrite($fp, $file);
+				fclose($fp);
+				@chmod($path, 0644);
+			} else {
+				if (substr($path, -1) == '/') {
+					$path = preg_replace('!/+$!', '', $path);
+				}
+				if (!__mkdir($path)) {
+					exit('ERROR: failed creating directory '. $path);
+				}
+			}
+		} while (($pos = strpos($data, "\n//", $pos)) !== false);
+	}
+
+	function __mkdir($dir)
+	{
+		$u = umask(0);
+
+		if (@is_dir($dir)) {
+			return 1;
+		} else if (file_exists($dir)) {
+			unlink($dir);
+		}
+		$ret = (mkdir($dir, 0755) || mkdir(dirname($dir, 0755)));
+
+		umask($u);
+		return $ret;
+	}
+
+5. use "decompress_archive" function of "install.php" to extract "fudforum_archive" file.
+6. make datadir from "data_root" folder of extracted "fudforum_archive".
+7. make zip from downloaded installer zip and "web_root" folder of extracted "fudforum_archive".
+8. for creating cache go to "Forum Consistency" and proceed also verify post values of curlcall in install.php and update
+9. for creating template go to "Theme Manager" and click on "[ Rebuild all Themes ]" also verify post values of curlcall in install.php and update
+10. http://cvs.prohost.org/index.php?title=FUDforum_3.0.9#Requirements
+11. Copy files which need not to be configured from {Manual Data Dir}/include/theme/default and keep files which need to be configured in {Our Package}/default

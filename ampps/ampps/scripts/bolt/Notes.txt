@@ -1,0 +1,34 @@
+1. Add following entries before starting for manual installation in $datadir/app/config/config.yml take it from vendor/bolt/bolt/app/config/config.yml.dist
+
+  driver: mysql
+  username: root
+  password: mysql
+  databasename: bolt
+  host: localhost
+  
+2. create data.zip without public folder and create bolt.zip from public folder
+This structure is changed since 3.2.6 because a user had pointed out this error in ticket.
+https://docs.bolt.cm/3.6/howto/troubleshooting-outside-webroot
+https://docs.bolt.cm/3.6/installation/manual-download-and-extraction
+
+3. Rename following files
+composer.json.dist to composer.json, composer.lock.dist to composer.lock, .bolt.yml.dist to .bolt.yml, and /src/Site/CustomisationExtension.php.dist to /src/Site/CustomisationExtension.php in manual installation and add this renamed files in our zip package also.
+
+3. PHP REQUIREMENT LINK : https://docs.bolt.cm/3.6/getting-started/requirements
+
+4.Please note that since version 3.3.1 , '.bolt.yml' was removed from the Bolt's package.
+So before starting manual installation create .bolt.yml in $datadir($datadir/.bolt.yml) manually
+and add following entry to it.
+
+paths:
+
+    web: [[softpath]] 
+	
+(This is needed since we keep $datadir outside the webroot , It's needed for mapping webroot files.
+Confirmed with vendor in mail).
+
+Also add [[softdatadir]] path in index.php in softpath.
+
+5. Added __pre_settings function in install.php becuase first character as special character is not allowed in config.yml in datadir. (Since 3.3.5)
+6. Take SQL dump before login and after login add dummy content and check diff and make SQL accordingly.
+7. move all the placeholder_xxx.jpg files inside 'files' folder(in softpath) from manual to zip as they are not made.(Since version 3.6.3)

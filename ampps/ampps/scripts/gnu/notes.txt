@@ -1,0 +1,1 @@
+1. PHP REQUIREMENT LINK: https://notabug.org/diogo/gnu-social/src/1.20.x/INSTALL.md

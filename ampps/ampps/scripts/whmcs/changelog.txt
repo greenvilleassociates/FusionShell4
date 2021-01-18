@@ -1,0 +1,207 @@
+Version 8.1.0 Release Notes
+Maintenance
+
+CORE-10886 - Do not send "Invoice Created" email when Order does not have invoice
+CORE-12227 - Add search and UI improvements for module log
+CORE-14738 - Provide Health Check for known MySQL variable issues
+CORE-14777 - Correct unpaid invoice total calculations on "My Invoices" sidebar
+CORE-15210 - Improving logging of admin actions related to affliate operations
+CORE-15211 - Include negative tax rates in invoice email
+CORE-15586 - Prevent error when transferring domain whose associated service's server does not define nameservers
+CORE-15595 - Correct language selection for Admin New Order notification
+CORE-15677 - Ensure Load Saved Message options reflect selected email type
+CORE-15709 - Display Generic Feedback on Ticket Feedback Comments report
+CORE-15711 - Improve support department POP setup UI
+CORE-15739 - Only render Mass Payment button when enabled and client has unpaid invoices
+CORE-15751 - Optimise downloads routine when no service provided
+CORE-15774 - Improve resilience of domain SSL status sync
+CORE-15795 - Prevent superfluous empty option for CC Recipients when viewing ticket as admin
+CORE-15804 - Correct filtering behavior of client custom fields for Email Campaigns
+CORE-15820 - Correct typo in "Available Merge Fields" section on email templates
+CORE-15869 - Ensure client currency is used if available in admin order process
+CORE-15878 - Prevent quantity factor of recurring amount when creating a line item of a multiple quantity service
+CORE-15879 - Correct One Time promo calculation for multiple quantity service
+CORE-15881 - Ensure time input is used when provided for AddInvoicePayment API
+CORE-15882 - Ensure all distributed mail provider support the Reply-To header
+CORE-15890 - Add Facebook Sign-in Feedback Error String to Language File
+CORE-15897 - Correct display of country on save of Contact in Client area
+CORE-15898 - Correct generation of UUIDs required for API actions
+CORE-15899 - Remove reference to obsolete client_password merge field
+CORE-15905 - Retain invites for 7 days following expiry
+CORE-15907 - Correct saving of input for Mail Provider details
+CORE-15910 - Improve small port view for password reset in Twenty-One
+CORE-15913 - Implement automatic pruning of Module Log
+CORE-15914 - Update WHOIS server for .NU
+CORE-15922 - Improve display of navigation bar with many items for Twenty-One
+CORE-15923 - Correct template inheritance for Marketconnect Upsells
+CORE-15932 - Update EV upsell messaging
+CORE-15940 - Correct display of Allow Multiple Quantities in Products/Services
+CORE-15942 - Prevent partial render on invalid ticket request
+CORE-15944 - Ensure correct expiry date is set for multi-year registrarion
+CORE-15950 - Include pid if available when redirecting to product group
+CORE-15952 - Update EV icon
+CORE-15953 - Ensure registrant contact fields are visible when bulk editing domain contact information
+CORE-15955 - Implement GetUsers API
+CORE-15958 - Improve remote bank + remote gateway migration
+CORE-15960 - Correct inheritance for invoicepdf.tpl
+CORE-15966 - Ensure OX App Suite upgrade utilises quantities
+CORE-15978 - Ensure Security Questions in use cannot be deleted
+Also known as: CORE-15981
+CORE-15994 - Correct internal type related to display of domain registration pricing
+CORE-16013 - Prevent error when providing invalid domain search term in Admin WHOIS lookup
+Modules
+
+MODULE-7537 - Ensure credits apply to accounts with addons
+MODULE-7541 - Transliterate Statement Descriptor Suffix for Stripe
+MODULE-7545 - Correct server sync API request for DirectAdmin
+
+CORE-15928 - Improve resilience of mod_pleskaccounts update routine
+Addons
+
+ADDON-6132 - Improve styling of Licensing addon for use in theme Twenty-One
+Project Management Addon
+
+PMA-188 - Correct display of associated projects when using custom ticket mask
+PMA-189 - Improve compatibility with Twenty-One
+Also known as: PMA-190
+API
+
+CORE-16008 - Rectify distributed example for OrderProductPricingOverride hook
+Languages
+
+CORE-15888 - Update Azerbaijani translations
+CORE-15921 - Update Hungarian translations
+CORE-15925 - Improvements for Admin Hebrew translation
+CORE-15927 - Improvements for Client Hebrew translation
+
+Version 8.0.4 Release Notes
+Maintenance
+
+CORE-15587 - Correct redirect for OpenID authorization
+CORE-15608 - Prevent error on Compose for campaign associated with client group
+CORE-15611 - Prevent erroneous validation error during cart creation of new account
+CORE-15619 - Correct behavior for legacy method ClientArea::getUserID()
+CORE-15633 - Prevent error on EmailPreSend abort
+Modules
+
+MODULE-7526 - Correct available variables for DomainSync function invocation
+
+Version 8.0.3 Release 1 (Maintenance)
+Maintenance
+
+CORE-14944 - Ensure consistent formatting of servers table for active and disabled servers
+CORE-15250 - Ensure Accept Order button is active when status is set to Pending
+CORE-15301 - Correct client replies count on Support Overview
+CORE-15334 - Update whois server for .as TLD
+CORE-15355 - Ensure CC recipient status is shown on the client ticket page
+Also known as: CORE-15527
+CORE-15357 - Invoice ID shown in title when view invoice URL without being authenticated
+CORE-15432 - Display client search result by ID in Invoice client search dropdown
+CORE-15459 - Ensure contact us form reply-to does not contain system email
+CORE-15469 - Correct WHOIS entry for .ec TLDs
+CORE-15478 - Text is cut off and not displayed in System Information sidebar section
+CORE-15485 - Ensure Contact results link to the contact's profile
+CORE-15486 - Improve display of labeling for recurring field of client's service page
+Also known as: CORE-15510
+CORE-15492 - Ensure client profile email can be updated
+CORE-15502 - Improve resilience of domain SSL status sync
+CORE-15503 - Prevent error on optional paymentmethod for CreateInvoice API
+CORE-15504 - Prevent error on client authenticated reply for guest requestor ticket
+CORE-15505 - Correct activity log entry for saving client profile
+CORE-15506 - Correct displayed count of Security Questions usage
+CORE-15511 - Correct displayed currency of total due amount when authenticated and creating a new account in cart
+CORE-15513 - Correct relative path for results of the Intelligent Search
+Also known as: CORE-15525
+CORE-15516 - Improve logging of POP mail connection errors
+CORE-15518 - Correct display of price for multiple one-time quantities with apply-once promotional code
+CORE-15522 - Correct display of prorata date on invoice
+CORE-15524 - Allow User creation relative to new Client when name is optionally excluded
+CORE-15530 - Ensure new Client email is unique on new order
+CORE-15533 - Improve message and linking in Password Reset activity log entries
+CORE-15538 - Correct tax for multiple quantity order
+CORE-15540 - Correct registrar TLD sync for of IDN TLDs
+CORE-15541 - Correct off by one error on activity log prune
+CORE-15544 - Ensure changing currency redirects to currently selected product group
+CORE-15549 - Prevent duplicate owner recipients on owner created tickets
+CORE-15554 - Ensure existing domains can be used when ordering
+CORE-15559 - Improve display of labeling for recurring field of client's domain page
+CORE-15560 - Correct contact editing from client area
+CORE-15561 - Ensure product related merge fields are visible for Email Campaigns
+CORE-15563 - Ensure SiteLock VPN landing page title is correct
+CORE-15576 - Ensure config options upgrade updates the recurring amount
+CORE-15577 - Correct language string for Email Campaigns
+CORE-15578 - Do not display linked accounts when 2FA setup is pending
+CORE-15579 - Correct FTP path for Weebly product configuration wtih DirectAdmin
+Also known as: ADDON-6128
+Modules
+
+MODULE-7471 - Prevent email failure from affecting invoice status
+MODULE-7500 - Improve duplicate subscriptions detection for PayPal Checkout
+MODULE-7516 - Improve error message rendering in Admin Area with Stripe
+MODULE-7521 - Correct logging of invalid Stripe based callback signature
+MODULE-7523 - Correct method of argument handling within DomainStatusSync
+Project Management Addon
+
+PMA-177 - Ensure Associate Invoice returns relevant search results
+Languages
+
+CORE-15401 - Update Hungarian translations
+CORE-15489 - Update Norwegian translations
+
+Version 8.0.2 Release Notes
+Maintenance
+
+CORE-15430 - Correct admin attribution in Activity Log
+CORE-15456 - Prevent error when placing order and integer limit is reached
+CORE-15457 - Improve error message when attempt to view order ID
+CORE-15460 - Ensure default gateway selection is pre-selected in Client Profile
+CORE-15461 - Provide context for Invalid Domain errors in Domain Sync
+CORE-15462 - Correct display of Next Cron Invocation in Automation Status
+CORE-15465 - Improve handling for invalid email headers
+CORE-15466 - Correct redirection following usage of 2FA backup code
+CORE-15467 - Correct redirection for client 2FA setup
+CORE-15473 - Prevent error with existing Application Links and migrated Users
+CORE-15474 - Prevent error when searching with invalid IDNA sld
+CORE-15481 - Ensure attachments are sent within Email Campaigns
+CORE-15482 - Correct scheduling of Email Campaigns where type is Product/Service
+CORE-15488 - Ensure Client Account Email Addresses are Unique
+CORE-15490 - Correct Owner label on Choose Account page
+Modules
+
+MODULE-7520 - Correct http request in FraudLabs
+PMA
+
+PMA-184 - Correct time tracking UI aggregation of ticket associated task
+PMA-185 - Prevent error on Associate Ticket search
+
+Version 8.0.1 Release 1 (Maintenance)
+Maintenance
+
+CORE-15215 - Prevent error when managing admin roles
+CORE-15394 - Use single cost pricing format for SSL products
+CORE-15398 - Prevent upgrade error when product groups are numeric
+CORE-15403 - Correct application of client group domain pricing in Admin area
+CORE-15404 - Improve email transport health check
+CORE-15405 - Prevent error when removing quote items
+CORE-15411 - Correct description of Domain Pending Transfer To Do items
+CORE-15412 - Prevent validation error in cart when ordering MarketConnect services with existing domain
+CORE-15414 - Correct aggregation and display within Client Activity dashboard widget
+CORE-15415 - Improve parsing and decoding of addresses during email import
+CORE-15418 - Ensure bulk Send Message on Products/Services pages honor email type
+CORE-15420 - Prevent error when importing email containing non-compliant addresses
+CORE-15422 - Correct client area MarketConnect manage routine
+Also known as: CORE-15428
+CORE-15423 - Improve detection for sequential non-visual but printable folded header body content during mail import
+CORE-15427 - Ensure 2FA can be disabled
+CORE-15434 - Ensure One Time addons price is set when adding to service
+CORE-15439 - Prevent erroneous redirect to login following Signin Provider authentication when 2FA is enabled
+CORE-15440 - Ensure Auto Recalculate is performed when requested
+CORE-15442 - Prevent error for affiliate search when viewing order
+Modules
+
+MODULE-7512 - Prevent error when creating a new customer entity with ResellerClub
+MODULE-7514 - Restore and shim original libraries from BitPay
+MODULE-7515 - Prevent cron error when Enom New TLDs addon is activated
+PMA
+
+PMA-183 - Ensure projects with multiple ticket associations output to Support Ticket UI

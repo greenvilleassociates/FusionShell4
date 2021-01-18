@@ -1,0 +1,14 @@
+.htaccess
+CHANGELOG.md
+CONTRIBUTING.md
+LICENSE.txt
+README.md
+admin
+assets
+composer.json
+extensions
+index.php
+main
+robots.txt
+setup
+system

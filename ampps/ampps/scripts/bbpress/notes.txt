@@ -1,0 +1,30 @@
+1. The following files _wpconfig.php and .htaccess have to be configured if the user selects to install with Multisite and also the multisite.sql should be made with the new tables that are created after configuring the Multisite Option.
+The guide to install Multisite Manually :
+https://wordpress.org/support/article/create-a-network/
+
+2. (101, 'rewrite_rules', '', 'yes'), Keep it blank, WordPress generates it automatically
+
+3. In multisite sql
+After Configuring the Network, dump the SQL before logging in.
+
+4. The multisite.sql is the whole SQL file and also remove the INSERTS in the Options table that are made after login i.e from 'CRON' except 
+INSERT INTO `[[dbprefix]]options` VALUES
+(100, 'rewrite_rules',''), Keep it blank, WordPress generates it automatically
+(115, 'can_compress_scripts', '0', 'yes'); 
+also change the AUTO INCREMENT as it is in the dumped SQL of Original database.
+
+5. Remove inserts in the sitemeta table after "active_sitewide_plugins" in MU 
+
+6. (14, 1, 'session_tokens', 'a:1:{s:64:"e5043af8ebbd5602c6df6fca2ab4f7a7f09d80484487b1a1698c449455dc8f9a";i:1416717670;}'), and 
+	(17, 1, 'community-events-location', 'a:1:{s:2:"ip";s:11:"";}'), will be created in usermeta table. If doesn't then create token and add it.
+7. From 4.5.1 we detect if the server has capability to use utf8mb4, we have changed define('DB_CHARSET', 'utf8mb4'); to define('DB_CHARSET', '[[utf8]]'); in both config file and updated COLLATE utf8mb4_unicode_ci to [[collate]] in both sql from 4.2.2
+
+8. While manual installation keep root writable and configure .htaccess as _htaccess.
+
+9. configure [[permalink_structure]] only in wp.sql. Not in multisite.sql.
+
+10. _index.php is our file no need to change it.
+
+11. Remove Storage ENGINE "ENGINE=InnoDB" from all the CREATE TABLE queries in wp.sql and multisite.sql as WordPress sets the storage engine based on the default set in the MySQL Server.
+
+12. when we add/delete a plugin update the edit.php and edit.xml file.

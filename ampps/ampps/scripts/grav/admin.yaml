@@ -1,0 +1,11 @@
+state: enabled
+email: [[admin_email]]
+fullname: '[[admin_fname]] [[admin_lname]]'
+title: [[admin_realname]]
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: [[admin_pass]]

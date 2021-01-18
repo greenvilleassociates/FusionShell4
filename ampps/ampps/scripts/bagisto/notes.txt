@@ -1,0 +1,9 @@
+1. Install Composer and create zip for package
+2. PHP REQUIREMENT LINK : https://bagisto.com/en/download/
+3. "config" updates when login
+4. use "php artisan vendor:publish --all --force  > publish.txt" command to get list of file and folder we need to be copy while softaculous install, check "publish.txt" file
+5. Follow installation steps mentioned here i.e from 'Try our old fashioned way to install Bagisto'(Steps 1 to 5)
+https://github.com/bagisto/bagisto
+6. Remove DEFINER='root@localhost' as it is created again when our sql is imported.
+7. Use mysqldump command for dumping bagisto.sql. i.e.mysqldump --routines -u root -pmysql bagisto > bagisto.sql
+8. Set APP_ENV=production and APP_DEBUG=false in .env file.

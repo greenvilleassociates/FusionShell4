@@ -1,0 +1,132 @@
+Collabtive 3.1
++ Fix a bug where the generic female avatar wasnt shown in the user-admin area
++ Update PHPMailer to its latest stable release 5.2.2 to mitigate potential issues with PHP7
++ PHPMailer dependency now managed by composer
++ PCLZip dependency now managed by composer
++ Fix CSP header frame-ancestors
++ Submit timetracker entries asyncronously
++ Display total hours in timetracker report (again)
++ Make forms reset by default after they have been submitted.
++ Allow users to be assigned to milestones
++ When moving the due date of a milestone, the due dates of associated tasks are also moved
++ Allow multiple tasklists to be created when creating a milestone
++ Display tree view of tasklist assigned to a milestone in milestone details
++ Display messages in milestone details treeview
++ Make opening an accordion slide a lot faster in accordions with many items
++ Replace pixel graphics in the tree view with SVG vector graphics
++ Fix the accordion in "late" milestone when creating a new milestone that is late
++ Draw milestones associated to messages, with  their tasklists, tasks in a tree view
++ Draw files associated to messages in a tree view in the message details.
+
+Collabtive 3.0.2
++ Fix character encoding issue with some special characters in titles of projects, tasks, etc
++ Refactor lots of vue.js 1.0 syntax to be compatible with 2.0
++ Change default number of projects displayed on the desktop to 15
++ Fix font encoding issue in PDF generation
++ Change truncation of project titles to 35
++ Fix the accordeon in project->milestones
++ add an additionalFields field to the model of the viewManager. It facilitates passing arbitrary global data from an endpoint to a vue template
++ Improve pagination with many pages: the pagination control now display only the first, second as well as the current +-1, and the 2 last pages
++ Actually load minified JS assets in some places
++ Set CSP frame-ancestors to 'self'. this prevents clickjacking attacks, where collabtive is embedded into other website contexts.
+
+
+Collabtive 3.0.1
++ Fix broken link to task list in upcoming milestones block
++ Fix XSS Vector in the user profile
++ Fix selection of subfolders when uploading files
++ Make truncation of project titles more consistent at 40 characters.
++ Correctly display timetracker and projects block in a users own profile
++ Fix user profiles when not logged in as admin
++ Fix changing the role of an existing user that already had a role assigned.
++ use a global HTMLPurifier object in getArrayVal() instead of creating a new one for each variable. this should improve performance by creating a
+much fewer objects.
+
+Collabtive 3.0
++ All external library dependencies now live in /vendor/ and are managed using composer.
++ Restructured templates. Form templates now live in the /forms/ subdirectory of the template folder.
++ Start using native HTML5 form validation instead of a JS library
++ Added blockaccordeon for the blocks in the userprofile
++ Improved the look of the file list view
++ Fix a bug where getThemes() wouldnt finish if a template has no /theme/ folder
++ Properly minify all JS assets using closure compiler
++ Display the parent message in the breadcrumbs on top when viewing a message
++ Messages now can have recursive replies. That is, each reply can have a reply, which can have a reply and so on.
++ Private messages can now be added to any project. They can only be viewed by their designated recipient.
++ Don't show mobile template in the template selector. these should not be activated directly but set by class mobileDetect()
++ Updated the database schema of new installations to use innoDB instead of myISAM storage engine. myISAM is outdated, and innoDB now the default on
+  mysql.
++ Moved helper classes to replace inline styles to /theme/css/style_helpers.css
++ Most inline styles have been refactored to classes. One of the next releases will disable inline style in CSP
++ The sidebar is collapsed by default, giving more room for the main content area
+  It can be expanded by clicking
++ Added viewManager functions that make it easy to create, and update reactive vue.js views
++ Added helper methods css(), cssAll, cssId() to ajax.js
++ All animations now use velocity.js. This removes the dependency on scriptculous and enables HW acceleration on mobile.
++ Implemented new modal dialog for the calendar, that is not based on prototype
++ Implemented accordeon that does not depend on prototype
++ Added example plugin
++ Plugin system that is completely modular and cacheable.
+  Plugins are defined as their own classes, and implement the collabtivePlugin interface
+  Arbitrary Plugin Hooks can be placed in templates to allow dependency injection
++ All forms are now submitted asyncronously
++ Rewrite of UI rendering with vue.js to enable more reactive UI
++ Changed constructor of SmartyPaginate.class.php to be compatible with PHP 7
++ Fixed unfiltered variables
++ Refactored helper methods to use the new ajaxRequest object.
++ Implemented ajaxRequest() object in ajax.js that wraps native xmlhttprequest to create POST and GET ajax requests.
++ Improved database checks in init.php (srichter)
++ Fixed file download link in file upload email notification
++ Performance improved in getMyProjects() SQL query by using a JOIN (srichter)
++ Fixed a bug in thumb.php where not-logged in users could load thumbnails of images they know the path to
++ Converted the filetype check int he user image upload to a whitelist to be more secure from malicious file uploads.
++ Added code for excel import
++ Code refactoring to use arrays $cleanPost, and $cleanGet - these supply the value of $_POST and $_GET sanitized from XSS vectors
++ Converted a few remaining SQL queries to prepared statements
++ Converted loading of content on the desktop to an asyncronous method using vue.js. This speeds up the loading of the desktop page considerably.
++ Adding of projects now done asyncronously
++ Refactoring of code
++ Converted several queries into JOINs to improve performance
++ Converted loading of project tasks to asnycronous loading
++ Converted loading of timetracker to asyncronous loading
++ Converted loading of milestones to asyncronous loading
++ Converted loading of messages to asyncronous loading
++ Made adding of projects asyncronous
++ Late, Current and upcoming milestones are now displayed in a block accordeon
++ Project tasks are now arranged as a block accordion
++ Rewrote accordion code to no longer depend on prototype.js
++ Added feature to optionally adapt all lower-level deadlines upon changing a project or milestone deadline
+
+Collabtive 2.1
++ Removed accordion-related JS legacy code from desktop
++ Added default charset to all create table statements
++ Removed creation of unnecessary table
++ Added collation info to install-readme files
++ Fixed bug in start date vs. end date comparison when adding or editing a task
++ Fixed bug to return correct customer for a project
++ Made customer selection available in admin area
++ Localized customer-related labels and labels for the installation procedure
++ More SQL queries use prepared statements now
++ Remove file upload for IE versions 9 and older
++ Removed several calls to htmlspecialchars(). they are obsoleted by the html purifier lib and caused issues
++ Removed several calls to stripslashes(). they are obsoleted by html purifier
++ Fixed a problem with ambiguous field names
++ Fixed a missing GROUP BY clause
++ Implemented SQLite support. It can be chosen in the installer.
++ Removed the tags class for good
++ Add folder /files/standard/ics/ to the installation package
++ Removed call to file_exists in getArrayVal() - it worked around an edge case in the installer. This safes a lot of calls to file_exists()
++ Fixed a bug that prevented files from being attached to messages
++ Fix the link in the file-uploaded email notification
++ Made mylog object global. This safes a lot of object instantiations and improves performance. (srichter)
++ Reuse $myOpenProjects from init.php in index.php , improving performance (srichter)
++ Improved SSL recognition (srichter)
++ Improved the timetracker widget on the project dashboard to alternatively take working hours directly as input
++ Re-added closed projects on the desktop
++ Fix deleting of task assignments when deleting a project
++ Enable deleting and editing of customers
++ Make the password field in add user obfuscated
++ Fix replying to messages on the desktop
++ Fix cancel buttons in desktop->add task and desktop->edit project
++ Fix inserting uploaded images from the tinyMCE image list
++ Make the datepicker fade out faster

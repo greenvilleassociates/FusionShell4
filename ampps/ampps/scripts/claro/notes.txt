@@ -1,0 +1,5 @@
+1. While installation keep Prefix for course tables and Prefix for main tables same 
+2. institution_name : Softaculous
+3. institution_url : softaculous.com
+4. We have changed php requirement to 5.3 because its not working on 5.2
+5. Release date : https://sourceforge.net/projects/claroline/files/Claroline/

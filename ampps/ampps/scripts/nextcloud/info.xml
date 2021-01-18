@@ -1,0 +1,80 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Nextcloud
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/files/Nextcloud
+	</ratings>
+	<space>
+		463643221
+	</space>
+	<support>
+		https://help.nextcloud.com/categories
+	</support>
+	<version>
+		20.0.5
+	</version>
+	<mod>56</mod>
+	<release_date>15-01-2021</release_date>
+	<admin>index.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.2.0" />
+	<requirement check="php" type="extension" name="ctype" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="dom" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="iconv" />
+	<requirement check="php" type="extension" name="json" />
+	<requirement check="php" type="extension" name="libxml" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="openssl" />
+	<requirement check="php" type="extension" name="session" />
+	<requirement check="php" type="extension" name="SimpleXML" />
+	<requirement check="php" type="extension" name="xmlreader" />
+	<requirement check="php" type="extension" name="xmlwriter" />
+	<requirement check="php" type="extension" name="zip" />
+	<requirement check="php" type="extension" name="zlib" />
+	<languages>
+	<english-overview>
+	<font size="5" color="#182e7a">Nextcloud</font> is open source file sync and share software for everyone from individuals operating the free Nextcloud Server in the privacy of their own home, to large enterprises and service providers supported by the Nextcloud Enterprise Subscription. Nextcloud provides a safe, secure, and compliant file synchronization and sharing solution on servers that you control.
+	<br/><br/>You can share one or more files and folders on your computer, and synchronize them with your Nextcloud server. Place files in your local shared directories, and those files are immediately synchronized to the server and to other devices using the ownCloud / Nextcloud Desktop Sync Client, Android app, or iOS app.<br/><br/>
+	Nextcloud is released under the <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank">GNU AGPLv3.</a>.
+	</english-overview>		
+	<english-features>
+	<ul>
+	<li>Nextcloud puts you in control</li>
+	<li>File access and sharing</li>
+	<li>Security and control</li>
+	<li>Monitoring your Nextcloud server</li>
+	<li>Mobile and desktop clients</li>
+	<li>External storage</li>
+	<li>Calendar and Contacts</li>
+	<li>Secure audio and video calls</li>
+	<li>Collabora Online Office</li>
+	<li>Nextcloud is open source - there are no limitations and you can inspect, integrate, extend and modify Nextcloud however you want</li>
+	<li>Nextcloud offers an easy to use user interface which comes with search functionality, favorites, tags and even more ways to quickly reach the files you need</li>
+	<li>Document editing and thumbnail previews of PDF, images, text files, office files and more</li>
+	<li>Integration of anti-virus scanning functionality with the anti-virus app</li>
+	<li>Pre-loaded files and folders for new users. Populate a new user's Files area with, for example, a tutorial file, which appears when they first log in.</li>
+	<li>Powerful, integrated logging and password policy control functionalities</li>
+	<li>Fine-grained control from mobile, desktop or the Web over data access and sharing capabilities. Pick from the list of users and groups, stored either locally or on another, authorised, server.</li>
+	<li>Advanced quota management with configurable accounting of external storage</li>
+	<li>Sharing and Provisioning REST APIs. Facilitates the integration of remote 3rd party apps</li>
+	<li>Quick access to core functions for app development with the powerful Nextcloud App API and webhooks following the publication / subscription model</li>
+	<li>Built in, easy to use theming</li>
+	</ul>
+	</english-features>
+	<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+	<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+	<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+	</languages>
+</soft>

@@ -1,0 +1,75 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		https://demo.domainmod.org/
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/others/DomainMOD
+	</ratings>
+	<space>
+		9363125
+	</space>
+	<support>
+		https://domainmod.org/support/
+	</support>
+	<version>
+		4.16.0
+	</version>
+	<mod>17</mod>
+	<release_date>03-11-2020</release_date>
+	<admin>index.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.5.0" />
+	<requirement check="mysql" type="version" operator="lt" value="8.0.0" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">DomainMOD</font> is an open source application written in PHP &amp; MySQL used to manage your domains and other internet assets in a central location. DomainMOD also includes a Data Warehouse framework that allows you to import your web server data so that you can view, export, and report on your live data.<br/><br/>
+		DomainMOD is released under the <a href="http://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GNU GENERAL PUBLIC LICENSE</a>.
+		</english-overview>		
+		<english-features>
+			<ul>
+				<li><b>Central Management</b><br/>
+					In addition to keeping track of your domains you can also manage your SSL certificates, registrar and SSL accounts, hosting, DNS servers, IP addresses, account owners, and more.<br/>
+				</li>
+				<li><b>Registrar Importing</b><br/>
+					Get up-and-running in a flash by importing your domains using your domain registrar's API. Simply add the API credentials, choose the account, and let DomainMOD do the rest.<br/>
+				</li>
+				<li><b>Bulk Domain Updater</b><br/>
+					There's no need to waste time updating your domains one-by-one, with the Bulk Updater you can modify as many domains as you want, all with a couple clicks of a mouse.<br/>
+				</li>
+				<li><b>Custom Data Fields</b><br/>
+					Using Custom Fields you can track an unlimited amount of information for your domains &amp; SSL certificates. With the ability to export this data, the tracking possibilities are endless.<br/>
+				</li>
+				<li><b>Reporting</b><br/>
+					Your data is virtually useless without the ability to make sense of it, so DomainMOD contains a Reporting section that allows you to run various reports against your data.<br/>
+				</li>
+				<li><b>Segment Filters</b><br/>
+					Segments allow you to save lists of domains that you can use to filter against your main domains. You can see how many match, how many don't, and easily view the results.<br/>
+				</li>
+				<li><b>User-Based Currencies</b><br/>
+					Every user can set their currency and it will be used throughout the entire system. Every setting, webpage, report, and export will automatically display values in the user's currency. <br/>
+				</li>
+				<li><b>Task Scheduler</b><br/>
+					The Task Scheduler allows you to run system tasks at set times. You can run currency conversions, send emails about upcoming expirations, check for new DomainMOD versions, and more!<br/>
+				</li>
+				<li><b>Data Warehouse</b><br/>
+					The built-in Data Warehouse lets you import data from your WHM web servers, which you can view, export, and run reports against in order to gain insight into your server data.
+				</li>				
+				<li><b>Mobile-Friendly</b><br/>
+					Built on Twitter Bootstrap, DomainMOD was designed from the ground up with mobile in mind, so you'll never have a problem accessing your data while you're on the go<br/>
+				</li>
+				
+			</ul>		
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

@@ -1,0 +1,1 @@
+Release date : https://github.com/LibreHealthIO/LibreEHR/releases

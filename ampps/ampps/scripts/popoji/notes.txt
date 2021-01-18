@@ -1,0 +1,2 @@
+1. select "site_timezone"	"America/New_York" in manual
+2. Minimum requirement is set to 5.5. Confirmed from vendor.

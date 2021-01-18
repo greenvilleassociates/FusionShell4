@@ -1,0 +1,11 @@
+.htaccess
+404.php
+LICENSE
+README
+index.php
+install.php
+maintenance.php
+po-admin
+po-content
+po-includes
+vqmod

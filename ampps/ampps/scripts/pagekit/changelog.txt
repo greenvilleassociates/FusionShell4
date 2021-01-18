@@ -1,0 +1,35 @@
+# Changelog
+
+## 1.0.18 (January 20, 2020)
+
+### Security
+- CSRF vulnerability in Finder, discovered by Christian Bortone
+
+## 1.0.17 (July 11, 2019)
+
+### Added
+- Added new translations
+
+## 1.0.16 (January 18, 2019)
+
+### Fixed
+- Fixed Google reCAPTCHA
+
+## 1.0.15 (November 14, 2018)
+
+### Added
+- Added Google reCAPTCHA for user registration and blog comments
+
+### Fixed
+- Fixed `isValidFilename` method in FinderController
+
+## 1.0.14 (July 17, 2018)
+
+### Fixed
+- Fixed browser autocomplete on login page
+- Fixed module renaming on update
+
+### Security
+- Open redirect vulnerability on login page, discovered by zhihua.yao from DBAPPSecurity
+- Administrator profiles can only be managed by administrators
+

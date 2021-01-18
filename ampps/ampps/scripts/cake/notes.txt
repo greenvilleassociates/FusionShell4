@@ -1,0 +1,10 @@
+1. PHP REQUIREMENT LINK: https://book.cakephp.org/4/en/installation.html
+2. Set "DEBUG" true in  "config/app.php"
+3. We have copied logs folder from older version inside our package. As it throws error.(Log folder added in version 4.0.2)
+4. We have added database settings in app.php file explicitly in version 4.0.0 i.e,
+'host' => '[[softdbhost]]',
+'username' => '[[softbuser]]',
+'password' => '[[softdbpass]]',
+'database' => '[[softdb]]',
+as they were not present in version 4.0.0, and they are needed to connect to database. Please check in next version.(If not present add them below the line 'persistent' => false, under ORM settings in app.php file).(Not needed since 4.0.2 as script now uses app_local.php for configuration and provides way to configure database settings.)
+5. Use app_local.php and not app.php for configuring database settings in manual installation(As settings in app_local.php override settings in app.php)(Since version 4.0.2)

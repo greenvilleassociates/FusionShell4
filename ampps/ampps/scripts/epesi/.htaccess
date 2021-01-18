@@ -1,0 +1,8 @@
+Options -Indexes
+#SecFilterEngine Off
+
+
+<IfModule mod_alias.c>
+RedirectMatch 404 /\\.svn(/|$)
+RedirectMatch 404 /\\.git(/|$)
+</IfModule>

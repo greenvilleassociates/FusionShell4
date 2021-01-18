@@ -1,0 +1,88 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/ChurchCRM
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/erp/ChurchCRM
+	</ratings>
+	<space>
+		63060881
+	</space>
+	<support>
+		http://churchcrm.io/support/
+	</support>
+	<version>
+		4.3.1
+	</version>
+	<mod>42</mod>
+	<release_date>10-12-2020</release_date>
+	<admin>Login.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.3.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.5.0" />
+	<requirement check="php" type="extension" name="pcre" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="phar" />
+	<requirement check="php" type="extension" name="session" />
+	<requirement check="php" type="extension" name="xml" />
+	<requirement check="php" type="extension" name="exif" />
+	<requirement check="php" type="extension" name="iconv" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="fileinfo" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="gettext" />
+	<requirement check="php" type="extension" name="intl" />
+	<requirement check="php" type="extension" name="json" />
+	<requirement check="php" type="extension" name="zip" />
+	<requirement check="php" type="extension" name="bcmath" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">ChurchCRM</font> is a free church management platform. Manage your congregation's information, online and in person giving, groups, church, sunday school attendance and much more.
+		<br /><br />
+		ChurchCRM is released under the <a href="https://opensource.org/licenses/MIT" target="_blank">The MIT License (MIT)</a>.
+		</english-overview>		
+		<english-features>
+			<ul>
+				<li><b>Dashboards</b> : Dashboards gives you quick view about your members</li>
+				<li><b>Data Import</b> : You can import data from a comma-separated value (.csv) file</li>
+				<li><b>Congregation Features</b>
+					<ul>
+						<li>Group members into families</li>
+						<li>Upload family and members photo</li>
+					</ul>
+				</li>
+				<li><b>Sunday School</b>
+					<ul>
+						<li>Sunday School class reports with child and parent contact information</li>
+						<li>Email Sunday School class, teachers, and parents with the click of a button</li>
+					</ul>
+				</li>
+				<li><b>Maps</b> : Visualize members' home addresses with Google Maps integration</li>
+				<li><b>MailChimp</b> : Integration with MailChimp lists</li>
+				<li><b>Reports</b>
+					<ul>
+						<li>Email all families at once requesting info verification</li>
+						<li>Generate deposit slips</li>
+						<li>Generate end-of-year donation reports</li>
+					</ul>
+				</li>
+				<li><b>Finances</b> : ChurchCRM has a finance function for tracking tithes, pledges and gifts.</li>
+				<li><b>Fundraiser</b> : Fundraiser automation is used for events where members are buying and selling items and/or services to benefit the church</li>
+				<li><b>Volunteers</b> : This feature is used to keep track of talent and the willingness of volunteers for specific tasks</li>
+				<li><b>Calendar</b> : Keep track of events and member birthdays</li>
+				<li><b>Canvass Support</b> : ChurchCRM includes comprehensive support to facilitate an every-member canvass effort.</li>
+			</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

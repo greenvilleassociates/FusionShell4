@@ -1,0 +1,7 @@
+1. While installing on webuzo give writable permission to cache
+2. Choose password encryption method sha1 (Not Required since 3.1.0.0)
+3. Upgrade requires old installation to be deleted and have to safe guard config file and public folder. (confirmed by vendor). Everytime change version in upgrade.php __pre_unzip function. or remove condition of version in next update. (Added in 3.0.2.0)
+4. PHP REQUIREMENT LINK: https://pkp.sfu.ca/ojs/ojs_download/
+5. Select MySQLi in manual installation.
+6) Please check symlinks every time  by checking difference in the original zip and ground zip.
+7) Tick on all addition languages except English in manual installation.

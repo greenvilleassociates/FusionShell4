@@ -1,0 +1,147 @@
+Version 2.3.5 (April 25th, 2020)
+------------------------------------------------------------------------
+
+   * Fix: CSS: Restrict block display of summary to trackbacks. (#703)
+
+   * Fix: Don't strip HTML from comments body in serendipity_plugin_comments
+          before serendipity_event_unstrip_tags can convert the HTML tags
+          (being called via frontend_display hook). (#702)
+
+   * Fix: [CKE] Don't remove <details> and <summary> elements from
+          WYSIWYG editor.
+
+   * Fix: Don't delete extend properties from the entryproperties
+          plugin when publishing from dashboard (or sending
+          delayed trackbacks). (#695)
+
+   * Fix: SQL error in serendipity_plugin_history present since we
+          "don't allow requesting an archive page that doesn't exist"
+          (2.3.3). (#694)
+
+   * Fix: Entry title in backend list of entries was double escaped.
+
+   * Fix: Don't drop upgraded_version from local plugin cache.
+
+   * Fix: Regular expression in functions_routing.inc.php
+
+   * Fix: Truncate extension of media items to 5 chars (which ist the
+          max length of the corresponding database field). (#609)
+          Thanks to @mmitch!
+		  
+Version 2.3.4-beta1 (March 25th, 2020)
+------------------------------------------------------------------------
+
+   * Security: Fix RCE on Windows.
+     Thanks to Junyu Zhang <rgdz.eye@gmail.com>!
+
+   * Fix: ML: Fixed filename generation when renaming and added
+          some error messages on rename failures.
+
+   * Display source of plugins (Spartacus, bundled or locally installed).
+   
+Version 2.3.3 (March 22nd, 2020)
+------------------------------------------------------------------------
+
+   * #651: When using checkboxes to insert multiple media files, if only
+     one asset has been selected, do not use the gallery mode,
+     but instead single-asset view. Also improves to click the title
+     of an asset to select its checkbox, and hides the 'Insert all'
+     button when no assets are selected. (garvinhicking)
+
+   * Use the video tag for videos in the Medialibrary, also when
+     inserting such a video into an entry
+
+   * media_choose.tpl: Fixes bad usage of
+     {serendipity_hookPlugin eventData=...} to {serendipity_hookPlugin eventData=}
+     and allow plugins to skip HTML block insertion to use their own
+     markup
+
+   * Updates mailer event plugin to support force sending mails on
+     published blog entries and ability to prepend a mail body. 
+     Also fixes missing "keep strip tags" configuration option
+
+   * Fix serendipity_killPath().
+     Thanks to @surrim!
+
+   * Don't allow requesting an archive page that doesn't exist.
+     Thanks to @lotharsm!
+
+   * Fix: Set action to empty in functions_routing.php when serving JS;
+     otherisw the default page has been generated at every call.
+
+   * Fix: Add valid HTTP referrer when trying to delete a
+     trackback from the frontend.
+
+   * Fix: Wordwrap at word boundaries only in bundled plugin
+          serendipity_plugin_comments.
+
+   * Fix: Force empty limit to "" in serendipity_fetchEntries().
+
+   * Fix: Escape version string in update notifier to avoid XSS.
+
+   * Fix: Prevent renaming a ML object into an existing file,
+          resulting in deletion of both from disk and database.
+
+   * Fix: Items in Medialibrary that are not images now get
+          the correct link
+
+   * Fix: Remember where you stored images last (#652)
+
+   * Fix: [bbcode] Get roman numerals working in bbcode plugin.
+          Thanks to Fabien Chabreuil!
+
+   * Fix: Force positive limits for number of entries shown on
+          title page and in RSS feed. s9y doesn't work with 0 or
+          negative numbers, so force our default (15) in this case,
+          (#646)
+
+Version 2.3.2 (October 16th, 2019)
+------------------------------------------------------------------------
+
+   * Fix: Auto-generated mails submitted to qmail as MTA will get
+          mangled if encoded to quoted-printable due to qmail
+          changing "\r\n" linebreaks to "\r\r\n". Submit just "\n"
+          as linebreaks; other MTAs should cope with that.
+
+   * fix: Rotating an image did not rotate all responsive thumbnails
+   
+   * fix: The wysiwyg editor stripped the figcaption element used
+          for image captions
+
+   * Only populate $serendipity['GET'], $serendipity['POST'] and
+     $serendipity['COOKIE'] with references to $_GET['serendipity'],
+     $_POST['serendipity'], $_COOKIE['serendipity'] if they are
+     transmitted as an array. Else, an empty array is used.
+     Prevents PHP warnings (Issue 642) thanks to @hannob
+
+   * Escape category images to avoid backend XSS.
+     Thanks to @hannob!
+
+   * Only allows .txt and .log files for spamblock logging.
+     Thanks to Gary O'Leary-Steele (CVE TBD)
+
+   * Fixes not properly displaying plugin save errors (validation)
+
+   * Fix autologin when using MySQL (thanks @Eike Rathke,
+     https://github.com/s9y/Serendipity/pull/632)
+
+Version 2.3.1 (21.08.2019)
+------------------------------------------------------------------------
+
+   * Enhance i18n of ML multimove.
+
+   * Fix ML multidelete.
+
+   * Change footer_info and prev/next links for archive pages for
+     "stable archives" sort order.
+
+   * Fix pagination in core for "stable archives" sort order and fix
+     prev/next links for pagination in timeline and bulletproof themes
+     when "stable archives" are active.
+
+   * Add Spartacus links ("more info") to plugin lists.
+
+   * Fix/Change: Wording of plugin display ("version") and PHP/smarty
+                 variable names.
+
+   * Spartacus: Fix caching of plugin lists in getCachedPlugins().

@@ -1,0 +1,8 @@
+1. Download English pack from http://www.igalerie.org/forum/viewtopic.php?id=1942
+	copy locale/en_GB from this pack to zip at locale/en_GB and images/flags/en_GB.png from this pack to zip at images/flags/en_GB.png
+2. Default time zone: America/Newyork
+3. PHP REQUIREMENT LINK : http://www.igalerie.org/documentation/installation
+4. Delete entries from sessions table and sessions_users table as well.
+5. Upgrade from version 2.x to 3.x is not possible. http://www.igalerie.org/documentation/mise-a-jour
+Enable upgrade from next 3.x version.
+6) We do not provide English language from 3.0.3 as vendor has not provided english language. We have requested them but they do not have any plan to add English translation now. We will add it once they provide it.

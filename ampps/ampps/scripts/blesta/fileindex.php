@@ -1,0 +1,13 @@
+.htaccess
+app
+cache
+components
+config
+core
+helpers
+index.php
+install.php
+language
+lib
+plugins
+vendors

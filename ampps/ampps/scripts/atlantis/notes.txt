@@ -1,0 +1,13 @@
+1. Take dump after installing composer and while making package, check and include bootstrap/cache/* in zip.
+2. Installation http://www.atlantis-cms.com/docs 
+	i.e eg : 
+	1. Download and extract atlantis package 
+	2. download composer and install in directory
+	php composer.phar install --prefer-dist
+	3. php artisan key:generate
+	3. php artisan atlantis:set:db
+	4. php artisan atlantis:install
+4. Add relativeurl in .htaccess RewriteBase
+5. take sql dump after command line installation
+6. set APP_DEBUG is false in .env
+7. RELEASE DATE : https://bitbucket.org/aggressione/atlantis3/downloads/?tab=tags

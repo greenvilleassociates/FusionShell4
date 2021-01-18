@@ -1,0 +1,22 @@
+1) Do not install with Demo data.
+2) SuiteCRM asks only for MySQLi
+3) Dont forget to add the "generatepasswordtmpl" and "lostpasswordtmpl" in email_templates table in SQL
+4) Add :
+
+error_reporting(E_PARSE);
+
+$sugar_config['http_referer']['list'][] = '[[servervar]]'; 
+
+in config_override.php
+
+5) Make script where Database ENGINE is InnoDB
+
+6) Check and replace custom folder from manual to zip if there are any changes.
+
+7) Give writeble permission to install directory in manual installation to create status.json.
+
+8) PHP REQUIREMENT LINK : https://docs.suitecrm.com/admin/compatibility-matrix/#7.11.x
+
+9) We do not provide Upgrade in SuiteCRM because there is no manual upgrade utility and they have stated in their guide that "Note: Manual upgrades by file replacements and running the upgrade SQL are not supported." Upgrade Guide : https://suitecrm.com/wiki/index.php/Upgrade#Upgrading_SuiteCRM
+
+10) We do not change "MySettings" value in `config` table because they are default module names. Check with base64_decode('value');

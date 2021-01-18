@@ -1,0 +1,31 @@
+Version 1.33.0 (July 14, 2020): #
+
+    settings for the Best listings widget (for Basis and Dolphin themes);
+    the capability to download images appeared for "Information Pages" in Popular Destinations widget (for Basis and Dolphin themes);
+    on the video tab, it's enough to specify the youtube URL for video addition;
+    setting "Convert Youtube URL to Video". When you turn it on, all Youtube Url in the object's description, materials, info pages changed to a video player;
+    the capability to add API key in the website settings for currency conversion using currencyconverterapi.com service (for paid Basic / PRO / Ultimate versions);
+    module "Tariff plans" - limitation of adding objects for tariff plans "Free";
+    module "Tariff plans" - different tariff plans for different types of users;
+    in the list of users displaying only those who have objects.;
+    multiple improvements and speedwork increase.: https://monoray.net/forum/viewtopic.php?f=3&t=1447
+
+Version 1.32.2 (May 6, 2020): #
+
+    yii 1.1.22;
+    minor bugfixes.
+	
+Version 1.32.1 (April 17, 2020): #
+
+    minor bugfixes.
+
+Version 1.32.0 (April 5, 2020): #
+
+    now Atlas design theme is added in the Free version;
+    minor improvements and bugfixes.
+
+Version 1.31.0 (February 25, 2020): #
+
+    new website section and the "Favorites" function;
+    the payment system Robokassa's work corrected in testing mode;
+    minor improvements and bugfixes.

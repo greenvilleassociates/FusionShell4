@@ -1,0 +1,4 @@
+1) Install using Classic method(HTTP).
+2) Languages to install (Keep default(i.e english)).
+3) PHP REQUIREMENT LINK: /readme.txt
+4) We have kept version as 2.3.0 for 2.3.0.2 in info.xml since file from which we import i.e appCore/versions.php vendor hasn't changed the version but he has provided crucial bugfix and security fixes.

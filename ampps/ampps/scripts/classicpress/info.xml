@@ -1,0 +1,50 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.png" style="float:right;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/ClassicPress
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/cms/ClassicPress
+	</ratings>
+	<space>
+		28223451
+	</space>
+	<support>
+		https://forums.classicpress.net/
+	</support>
+	<version>
+		1.2.0
+	</version>
+	<mod>4</mod>
+	<mod_files>1</mod_files>
+	<release_date>16-09-2020</release_date>
+	<admin>wp-admin/</admin>
+	<softversion>
+		4.1.7
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.6.0" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">ClassicPress</font> is a community-led open source content management system and a fork of WordPress 4.9.x that preserves the classic TinyMCE editor as the default option. It will be immediately familiar to WordPress 4.9.x users.<br /><br />
+		We believe that when we combine careful, deliberate planning with the insight and collective wisdom of the ClassicPress community, we will ensure the success of ClassicPress for many years to come.<br /><br />
+		Check out our <a href="https://www.classicpress.net/roadmap/" target="_blank">roadmap</a> to learn more.<br /><br />
+		We have an active and growing community of users from many different backgrounds. Whether you are a developer, designer, business owner, or blogger, the ClassicPress Forums are where you can discuss all things ClassicPress. Add your voice to the conversation!<br /><br />
+		ClassicPress is released under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html" target="_blank">GNU General Public License version 2 (GPLv2)</a> (or later) license from the <a href="https://www.fsf.org/" target="_blank">Free Software Foundation</a>.
+		</english-overview>
+		<english-features>
+		ClassicPress retains many of the great features of WordPress. However, in addition, it also has these noteworthy qualities :<br /><br />
+		<ul>
+			<li><b>Improved Security</b> : Concerned about security? ClassicPress has a “security-first” approach. No matter how shiny or exciting a new feature is, if it’s not secure, it won’t be added to the platform.</li><br />
+			<li><b>Less Bloat</b> : We believe that powerful does not need to mean code-heavy. We've trimmed unnecessary plugins and features from ClassicPress core, and continue to actively seek smart ways to reduce code bloat.</li><br />
+			<li><b>Block-free</b> : Choose the development path that works best for you. With the flexibility and stability that ClassicPress provides, you have the freedom to create a solution that meets your unique needs.</li>
+		</ul>
+		</english-features>
+		<english-err_no_signon_user>The signon username is incorrect and does not exist!</english-err_no_signon_user>
+		<english-err_invalid_username>The username you provided has invalid characters</english-err_invalid_username>
+	</languages>
+</soft>

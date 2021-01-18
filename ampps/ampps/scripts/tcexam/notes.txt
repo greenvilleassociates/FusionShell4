@@ -1,0 +1,5 @@
+1. The installer is at /install/install.php
+2. Rename config.default to config in our package.
+3. For major upgrades please change upgrade.php to import sql according to version
+4. Upgrade is Disabled from version lower than 14.0.0 because password utility is changed. No utility to change password after upgrade. (User need to hash their password and make entry in DB. Confirm with vendor). Enable upgrade from 14.0.0 as user will not required to change password. Also, add upgrade file in upgrade folder if required and make changes in upgrade.php. 
+5. PHP REQUIREMENT LINK: https://tcexam.org/docs/installation/

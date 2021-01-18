@@ -1,0 +1,1 @@
+1. use step10 at "install/install.php?step=10&URL=" while making CURL call, since the vendor has made customization for Softaculous in installer.

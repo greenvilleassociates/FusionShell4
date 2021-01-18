@@ -1,0 +1,5 @@
+1. Select MySQLi in manual installation.
+2. PHP REQUIREMENT LINK: https://pkp.sfu.ca/ops/ops_download/
+3. Tick on all addition languages except English in manual installation and add them in install.xml if any new language is added.
+4. Add upgrade in next version itself.
+(Added in version 3.2.1.2)

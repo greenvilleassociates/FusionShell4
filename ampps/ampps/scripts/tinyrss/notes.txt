@@ -1,0 +1,10 @@
+1) Add following in `ttrss_user_prefs` table:
+
+INSERT INTO `ttrss_user_prefs` VALUES
+(1, 'USER_LANGUAGE', '[[language]]', NULL);
+
+2) Make script where Database ENGINE is InnoDB
+
+3) Check for language
+4) Release date : https://git.tt-rss.org/git/tt-rss/src/17.4
+5) PHP Requirement Link: https://git.tt-rss.org/fox/tt-rss/wiki/InstallationNotes

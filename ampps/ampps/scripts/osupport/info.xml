@@ -1,0 +1,73 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/OpenSupports
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/customersupport/OpenSupports
+	</ratings>
+	<space>
+		16330772
+	</space>
+	<support>
+		https://www.opensupports.com/documentation/
+	</support>
+	<version>
+		4.9.0
+	</version>
+	<mod>16</mod>
+	<release_date>09-01-2021</release_date>
+	<admin>admin</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.6.0" />
+	<requirement check="php" type="extension" name="pdo" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">OpenSupports</font> is an open source ticket system for giving support to your clients. It provides you with a better management of your users inquiries. The software has tools to manage the tickets, like departments, staff members, custom responses, multi-language support.
+		<br /><br />
+		OpenSupports is released under the <a href="https://github.com/opensupports/opensupports/blob/master/LICENSE" target="_blank">GNU General Public License v3.0</a>.
+		</english-overview>
+		<english-features>
+			<ul>
+				<li>Responsive design<br/>
+					OpenSupports is responsive, that means it looks well in phones, tablets and desktop computers.
+				</li>
+				<li>Custom Responses<br/>
+					Don't repeat yourself. With our system you can customize your own templates to respond tickets.
+				</li>
+				<li>Articles and Topics<br/>
+					Create articles to solve your customer's frequently asked questions (FAQs), and to provide them with How-To Guides about your product or service.
+				</li>
+				<li>Staff members<br/>
+					Add as many staff members as you want, and assign each of them the set of departments they will respond.
+				</li>
+				<li>Departments<br/>
+					Every ticket belongs to one department. You can assign each staff member a set of departments he will be in charge.
+				</li>
+				<li>File Attachments<br/>
+					Staff members and your customers can attach files to comments in tickets. You can decide the maximum size of these files.
+				</li>
+				<li>CSV Import<br/>
+					You can import users to your OpenSupports via a simple CSV file. Every row should have username, password and email.
+				</li>
+				<li>Notifications<br/>
+					You can easily see a log of all the last actions that have taken place in your OpenSupports website.
+				</li>
+				<li>Email Templates<br/>
+					You can customize your email templates for common actions in OpenSupports to look according to your company style.
+				</li>
+			</ul>
+		</english-features>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_email>Please provide the email to reset the password</english-err_no_email>
+		<english-err_no_such_email>The Admin email is incorrect and does not exist!</english-err_no_such_email>
+	</languages>
+</soft>

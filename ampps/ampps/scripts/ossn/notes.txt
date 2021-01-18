@@ -1,0 +1,4 @@
+1. PHP REQUIREMENT LINK : https://www.opensource-socialnetwork.org/wiki/view/706/how-to-install-open-source-social-network
+2. Take database dump on login page.
+3. We have commented code in /installation/pages/check.php to disable code which was checking if the cache folder is to be created by user. For this manual installation was asking root directory writable to create cache folder. (Confirmed with vendor over email)
+(Same is checked and code is commented in OSSN 5.6 as well)

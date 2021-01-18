@@ -1,0 +1,8 @@
+1. Install with "new-world" theme and sample data
+2. We have disabled upgrade because 1.0.8 version uses Laravel framework and they changed their structure of the "config/app.php" file in which contains the site's Secret Key. (Confirmed with vendor via email)
+3. Always download the latest update zip from :
+https://github.com/microweber/dist/raw/master/microweber-update.zip
+and update this zip under "update" directory. (Just unzip this update zip over the existing installation and visit the installation, upgrade shall be done automatically. Confirmed by vendor via email) ADD AFTER 1.0.8
+4. PHP REQUIREMENT LINK: https://github.com/microweber/microweber#requirements
+5. Need to copy mw_content.json from manual as it is not generating after login. We can compare its content from Original zip userfiles\templates\{{pre-filled template}}\mw_default_content.zip (Not required now since we have adjusted that in install.php)
+6. Remove inserts from `[[dbprefix]]stats_sessions tables as they are created after visiting front link and accessing admin panel.

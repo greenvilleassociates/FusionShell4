@@ -1,0 +1,65 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Xerte_Online_Toolkits
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/educational/Xerte_Online_Toolkits
+	</ratings>
+	<space>
+		102992993
+	</space>
+	<support>
+		http://xerte.org.uk/index.php?option=com_kunena&amp;view=category&amp;Itemid=760&amp;lang=en&amp;layout=list
+	</support>
+	<version>
+	   3.9
+	</version>
+	<mod>16</mod>
+	<release_date>13-09-2020</release_date>
+	<admin>management.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.2.0" />
+	<languages>
+		<english-overview>
+	<font size="5" color="#182e7a">Xerte Online Toolkits</font> is a server-based suite of tools for content authors. Elearning materials can be authored quickly and easily using browser-based tools, with no programming required. Xerte Online Toolkits is aimed at content authors, who will assemble content using simple wizards.
+	<br /><br />
+	Xerte Online Toolkits is released under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License 2.0</a>.
+		</english-overview>		
+		<english-features>
+		<ul>
+		<li>For Quality managers:
+			<ul>
+				<li>Empower : Easy for non-technical staff to create good e-learning resources opening up opportunities for new types of learning (eg distance learning or blended learning)</li>
+				<li>Share : Encourage staff teams to share and adapt resources, improving overall quality and fostering a culture of sharing.</li>
+				<li>Integrate : Xerte integrates with existing tools and practices. Online quizzes, favourite websites, google docs etc can be embedded in Xerte pages.</li> 
+			</ul>
+		</li>
+		<li>For tutors:
+			<ul>
+				<li>Create : Rapidly create quality interactive learning resources or get learners creating for each other. Go beyond PowerPoint with a range of easy to create interactivities.</li>
+				<li>Enhance : Already use YouTube videos? Embed them in Xerte pages and add a reflective quiz. Got some great PowerPoints? Upload to the media store and link to them.</li>
+				<li>Get flexible : Use Xerte objects online or export and use offline where connectivity is limited</li>
+			</ul>
+		</li>
+		<li> For IT teams:
+			<ul>
+				<li>Standards compliant : Xerte toolkits is html5 based - staff (or learners) can create and consume content on a wide range of devices whatever your technology infrastructure.</li>
+				<li>Evolving : Active support is available from a responsive community of developers and experts who are actively engaged on extending Xerte's capabilities.</li>
+				<li>Adaptable : Being open source, Xerte toolkits can be adapted to suit institutional needs or corporate badging.</li>
+			</ul>
+		</li>
+		</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

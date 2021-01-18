@@ -1,0 +1,2 @@
+1. php requirement : https://github.com/uvdesk/community-skeleton#requirements
+2. Change APP_ENV to prod in .env of our package.

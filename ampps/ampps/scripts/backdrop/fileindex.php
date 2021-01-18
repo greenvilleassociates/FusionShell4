@@ -1,0 +1,14 @@
+.editorconfig
+.gitignore
+.htaccess
+LICENSE.txt
+README.md
+core
+files
+index.php
+layouts
+modules
+robots.txt
+settings.php
+sites
+themes

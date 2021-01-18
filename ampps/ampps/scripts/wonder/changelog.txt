@@ -1,0 +1,132 @@
+What's new in v3.1.4
+December 2, 2020
+
+Dear WonderCMS user
+
+- This update introduces a few text changes and 2 bug fixes. More information is available below.
+
+We wish you and your loved ones to stay healthy and safe, happy holidays! 🎄
+
+
+Best wishes,
+- WonderCMS team
+Features & fixes
+
+    Added clearer texts after installing WonderCMS.
+    Fixed custom repository adding bug. We introduced a bug with version 3.1.3 which has now been fixed.
+    Fixed SSRF vulnerability. Authenticated user could install themes/plugins from other sources than Git.
+
+1 click update
+
+    Login to your WonderCMS website and click "Update". Create a backup prior to updating.
+    If you can't see the update, open Settings -> Themes or Plugins and click "Check for updates".
+
+
+What's new in v3.1.3
+October 17, 2020
+
+This update brings a minor fix for supporting GitHub's new default "main" branch name, which enables all new themes/plugins should be working/loading as expected.
+
+This release also includes a new installable translation plugin - Greek.
+
+
+Happy WonderCMS-ing! 🚀
+Features & fixes
+
+    Add support for GitHub's new default branch name "main".
+
+Plugins updates
+
+    New translation plugin: Greek.
+
+1 click update
+
+    Login to your WonderCMS website and click "Update". Create a backup prior to updating.
+    If you can't see the update, open Settings -> Themes or Plugins and click "Check for updates".
+
+Roadmap / Get involved
+Support WonderCMS with a donation
+Support WonderCMS with by getting merch
+
+What's new in v3.1.2
+October 8, 2020
+
+This updates an important debugging fix with the database being randomly overwritten. This patch should prevent any database corruption and log any issues.
+
+If your /data/ folder will contain any error logs after this update, please share it on any of our communcations channels, so the database can be resolved faster and debugging removed from WonderCMS completely.
+
+This release comes with two new installable plugins: Swedish and Portuguese translations!
+
+Happy WonderCMS-ing 🚀
+
+ What's new in v3.1.1
+July 21, 2020
+
+This updates bring three important security fixes as reported by Calvin Phang from SEC Consult. These issues affected only logged in users. This update also includes a few other minor updates.
+
+After 12 years of development, we have finally opened our very own Official Merch Store. Please check it out and support future WonderCMS development.
+
+Happy WonderCMS-ing 🚀
+Features & fixes
+
+    Fixed vulnerabilities.
+    Upgraded WonderCMS updating mechanism to prevent database corruption.
+    Improved file upload allowed extensions list.
+    Other minor improvements.
+
+New themes & plugins + updates
+
+    New theme - Watercolor by Stephan Stanisic (can be installed via Settings -> Themes)
+    Cache plugin - caches all theme/plugin images. Created by Stephan Stanisic (can be installed via Settings -> Plugins)
+    Simple blog - fixed CSS (white background) issue
+    All translation plugins have been updated.
+
+Download / Update instructions
+
+    Login to your WonderCMS website and click "Update". Create a backup prior to updating.
+    If you can't see the update, open Settings -> Themes or Plugins and click "Check for updates".
+
+What's new in v3.1.0
+May 18, 2020
+
+This update brings a lot of speed and easier editing improvements. We have finally detached the WonderCMS Settings panel from requiring Bootstrap or jQuery and have completely rewritten the CSS/JavaScript part of the Settings.
+
+For the first time ever, we're now also providing translation plugins, which will translate your Settings panel into one of the mentioned languages below. Special thanks to Stephan Stanisic.
+
+Additionally, there's a new default theme, along with some new variants - previews and screenshots below.
+
+Happy WonderCMS-ing 🚀
+Features and fixes
+
+    Faster WonderCMS - settings are now completely independent and detached of jQuery and Bootstrap.
+    Translations: Russian, Netherlands, Slovenian.
+    Easier editing - edit icons from "Website title", "Menu" will open the modal window directly to the editable locatation.
+    Settings/Logout buttons are now floating/fixed to avoid theme compatibility issues.
+    Footer is now directly editable.
+    Optimized - admin JavaScript and CSS rewritten from scratch.
+    All alerts are now dismissible until a page refresh is done.
+    Autofocus on input field when logging in.
+    Improved loader when saving and checking for updates.
+    Improved file uploader allowed extensions.
+
+New themes & updates
+
+    New default theme: Essence - can be installed via Settings and Themes.
+    New theme: Violet.
+    New theme: Universe Gradient.
+    These themes are similar with different color schemes.
+
+New plugins & updates
+
+    German, Russian, Dutch and Slovenian plugin translations.
+    Simple blog - improved user experience.
+    Summernote editor - updated to support latest version of WonderCMS.
+    Simple statistics - fixed bug with special characters/UTF-8 encoding.
+    Additional contents - improved buttons without icons.
+    Hits counter - text changes.
+
+Download / Update instructions
+
+    Login to your WonderCMS website and click "Update". Create a backup prior to updating.
+    If you can't see the update, open Settings -> Themes or Plugins and click "Check for updates".
+

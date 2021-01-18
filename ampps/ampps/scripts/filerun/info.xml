@@ -1,0 +1,112 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/FileRun
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/files/FileRun
+	</ratings>
+	<space>
+		30548571
+	</space>
+	<support>
+		https://feedback.filerun.com/
+	</support>
+	<version>
+		2019.12.25
+	</version>
+	<mod>5</mod>
+	<mod_files>2</mod_files>
+	<release_date>25-12-2019</release_date>
+	<admin>index.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.1.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.6.0" />
+	<requirement check="php" type="version" operator="lt" value="7.4.0" />
+	<requirement check="php" type="extension" name="ionCube Loader" />
+	<requirement check="php" type="extension" name="pdo" />
+	<requirement check="php" type="extension" name="openssl" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="exif" />
+	<requirement check="php" type="extension" name="xml" />
+	<requirement check="php" type="extension" name="zlib" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">FileRun</font> is a self-hosted Google Drive/Photos/Music alternative. It is a full featured web based file manager with exceptionally well-polished user interface.
+		<br /><br />
+		FileRun is released under the <a href="http://f.afian.se/wl/?id=zROVSIj1b5jlXxSx25oCuIExDZXZsPi0" target="_blank">FileRun – License Agreement</a>.
+		</english-overview>
+		<english-features>
+			<ul>
+				<li>
+					<b>No import required</b><br/>
+					Just like you do with an FTP server, point FileRun to where you keep the files on your server and you will get instant web access to them.
+					<br/>
+					Want to access your files also by FTP, SMB or WebDAV (server included)? No problem. Upload, download or manage the same files.
+					<br/>
+					All changes made to the files using FTP or other method reflect via FileRun without delay.<br/>
+				</li>
+				<li>
+					<b>Send file requests</b><br/>
+					File requests allow you to collect and receive files from anyone, right into your FileRun user account, with just a link.
+					<br/>
+					File requests are ideal for receiving a large file or collection of files, collecting photos after a special event, and requesting submissions from coworkers and clients.<br/>
+				</li>
+				<li>
+					<b>Guest users</b><br/>
+					Collaborate with other people without creating accounts for them.
+					<br/>
+					Getting feedback on documents, photos or any type of file has never been this easy.<br/>
+				</li>
+				<li>
+					<b>Your files everywhere</b><br/>
+					Access your files from wherever you are using the free mobile apps.
+					<br/>
+					Sync files from your desktop using the free desktop apps.
+					<br/>
+					Access via WebDAV. FileRun comes with its own embedded WebDAV server. No server configuration needed.<br/>
+				</li>
+				<li>
+					<b>Extendable</b><br/>
+					PHP web developers can develop plugins for viewing, creating or manipulating files.
+					<br/>
+					The OAuth2-secured API can be used for programatically interacting with FileRun, or creating more apps for accessing your files.<br/>
+				</li>
+				<li>
+					<b>Safe</b><br/>
+					The automatic file versioning system prevents you from accidentally overwriting existing files.
+					<br/>
+					Deleted files first end up in a trash folder before they get permanently erased.<br/>
+				</li>
+				<li>
+					<b>Secure</b><br/>
+					Cross Site Scripting (XSS) protection.
+					<br/>
+					SQL injections protection.
+					<br/>
+					Session Hijacking protection.
+					<br/>
+					Brute force login attempts protection.
+					<br/>
+					The users input is strictly validated to prevent access outside the allowed folders.
+					<br/>
+					The files can be stored outside the public are of the webserver (ie. outside the "www" folder) so direct access to the files is impossible.
+					<br/>
+					100% support for HTTPS/SSL.<br/>
+				</li>
+			</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+	</languages>
+</soft>

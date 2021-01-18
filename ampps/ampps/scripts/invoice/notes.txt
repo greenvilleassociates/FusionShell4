@@ -1,0 +1,7 @@
+1) Make following changes in .htaccess 
+RewriteBase [[relativeurl_]]
+It is mentioned in installer and on installation document
+2) Please check if new language is added in /application/language then update install.xml
+3) Follow the upgrade guide here :
+https://wiki.invoiceplane.com/en/1.5/getting-started/updating-ip
+4)PHP REQUIREMENT LINK : https://wiki.invoiceplane.com/en/1.5/getting-started/requirements

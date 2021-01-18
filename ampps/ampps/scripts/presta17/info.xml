@@ -1,0 +1,124 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.jpg" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/PrestaShop_1.7
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/ecommerce/PrestaShop_1.7
+	</ratings>
+	<space>
+		284180480
+	</space>
+	<support>
+		http://www.prestashop.com/
+	</support>
+	<version>
+		1.7.7.1
+	</version>
+	<mod>43</mod>
+	<release_date>11-01-2021</release_date>
+	<admin>admin123</admin>
+	<branch>591</branch>
+	<branch>72</branch>
+	<branch>417</branch>
+	<verify_dom>1</verify_dom>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.1.3" />
+	<requirement check="php" type="extension" name="fileinfo" />
+	<requirement check="php" type="extension" name="openssl" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="zip" />
+	<requirement check="php" type="extension" name="PDO" />
+	<requirement check="php" type="extension" name="gd" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">PrestaShop</font> e-Commerce Solution was built to take advantage of essential Web 2.0 innovations such as dynamic AJAX-powered features and next-generation ergonomy. PrestaShop guides users through your product catalog intelligently and effortlessly, turning intrigued visitors into paying customers.
+		<br /><br />
+		PrestaShop is available under the <a href="http://www.prestashop.com/en/osl-license" target="_blank">Open Software License</a>
+		</english-overview>		
+		<english-features>
+<h3>Templates</h3>
+<ul>
+	<li>You're in creative control</li>
+	<li>Stand out with mobile-responsive design</li>
+	<li>2,000+ professional ecommerce website templates</li>
+	<li>Meet our network of expert designers</li>
+	<li>Designers, make your mark</li>
+</ul>
+<h3>Store Builder</h3>
+<ul>
+	<li>310+ powerful built-in features to help you sell more</li>
+	<li>Wow visitors with a storefront designed to convert</li>
+	<ul>
+		<li>Product Quick View</li>
+		<li>Attractive Promotional Banners</li>
+		<li>Add-to-Cart with Cross Selling</li>
+	</ul>
+	<li>Offer customers a seamless, user-friendly shopping experience</li>
+	<ul>
+		<li>Product Page Layout</li>
+		<li>Instant Filtered Search</li>
+		<li>Powerful Navigation</li>
+	</ul>
+	<li>Simplify day-to-day management with a centralized back office</li>
+	<ul>
+		<li>Quick Install Features</li>
+		<li>Intuitive Interface</li>
+		<li>Brilliant Analytics</li>
+	</ul>
+</ul>
+<h3>Shopping Cart</h3>
+<ul>
+	<li>Accept payments instantly</li>
+	<li>Configure shipping with major carriers</li>
+	<li>Easily set up tax rules</li>
+	<li>Seamless customer checkout</li>
+	<li>Integrated customer service tools</li>
+</ul>
+<h3>Mobile</h3>
+<ul>
+	<li>Stay close to your customers, wherever they go</li>
+	<li>Smooth mobile checkout</li>
+	<li>Manage your shop on-the-go, 24/7</li>
+</ul>
+<h3>eMarketing</h3>
+<ul>
+	<li>Rocket to the top of search results</li>
+	<li>Turn data into sales</li>
+	<li>Sprint ahead with fully-loaded online marketing features</li>
+	<ul>
+		<li>Set cart rules</li>
+		<li>Offer coupons &amp; vouchers</li>
+		<li>Encourage customer reviews</li>
+		<li>Build customer loyalty</li>
+		<li>Dominate email marketing</li>
+	</ul>
+</ul>
+<h3>International</h3>
+<ul>
+	<li>Localize currencies, taxes and units of measure</li>
+	<li>Flexible location-based logistics</li>
+	<li>Integration Fund</li>
+</ul>
+<h3>Integrations</h3>
+<ul>
+	<li>310+ built-in features</li>
+	<li>Official partner features and services at your finger tips</li>
+	<li>Integrate the power of PrestaShop Addons</li>
+	<li>Developers, come on over</li>
+</ul>
+		</english-features>
+		<english-ad_dir>Admin Folder</english-ad_dir>
+		<english-err_admin_folder>The Admin folder name cannot be "admin" !</english-err_admin_folder>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_email>Please provide the email to reset the password</english-err_no_email>
+		<english-err_no_such_email>The Admin email is incorrect and does not exist!</english-err_no_such_email>
+	</languages>
+</soft>

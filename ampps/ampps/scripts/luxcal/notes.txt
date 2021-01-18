@@ -1,0 +1,3 @@
+1) Installation file name is based on version i.e install422.php In every update change install...php in install.xml i.e  <exclude>install422.php</exclude> and also change 'update...php' in upgrade.xml i.e <setuplocation>upgrade460.php</setuplocation>
+2) In manual install New to install: mycal = softaculous
+3) PHP REQUIREMENT LINK : https://www.luxsoft.eu/index.php?pge=dtail

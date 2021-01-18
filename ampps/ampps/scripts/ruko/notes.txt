@@ -1,0 +1,2 @@
+1. Check upgrade procedure everytime and change upgrade files accordingly.
+2. PHP REQUIREMENT LINK : https://www.rukovoditel.net/download.php

@@ -1,0 +1,9 @@
+1. The default home page is Forbidden in the package itself and we do not redirect to admin page because if we redirect there is no point to change the admin folder.
+2. Change the index.html on demo to redirect to admin page.
+3. Select timezone as : America/New_York.
+4. We have added admin_tips.txt to the package as the upgrade utility does not want any files from the folder except this file so we exclude the complete folder and copy the file. (Not required in 3.0)
+5. We have disabled upgrade from version 2.5 to 3.0 because while upgrading to 3.0, script ask for change of password using lost password utility which further ask for valid email id. and also it requires completely new config.php so all old database details will be required.
+https://www.commentics.org/upgrade
+Try to add it in next version. (Added from v3.2 with min requirement as v3.0)
+6. PHP REQUIREMENT LINK : docs/requirements.txt
+7. We have changed PHP requirement in info.xml to PHP 5.4.0 due to syntax error on PHP 5.3.0.(Change this if vendor fixes the issue for same)

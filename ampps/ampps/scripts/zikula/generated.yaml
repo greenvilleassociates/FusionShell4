@@ -1,0 +1,30 @@
+#This is a dynamically generated configuration file. Do not touch!
+
+jms_i18n_routing:
+    strategy: prefix_except_default
+parameters:
+    localisation.locales:
+        - en
+    zikula.session.name: _zsid
+    zikula.session.handler_id: session.handler.native_file
+    zikula.session.storage_id: zikula_core.bridge.http_foundation.zikula_session_storage_file
+    zikula.session.save_path: '%kernel.cache_dir%/sessions'
+    multisites:
+        enabled: false
+        mainsiteurl: null
+        based_on_domains: null
+        protected.systemvars: []
+translation:
+    configs:
+        zikula:
+            dirs: []
+            output_dir: '%kernel.project_dir%/translations'
+            excluded_names: ['*TestCase.php', '*Test.php']
+            excluded_dirs: [vendor, cache, data, log]
+            output_format: yaml
+            local_file_storage_options: { default_output_format: yaml }
+        extension:
+            excluded_names: ['*TestCase.php', '*Test.php']
+            excluded_dirs: [vendor]
+            output_format: yaml
+            local_file_storage_options: { default_output_format: yaml }

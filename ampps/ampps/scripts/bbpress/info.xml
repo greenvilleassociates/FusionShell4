@@ -1,0 +1,79 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/bbPress
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/forums/bbPress
+	</ratings>
+	<space>
+		46421416
+	</space>
+	<support>
+		http://bbpress.org/
+	</support>
+	<version>
+		2.6.6
+	</version>
+	<mod>13</mod>
+	<release_date>05-11-2020</release_date>
+	<admin>wp-admin/</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<idn_dir>1</idn_dir>
+	<requirement check="php" type="version" operator="ge" value="5.6.20" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">bbPress</font> is forum software from the creators of WordPress. Quickly setup a place for asyncronous discussion, subscriptions, and more! bbPress is focused on simplicity, flexibility, a deep integration with WordPress, web standards, and speed.  bbPress is lean, mean, and ready to take on any job you throw at it.
+		<br /><br />
+		bbPress is released under the <a href="http://bbpress.org/about/gpl/">GNU/GPL license</a>.
+		</english-overview>		
+		<english-features>
+			<ul>
+				<li><b>Simple Setup</b><br/>
+					Simple Setup Easy to setup. Easy to moderate. Fast, and clean.</li>				
+				<li><b>Fully Integrated</b><br/>
+					One central account. One unified admin area. One click install.</li>
+				<li><b>Multisite Forums</b><br/>
+						Divide your site into sections. Allow your users to create content.</li>
+				<li><b>Fast and light</b><br/>
+						We keep our code lean so that you get the best experience possible.</li>	
+				<li><b>Simple interface</b><br/>
+						One of our biggest goals is to keep things simple and make things intuitive. Our dream is that you forget you are even using the software</li>
+				<li><b>Customizable templates</b><br/>
+						Not everybody likes the same pair of pants, so we allow you to dress up your forums however you like.</li>
+				<li><b>Highly extensible</b><br/>
+						bbPress can not toast your bagels, but a plugin for it sure could!</li>
+				<li><b>Spam protection</b><br/>
+						Full Akismet support built in offering you an amazing weapon against spam.</li>
+				<li><b>RSS Feeds</b><br/>
+						You want feeds? We get them, they are everywhere.</li>
+			</ul>
+		</english-features>
+		<english-err_no_signon_user>The signon username is incorrect and does not exist!</english-err_no_signon_user>
+		<english-err_invalid_username>The username you provided has invalid characters</english-err_invalid_username>
+		<english-err_php524>The PHP version is less than the required 5.2.4+ version!</english-err_php524>
+		<english-select_plugins>Select Plugin(s)</english-select_plugins>
+		<english-install_plugins>Install Plugin(s)</english-install_plugins>
+		<english-loginizer>Limit Login Attempts (Loginizer)</english-loginizer>
+		<english-exp_loginizer>Protect your site against bruteforce attacks by limiting the number of login attempts for your WordPress installation.<br />
+		If selected Loginizer plugin will be installed and activated with your installation.<br />
+		Click <a href="https://wordpress.org/plugins/loginizer/" target="_blank">here</a> to visit plugin site.</english-exp_loginizer>		
+		<english-exp_ad_name>The username for which you want to change the password. Leave blank if you do not want to reset the password</english-exp_ad_name>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-exp_note><br />If this plugin is already installed, no action shall be performed</english-exp_note>
+		<english-wpcentral>wpCentral - Manage Multiple WordPress</english-wpcentral>
+		<english-exp_wpcentral>Helps you to manage all your WordPress blogs from ONE dashboard<br />
+		If selected wpCentral plugin will be installed and activated with your installation.<br />
+		Click <a href="https://wordpress.org/plugins/wp-central/" target="_blank">here</a> to visit plugin site.</english-exp_wpcentral>
+		<english-no_search_engine>Disable Search Engine Visibility</english-no_search_engine>
+		<english-exp_no_search_engine>If checked then this shall discourage search engines from indexing this site. It is up to search engines to honor this request.<br />This can be changed later from WordPress admin panel -> Settings -> Reading page.</english-exp_no_search_engine>
+		<english-exp_site_name_clone>Enter Site Name for your new site. If you want to use the same site name as the source site leave this field blank. </english-exp_site_name_clone>
+	</languages>
+</soft>

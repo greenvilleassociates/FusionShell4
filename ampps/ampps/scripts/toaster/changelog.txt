@@ -1,0 +1,78 @@
+July 24th 2020 SEOTOASTER V3.2
+SeoToaster CMS
+Added Voip for the users screen
+Added strict option for the general website search
+Added page folders functional
+Added user prefix
+Added "don't send reply email" for the forms
+Added filter by role on "manage users grid"
+Added PWA support
+Added blacklist for the forms
+Added page preview crop
+Add copy link for the files on the "Media" screen
+Added user remote authorization
+Added ability to login as user on the manage users screen
+Added copyright widget
+Changed mobile and phone masks format for FR and GB
+
+SeoToaster Shopping Cart
+Added suppliers functional 
+Added zone restrictions for the coupons 
+Added default user group after the registration during checkout 
+Added product inventory and qty to product lists 
+Added one time use coupon 
+Added wish-list functional 
+Added product dimensions (height, width, length) 
+Added salesperson only - magic space 
+Added signature to the profile screen 
+Added purchase a gift option during checkout 
+Added user groups assignment based on the customer params 
+Added product custom attributes 
+Added order sub-type 
+Added group-only- magicspace 
+Added notify-me widget 
+Added non taxable group 
+Added custom label for the shipping service
+Added reccuring billing support
+
+SeoToaster Ultimate CRM
+Added more search options to the lead and organization filters
+Added organization notes
+Added lead filtration for the graphs.
+Added default mobile country code and country code
+Added sales by lead tag graph
+Added opportunities stats for the organizations
+Added ability to merge several leads manual/mass action
+Added organization website for the organization
+Added ability to archive sequence
+Added mass lead delete functional
+Added bounce emails support
+Added lead mass deletion
+Added support for the external forms sms
+Added custom field tabs
+Added log for emailsequence emails
+Added lead workflow configuration screen
+Added bcc tracking emails
+Added additional ip-address tracking
+
+June 14th 2018 SEOTOASTER V3.0
+
+Added nested templates usage in the containers
+Added repeat widget.
+Added new media types support ogg, webm & ogv, docx, text/x-vcard
+Added admin email templates for the form settings.
+Added user attributes to the manage user screen.
+Added users timezone.
+Added grecaptcha multiply support.
+Added default image height attribute.
+Added custom redirect to the login.
+Added mobile and desktop country code support.
+Added user invitation action email.
+Added support for optional params during member signup.
+Added switch index page.
+Added store operational hours.
+Extended dashboard filters.
+Added width, length, depth and gtin product attributes.
+Different fixes and improvements.
+Added Spanish translation.
+Added brand new CRM.

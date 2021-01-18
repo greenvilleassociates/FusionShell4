@@ -1,0 +1,65 @@
+3.59v
+
+1. Option to automatically close the chats where visitor has abandoned them. In other words will close chats where pending widget row indicates that visitor has left the chat.
+2. Option to do prefill offline message form. Usefull if bot redirects to offline form and you do not want that message area would be prefilled by previous covnersation.
+3. Update chat -> Transfer to operator has now option to transfer chat to operator and ignore department online hours.
+4. Internal failing of visitor sending messages will be logged in audit log. Usefull if you experiencing high load and want to investigate why it's happening.
+5. Transactions will be used on remarks saving.
+6. saveThis method was not respecting passed arguments to indicate what columns should be updated.
+7. Department load statistic modal window.
+
+execute doc/update_db/update_232.sql for update
+
+3.58v
+
+1. You can change TOS field text value directly in theme. E.g Our terms of service [url=http://livehelperchat.com]Live Helper Chat[/url]
+2. There is new option to close all active chats based on last message.
+3. Right chat column layout was changes
+4. Screenshot from chat was not updating image if more than one chat was open at a time.
+5. Mobile app will show notification if chat was transfered to an operator.
+6. Option to reload widget theme on the fly. Usefull if your APP is switching between dark/bright themes.
+7. Statistic for last 24 hours won't be generated if operator clicks a tab.
+8. [html] tag will not be rendered for an operator to avoid bad operator scenario :D
+9. We will try to assign default chat by departments priority.
+
+execute doc/update_db/update_231.sql for update
+
+3.57v
+
+1. New widget offline form will support file field now.
+2. Webhook has option to set alternative scenario of conditions are not met.
+3. Change how soft limit is calculated for department load statistic.
+4. Popup was not showing offline form even argument was passed in embed code.
+5. Dashboard open chats has sub-tabs instead of list one after another.
+6. Start chat custom field settings was not setting required attribute if not first one was checked.
+7. Webhooks conditions can be applied to standard events now.
+8. JS API to send messages as visitor from third party JS.
+9. Images will show download icon always.
+10. If sending message to chat fails we will show an error to visitor.
+
+execute doc/update_db/update_230.sql for update
+
+3.56v
+
+1. Chat export will have modal window dedicated to chat's export with subject and messages types inclusion.
+2. FB and Twilio extension has new documentation for easier understanding how to install.  https://github.com/LiveHelperChat/twilio https://github.com/LiveHelperChat/fbmessenger
+3. Sandbox error for serviceWorker will be ignored. Edge case devices handling.
+4. You can have notifications for active chats which get's alert icon assigned
+5. You can now manual init widget JS and all it's dependencies https://doc.livehelperchat.com/docs/javascript-arguments/
+6. Notifications won't be shown if you have many pending chats and change sort
+7. If storing message fails we should show visitor what happened. So he can try again
+8. We should also keep his last message attempt
+9. Reduced number of renders checks in widget
+10. Translations performance/cache improvements
+11. You can override now also english translations - https://doc.livehelperchat.com/docs/language/#how-to-override-default-translations
+12. If sending message from a new widget fails we will show now message for a visitor.
+
+execute doc/update_db/update_229.sql for update
+
+3.55v
+
+1. Continuous webhooks.
+2. Chat closing and other emails will include all chat messages.
+3. You can have now custom JS in static url. "Events Tracking" window. Events in static URL still won't be tracked. It will be implemented in next releases.
+
+execute doc/update_db/update_228.sql for update

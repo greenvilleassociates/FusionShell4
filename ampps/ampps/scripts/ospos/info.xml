@@ -1,0 +1,79 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Open_Source_Point_Of_Sale
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/ecommerce/Open_Source_Point_Of_Sale
+	</ratings>
+	<space>
+		8094704
+	</space>
+	<support>
+		https://opensourcepos.org/
+	</support>
+	<version>
+		3.3.3
+	</version>
+	<mod>24</mod>
+	<release_date>01-01-2021</release_date>
+	<admin>public/index.php</admin>
+	<min_require>3.1.0</min_require>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.2.0" />
+	<requirement check="php" type="version" operator="lt" value="8.0.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.6.0" />
+	<requirement check="php" type="extension" name="mysqli" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="bcmath" />
+	<requirement check="php" type="extension" name="intl" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="openssl" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Open Source Point of Sale,</font> a web based point of sale application written in PHP using CodeIgniter framework. It uses MySQL as the data back end and has a Bootstrap 3 based user interface.<br /><br />
+		 We were able to cover almost every function needed to form a fully reliable POS solution that fits several business types including most required modules to run your business smoothly!<br /><br />
+		 Our team variation helped us alot in forming the right atmosphere taking into consideration several worldwide laws from invoicing, taxation, to customer privacy. This led our solution to become more fitting different regions all around the world.<br /><br />
+ 
+		Open Source Point Of Sale is released under the <a href="https://opensource.org/licenses/gpl-3.0.html" target="_blank">GNU GENERAL PUBLIC LICENSE
+Version 3</a>.
+		</english-overview>		
+		<english-features>
+		<ul>
+<li>Stock management (Items and Kits with extensible list of Attributes)<br /></li>
+<li>VAT, GST, customer and multi tiers taxation<br /></li>
+<li>Sale register with transactions logging<br /></li>
+<li>Quotation and invoicing<br /></li>
+<li>Expenses logging<br /></li>
+<li>Cashup<br /></li>
+<li>Receipt and invoice printing and/or emailing<br /></li>
+<li>Barcode generation and printing<br /></li>
+<li>Suppliers and Customers databas<br /></li>
+<li>Multiuser with permission control<br /></li>
+<li>Reporting on sales, orders, expenses, inventory status<br /></li>
+<li>Receivings<br /></li>
+<li>Giftcard<br /></li>
+<li>Rewards<br /></li>
+<li>Restaurant tables<br /></li>
+<li>Messaging (SMS)<br /></li>
+<li>Multilanguage<br /></li>
+<li>Selectable Boostrap (Bootswatch) based UI theme<br /></li>
+<li>Mailchimp integration<br /></li>
+<li>reCAPTCHA to protect login page from brute force attacks<br /></li>
+<li>GDPR ready<br /></li>
+</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+	</languages>
+</soft>

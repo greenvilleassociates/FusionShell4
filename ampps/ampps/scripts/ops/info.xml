@@ -1,0 +1,52 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Open_Preprint_Systems
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/others/Open_Preprint_Systems
+	</ratings>
+	<space>
+		150011768
+	</space>
+	<support>
+		http://pkp.sfu.ca/ops
+	</support>
+	<version>
+		3.2.1.2
+	</version>
+	<mod>2</mod>
+	<release_date>13-11-2020</release_date>
+	<admin>index.php/index/login</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.2.0" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Open Preprint Systems (OPS)</font> is an open source preprint server for managing the posting of research papers. 
+		<br /><br />
+		Authors, after registering with the system and being approved by the Preprint Manager, can share their research as preprints, whether as PDFs, or Word documents. The posted papers are then made freely available online to be downloaded and indexed by Google Scholar.
+		<br /><br />
+		Open Preprint Systems (OPS) is released under the <a href="http://www.gnu.org/copyleft/gpl.html" target="_blank">GNU GENERAL PUBLIC LICENSE</a>.
+		</english-overview>		
+		<english-features>
+		<ul>
+			<li>Responsive reader front-end with multiple options for content organization</li>
+			<li>Author-led rapid publication workflow</li>
+			<li>Online submission and management of all content</li>
+			<li>Customizable to suit your screening policies, with several options included</li>
+			<li>Integrated with scholarly publishing services such as Crossref and ORCiD</li>
+			<li>Locally installed and controlled</li>
+			<li>Community-led and supported</li>
+			<li>Built-in support for a wide array of features from the OJS and OMP ecosystem</li>
+		</ul>
+		</english-features>
+	</languages>
+</soft>

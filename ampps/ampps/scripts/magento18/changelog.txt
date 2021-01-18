@@ -1,0 +1,323 @@
+Magento Open Source 2.2.11 Release Notes
+
+This release (Magento 2.2.11) marks the final supported software release for Magento version 2.2. Magento 2.2 will no longer receive security updates or product quality fixes now that its support window has expired.
+
+Magento Open Source 2.2.11 offers platform upgrades and substantial security changes. This release includes 24 functional fixes and enhancements to the core product and 30 security enhancements.
+
+Magento 2.2.11 has not been tested with PHP 7.1. PHP 7.1 reached EOL (End of Life) on December 1, 2019. We recommend updating your deployment to a supported version of PHP.
+Functional fixes
+
+In addition to security enhancements, this release contains the following functional fixes.
+Cart and checkout
+
+    Administrators with appropriate but restricted privileges can now view the list of CMS pages at Content > Pages. Previously, Magento displayed this error: You cannot define a correlation namestore_table more than once.
+
+    A shopping cart that contains items no longer displays a subtotal and order total of zero when the Clear Persistence on Sign Out setting is disabled and the Redirect Customer to Account Dashboard after Logging in setting is enabled.
+
+CMS content
+
+    You can now upload a video from the WYSIWYG editor.
+
+Configurable products
+
+    You can now add new options with new images to an existing configurable product. Previously, when you clicked Save, Magento threw an error and did not save the new variations.
+
+    Simple products no longer disappear from the Admin configurable product list when you set the product quantity to 0.
+
+    Out-of-stock configurable product options are now listed as expected on the storefront when the Display Out of Stock Products setting is enabled on Admin > Store > Configuration > Inventory > Stock Options.
+
+Inventory
+
+    You can now save an edited product when max_sale_qty is set to the Magento default value. GitHub-23319
+
+Import/export
+
+    Magento now adds newly imported images after previously imported ones. Previously, Magento added these most recently imported images randomly.
+
+    The import process now maintains custom option prices that were assigned to different websites and scope before import. Previously, after import, these custom option prices were set to the default scope values.
+
+    Magento now correctly processes product prices during export when the All Store Views scope is set. Previously, the logic for updating the price of custom options in non-default websites was missing when the Catalog > Price setting was set to Website.
+
+Indexing
+
+    The POST /V1/products/tier-prices endpoint now considers account indexer mode as expected.
+
+Infrastructure
+
+Magento 2.2.11 has not been tested with PHP 7.1. PHP 7.1 reached EOL (End of Life) on December 1, 2019. We recommend updating your deployment to a supported version of PHP. See Magento 2.2 technology stack requirements for information about supported versions.
+Payment methods
+
+    You can now successfully complete an order using Braintree with PayPal when Shipping Flat Rate is activated. Previously, Magento displayed an informative error.
+
+    For orders paid with Payflow Pro, if the Vault Enabled option is set to Yes, Magento now displays accurate stored card information as expected on the order information page.
+
+Persistent
+
+    Guest users can now check out after persistent shopping cart has been disabled. Previously, Magento displayed this error: No cart with such entityId=0.
+
+    Magento no longer creates a persistent cart session for logged-in users when the persistent cart feature has been disabled. Previously, Magento did not empty shopping carts for users when the user logged out.
+
+Sales Rule
+
+    Select All on the coupon list of the Manage Coupon Codes page now works as expected.
+
+Shipping
+
+    Shipping notification emails sent to customers now contain a link to order tracking.
+
+    Magento now displays the correct cost for shipping in the shopping cart when you return to the cart from the checkout page for an order being shipped to multiple addresses.
+
+Search
+
+    Magento no longer throws an exception when search queries contain decimals.
+
+URL rewrite
+
+    Category-specific URL rewrites are now generated as expected when importing and assigning a product to a category.
+
+    A category schedule update no longer unchecks the Use default value setting on the URL key for the store view.
+
+Wishlist
+
+    Wishlists now accurately reflect product availability when a product has been added to a wishlist and then subsequently disabled. Previously, the wishlist displayed these contradictory messages: You have no items in your wish list and 1 item in wish list.
+
+    Products that are deleted from a wishlist from the Admin are now deleted from the storefront wishlist.
+
+Installation and upgrade instructions
+
+See How to get the Magento software for complete installation and upgrade information.
+Migration toolkits
+
+The Data Migration Tool helps transfer existing Magento 1.x store data to Magento 2.x. This command-line interface includes verification, progress tracking, logging, and testing functions. For installation instructions, see Install the Data Migration Tool. Consider exploring or contributing to the Magento Data Migration repository.
+
+The Code Migration Toolkit helps transfer existing Magento 1.x store extensions and customizations to Magento 2.2.x. The command-line interface includes scripts for converting Magento 1.x modules and layouts.
+
+Magento Open Source 2.2.10 Release Notes
+
+Patch code and release notes published on October 8, 2019.
+
+Magento Open Source 2.2.10 offers significant platform upgrades, substantial security changes, and PSD2-compliant core payment methods. This release includes over 147 functional fixes and enhancements to the core product and over 70 security enhancements. It includes 56 community-fixed GitHub issues.
+Highlights
+
+Look for the following highlights in this release:
+Platform upgrades
+
+The following upgrades to core platform components boost platform security and support PCI compliance:
+
+    Magento 2.2.10 now supports PHP 7.2.x (tested with 7.2.21).
+    Magento 2.2.10 does not support PHP 7.0.x.
+
+Substantial security enhancements
+
+This release includes the following security enhancements:
+
+    PSD2 compliance for core payment methods
+    Fixes for 75 critical security issues
+    Significant platform-security enhancements that boost XSS (cross-site scripting) protection against future exploits. This effort is the culmination of several months of concentrated effort on Magento’s part to reduce our backlog of security enhancements.
+
+Core payment methods integrations are now compliant with PSD2 regulations
+
+The European Union recently revised the Payment Services Directive (PSD) regulation with an updated version–PSD2. This revised regulation will go into effect on September 14, 2019 or shortly thereafter, and will significantly affect most payment processing involving credit cards or bank transfers.  See the Magento Forum DevBlog post 3D Secure 2.0 changes for more information on Magento Payment Provider Recommendations and a wealth of links to PSD2 regulation discussions.
+
+This release contains the following major PSD-related changes:
+
+    The Braintree payment method now complies with PSD2 regulations. Its core integration API has been upgraded to the latest JavaScript SDK v3 API, which is a requirement for supporting native Braintree 3D Secure 2.0 adoption. Braintree transactions are now also verified by using the native Braintree 3D Secure 2.0 service.
+
+    Authorize.net now provides the ability, through the cardholderAuthentication request field, to make 3D Secure verification through third-party services such as CardinalCommerce. Starting with this release, Authorize.net accept.js integration will support 3DS 2.0 through CardinalCommerce.
+
+    The Cybersource and eWay payment modules have been deprecated in this release to comply with PSD2 SCA regulation, which took effect on September 14, 2019, or shortly thereafter. Use the official Marketplace extensions for these features instead.
+
+Security enhancements and fixes to core code
+
+    70 security enhancements that help close cross-site scripting (XSS) and remote code execution (RCE) vulnerabilities as well as other security issues. No confirmed attacks related to these issues have occurred to date. However, certain vulnerabilities can potentially be exploited to access customer information or take over administrator sessions. Most of these issues require that an attacker first obtains access to the Admin. As a result, we remind you to take all necessary steps to protect your Admin, including but not limited to these efforts: IP whitelisting, two-factor authentication, use of a VPN, the use of a unique location rather than /admin, and good password hygiene. See Magento Security Center for a comprehensive discussion of these issues. All known exploitable security issues fixed in this release (2.2.10) have been ported to 2.3.3, 1.14.4.3, and 1.9.4.3, as appropriate.
+
+Magento Open Source 2.2.9 Release Notes
+
+Patch code and release notes published on June 25 2019.
+
+We are pleased to present Magento Open Source 2.2.9. This release includes 75 critical enhancements to product security, over 100 core code fixes and enhancements, and over 200 community-submitted pull requests.
+Highlights
+
+Look for the following highlights in this release:
+Substantial security enhancements
+
+This release is focused on substantial security enhancements:
+
+    75 security enhancements that help close cross-site scripting (XSS), remote code execution (RCE), and sensitive data disclosure vulnerabilities as well as other security issues. No confirmed attacks related to these issues have occurred to date. However, certain vulnerabilities can potentially be exploited to access customer information or take over administrator sessions. See Magento Security Center for a comprehensive discussion of these issues. All known exploitable security issues fixed in this release (2.2.9) have been ported to 2.3.2, 2.1.18, 1.14.4.2, and 1.9.4.2, as appropriate.
+
+    Google reCAPTCHA module for PayPal Payflow checkout. The new PaypalRecaptcha module adds Google reCAPTCHA and CAPTCHA to the Payflow Pro checkout form. This enhanced functionality has been added in response to malicious targeting of Magento deployments that implement Payflow Pro. Configuration information can be found in Google reCAPTCHA.
+
+Infrastructure improvements
+
+This release contains 150 enhancements to core quality, which improve the quality of the Framework and these modules: Catalog, Sales, Checkout/One Page Checkout, UrlRewrite, Customer/Customers, and UI. Here are some additional core enhancements:
+
+    Braintree payment method is now supported for checkout with multiple addresses. Previously, you could not use Braintree and Braintree PayPal when checking out an order that was being shipped to multiple addresses.  
+
+    The CGI URL gateway in UPS module has been updated from HTTP to HTTPS.The CGI URL gateway endpoint in the UPS module has been updated from HTTP to HTTPS in response to the disablement of the HTTP gateway by UPS in mid-2019. See Magento User Guide for a discussion of using the UPS shipment method. Shipping method configuration settings are described in the Shipping methods.
+
+    Google chart API updated to the Image-Charts. Magento now uses the Image-Charts free service to render static charts in Admin dashboards. Earlier deployments used Google Image Charts, which was deprecated in 2012 and turned off on March 18, 2019. 
+	
+Magento Open Source 2.2.8 Release Notes
+
+Patch code and release notes were published on March 26, 2019.
+
+We are pleased to present Magento Open Source 2.2.8. This release includes over 30 critical enhancements to product security, over 150 core code fixes and enhancements, and 285 community-submitted pull requests.
+
+Although this release includes these security enhancements, no confirmed attacks related to these issues have occurred to date. However, certain vulnerabilities can potentially be exploited to access customer information or take over administrator sessions, so we recommend that you upgrade your Magento software to the latest version as soon as possible.
+
+See Magento Security Center for a comprehensive discussion of these issues. All exploitable security issues fixed in this release (2.2.8) have been ported to 2.3.1, 2.1.17, 1.14.4.1, and 1.9.4.1, as appropriate.
+Apply patch PRODSECBUG-2198 to address critical SQL injection vulnerability
+
+A critical SQL injection vulnerability has been identified in 2.2.x Magento code. A fix for this issue is included in Magento 2.2.8. However, if you cannot immediately apply the full patch, you can quickly protect your store from this vulnerability by installing patch PRODSECBUG-2198. See the description of PRODSECBUG-2198 in the Magento Security Center for information on this vulnerability.
+
+Follow these steps to download and apply this patch:
+
+    Access the Downloads page here.
+
+    Select the Git-based option from Select your format.
+
+    Download the patch and upload to a specific directory in your Magento installation such as m2-hotfixes (confirm that the directory is not accessible publicly).
+
+    From your project root, apply the patch.  git apply ./m2-hotfixes/<patch-file-name>.
+
+    Refresh the cache from the Admin (System > Cache Management).
+
+Highlights
+
+Look for the following highlights in this release:
+Merchant tool enhancements
+
+    Improved order creation workflow in the Admin. The Admin order creation workflow has been refactored to eliminate delays when editing billing and shipping addresses. Processing of these fields now happens only after they are populated. 96174
+
+    Ability to upload PDP images without compression and downsizing. Merchants can now upload PDP images larger than 1920 x 1200 without first compressing and downsizing the images. Previously, when a merchant uploaded a high quality product image (larger than 1920 x 1200), Magento resized and compressed the image. Merchants can now set requirements for resizing and compression as well as compression quality and target width and height. 95299
+
+Substantial security enhancements
+
+These releases include security enhancements that help close cross-site scripting, arbitrary code execution, and sensitive data disclosure vulnerabilities as well as other security issues. No confirmed attacks related to these issues have occurred to date. However, certain vulnerabilities can potentially be exploited to access customer information or take over administrator sessions. All exploitable security issues fixed in this release (2.2.8) have been ported to 2.3.1, 2.1.17, 1.14.4.1, and 1.9.4.1, as appropriate.
+Infrastructure improvements
+
+    Magento now supports Elasticsearch 6.0. (Elasticsearch 5.x reached end-of-life on March 11, 2019. For more information, see Elastic Product End of Life Dates. Fix submitted by community member Romain Ruaud. Thank you, Romain!
+
+    Magento’s implementation of the Authorize.Net Direct Post payment method currently uses MD5 based hash for all M1 and M2 installations. As of June 28, 2019, Authorize.Net will stop supporting MD5 based hash usage. See Authorize.Net Direct Post for a discussion of this deprecation and the steps you need to take to add the new key you’ll need after deprecation. *
+
+Bundled extension enhancements
+
+This release of Magento includes extensions developed by third-party vendors.
+dotdigital Engagement Cloud (formerly dotmailer)
+
+    dotmailer has been rebranded as dotdigital Engagement Cloud.
+
+Magento Shipping
+
+    Multiple improvements to the Shipment workflow user experience.
+
+    Batch Processing. Error messaging and field validation has been added to the batch processing workflow.
+
+    Carrier Specific Packaging. Carrier-specific packaging has been added for FedEx. These packages will be available for selection during shipping if a FedEx carrier is configured.
+
+    Security. We’ve closed scenarios that could allow for third-party code execution.
+
+    Magento Cart Price Rules. Cart price rules can now be applied to Magento Shipping.
+
+Vertex
+
+    Added support for B2C VAT.
+
+    Added support for configurable logging.
+
+Functional fixes
+
+In addition to security enhancements, this release contains the following functional fixes.
+Fixes
+
+In addition to security enhancements, this release contains the following functional fixes.
+Installation, setup, and deployment
+
+    The bin/magento setup:config:set --enable-syslog-logging=true|false command now provides the functionality that Magento previously provided in . See Logging.
+
+    The storefront now uses HTTPS exclusively and the Admin uses HTTP without resulting in excessive redirects.
+
+    Controllers with different route IDs and front names no longer redirect users to the dashboard when a user clicks on a menu link. Fix submitted by Laura Folco in pull request 18018. GitHub-7557
+
+    Integrations are no longer reset after running the bin/magento setup:upgrade command. Fix submitted by Pratik Oza in pull request 18273. GitHub-12095
+
+    The ./bin/magento config:show command no longer fails with a fatal error after you run ./bin/magento app:config:dump. Fix submitted by Keyur Shah in pull request 17993. GitHub-17582
+
+    A new cron.log file dedicated to logging cron-related information has been added to Magento. This new log file reduces output previously sent to the system.log file, making it easier to find non-cron-related information in the system.log file. Fix submitted by Pieter Hoste in pull request 18389. GitHub-17190
+
+    The getHostUrl() method has been updated to reference HTTP_HOST rather than SERVER_PORT. Fix submitted by Luuk Schakenraad in pull request 18595. GitHub-18585
+
+    You can now install Magento without first creating an administrator account.
+
+    Magento now skips disabled modules when compiling static content. Fix submitted by Shikha Mishra in pull request 19989. GitHub-19605
+
+    The config:set --lock-config command now acts as expected on all scopes. Previously, after this command was run, admin users were not able to change the configuration for the default store, but could still change it for other scopes. Fix submitted by Mahesh Singh in pull request 20322. GitHub-19609
+
+Backend
+
+    The address form in the Admin order creation workflow has been refactored to improve performance.
+
+    Calling getCurrentUrl on a store no longer adds the ___store parameter when store code in URL is set to yes and the current store is not the same store requested in the URL. Fix submitted by Shikha Mishra in pull request 19910. GitHub-19285
+
+    CustomerRepository::getList() now loads custom attributes named company. Fix submitted by Govind Sharma in pull request 20284. GitHub-17759
+
+Bundle products
+
+    Bundle product SKUs are now built based on the order of the associated (selected) product ID numbers in ascending order. Previously, SKUs were built based on the order of the selected product ID numbers in ascending order instead of the order in which the option is added to the bundle product.
+
+    Magento no longer overwrites user-defined option quantities with default values when a customer edits a bundle product from a shopping cart. Fix submitted by Joseph Maxwell in pull request 15905. GitHub-4942
+
+    Bundle special prices are now correctly rounded when you load and resave a bundle product. Previously, when you reloaded a bundle with a special price that requires four positions after the decimal (for example, 78,9473), Magento rounded the price to two decimal places. Fix submitted by magently in pull request 17971. GitHub-17638
+
+    Magento now maintains the correct base price for a bundle product when you add a bundle product in one currency and then add the same bundle product option in a different currency. Previously, when you added the same bundle product option in a different currency, Magento doubled the base price.
+
+CAPTCHA
+
+    CAPTCHA now appears as expected in the Log in popup window.
+
+Magento Open Source 2.2.7 Release Notes
+
+Patch code and release notes were published on November 28, 2018.
+
+We are pleased to present Magento Open Source 2.2.7. This release includes over 30 critical enhancements to product security, over 150 core code fixes and enhancements, and over 350 community-submitted pull requests.
+
+Although this release includes these security enhancements, no confirmed attacks related to these issues have occurred to date. However, certain vulnerabilities can potentially be exploited to access customer information or take over administrator sessions, so we recommend that you upgrade your Magento software to the latest version as soon as possible.
+
+See Magento Security Center for a comprehensive discussion of these issues. All exploitable security issues fixed in this release (2.2.7) have been ported to 2.1.16, 1.14.3.10, and 1.9.3.10, as appropriate.
+Highlights
+
+In addition to over 30 critical security fixes, look for the following highlights in this release:
+Core code highlights
+
+This release includes improvements to general usability of the core code plus enhancements to wishlist and shipping features.
+General improvements
+
+    All relevant attributes are now populated in the Google Tag Manager when a customer adds a product to their shopping cart. Previously, grouped, bundle, and configurable product attributes were missing from the Google Tag Manager.
+
+Wishlist
+
+    Customers can now choose which wishlist to add a product to when adding products to the wishlist from the shopping cart.
+
+    Products disabled in the Admin no longer appear in storefront wishlists. Previously, disabled products still appeared in the storefront wishlist, although when a customer clicked on a disabled product, Magento correctly returned “page not found”.
+
+    Magento now displays a success message when a customer successfully updates a wishlist.
+
+    Magento now displays the correct options when you click on View Details for a product with configurable options. ￼Previously, Magento displayed the image for the parent product. GitHub-8168
+
+Shipping
+
+    The Magento UPS module has been updated to support new UPS API endpoints.
+
+Magento Functional Test Framework (MFTF)
+
+    MTFT version 2.3.8 is now packaged with Magento 2.2.7.
+
+Community contribution highlights
+
+Highlights of community contributions include these fixes:
+
+    The email server no longer throws an exception when a customer places an order using a PayPal payment method. Previously, when a customer checked out using PayPal, Magento placed the order, but the email server threw an exception. Thanks to community member Jason Woods!
+
+    You can now use REST to add a configurable product to a shopping cart without creating a duplicate product entry. Thanks to community member zamboten! GitHub-15028
+
+    The price range displayed for bundle products now shows only valid prices. Previously, Magento displayed special prices that had expired, even though the price in the customization and summary area was correct. Thanks to community member Riccardo Tempesta! GitHub-15457

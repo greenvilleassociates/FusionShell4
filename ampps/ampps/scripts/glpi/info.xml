@@ -1,0 +1,86 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/GLPI
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/others/GLPI
+	</ratings>
+	<space>
+		152223338
+	</space>
+	<support>
+		http://www.glpi-project.org/
+	</support>
+	<version>
+		9.5.3
+	</version>
+	<mod>60</mod>
+	<release_date>25-11-2020</release_date>
+	<admin>index.php</admin>
+	<min_require>0.68</min_require>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.2.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.6.0" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="fileinfo" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="json" />
+	<requirement check="php" type="extension" name="mysqli" />
+	<requirement check="php" type="extension" name="session" />
+	<requirement check="php" type="extension" name="zlib" />
+	<requirement check="php" type="extension" name="SimpleXML" />
+	<requirement check="php" type="extension" name="xml" />
+	<requirement check="php" type="extension" name="intl" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">GLPI</font> is an Information Resource-Manager with an additional Administration-Interface. As an ITSM and Asset Management tool, it is capable of managing both the company's software and hardware assets.
+		<br /><br />You can use it to build up a database with an inventory for your company (computers, software, printers, consumables, etc.). It has enhanced functions to make the daily life for the administrators easier, like a job-tracking-system with mail-notification and methods to build a database with basic information about your network-topology.
+		<br /><br />
+		GLPI is released under the <a href="http://www.glpi-project.org/spip.php?article44" target="_blank">GNU/GPL version 2</a>.
+		</english-overview>
+		<english-features>
+<font size="2" color="#1281B6"><b>General</b></font><br />
+<ul>
+<li>Multi-entity management (multi-location, multi-structure)</li>
+<li>Multi-user support</li>
+<li>Multiple Authentication System (local, LDAP, AD, Pop/Imap, CAS, x509…) and multiple servers</li>
+<li>Multilingual management (45 languages available)</li>
+<li>Permissions and profiles system</li>
+<li>Notification system on events (consumable stock, expiry of contracts and licenses), customizable and by entity </li>
+</ul><br />
+<font size="2" color="#1281B6"><b>Inventory</b></font><br />
+<ul>
+<li>ITSM functionalities: inventory creation, maintenance and tracking of the entire company's data assets from a centralized console</li>
+<li>Inventory's data import from one or several OCS Inventory, NG servers or with the FusionInventory plugins</li>
+<li>Computer fleet inventory with management of its components, disk space and TCO management</li>
+<li>Monitors' inventory with management of the connections to the computers</li>
+<li>Inventory of the network hardware fleet with management of the connections to the devices (IP, Mac addresses, VLANs...)</li>
+<li>Printer fleet inventory with management of connections to the computers and management of consumable associated and consumption and the thresholds of alarm</li>
+<li>External devices inventory (scanners, graphical tables...) with management of the connections to the computers</li>
+<li>Phone fleet inventory with management of connections to the computers</li>
+<li>Software fleet inventory, with license and expiration dates management</li>
+<li>Administrative and financial Information management (purchase, guarantee and extension, damping)</li>
+<li>Management of the various states for the materials (in repair...)</li>
+<li>Management of generic peripherals and monitors being able to be associated several computers</li>
+<li>External bonds management towards other applications</li>
+<li>History of the modifications on the elements of the inventory</li>
+<li>Management of contracts, contacts, documents related to inventory items</li>
+</ul><br />
+<font size="2" color="#1281B6"><b>Helpdesk</b></font><br />
+<ul>
+<li>Incidents, requests, problems and changes management</li>
+<li>Ticket creation through emails, end-user or technician interface</li>
+<li>Ticket lifecycle (assignment, tickets scheduling, solutions, etc.)</li>
+<li>Knowledge base and Frequently Asked Questions (FAQ)</li>
+</ul>
+		</english-features>
+	</languages>
+</soft>

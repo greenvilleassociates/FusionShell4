@@ -1,0 +1,2 @@
+1)Keep  Gzip output and Database sessions default (i.e checked)
+2)PHP REQUIREMENT LINK : https://github.com/elkarte/Elkarte#requirements

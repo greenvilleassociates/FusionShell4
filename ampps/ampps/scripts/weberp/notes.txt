@@ -1,0 +1,6 @@
+1. Install without dbprefix bcoz of it takes dbprefix as prewb_weberp4
+2. Time Zone : America/New_york
+3. Install with sample data and also without sample data(since version 4.13.1).
+4. Dump the sql by command : mysqldump --routines -u root -pmysql web4101 > weberp.sql
+5. Copy companies/database folder from manual to companies/softaculous
+6. We Removed sample data install from softaculous, because sample and non-sample manual installation of weberp installs non-sample data only ( since 4.15.1 )

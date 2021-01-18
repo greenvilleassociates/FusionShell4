@@ -1,0 +1,17 @@
+1. PHP REQUIREMENT LINK : https://www.pimcore.org/docs/latest/Installation_and_Upgrade/System_Requirements.html
+2. Install using composer and make zip, remove extra files eg.
+	1.app/config/parameters.yml
+	2.app/config/local/database.yml
+	3.var/*
+	4.web/bundles
+	5.web/var
+	
+3. Follow installation steps mentioned in the link below, use the skeleton package to install via composer:
+composer create-project pimcore/skeleton my-project
+https://pimcore.com/docs/6.x/Development_Documentation/Getting_Started/Installation.html
+
+4. Use utf8mb4_general_ci collate for database while manual installation otherwise command throws error.
+
+5. Check "pimcore/pimcore" version in composer.json of "pimcore/skeleton" and download that version of "pimcore/pimcore" and check "lib/too/requirements.php"  if requirements verfication code is changed in "checkMysql" function then change requirements code accordingly.
+
+6. Don't remove double quotes from "[[softdbpass]]" it throws error when contain "[" and "]".

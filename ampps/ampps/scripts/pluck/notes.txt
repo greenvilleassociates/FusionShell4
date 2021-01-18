@@ -1,0 +1,6 @@
+While installtion create a page with the following details :
+
+Title : home
+content : This is a sample page.
+
+PHP REQUIREMENT LINK : https://github.com/pluck-cms/pluck/blob/master/requirements.php#L45

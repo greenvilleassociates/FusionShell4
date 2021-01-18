@@ -1,0 +1,81 @@
+
+v1.5.11 released 2020-04-17
+
+Improvements
+
+    Added PHP 7.4 support
+    Performance improvements
+    Fixed a few security issues
+
+Updated Libraries
+
+    mPDF (v7.1.9 => v8.0.5)
+
+v1.5.10 released 2020-01-19 
+
+Improvements
+
+    IP-766 - Bootstrap Update to close XSS vulnerability
+    Improved Docker support
+    Improved Version comparisson and fixed it for 4 digits releases (eg. 1.5.10)
+    Added PHP 7.3 support
+    Added invoiceplane.org as failover for invoiceplane.com for all critical operations
+    Check Updates on invoiceplane.org (failover) if .com fails
+    Check News on invoiceplane.org (failover) if .com fails
+	
+v1.5.9 released 2018-04-08
+
+Improvements
+
+    IP-681 - Added more schedules for recurring invoices
+    IP-688 - Made the list item count setting customizable
+
+Fixed Bugs
+
+    IP-679 - Fixes duplicate invoice number generation
+    IP-680 - Recurring invoices can be deleted again
+    IP-686 - Fixed issue with Select2 locale file
+    IP-687 - Users can remove clients from user accounts again
+
+Updated Libraries
+
+    Codeigniter Framework (v3.1.6 => v3.1.8)
+    PHPMailer (v6.0.3 => v6.0.5)
+    paragonie/random_compat (v2.0.11 => v2.0.12)
+    symfony/http-foundation (v2.8.35 => v2.8.38)
+    symfony/event-dispatcher (v2.8.35 => v2.8.38)
+    DropZone (v5.3.0 => v5.4.0)
+    Bootstrap Datepicker (v1.7.1 => v1.8.0)
+    PostCSS (v6.0.18 => v6.0.21)
+
+v1.5.8 released 2018-03-04
+
+Fixed Bugs
+
+    IP-640 - Some custom fields displayed wrong values in PDFs
+    IP-649 - Deleting tax rates working again
+    IP-656 - Update check is working correctly again
+    Smaller code corrections
+
+Updated Libraries
+
+    eWay Payment Provider (v2.2.1 => v2.2.2)
+    Payfast Payment Provider (v2.1.3 => v2.2.0)
+
+v1.5.7 released 2018-02-18
+
+Improvements
+
+    IP-641 - Browsers will use correct CSS and JavaScript files which prevents cache issues
+    IP-643 - InvoicePlane is now compatible with PHP 7.2
+    IP-650 - Logs for online payments are now viewable from the frontend
+
+Fixed Bugs
+
+    IP-596 - Password Reset now honours IP mail settings, the user can set a specific sender address in the settings
+    IP-647 - Quote / invoice creation does not fail due to client select anymore
+    IP-648 - Credit invoices work again correctly
+    IP-649 - Quote / Invoice and item deletion is working again
+    IP-652 - Testmode for online payments is working again
+
+

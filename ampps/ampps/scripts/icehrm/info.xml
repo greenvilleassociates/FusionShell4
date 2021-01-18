@@ -1,0 +1,55 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/IceHrm 
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/erp/IceHrm 
+	</ratings>
+	<space>
+		148606600
+	</space>
+	<support>
+		http://icehrm.github.io/docs/faq/
+	</support>
+	<version>
+		28.2.0.OS
+	</version>
+	<mod>8</mod>
+	<mod_files>1</mod_files>
+	<release_date>13-11-2020</release_date>
+	<admin>app/login.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.6.0" />
+	<requirement check="php" type="version" operator="lt" value="7.4.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.7.0" />
+	<requirement check="mysql" type="version" operator="lt" value="8.0.0" mariadb="10.5.0" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="mysqli" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">IceHrm</font> is a Human resource management system for small and medium sized organizations. It covers all the basic HRM needs of a company such as leave management, time management and handling employee information.
+		<br /><br />
+		IceHrm is licensed under <a href="https://github.com/gamonoid/icehrm/blob/master/LICENSE" target="_blank">The MIT License</a>.
+		</english-overview>
+		<english-features>
+		<ul>
+			<li><b>Company Information Management</b> : Store and manage details about how companies, departments and branches of the organisation are connected.</li>
+			<li><b>Basic Employee Management</b> : Store, manage and retrieve employee information when required.</li>
+			<li><b>Time sheets</b> : IceHrm is a timesheet app/Open source timesheet management application to track time spent by employees on various projects.</li>
+			<li><b>Attendance Management</b> : IceHrm can be used as a attendance management system effectively for any size a company.</li>
+			<li><b>Travel Management</b> : Module for managing travel requests.</li>
+		</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>		
+	</languages>
+</soft>

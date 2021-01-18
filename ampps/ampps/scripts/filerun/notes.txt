@@ -1,0 +1,5 @@
+1. Take sql dump after changing 'first-name' ,'last-name' and 'user-name' in 'Basic information' tag then change 'Path' in 'permissions' tab and save.
+2. Set 'last_email_notification' to 1 in 'df_settings' table it will update when login.
+3. Set column 'avatar' Null in 'df_users' table it will update on login with ( creates random color hash and name initial ).
+4. PHP REQUIREMENT LINK: https://filerun.com/requirements
+5. We have restricted the script in info.xml for PHP 7.4 as stable version of IonCube encoder for PHP 7.4 is currently not available.

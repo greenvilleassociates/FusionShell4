@@ -1,0 +1,31 @@
+2.8.5
+    Added import and export of groups
+    Updated Danish translation
+    Allow lower level administrators edit in-progress reservations
+    Added optional email to be sent to users when changing resource status
+    Added setting to show week numbers on calendars
+    Added settings to require phone, position, and organization during registration
+    Bugfixes
+
+2.8.4
+
+    Allow reservations on the schedule to be filtered by owner or participant
+    Include participant list in reports output
+    Add resource concurrency to resource import and export
+    Bugfixes
+
+2.8.3
+
+    Do not require logging in to set up resource tablet display
+    Bugfixes
+
+2.8.2
+
+    Added the ability to set a limit on the number of concurrent reservations per resource
+    Removed the ability to set a schedule as allowing unlimited concurrent reservations per resource
+    Bugfixes
+	
+2.8.1
+
+    Added ability to limit the total number of concurrent reservations for a schedule
+    Added ability to limit the number of resources per reservation for a schedule

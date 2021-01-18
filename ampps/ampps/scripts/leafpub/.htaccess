@@ -1,0 +1,13 @@
+# Rewrites
+RewriteEngine On
+
+# Uncomment RewriteBase if you are using a subdomain
+RewriteBase [[relativeurl]]
+
+# Forbid access to these folders
+RewriteRule ^backups/ - [F]
+
+# Route requests through index
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]

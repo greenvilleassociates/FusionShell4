@@ -1,0 +1,20 @@
+<softupgrade xmlns="http://www.softaculous.com">
+	<settings>		
+		<group>
+			<heading>hidden</heading>
+			<input type="hidden" name="dummy" value="">
+			</input>
+		</group>
+	</settings>
+	<files>
+		<exclude>data/settings/settings.xml</exclude>
+		<exclude>data/settings/config.php</exclude>
+		<exclude>data/salt.php</exclude>
+		<exclude>data/*</exclude>
+		<exclude>data/*/*</exclude>
+		<exclude>data/*/*/*</exclude>
+		<exclude>data/*/*/*/*</exclude>
+		<exclude>data/*/*/*/*/*</exclude>
+		<exclude>data/*/*/*/*/*/*</exclude>
+	</files>
+</softupgrade>

@@ -1,0 +1,62 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Maian_Cart
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/ecommerce/Maian_Cart
+	</ratings>
+	<space>
+		53388073
+	</space>
+	<support>
+		http://www.maiancart.com/
+	</support>
+	<version>
+		3.8
+	</version>
+	<mod>6</mod>
+	<release_date>10-04-2020</release_date>
+	<admin>admin</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.6.0" />
+	<requirement check="php" type="extension" name="json" />
+	<requirement check="php" type="extension" name="zip" />
+	<requirement check="php" type="extension" name="SimpleXML" />
+	<requirement check="php" type="extension" name="mcrypt" />
+	<requirement check="php" type="extension" name="openssl" />
+	<requirement check="php" type="extension" name="curl" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Maian Cart</font> is free and was written with ease of use in mind and contains many great features. It`s a powerful e-commerce system written with some of the latest technology and all presented in a cosmetically appealing interface to provide your business with a stable, reliable shopping cart environment
+		<br /><br />
+		Maian Cart is released under their own <a href="http://www.maiancart.com/licence.html" target="_blank">Free License</a>.
+		</english-overview>		
+		<english-features>
+<ul>
+<li><b>Payment Gateways</b> - Supports over 20 payment gateways including Paypal, 2Checkout, WorldPay, SagePay &amp; Secure Trading. No plugins required.</li><br />
+<li><b>Mobile / Tablet Ready</b> - HTML5 responsive layout for tablets and mobiles via Twitter Bootstrap. Get your products to a wider audience.</li><br />
+<li><b>SEO Friendly</b> - Optimised for search engines. Supports meta tags, keywords, seo urls with custom slugs, title overrides and more.</li><br />
+<li><b>Shipping Options</b> - Many shipping options can be grouped into countries and zones. Also has basic drop shipping option for drop ship suppliers.</li><br />
+<li><b>Disqus Comments</b> - Support for Disqus comments system so buyers can comment on purchases to help drive sales.</li><br />
+<li><b>Account System</b> - Optional account system so buyers can see order history, print PDF invoices, see order statuses etc</li><br />
+<li><b>AddThis Support</b> - Supports AddThis plugin for social bookmarking to help promote your products across social platforms.</li><br />
+<li><b>Post Tweets</b> - Post tweets directly to your twitter account from the admin interface via the Twitter Rest API.</li><br />
+<li><b>PDF Operations</b> - Easily create PDF invoices and packing slips. Create batch PDFs for quickness.</li><br />
+<li><b>Products</b> - Add products, categories, brands, attributes, personalisation options, product images and more.</li><br />
+<li><b>Trade Accounts</b> - Basic trade account system. Set different prices and purchase levels for trade accounts.</li><br />
+<li><b>Guest Checkout</b> - Supports guest checkout, no account required to purchase. Keep your buyers happy.</li>
+</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

@@ -1,0 +1,22 @@
+1.Select MySQL 5.5.x or higher (InnoDB engine)
+2.Enter client_id in Client ID.
+3.don't save language module click on next
+4.Skip Registration
+5.Copy data/client_id folder from manual. (Delete or do not copy client.ini.php)
+6. client.ini.php is writable admin can delete and create new client, permission is required to delete the client.
+7. set location of ilias.log in [[softdatadir]]\ilias.log in manual
+8. set location of log folder in [[softdatadir]]\log in manual
+9. PHP REQUIREMENT LINK : https://docu.ilias.de/ilias.php?ref_id=367&obj_id=122176&cmd=layout&cmdClass=illmpresentationgui&cmdNode=x&baseClass=ilLMPresentationGUI#system-requirements
+10. Windows not supported : https://www.ilias.de/docu/goto.php?target=lm_367&client_id=docu#supported-platforms
+11. apply following settings in php.ini to resolve strict error confirmed with vendor
+error_reporting = E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT;
+display_errors = Off
+12. Check and create symblinks in every version.
+13. SQL export doesn't works on server, take sql dump using command and import it on localhost then export from phpmyadmin with
+changes in php.ini
+max_execution_time = 30000
+max_input_time = 30000
+max_input_vars = 50000
+memory_limit = 1024M
+14. Keep ilias_uuid value as it is because it is constant for all installations. (/setup/sql/ilias3.sql)
+15. minimum PHP version set to 5.7 because install on mysql 5.6 causing error change in next version if start working.

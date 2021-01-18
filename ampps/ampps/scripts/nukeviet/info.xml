@@ -1,0 +1,61 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/NukeViet_CMS
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/cms/NukeViet_CMS
+	</ratings>
+	<space>
+		37797883 
+	</space>
+	<support>
+		https://nukeviet.vn/en/forum/
+	</support>
+	<version>
+		4.4.02
+	</version>
+	<mod>6</mod>
+	<release_date>22-06-2020</release_date>
+	<admin>admin</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.6.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.5.0" />
+	<requirement check="php" type="extension" name="openssl" />
+	<requirement check="php" type="extension" name="session" />
+	<requirement check="php" type="extension" name="pdo" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="xml" />
+	<requirement check="php" type="extension" name="json" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">NukeViet CMS</font> is multi Content Management System. NukeViet CMS is the first opensource CMS in Vietnam. The lastest version - NukeViet 4 coding ground up support lastest web technologies, include reponsive web design (use HTML 5, CSS 3, Composer, XTemplate), jQuery, Ajax...) enables you to build websites and online applications rapidly.<br /><br />
+		With it own core libraries built in, NukeViet 4 is cross platforms and frameworks independent. By basic knowledge of PHP and MySQL, you can easily extend NukeViet for your purposes.
+		<br /><br />
+		NukeViet CMS is released under a <a href="https://www.gnu.org/licenses/gpl-2.0.en.html" target="_blank">GNU GENERAL PUBLIC LICENSE.</a>
+		</english-overview>		
+		<english-features>
+		<ul>
+            <li>With it own core libraries built in, NukeViet 4 is cross platforms and frameworks independent. By basic knowledge of PHP and MySQL, you can easily extend NukeViet for your purposes.</li><br />
+            <li>NukeViet core is simple but powerful. It supports abstract modules which can be duplicated. So, it helps you create automatically many modules without any line of code from existing abstract modules.</li><br />
+			<li>NukeViet supports installing automatically modules, blocks, themes at Admin Control Panel and supports packing features which allow you to share your modules to web- community.</li><br />
+            <li>NukeViet fully supports multiple languages for internationalization and localization. Not only multi-interface languages but also multi-database languages are supported. NukeViet supports you to build new languages which are not distributed by NukeViet.</li><br />
+        </ul>	
+		</english-features>
+		<english-que_info>You should need security question and answer question if you have been lost your password</english-que_info>
+		<english-ans_info>You must remember this answer in response to the system.</english-ans_info>
+		<english-sec_que_ans>Security Question</english-sec_que_ans>
+		<english-sec_que_head>Your Question</english-sec_que_head>
+		<english-sec_ans_head>Your Answer</english-sec_ans_head>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

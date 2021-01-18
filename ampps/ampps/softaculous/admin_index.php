@@ -1,4 +1,4 @@
-#!"{$path}/php-5.3/php-cgi.exe"
+#!"C:/web/capitoltechnology.us/www/fusionshell4/ampps/php/php-cgi.exe"
 <?php
 
 //////////////////////////////////////////////////////////////

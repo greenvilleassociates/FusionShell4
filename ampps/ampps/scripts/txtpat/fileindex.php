@@ -1,0 +1,11 @@
+.htaccess
+HISTORY.txt
+LICENSE.txt
+README.txt
+css.php
+files
+images
+index.php
+rpc
+textpattern
+themes

@@ -1,0 +1,9 @@
+1. install without demo data
+2. comment php_value and php_flag from www/.htaccess ( Suggested by vendor as php_value and php_flag causes issue on suPHP servers )
+3. index.php is our file to redirect url.
+4. PHP REQUIREMENT LINK : Read doc/INSTALL File
+5. Keep $config->requestType  = 'GET'; in db.php (Confirmed with vendor via email)
+6. set timezone "(UTC-05:00) Eastern Time (US &amp; Canada)"
+7. Download international package which is named as ZenTaoALM.{{version}}.stable.int(suggested by vendor in email).
+8. Operation mode : Keep default(i.e Application Lifecycle management).
+9. PHP version set to 5.5 from 5.2 check and revert if its working on php 5.3

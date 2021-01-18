@@ -1,0 +1,200 @@
+Changes in 4.8.4 (29 Nov 2020)
+
+* Maintenance release including support for PHP 8.0 and bug fixes.
+* Fixed: Write panel JS error when override forms were switched off
+  (thanks, GugUser).
+* Fixed: Default publishing section is not updated on section delete/rename.
+* Added: 'fields' attribute to <txp:article />.
+* Added: Tags syntax extension to allow for custom processing order.
+* Added: Additional public-side language strings, primarily for themes.
+* Added: Latest translations. Thank you to all translators for your hard work.
+* Changed: Override forms can be of any type, not just article. See prefs.
+* Changed: Admin-side theme name references are appended with the theme version
+  number.
+* Changed: Improved keyboard focus within responsive tables (to allow scrolling
+  via arrow keys).
+* PrismJS 1.22.0.
+
+Changes in 4.8.3 (13 Sep 2020)
+
+* Fixed: A bug in 4.8.2 that can break some legacy plugins (thanks, Yiannis).
+* Fixed: Correctly label 'Allow commenter images in comments' pref.
+* Fixed: Reload private prefs on preferences save (thanks, phiw13).
+* Fixed: More notifications on list panels if there were no assets recorded.
+* Fixed: Improved upgrade path for Textpattern prior to version 4.5.0.
+* Added: 'loading' attribute for <txp:article_image />, <txp:image /> and
+  <txp:thumbnail /> tags.
+* Added: Instantly refresh admin theme on change.
+* Added: Latest translations. Thank you to all translators for your hard work.
+* Changed: Theme styles are now optional.
+* PrismJS 1.21.0.
+
+Changes in 4.8.2
+
+* Fixed: <txp:if_yield> 'else' container returning 1 instead of contents
+  (thanks, Vienuolis).
+* Fixed: Sanitize custom field labels on Write panel (thanks, luuthehienhbit).
+* Fixed: Date tags return -1 in some server setups (thanks, the blue dragon).
+* Fixed: Notification on list panels if there were no assets recorded.
+* Fixed: Incorrect search label for 'name' on Links panel.
+* Fixed: Override forms on Write panel stay in step with live Theme/Section
+  (thanks, cara-tm).
+* Fixed: Plugins loaded from cache show correct Textpack menu labels instead
+  of untranslated strings.
+* Added: 'size' attribute to <txp:images> tag to filter by aspect ratio.
+* Added: valueless 'replace' attribute filters out duplicates.
+* Added: Language selector on login and User Edit panels (if >1 installed).
+* Added: Support for table_collation variable in config.php to affect
+  safe_create() calls, when used in tandem with dbcharset.
+* Changed: Matching categories in <txp:article_custom> now performs AND. Use
+  match="Category" for previous OR behaviour.
+* Changed: Category links in breadcrumb permlink mode.
+* Changed: 'searchall="0"' attribute filters by section.
+* Changed: When logging in, chosen login language is used as admin language.
+* Changed: Password reset/welcome/activation and comment notification emails
+  sent in author language.
+* Changed: Multi-edit only active when checkboxes are selected.
+* Changed: Comments made by logged-in authors don't go through moderation.
+* Fixed: Multi-edit rearmed correctly after async saves on Forms panel.
+* Fixed: Update language list when deleting/switching to prevent stale entries.
+* Fixed: Language errors when using article preview (thanks, Destry and jakob).
+* Fixed: Date/time format when switching front-end language.
+* Fixed: Removed TRADITIONAL sql_mode for a smoother upgrade (thanks, Adi).
+* Fixed: Plugin panel uses the tempdir pref correctly.
+* Fixed: Image/thumb uploaders default to image types (thanks, Adi).
+* Fixed: Plugin auto-TOC strips out heading markup (thanks, Adi).
+* Developer: New 'pre' pretext callback.
+* Developer: Plugins can alter $pretext.
+* Developer: getIfElse() function returns 'else' part of <txp:if_yield else />,
+  and may be used as an EvalElse() replacement.
+* Developer: Add ability to filter strings in Lang->getPack() and extract().
+
+Changes in 4.8.1 (31 May 2020)
+
+* Changed: Improved pophelp for update check status on Diagnostics panel.
+* Changed: Tag builder includes new 4.8.x attributes where possible.
+* Changed: Lazy load images within Images list on supported browsers.
+* Changed: Support <txp:else /> in shortcodes.
+* Changed: Improved handling of yyyy/mm/dd article permlinks. Single-digit
+  months and days permitted, and /section/yyyy/mm/dd will limit articles to the
+  given section.
+* Changed: Multi-assign pageless (live) sections.
+* Changed: Dedicated '*' option when altering theme/page/style to leave assets
+  as they are.
+* Changed: Use noopener on target="_blank" links.
+* Changed: Optimised language loading.
+* Added: Latest translations. Thank you to all translators for your hard work.
+* Added: 'showalways' attribute for <txp:pages /> tag.
+* Added: Support for InnoDB database engine.
+* Fixed: Development and live assets are kept in sync when renamed.
+* Fixed: When setting development assets/themes, link to both live and dev
+  assets even if they share a name.
+* Fixed: Default value of permlink_format on new installs. Thanks, cara-tm.
+* Fixed: Multi-site index.php correctly included in multi-site css.php.
+* Fixed: JavaScript console warning on Hive theme login screens. Thanks,
+  cara-tm.
+* Fixed: Optional parameters come first in function definitions.
+* Fixed: Fall back on partial language identifier if code is not found.
+* Fixed: Strings loaded from plugin cache no longer break those already loaded.
+  Thanks, David.
+* Fixed: RPC errors when altering content from remote editors.
+* jQuery 3.5.1.
+* PrismJS 1.20.0.
+* jQuery File Upload 10.29.0.
+
+Changes in 4.8.0
+
+* Changed: Minimum system requirements increased to PHP 5.5.
+* Changed: <txp:newer /> and <txp:older /> tags support pagination ranges.
+* Changed: Author's real name is available in <txp:page_url>.
+* Changed: Refined scope of root .htaccess, and restricted directory listing
+  in /files/ and /textpattern/ with their respective .htaccess.
+* Changed: Non-searchable sections can be omitted from <txp:section_list>
+  output with valueless 'exclude' attribute.
+* Changed: Consistent Edit step search behaviour on Plugins and Links panels.
+* Changed: Text/HTML tabs now in popup dialog, with optional live preview.
+* Changed: Tag parser tweaks for secondpass handler.
+* Changed: Plugins cached and loaded from disk to avoid eval().
+* Changed: Custom fields support from/to filtering.
+* Changed: <txp:evaluate /> removes empty items from lists.
+* Changed: Scroll to top on list panels during navigation.
+* Changed: Random generator supports random_bytes and doesn't throw errors.
+* Changed: Improved performance of syndication feed handling for sections.
+* Changed: Check for updates throttle reduced to 1hr from 24hrs.
+* Added: Global public theme switcher.
+* Added: Dedicated live/dev theme switching.
+* Added: Support for PHP 7.4.
+* Added: <txp:if_request /> tag for checking server, URL, POST and cookie
+  variables.
+* Added: <txp:pages /> tag for enhanced pagination schemes.
+* Added: 'item' attribute to <txp:yield /> tag.
+* Added: 'title' attribute to image tags.
+* Added: 'class' attribute to comment form tags.
+* Added: 'match' and 'separator' attributes to <txp:if_variable /> tag.
+* Added: 'month' and 'time' attributes to <txp:file_download_list /> and
+  <txp:linklist> tags.
+* Added: 'pg', 'total' and 'limit' attributes to <txp:newer /> and
+  <txp:older /> tags.
+* Added: Support for id ranges in some tags and admin fields.
+* Added: Support for HTTP status 451 (Unavailable For Legal Reasons).
+* Added: Support for native PHP password hashing.
+* Added: Dark Mode support in Hive admin theme.
+* Added: Pageless sections for content snippets and creative article flows.
+* Added: Per-section article link format override.
+* Added: 'breadcrumb/title' article link format.
+* Added: 'section/category/title' article link format.
+* Added: Links have an editable publish time and date.
+* Added: Category searching to a specified depth.
+* Added: Custom field aliases and URL filters via valueless attributes.
+* Added: Global 'evaluate', 'replace' and 'yield' attributes. Evaluate can
+  execute contained content in arbitrary order.
+* Added: Ability to trim lists when using valueless 'trim' attribute.
+* Added: Link to phpinfo() in Diagnostics panel.
+* Added: Configuration file generated during setup can be downloaded.
+* Added: Support for Bengali language translation.
+* Added: Support for Khmer language translation.
+* Added: Support for Norwegian Nynorsk language translation.
+* Added: Support for Welsh language translation.
+* Added: Latest translations. Thanks to all Crowdin translators for their work.
+* Added: Hive and Classic admin themes now support 3 column layouts.
+* Added: Option to disable auto-expanding text areas in Hive admin themes via
+  config.php file. See Hive theme's README.txt file for instructions.
+* Added: Warning to admin panels if JavaScript is unavailable.
+* Added: Support for SSL MySQL connections in config.php.
+* Removed: Obsolete 'No widowed words' preference setting. If this feature is
+  needed it can be implemented directly with <txp:title /> tag.
+* Removed: Some deprecated functions from long ago.
+* Fixed: index.php correctly included in css.php.
+* Fixed: 3 undefined routing-related indexes.
+* Fixed: Article preview (txpreview) is not cached.
+* Fixed: <txp:category_list> 'sort' attribute respects 'categories'
+  attribute instead of requiring sort="" override.
+* Fixed: <txp:recent_articles> only uses default link without form/container.
+* Fixed: Use locale on admin side.
+* Fixed: Localization of pre-flight diagnostic upgrade messages.
+* Fixed: Undefined variable warnings thrown via compact().
+* Fixed: Password handling when using MySQL 8+.
+* Fixed: nbsp on French opening quote broke Textile in some cases.
+* Fixed: Incorrect acronym tag in welcome article.
+* Accessibility: Improved indication of required form fields.
+* Accessibility: Honour 'prefers-reduced-motion' in official themes.
+* Accessibility: Target WCAG 2.0 AAA contrast levels in official themes.
+* Accessibility: Improved ARIA experience.
+* Accessibility: Improved keyboard-only access experience.
+* Developer: Plugins can be uploaded with .php and .zip extensions.
+* Developer: Upload order and file totals sent when batch uploading files.
+* Developer: Some txplib_misc.php functions moved to txplib_admin.php.
+* Developer: PHP magic_quotes_gpc, magic_quotes_runtime, safe_mode and
+  register_globals support removed.
+* Developer: Title accessible to plugins in Atom/RSS.
+* Developer: Merge headers on demand.
+* Developer: Tags can be registered with custom attributes/parameters.
+* Developer: Multiple forms can be fetched at once.
+* Developer: txp.article > neighbour.criteria callback on Write panel.
+* Developer: Please register plugin tags or they will not work in future.
+* Performance optimizations via cacheing and preloading frequent content.
+* Textile 3.7.6. See https://github.com/textile/php-textile/releases/tag/v3.7.6
+  for full list of changes in this release (thanks, gocom).
+* jQuery 3.4.1.
+* PrismJS 1.19.0.
+* jQuery File Upload 10.8.0.

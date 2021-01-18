@@ -1,0 +1,7 @@
+1. Choose license "Shopware Community Edition(license:AGPL)"
+2. Choose language "English" while manual installation. "Default shop currency:" as USD.
+3. Language id is added from "s_core_locales".
+4. install twice. one for english language and second for german language sql dump In "Default shop currency:" Euro.
+5. Always check and replace update.zip with latest.
+6. Shopware is not designed for a Windows systems, hence we have disabled on windows. (Confirmed with vendor via email)
+7. PHP REQUIREMENT LINK: http://en.community.shopware.com/System-Requirements_detail_1841.html#Requirements

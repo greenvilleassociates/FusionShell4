@@ -1,0 +1,5 @@
+1. Language Anchor's language : en_GB
+2. Timezone Your current time zone : America/New_York
+3. Copy /vendor folder and composer.phar from manual to zip
+4. PHP REQUIREMENT LINK : https://github.com/anchorcms/anchor-cms
+5. Release date : https://github.com/anchorcms/anchor-cms/releases

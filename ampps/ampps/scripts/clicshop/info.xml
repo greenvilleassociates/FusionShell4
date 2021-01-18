@@ -1,0 +1,73 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/ClicShopping
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/ecommerce/ClicShopping
+	</ratings>
+	<space>
+		41625066
+	</space>
+	<support>
+		https://www.clicshopping.org/forum/
+	</support>
+	<version>
+		3.2204
+	</version>
+	<mod>5</mod>
+	<release_date>05-12-2020</release_date>
+	<admin>ClicShoppingAdmin/login.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.4.3" />
+	<requirement check="mysql" type="version" operator="ge" value="5.7.0" />
+	<requirement check="php" type="extension" name="pdo" />
+	<requirement check="php" type="extension" name="pdo_mysql" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="zip" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="openssl" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">ClicShopping</font> is an Ecommerce OpenSource and powerful Solution e-commerce B2B / B2C / B2B-B2C. The solution is based on a modern, responsive design that will allow you to have a great website on all mobile devices, desktops but also perform at speed !.
+		<br /><br />
+		The solution is built on modules and APP to have a very big flexibility. The approach is completely modular on the catalog / administration with simple code to understand, to customize and to update at need.
+		<br /><br />
+		ClicShopping is released under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
+		</english-overview>		
+		<english-features>
+			<ul>
+				<li>B2B - B2C  full functionalities</li>
+				<li>WYSIWYG to create your products description, content with CKeditor4.x</li>
+				<li>Image Editor management with El-Finder 2.x - drag and drop</li>
+				<li>Full SEO functionalities optimization ad url</li>
+				<li>Payment and Shipping modules included inside the application with Paypal</li>
+				<li>Extension System to install new Applications via the back-office</li>
+				<li>No limit to insert content</li>
+				<li>Some dynamic statistics inside the dashboard and all the back-office</li>
+				<li>GDRP included and some regulation aspect</li>
+				<li>Some configuration capacities to adapt the settings in function of your needs in B2B or B2C</li>
+				<li>Ready for mobile, tablet and desktop with BootStrap 4.x technology</li>
+				<li>Several modes of payment / delivery can be installed</li>
+				<li>More 250 modules available and free functional on the marketplace and available on Github !</li>
+				<li>Full responsive design  application with Bootstrap 4.x</li>
+				<li>Multi-template</li>
+				<li>multi-currency</li>
+				<li>Multi-language</li>
+				<li>Manifest and service worker implemented</li>
+				<li>Preload for php7.4</li>
+			</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_email>Please provide the email to reset the password</english-err_no_email>
+		<english-err_no_such_email>The Admin email is incorrect and does not exist!</english-err_no_such_email>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+	</languages>
+</soft>

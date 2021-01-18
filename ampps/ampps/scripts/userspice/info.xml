@@ -1,0 +1,60 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/UserSpice
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/others/UserSpice
+	</ratings>
+	<space>
+		6464768
+	</space>
+	<support>
+		http://www.userspice.com/forums/
+	</support>
+	<version>
+		5.2.3
+	</version>
+	<mod>18</mod>
+	<release_date>14-01-2021</release_date>
+	<admin>users/login.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.1.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.6.0" />
+	<requirement check="php" type="extension" name="mysqli" />
+	<requirement check="php" type="extension" name="PDO" />
+	<requirement check="php" type="extension" name="xml" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">UserSpice</font> is a PHP User Management Framework. It is designed from the ground up to be the perfect starting point for any web development project that requires users to login.
+		<br /><br />
+		UserSpice is available under the <a href="http://www.gnu.org/licenses/gpl.html" target="_blank">GNU General Public License</a>.
+		</english-overview>		
+		<english-features>
+		<ul>
+			<li>Completely Streamlined (60% smaller than 4.0)</li>
+			<li>Better Bootstrap Integration</li>
+			<li>Cleaner UI</li>
+			<li>More Descriptive Error Messages</li>
+			<li>Better Path Handling</li>
+			<li>Login with Username or Password</li>
+			<li>WYSIWYG Profile Editor</li>
+			<li>More Powerful Admin Dashboard</li>
+			<li>New System for Modifying UserSpice Core</li>
+			<li>New Timezone Features</li>
+			<li>Many Security, Bug, and Usability Fixes</li>
+		</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_email>Please provide the email to reset the password</english-err_no_email>
+		<english-err_no_such_email>The Admin email is incorrect and does not exist!</english-err_no_such_email>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+	</languages>
+</soft>

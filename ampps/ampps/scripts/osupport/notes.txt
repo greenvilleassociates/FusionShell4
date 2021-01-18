@@ -1,0 +1,2 @@
+1. leave smtp detail blank
+2. PHP REQUIREMENT LINK : https://github.com/opensupports/opensupports#requirements

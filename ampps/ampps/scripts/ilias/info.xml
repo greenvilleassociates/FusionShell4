@@ -1,0 +1,69 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/ILIAS
+	</demo>
+	<ratings>
+		http://softaculous.com/softwares/educational/ILIAS
+	</ratings>
+	<space>
+		552279784
+	</space>
+	<support>
+		https://www.ilias.de/docu/goto.php?target=cat_1580&amp;client_id=docu
+	</support>
+	<version>
+		6.6
+	</version>
+	<mod>33</mod>
+	<release_date>27-11-2020</release_date>
+	<admin>login.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.3.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.7.0" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="dom" />
+	<requirement check="php" type="extension" name="xsl" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">ILIAS</font> is a powerful Open Source Learning Management System for developing and realising web-based e-learning. The software was developed to reduce the costs of using new media in education and further training and to ensure the maximum level of customer influence in the implementation of the software.
+		<br /><br />
+		ILIAS is licensed under the <a href="http://www.gnu.org/licenses/gpl" target="_blank">GNU General Public License (GPL)</a>.
+		</english-overview>		
+		<english-features>
+			<ul>
+				<li>Powerful <b>Test &amp; Assessment</b> tool that allows you to offer both self-evaluations for your learners, as well as complete e-exams</li>
+				<li>Flexible <b>Course Management</b> for a multitude of didactical scenarios</li>
+				<li><b>Study Programs</b> allow you to reproduce full curriculums with a single tool</li>
+				<li>Content sharing with really fast <b>Drag&amp;Drop File Upload</b></li>
+				<li><b>Personal Workspace</b> for learners, allowing the easy creation of <b>portfolios</b> and <b>blogs</b></li>
+				<li>Simple creation of study materials with our <b>Authoring Tools</b>: Build learning modules, wikis, glossaries, and much more…</li>
+				<li><b>Streamlined Design</b>: Despite their usage differences, usability of all tools in ILIAS is held very similar - making it easy to explore new learning scenarios!</li>
+				<li><b>Learning Communities</b> that help you bring your learners together…</li>
+				<li>…based on the integrated <b>Communication Tools</b>: Personal profiles, Contacts, Who is online?-tool, mail, chat and more…</li>
+				<li>Highly developed <b>Access Management</b> allows you to fine-tune your permissions for each and every object</li>
+				<li><b>No Lock-In</b>: Your data can be exported in XML format</li>
+			</ul>
+		</english-features>
+		<english-client_id>Client ID</english-client_id>
+		<english-exp_client_id>Please choose a client ID. Any letter (except umlauts) or number is allowed. The client ID must be in one word.</english-exp_client_id>
+		<english-setup_pass>Master Password</english-setup_pass>
+		<english-convert>ImageMagick Convert Path</english-convert>
+		<english-exp_convert>Required for displaying thumbnails of images, e.g. '/your_path/convert'.</english-exp_convert>
+		<english-zip>Path to Zip</english-zip>
+		<english-exp_zip>Required for building export files, e.g. '/your_path/zip'.</english-exp_zip>
+		<english-unzip>Path to Unzip</english-unzip>
+		<english-exp_unzip>Required for extracting import files, e.g. '/your_path/unzip'.</english-exp_unzip>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+	</languages>
+</soft>

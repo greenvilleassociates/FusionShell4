@@ -1,0 +1,3 @@
+1. Check admin.php to delete unwanted files from previous version while upgrade and update upgrade.php accordingly.(No admin.php since 2.0.1 check for new file for list of files to be deleted from next versions)
+2. PHP REQUIREMENT LINK: https://www.webtrees.net/index.php/en/
+3. Download webtrees-x.y.z.zip package from github and not source code as webtrees-x.y.z.zip contains language files.(confirmed vendor)

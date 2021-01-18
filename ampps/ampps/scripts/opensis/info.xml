@@ -1,0 +1,63 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/openSIS
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/educational/openSIS
+	</ratings>
+	<space>
+		10259382
+	</space>
+	<support>
+		https://sourceforge.net/p/opensis-ce/discussion/
+	</support>
+	<version>
+		6.5
+	</version>
+	<mod>1</mod>
+	<mod_files>1</mod_files>
+	<release_date>08-02-2018</release_date>
+	<admin>index.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.5.0" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">openSIS</font> is a commercial grade, secure, scalable &amp; intuitive Student Information System from OS4ED.
+		<br /><br />
+		openSIS is a new paradigm in student management software - it is all about the student. openSIS focuses on capturing relevant data at source and helps administration to monitor progress and remediate deficiencies to retain students and increase their achievements.
+		<br /><br />
+		openSIS is released under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html" target="_blank">GNU GENERAL PUBLIC LICENSE Version 2</a>.
+		</english-overview>		
+		<english-features>
+		<ul>
+			<li>Student Demographic Information</li>
+			<li>Student Class Schedule</li>
+			<li>Student Grades, report cards and transcripts</li>
+			<li>Parent and Guardian Information</li>
+			<li>Student and Parent Portal</li>
+			<li>Built in Messaging</li>
+			<li>Staff Information</li>
+			<li>Staff Class Schedule</li>
+			<li>Student Class Roster</li>
+			<li>On-line Gradebook</li>
+			<li>Multiple types of Scheduling</li>
+		</ul>
+		</english-features>
+		<english-beg_date>Beginning Date</english-beg_date>
+		<english-end_date>Ending Date</english-end_date>
+		<english-s_date_exp>Please enter the Date in YYYY-MM-DD format.</english-s_date_exp>
+		<english-err_date>Beginning date and Ending date has to be in YYYY-MM-DD format.</english-err_date>
+		<english-err_passdig8>Password should be minimum 8 characters with atleast one number and one special character.</english-err_passdig8>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

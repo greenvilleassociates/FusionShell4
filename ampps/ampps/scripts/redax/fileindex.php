@@ -1,0 +1,15 @@
+.htaccess
+README.md
+assets
+cache
+config.php
+console.php
+database
+includes
+index.php
+install.php
+languages
+libraries
+modules
+templates
+web.config

@@ -1,0 +1,55 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/SCHLIX_CMS
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/cms/SCHLIX_CMS
+	</ratings>
+	<space>
+		30169266
+	</space>
+	<support>
+		https://www.schlix.com/forum/
+	</support>
+	<version>
+		2.2.6-1
+	</version>
+	<mod>35</mod>
+	<release_date>10-01-2021</release_date>
+	<admin>admin</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.6.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.6.0" />
+	<requirement check="php" type="extension" name="mysqli" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">SCHLIX CMS</font> is a lightweight, extensible content management system for publishing websites and blogs with friendly user interface. It also features multisite, versioning for easy backup and restore of articles, multi-site, XML sitemap for search engine submission. Bootstrap and Font Awesome are also built-in.
+		<br /><br />
+		SCHLIX CMS is released under the <a href="https://www.schlix.com/html/license.html" target="_blank">Schlix SHARED SOURCE License</a>.
+		</english-overview>		
+		<english-features>
+	<ul>
+		<li><b>Extensible API for 3rd-party Application Development.</b> You can choose from pre-defined data structures and extend the existing classes to create your own business directories, e-commerce, student database, etc</li>
+		<li><b>WYSIWYG</b> Editing. User-friendly content editing . Insert images easily through upload</li>
+		<li><b>Drag and Drop.</b> Drag and drop is standardized through all classess in the administration.</li>
+		<li><b>RSS</b> support for contents/blog.</li>
+		<li><b>Captcha</b>  support to reduce spamming attempt.</li>
+	</ul>
+		</english-features>
+		<english-site_id>Site ID</english-site_id>
+		<english-exp_site_id><br />This field is used to identify multisite. Please use only alphanumeric characters.</english-exp_site_id>
+		<english-err_siteid>Site Id must be of 3 to 20 characters and alphanumeric only.</english-err_siteid>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+	</languages>
+</soft>

@@ -1,0 +1,11 @@
+1. Check Default theme while installation otherwise frontend will be blank. Mentioned in the documentation link below.
+https://docs.expressionengine.com/latest/installation/installation.html#4-run-the-installation-wizard
+
+2. Uncheck 'I want to share analytics with the ExpressionEngine Development Team while manual installation'.
+
+3. Very important : In every update check and change the value of $__settings['site_system_preferences'] variable in install.php as per the 'site_system_preferences' column in `[[dbprefix]]sites` table,
+which is a serialized base64 encoded value. Check all the other base64 entries in the [[dbprefix]]sites table, if there are some values from manual installation that are required to be configured by us, please configure them in install.php. Also check base64 encoded entries from [[dbprefix]]channel_fields , [[dbprefix]]fieldtypes table as well and do the same for them.(Not required since 6.0.0)
+
+4. Check and copy /themes/user/site and /system/user/templates from manual to zip. they can be checked in /system/ee/installer/site_themes folder for reference.
+
+5. PHP REQUIREMENT LINK : https://docs.expressionengine.com/latest/installation/requirements.html

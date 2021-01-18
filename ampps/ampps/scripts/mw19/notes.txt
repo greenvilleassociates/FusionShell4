@@ -1,0 +1,17 @@
+################ Untar downloaded tar.gz package on linux server and then make a ground zip. ################
+
+1) Use Storage Engine Innodb. 
+2) Use binary database character set.
+3) Use the License as "No license footer"
+4) Check the language files exists in the /languages/classes/ & /languages/messages/ it should be there with the downloaded zip.
+5) We have added "tmpdir" in order to save cache at different locations for each installation to avoid conflicts between them. (v1.27.1)
+https://www.mediawiki.org/wiki/Manual_talk:Upgrading#Shared_server_.2B_multiple_Mediawiki_installations
+https://phabricator.wikimedia.org/T127127
+We have added the following in LocalSettings.php
+$wgTmpDirectory = "[[tmpdir]]";
+6) PHP REQUIREMENT LINK: https://www.mediawiki.org/wiki/Manual:Installation_requirements
+7) check "I'm bored already, just install the wiki." and continue in manual install
+8) removed inserts from "job" table because it creates entry after page access
+9) Keep `content_sha1` value as it is in "content" table because it is same for all installations.
+10)we have disable cross upgrade because we were getting following error post upgrading. eb786298294aef346a4e8c9b] 2020-03-27 11:45:10: Fatal exception of type "MWException"
+(Reported issue to vendor as well) Check in next version if it resolves.(Got this error while upgrading from 1.31.12 to 1.35.1 so have disabled cross upgrade(i.e changed 'min_require' in info.xml as 1.35.0), check whether cross upgrade works in next version and also change 'min_require'.

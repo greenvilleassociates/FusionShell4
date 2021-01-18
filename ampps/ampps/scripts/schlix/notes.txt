@@ -1,0 +1,8 @@
+1. Choose "System Timezone" as "America/New_york"
+2. install with "Demo - Company profile sample site" sample data
+3. Move all files and folder of web folder except config.inc.php and /web/{{site-id}}/cache/sitemap.xml to package
+4. PHP REQUIREMENT LINK : https://www.schlix.com/documentation/v2/system-requirement.html
+(We have kept the minimum requirement as PHP 5.6 in info.xml(even though site mentions PHP 5.5), as the installer checks for PHP 5.6 in runtime.inc.php).
+5. Keep Port Number, Database socket blank in Advanced Options for database in manual installation. Also uncheck 'Database connection uses SSL' and keep  'SSL CA certificate file path' blank. Even though script detects values for SCHLIX_DB_PORT and SCHLIX_DB_SOCKET and adds their entries (in config.inc.php) , even after keeping them blank in manual installation, keep their values blank in config.inc.php file. i.e define('SCHLIX_DB_PORT',''); and define('SCHLIX_DB_SOCKET','');(Tested in manual installation as well)
+6. Download language files from "https://www.schlix.com/downloads/schlix-cms/system-language-packs/{{SCHLIX VERSION WITHOUT ._ }}/schlix-cms-syslangpack-{{LANGUAGE CODE}}-v{{SCHLIX VERSION}}.zip" and make ground zip from "system" folder ( link Mentioned in "system\apps\admin\admin.admin.class.php" in "installSystemLanguagePack" function )
+eg: https://www.schlix.com/downloads/schlix-cms/system-language-packs/2-2-3-1/schlix-cms-syslangpack-bg-v2.2.3-1.zip

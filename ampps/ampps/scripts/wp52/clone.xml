@@ -1,0 +1,17 @@
+<softclone xmlns="http://www.softaculous.com">
+	<settings>
+		<group>
+			<heading>{{site_set}}</heading>
+			<input type="checkbox" name="no_search_engine" value="off">
+				<head>{{no_search_engine}}</head>
+				<exp>{{exp_no_search_engine}}</exp>
+				<optional>true</optional>
+			</input>
+			<input type="text" name="site_name" size="30" save="true">
+				<head>{{site_name}}</head>
+				<exp>{{exp_site_name_clone}}</exp>
+				<optional>true</optional>
+			</input>
+		</group>
+	</settings>
+</softclone>

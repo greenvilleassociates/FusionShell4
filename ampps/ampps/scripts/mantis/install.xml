@@ -1,0 +1,108 @@
+<softinstall xmlns="http://www.softaculous.com">
+	<settings>
+		<group>
+			<heading>{{db_set}}</heading>
+			<input type="text" name="dbprefix" size="30" value="mt_">
+				<head>{{db_pre}}</head>
+				<optional>true</optional>
+			</input>
+		</group>
+		<group>
+			<heading>{{site_set}}</heading>
+			<input type="text" name="site_name" size="30" value="MantisBT">
+				<head>{{site_name}}</head>
+			</input>
+		</group>
+		<group>
+			<heading>{{ad_act}}</heading>
+			<input type="text" name="admin_username" size="30" value="administrator" disabled="disabled">
+				<head>{{ad_name}}</head>
+				<optional>true</optional>
+			</input>
+			<input type="text" name="admin_pass" size="30" value="pass">
+				<head>{{ad_pass}}</head>
+				<handle>__ad_pass</handle>
+			</input>
+			<input type="text" name="admin_realname" size="30" value="Administrator">
+				<head>{{real_name}}</head>
+			</input>
+			<input type="text" name="admin_email" size="30" value="admin" softmail="true">
+				<head>{{ad_email}}</head>
+				<handle>__email_address</handle>
+			</input>
+		</group>
+		<group>
+			<heading>{{ad_lang}}</heading>
+			<input type="select">
+				<select name="language">
+					<option value="english">English</option>
+					<option value="afrikaans">Afrikaans</option>
+					<option value="amharic">Amharic</option>
+					<option value="arabic">Arabic</option>
+					<option value="asturian">Asturian</option>
+					<option value="basque">Basque</option>
+					<option value="belarusian_tarask">Belarusian (Tarask)</option>
+					<option value="breton">Breton</option>
+					<option value="bulgarian">Bulgarian</option>
+					<option value="catalan">Catalan</option>
+					<option value="chinese_simplified">Simplified Chinese</option> 
+					<option value="chinese_traditional">Traditional Chinese</option>
+					<option value="croatian">Croatian</option>
+					<option value="czech">Czech</option>
+					<option value="danish">Danish</option>
+					<option value="dutch">Dutch</option>
+					<option value="estonian">Estonian</option>
+					<option value="finnish">Finnish</option>
+					<option value="french">French</option>
+					<option value="galician">Galician</option>
+					<option value="georgian">Georgian</option>
+					<option value="german">German</option>
+					<option value="greek">Greek</option>
+					<option value="hebrew">Hebrew</option>
+					<option value="hungarian">Hungarian</option>
+					<option value="icelandic">Icelandic</option>
+					<option value="interlingua">Interlingua</option>
+					<option value="italian">Italian</option>
+					<option value="japanese">Japanese</option>
+					<option value="korean">Korean</option>
+					<option value="latvian">Latvian</option>
+					<option value="lithuanian">Lithuanian</option>
+					<option value="luxembourgish">Luxembourgish</option>
+					<option value="macedonian">Macedonian</option>
+					<option value="norwegian_bokmal">Norwegian Bokmal</option>
+					<option value="norwegian_nynorsk">Norwegian Nynorsk</option>
+					<option value="occitan">Occitan</option>
+					<option value="persian">Persian</option>
+					<option value="polish">Polish</option>
+					<option value="portuguese_brazil">Portuguese Brazil</option>
+					<option value="portuguese_standard">Portuguese Standard</option>
+					<option value="ripoarisch">Ripuarian</option>
+					<option value="romanian">Romanian</option>
+					<option value="russian">Russian</option>
+					<option value="serbian">Serbian</option>
+					<option value="serbian_latin">Serbian Latin</option>
+					<option value="slovak">Slovak</option>
+					<option value="slovene">Slovenian</option>
+					<option value="spanish">Spanish</option>
+					<option value="swedish">Swedish</option>
+					<option value="swissgerman">Swiss German</option>
+					<option value="tagalog">Tagalog</option>
+					<option value="turkish">Turkish</option>
+					<option value="ukrainian">Ukrainian</option>
+					<option value="urdu">Urdu</option>
+					<option value="vietnamese">Vietnamese</option>
+					<option value="volapuk">Volapuk</option>
+					<option value="zazaki">Zaza</option>
+				</select>
+				<head>{{select_lang}}</head>
+			</input>
+		</group>
+	</settings>
+	<db>mysql</db>
+	<files>
+		<exclude>admin/*</exclude>
+		<exclude>admin/*/*</exclude>
+		<exclude>admin/*/*/*</exclude>
+		<exclude>admin/*/*/*/*</exclude>
+	</files>
+</softinstall>

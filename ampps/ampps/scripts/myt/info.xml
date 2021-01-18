@@ -1,0 +1,66 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Manage_Your_Team
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/projectman/Manage_Your_Team
+	</ratings>
+	<space>
+		32424610
+	</space>
+	<support>
+		http://forum.manageyourteam.net/
+	</support>
+	<version>
+		1.5.1
+	</version>
+	<mod>1</mod>
+	<mod_files>3</mod_files>
+	<release_date>21-08-2016</release_date>
+	<admin>site/login</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.3.0" />
+	<requirement check="php" type="version" operator="lt" value="7.4.0" />
+	<requirement check="php" type="extension" name="PDO" />
+	<requirement check="php" type="extension" name="SPL" />
+	<requirement check="php" type="extension" name="pcre" />
+	<requirement check="php" type="extension" name="pdo_mysql" />
+	<requirement check="php" type="extension" name="gd" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">MyT</font> (Manage Your Team) is an extremely powerful project management tool, and it's easy to use for both administrators and end-users with a really intuitive structure. 
+		<br /><br />
+		It's a free open source task management and project management system, based on Yii Framework, easy to use and with a great perspective of growth for the future. You can create one or more Projects and manage several types of Tasks for each one. You can also create and manage Timesheet hours. 
+		<br /><br />
+		Myt can send email notifications based on some events, such as Task assignments and Project associations. All features are configurable from the Administration Panel.
+		<br /><br />
+		Manage Your Team is released under the <a href="https://creativecommons.org/licenses/by-nc/2.0/" target="_blank">Creative Commons Attribution Non-Commercial License V2.0</a>.
+		</english-overview>		
+		<english-features>
+<font size="3" color="#1281B6"><b>Project Management</b></font><br />
+<b>Awesome project management feature.</b> Project hierarchy support, project assignment notification and much more.<br /><br />
+<font size="3" color="#1281B6"><b>Task Management</b></font><br />
+<b>All your project tasks under control.</b> Easy monitoring of all your task by advanced filtering and mail notification.<br /><br />
+<font size="3" color="#1281B6"><b>Cloud Storage</b></font><br />
+<b>Innovative attachment storage.</b> Built-in cloud storage support for attachment ( Mega ) or directly on your host.<br /><br />
+<font size="3" color="#1281B6"><b>TimeCard Management</b></font><br />
+<b>Time Card based charge like no others.</b> Keep track of all effort spent by your resources by managing it via intuitive time card based area, you can also export it and make simple reports.<br /><br />
+<font size="3" color="#1281B6"><b>Customizable settings</b></font><br />
+<b>Customize MyT as you like.</b> No need to change files for change MyT settings, you can do all via application.<br /><br />
+<font size="3" color="#1281B6"><b>Multiple Users</b></font><br />
+<b>Role based permission and groups.</b> Predefined and fully customizable roles, to fit all your needs.<br /><br />
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+	</languages>
+</soft>

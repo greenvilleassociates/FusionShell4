@@ -1,0 +1,81 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/BlaB!AX
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/others/BlaB!AX
+	</ratings>
+	<space>
+		3776271
+	</space>
+	<support>
+		https://justblab.com/blabax-chat-faq
+	</support>
+	<version>
+		21.01
+	</version>
+	<mod>19</mod>
+	<release_date>27-12-2020</release_date>
+	<admin>account.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.4.0" />
+	<requirement check="php" type="extension" name="json" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">BlaB! AX</font> is a free AJAX/PHP group chat system. Both the frontend and Admin CP are with responsive design, HTML5 and CSS3 compliant, support all modern browsers (incl. mobile browsers), HiDPI displays ready (no raster images).<br/><br/>
+		BlaB! AX is tiny - all that users load with their browsers is less than 200kB (60kB gzipped) in 5 HTTP requests (incl. sounds, emoticons and other images; stickers and avatars are loaded on request) and 95% of this content is cached for further use.
+		 <br /><br />
+		BlaB! AX <a href="https://justblab.com/blabax-chat-faq#license" target="_blank">License Agreement</a>.
+		</english-overview>		
+		<english-features>
+		<ul>
+			<li>Supports any browser incl. mobile browsers.</li>
+			<li>PHP5/PHP7 compatible: no PHP errors, warnings or notices.</li>
+			<li>HTML5 and CSS3 compliant: passes W3C tests with 1 warning about scaling.</li>
+			<li>No errors and warnings in Browser Console.</li>
+			<li>Native code only - no external frameworks and libraries used.</li>
+			<li>Excellent responsiveness even on old low-end smartphones and tablets.</li>
+			<li>HiRes/Retina displays ready - no raster images used /why not? see FAQ/.</li>
+			<li>100% resizable layout, you can run it fullscreen or in iframes as small as 360x360px.</li>
+			<li>Registration system allowing 'guest' users.</li>
+			<li>Innovative method to reset forgotten passwords without sending emails.</li>
+			<li>Predefined mottos, users can put their own one-line motto instead.</li>
+			<li>A set of avatars to pick from and an option to upload an image/photo.</li>
+			<li>Online status: Online, Away, Occupied, Unavailable, DND</li>
+			<li>Rooms - separate chat spaces. Every chatter is connected to all the rooms and receives any message posted in any room with a visual notification and a different sound notification for messages posted in background rooms.</li>
+			<li>Private one-2-one chats inside the main chat.</li>
+			<li>Admin can kick and ban users and IP addresses.</li>
+			<li>Material icons, EmojiOne emoticons, native emojis &amp; stickers.</li>
+			<li>Colorful predefined themes; option to create your own in seconds.</li>
+			<li>Two ready to use Android apps available on Google Play.</li>
+			<li>An easy way to create your own custom mobile app for Android and IOS.</li>
+			<li>An easy way to create a Chrome web extension /see FAQ/.</li>
+			<li>Ignore option - chatters can choose to hide messages from other chatters.</li>
+			<li>Stealth users - invisible in chat; do not appear in logs</li>
+			<li>Sound notifications on (1) new messages, (2) enter/leave/changeStatus, (3) messages in background, (4) PM.</li>
+			<li>Language &amp; timezone settings per user.</li>
+			<li>UTF-8 multilanguage support incl. usernames with non-Latin letters.</li>
+			<li>Translated in English, French, German and Spanish.</li>
+			<li>Mobile friendly Admin CP: settings, logs, user management, themes.</li>
+			<li>ESC-centric - the ESC key closes any element that is on top and opens the main panel in chat and in Admin CP.</li>
+			<li>On mobile, a swipe from the left edge opens the main panel in chat and the menu in Admin CP.</li>
+			<li>Users can scroll with arrow keys, mouse wheel and by dragging.</li>
+			<li>A double click swaps between select mode and drag to scroll mode.</li>
+			<li>CTRL+SHIFT+1 CTRL+SHIFT+2 ... CTRL+SHIFT+9 switches to rooms 1-9.</li>
+			<li>CTRL+SHIFT+L/R arrows cycles between rooms.</li>
+		</ul>
+		</english-features>
+		<english-err_passlen5to12>Password should be between 5 to 12 characters.</english-err_passlen5to12>
+		<english-err_alphanumpass>Password should contain atleast one upper case, one lower case and one numeric character.</english-err_alphanumpass>
+		<english-ad_ques>Admin password Recovery question</english-ad_ques>
+		<english-ad_answ>Admin password Recovery Answer</english-ad_answ>
+	</languages>
+</soft>

@@ -1,0 +1,12 @@
+1. (NOT REQUIRED NOW) We have added few variables in config.php so add them even if they are not in the current file (Now these variables are added in Database).
+2. Keep MyISAM in MySQL database engine type while installing manually.
+3. After installation if you get update notification then add 
+('updateavailable', '0'),
+('updatelastcheck', '[[regtime]]'); In [[dbprefix]]settings_global table
+4. We have removed auto upgrade for minor version. i.e when there is no change in Db we will display 3rd link.
+5. PHP REQUIREMENT LINK : https://manual.limesurvey.org/Installation#Make_sure_you_can_use_LimeSurvey_on_your_website
+6. We have disabled upgrade to  version 3.x.x from previous versions i.e from 2.x.x and 1.x.x  ,as 'Plugin manager' breaks after upgrade.(Please check and enable upgrade in next version if it works 2.x.x and 1.x.x and change minimum requirement accordingly.)(Since  version 3.1.1+).
+7. Upgrade enabled with minimum version 3.1.1+.
+8. Important : Every time check and change the value of $DBVersion variable in upgrade.php by checking value of DBVersion from `".$__settings['dbprefix']."settings_global` table when there is a change in it.
+9. Since 4.1.6+ installer asks for custom dbprefix during installation but takes default prefix (lime_) to populate database. Hence we have removed from install.xml Check in next version.(Checked in 4.1.8+ as well, not yet fixed) (re-enabled from 4.1.18+)
+10. After 4.3.15+, we don't provide any further update to LimeSurvey 4.x , since those releases are labelled as 'Unstable' on their website. We have reverted to 3.x latest stable(i.e 3.25.3+) release post 4.3.15+. Provide update to 4.x only when the releases are mentioned as 'Stable'.

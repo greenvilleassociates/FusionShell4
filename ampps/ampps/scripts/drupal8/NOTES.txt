@@ -1,0 +1,11 @@
+1) Default Timezone should be ZERO I.e UTC +0000 and keep default country NONE
+2) Leave "Check for updates automatically ", "Email notifications"  as it is.
+3) Delete all watchdog INSERTS And also change its AUTO INCREMENT =1 ; 
+4) Delete this table inserts from following tables cache_bootstrap, cache_config, cache_container, cache_data, cache_default, cache_discovery, cache_entity, cache_menu, cache_render. Drupal creates it on login
+5) No need to generate system.js_cache_files and drupal_css_cache_files. It's same for all install
+6) If any new root level folder added in drupal package then add its entry in upgrade.php apart from vendor and core. Only 'core', 'vendor' and root level files need to be deleted before upgrade. (https://api.drupal.org/api/drupal/core!UPGRADE.txt/8)
+7) Do not change "default_config_hash" from sql since it remains same across installations for same version.
+8) Set the value for temporary as s:0:"" in `config` table for "system.file" row. On our servers we get it as /tmp but on some servers /tmp is not accessible due to open_basedir which causes temporary file creation issue. So if we set it as empty Drupal will generate it automatically when needed(Not needed since version 8.8.0).
+9) Remove serialized entries of "twig_extension_hash" and "twig_cache_prefix" from key_value table as it creates itself.
+10) PHP REQUIREMENT LINK: https://www.drupal.org/docs/understanding-drupal/how-drupal-9-is-made-and-what-is-included/environment-requirements-of
+11) Can not add languages at the moment as it needs to enable (language, content translation and interface translation modules) which adds too many entries in SQL

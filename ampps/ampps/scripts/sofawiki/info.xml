@@ -1,0 +1,55 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.png" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/SofaWiki
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/cms/SofaWiki
+	</ratings>
+	<space>
+		1026525
+	</space>
+	<support>
+		https://www.sofawiki.com/en/sofawiki
+	</support>
+	<version>
+		3.1.2
+	</version>
+	<mod>2</mod>
+	<release_date>14-10-2020</release_date>
+	<admin>index.php?action=login</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.4.0" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">SofaWiki</font> is a filebased CMS built on PHP. It uses concepts of MediaWiki, but without MySQL which makes it extremely portable. Pages written in SofaWiki can also have freely defined fields from which relational database queries can be built.
+		<br /><br />
+		SofaWiki is licensed under <a href="https://www.sofawiki.com/en/license" target="_blank">GNU Lesser General Public License</a>.
+		</english-overview>
+		<english-features>
+		<ul>
+			<li>Complete Version control with history on each page and diff tool</li>
+			<li>Compatible to MediaWiki Syntax, so you can migrate to MediaWiki as a fallback.</li>
+			<li>Fine grained User Rights</li>
+			<li>Extensible with using Transclusion with templates, parsers and functions</li>
+			<li>Custom design with skins and CSS</li>
+			<li>Multilanguage content by default. Unicode UTF-8 encoding.</li>
+			<li>Works with PHP5 or PHP4 and no database needed. Simple Backup.</li>
+			<li>Fast server for 100000 pages and more</li>
+			<li>HTML 5 templates</li>
+			<li>Semantic fields make SofaWiki a searchable database either through the Query function or the brand new Relation function</li>
+			<li>Open Source, free license</li>
+		</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_email>Please provide the email to reset the password</english-err_no_email>
+		<english-err_no_such_email>The Admin email is incorrect and does not exist!</english-err_no_such_email>
+	</languages>
+</soft>

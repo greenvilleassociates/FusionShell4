@@ -1,0 +1,56 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/UVdesk
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/customersupport/UVdesk
+	</ratings>
+	<space>
+		98468595
+	</space>
+	<support>
+		https://forums.uvdesk.com/
+	</support>
+	<version>
+		1.0.12
+	</version>
+	<mod>2</mod>
+	<release_date>27-07-2020</release_date>
+	<admin>public/en/member/login</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.2.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.7.23" />
+	<requirement check="php" type="extension" name="imap" />
+	<requirement check="php" type="extension" name="mailparse" />
+	<requirement check="php" type="extension" name="mysqli" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">UVdesk</font> community helpdesk project skeleton packaged along with the bare essential utilities and tools to build and customize your own helpdesk solutions.
+		<br /><br />
+		UVdesk is released under the <a href="https://github.com/uvdesk/community-skeleton/blob/master/LICENSE" target="_blank">MIT license</a>.
+		</english-overview>		
+		<english-features>
+			<ul>
+				<li><b>Branding</b><br/>Branding allows complete transformation of support portal to match with the business and to meet with the expectation of users implementing your brand colors.</li>
+				<li><b>Highly Customizable</b><br/>As it is created with the Symfony PHP framework to be highly customizable for the complex customer support requirement of any trade.</li>
+				<li><b>Knowledgebase</b><br/>A smart way to give a self-served appropriate description prior to the customers and let them find out a quick solution from up to dated knowledgebase articles to reduce the inquiry count.</li>
+				<li><b>Mailbox Configuration</b><br/>Configure your support email address with the mailbox to never miss out any lead as it converts all the coming emails into the Helpdesk Ticket for the standard supervision and better customer support.</li>
+				<li><b>Saved Replies</b><br/>Saved Replies are the pre-prepared answers for quick resolution of repetitive customer queries to save support agent\'s time from typing the same answers repeatedly. </li>
+				<li><b>Ticket Formation</b><br/>No more checking emails frequently. Get every email inquiries generated as a Ticket with UVdesk Open Source Helpdesk and instantly deliver better customer support experience.</li>
+				<li><b>Ticket Management</b><br/>Get all the queries generated as Tickets,  hold, manage and route the inquiries using smart tools to distribute work among team for delivering instant and better customer support experience.</li>
+				<li><b>User Management</b><br/>Easily scale and streamline your customer support with countless agents, team, and groups.</li>
+				<li><b>Workflow</b><br/>Save time from using pre-set workflow based on events and conditions to automate actions also helps to escape from executing manual steps in every fixed interval of time.</li>
+			</ul>
+		</english-features>
+		<english-ad_path>Admin Path</english-ad_path>
+		<english-cust_path>Customer Path</english-cust_path>
+	</languages>
+</soft>

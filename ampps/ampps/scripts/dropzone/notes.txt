@@ -1,0 +1,1 @@
+Release date : https://gitlab.com/meno/dropzone/commits/master

@@ -1,0 +1,76 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Attendize
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/customersupport/Attendize
+	</ratings>
+	<space>
+		273884659
+	</space>
+	<support>
+		https://www.attendize.com/support.html
+	</support>
+	<version>
+		2.1.2
+	</version>
+	<mod>5</mod>
+	<release_date>02-12-2020</release_date>
+	<admin>public/login</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.3.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.7.0" />
+	<requirement check="php" type="extension" name="openssl" />
+	<requirement check="php" type="extension" name="pdo" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="tokenizer" />
+	<requirement check="php" type="extension" name="fileinfo" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="zip" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Attendize</font> is an Open-source ticket selling and event management platform and is everything you need for a successful event. Attendize has a wide array of features aimed at making organising events as effortless as possible.
+		<br /><br />
+		Attendize released under The <a href="https://www.attendize.com/license.html" target="_blank">Attribution Assurance Licence</a>.
+		</english-overview>
+		<english-features>
+		<ul>
+			<li>Beautiful mobile friendly event pages.</li>
+			<li>Easy attendee management - Refunds, Messaging etc.</li>
+			<li>Data export - attendees list to XLS, CSV etc.</li>
+			<li>Generate print friendly attendee list.</li>
+			<li>Ability to manage unlimited organisers / events.</li>
+			<li>Manage multiple organisers.</li>
+			<li>Real-time event statistics.</li>
+			<li>Customizable event pages.</li>
+			<li>Multiple currency support.</li>
+			<li>Quick and easy checkout process.</li>
+			<li>Customizable tickets - with QR codes, organiser logos etc.</li>
+			<li>Fully brandable - Have your own logos on tickets etc.</li>
+			<li>Affiliate tracking - track sales volume / number of visits generated etc.</li>
+			<li>Widget support - embed ticket selling widget into existing websites / WordPress blogs.</li>
+			<li>Social sharing.</li>
+			<li>Support multiple payment gateways - Stripe and PayPal out the box. Other payment gateways can be added.</li>
+			<li>Support for offline payments.</li>
+			<li>Refund payments - partial refund &amp; full refunds.</li>
+			<li>Ability to add service charge to tickets.</li>
+			<li>Messaging - eg. Email all attendees with X ticket.</li>
+			<li>Public event listings page for organisers.</li>
+			<li>Ability to ask custom questions during checkout.</li>
+			<li>Browser based QR code scanner for door management.</li>
+		</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_email>Please provide the email to reset the password</english-err_no_email>
+		<english-err_no_such_email>The Admin email is incorrect and does not exist!</english-err_no_such_email>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+	</languages>
+</soft>

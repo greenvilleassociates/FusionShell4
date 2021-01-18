@@ -1,0 +1,3 @@
+1. We add the /index.php and /local/config.php so add it even if it is not in the Manual
+2. PHP REQUIREMENT LINK : http://www.pmwiki.org/wiki/PmWiki/Requirements
+3. Download "i18n-all.zip" file from "http://www.pmwiki.org/pub/pmwiki/i18n/" and add in "wikilib.d" folder of package(i.e only the contents inside UTF-8/wikilib.d to wikilib.d of our package) ( https://www.pmwiki.org/wiki/Cookbook/MultiLanguage ). Not Required in manual install

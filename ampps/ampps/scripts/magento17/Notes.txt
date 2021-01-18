@@ -1,0 +1,5 @@
+1) Select Database for saving session storage while insatllation on manual
+2) Just check that "USING BTREE" is not there in the MySQL file.
+3) Always check the file permissions
+4) Release date : https://magento.com/tech-resources/download
+5) PHP REQUIREMENT LINK: http://docs.magento.com/m1/ce/user_guide/magento/system-requirements.html

@@ -1,0 +1,43 @@
+<softinstall xmlns="http://www.softaculous.com">
+	<settings>
+		<group>
+			<heading>{{db_set}}</heading>
+			<input type="text" name="dbprefix" size="30" value="nv_">
+				<head>{{db_pre}}</head>
+			</input>
+		</group>
+		<group>
+			<heading>{{site_set}}</heading>
+			<input type="text" name="site_name" size="30" value="NukeViet CMS">
+				<head>{{site_name}}</head>
+			</input>
+		</group>
+		<group>
+			<heading>{{ad_act}}</heading>
+			<input type="text" name="admin_username" size="30" value="admin">
+				<head>{{ad_name}}</head>
+				<handle>__ad_uname</handle>
+			</input>
+			<input type="text" name="admin_pass" size="30" value="Pass1234">
+				<head>{{ad_pass}}</head>
+				<handle>__admin_pass</handle>
+			</input>	
+			<input type="text" name="admin_email" size="30" value="admin" softmail="true">
+				<head>{{ad_email}}</head>
+				<handle>__email_address</handle>
+			</input>					
+		</group>
+		<group>
+			<heading>{{sec_que_ans}}</heading>
+			<input type="text" name="sec_que" size="30" value="">
+				<head>{{sec_que_head}}</head>
+				<exp>{{que_info}}</exp>
+			</input>
+			<input type="text" name="sec_ans" size="30" value="">
+				<head>{{sec_ans_head}}</head>
+				<exp>{{ans_info}}</exp>
+			</input>					
+		</group>
+	</settings>
+	<db>mysql</db>
+</softinstall>

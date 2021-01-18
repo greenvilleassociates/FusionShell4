@@ -1,0 +1,5 @@
+1. Timezone : America/Newyork
+2. Dump the sql by command : mysqldump --routines -u root -pmysql helpdezk14 > helpdezk.sql
+3. Vendor has asked to keep min requirement PHP 7.0 and MYSQL version 5.6. Check here
+https://github.com/albandes/helpdezk/issues/62#issuecomment-577118916
+4. Remove DEFINER=`root`@`localhost` from sql. It is added post installation

@@ -1,0 +1,10 @@
+1. Install Composer and create zip for package
+2. Run "php artisan migrate" from command line before creating tables step in manual installation.(confirmed with vendor)
+3. Add the following line to the .htaccess file in the root folder :
+<IfModule mod_alias.c>
+RedirectMatch 301 ^[[relativeurl]]/$ [[softurl]]/public
+</IfModule>
+4. PHP REQUIREMENT LINK: https://snipe-it.readme.io/docs/requirements
+5. We have not added upgrade yet because script provides upgrade/migrate through composer only. https://snipe-it.readme.io/docs/upgrading
+check everytime and add if possible
+6. delete inserts of oauth_clients and oauth_personal_access_clients tables. It creates after login. (check in every version)

@@ -1,0 +1,2 @@
+1. PHP REQUIREMENT LINK : https://github.com/freescout-helpdesk/freescout#requirements
+2. Select (GMT-04:00) Eastern Time (US) in manual installation.

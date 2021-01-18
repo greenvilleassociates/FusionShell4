@@ -1,0 +1,15 @@
+1. Installer is at /Web/install
+2. While installation choose : Import sample data. Creates admin account: admin/password and user account: user/password
+3. Please change in the index.php redirect to 0 seconds and comment the echo. (Not Required Now.)
+4. Remove two conditions from upgrade.php if phpsch team has fixed the upgrade process
+5. Rename /config/config-dist.php to /config/config.php and do following changes in it (MANUAL Installation):
+	i) provide installation password.
+   ii) provide database details(except database password, from 2.5.15 dbpassword is required)
+6. Changelog is available in readme.html
+7. If there is no change in database then make change the respective values in upgrade.php to disable setuplocation
+8. PHP REQUIREMENT LINK: {PATH TO BOOKED}/readme_installation.html
+9. In version 2.7.2, while manual installation we have imported the sql files manually in the database in following sequence :
+	a)/database_schema/full-install.sql (only keep SET foreign_key_checks = 0; remove all the database creation entries as we create database manually.)
+	b)/database_schema/sample-data-utf8.sql
+This manual method is mentioned in {PATH TO BOOKED}/readme_installation.html as well(Follow steps written in 'If you have database creation privileges in MySQL' section to import databases manually). 
+(We used this method because the script installer had an issue. Check if installer works in next version. Still same issue persists in script installer in version 2.7.4 and in 2.7.7 as well).

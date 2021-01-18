@@ -1,0 +1,122 @@
+osTicket v1.14.5
+Enhancements
+
+    typo: Change User Confirmation Popup (79e6513)
+    redactor: Upgrade to version 3.4.6 (5c77b0d)
+
+Improvements
+
+    issue: MailFetch Inline Disposition (fbf0c7d)
+    issue: Editor Spacing (a6cbc5c)
+    Issue: Collaborator Adding New Collabs (a4ab6b6)
+    mail: Reply to Ticket Owner Only (a4bb20a)
+    dept: Dept Deletion Bug (7cba73d)
+    issue: Task From Ticket (4b48456)
+
+Security
+
+    security: Parent Ticket Access (Client) (5972fe8)
+
+osTicket v1.14.4
+Enhancements
+
+    forms: Pseudo-random name for Dynamicforms on POST (077d26f)
+    Authcode: Ticket Access Link (043c3fe)
+    redactor: Upgrade to version 3.4.5 (e593c5c, 9102240, e471132)
+    Auth: Client Create Request (c3c01d3, 43e07c2)
+
+Improvements
+
+    Issue: Event YAML (52c7211)
+    issue: Missing Description On New Task (949acc6)
+    issue: Draft Save (f2c5c5a)
+    mpdf: Logo Overlap (5012ccc)
+    Issue: Viewing Email Templates (817cdee)
+    Issue: Topics on Install (bfaad5b)
+    Partially revert commit 077d26f (d554c2b)
+    Issue: Prevent Deleting All Topics (8d2b8c6)
+    Issue: Sub Queues (8e3a6c6)
+    authtoken: Add ticket link when recipient is ticket owner (2be608c)
+    redactor: Improper Formatting When Double Spacing (fe26123)
+    forms: Add SECRET_SALT to field name hash (4eeb4b5, 133362d)
+    issue: Better URL Parsing For External Inline Images (50eed90)
+    Issue: Default Delimiter (f302503)
+    issue: Update Autocomplete (d3245b1)
+    Fix incorrrect compare locked staff at Ticket Preview (e8f0c58)
+    Don't use a default comment on ticket assignment (433e62d)
+    Issue: Ticket Export Delimiters (38dbe73)
+    CsvImporter: Skip Byte Order Mark (BOM) if present (9e1dfef)
+    Drop nested table from open new ticket (fb0164b)
+    issue: New Message Alert Recipients (ea9cd56)
+    issue: Custom REGEX Failure (4850b2a)
+    Issue: Ticket From Thread Attachments (1de3f6a)
+    cli: Manage.php Errors (239b9ba)
+    issue: Assignee Field (3c89117)
+    issue: Agent Password Reset With No Existing Password (101ebea)
+    More modern, cleaner DocBlock (84195ec)
+    issue: Ticket Merge Select2 (bffac98)
+
+osTicket v1.14.3
+Enhancements
+
+    select2: Update To 4.0.13 (b67c75b)
+    jquery: Update To 3.5.1 (121ab41)
+    redactor: Upgrade to version 3.4.2 (384fe27)
+    Issue: Template Variables in Ticket Filter (8ef505d, 8a82d1e)
+    issue: Get Team Members For Alerts (d88e384)
+    Issue: Topic Help Tip (66fc808)
+    Create SECURITY.md (165cf18, 0ecfceb)
+    redactor: Upgrade to version 3.4.1 (8f08a09)
+    inline: RichText Fields View First (d8ff946, a97ddba)
+    print: Update Icons and Add Titles (be18e46)
+    issue: Update Print Options Icons/Text/Title (b4cd46a)
+    refactor: Help Topic Status Refresh (2dee16b)
+    Adding translation to the dashboard plot labels. (ebfd68b)
+    Issue: Language Verification (a1e9342)
+
+Improvements
+
+    oops: Local Inline Images (f6cd8c4)
+    Issue: Ticket Edit Save (3281e74)
+    Revert Topic Saving Fixes (0ff87f3)
+    issue: NOTLS For IMAP/POP Without SSL (7506937)
+    Update dynamic-field-config.tmpl.php (e847ddb)
+    Ticket Merge Translation Improvement (ba389a6)
+    oops: Task Missing Parentheses (b7684ad)
+    Issue: Create Task File Upload (87f5006)
+    issue: Delete Users With Tickets (9d2e1da)
+    DynamicField Update (c21452b)
+    issue: Form Field Help Text Not Null (e295c52)
+    export: Duplicate Results (b415baf)
+    issue: Email Template Internal Notes (8d6b9aa)
+    oops: Change lastupdate To updated For Tasks (03bedc5)
+    i18n: Redactor Files Not Included (f91308a)
+    Issue: Ticket Task Print (7b6ba94)
+    Issue: Topic Fields on Ticket Edit (f79a28a)
+    issue: Activity Notice getLastRespondent() (07024fc)
+    Issue: Create Team With Members (6f50e91)
+    i18n: Don't Store Files Under Branch Name (31dfc6e)
+    template: Add Ticket ID To Var Scope (351f8ec)
+    Issue: Topic and Department Columns (36778cc)
+    sla: Force Intval For Scientific Floats (9ea2e4d)
+    oops: JS Method Typo (58e559d)
+    issue: Signature Box No Longer Expands (5d68847)
+    install: Add Mark As Answered To All Access (0765571)
+    print: Client Print Not Respecting Identity Masking (5db5a72)
+    templates: %{ticket.thread.complete} Not Respecting Identity Masking (faec1a7)
+    issue: Filter Action Add Button (adc46ae)
+    install: Embedded Domain Whitelist (e0b5d81)
+    install: Schedule, SLA, and Help Tip Updates (88dd0aa, e589c1b, 1860db4)
+    Issue: Ticket Number Search (61443ef)
+    issue: PHP 7.4 Warnings (1aafa42, d93379e, 90f5985)
+    issue: Flush Model Cache (db5eb07)
+    Issue: PHP Warning (4997780)
+    issue: MySQL 8.0 {min,max} Value Error (bb54dea)
+    issue: Mass Delete Help Topics Warning (52fd884)
+    issue: Org Added Collabs (0ee25b8)
+    issue: Attachment Upload Configuration (2540350)
+
+Performance and Security
+
+    security: Reported Vulns July-August 2020 (fb57082, d2491c1, d98c2d0, 518de22)
+    xss: FAQ Category On Errors (292e7dd)

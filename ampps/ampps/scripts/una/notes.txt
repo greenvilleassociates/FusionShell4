@@ -1,0 +1,4 @@
+1. PHP REQUIREMENT LINK: https://github.com/unaio/una/wiki/Requirements
+2. Select bydefault Template and Profile in manual installation.
+3. While installing keep UNA Key and UNA Secret blank
+4. Release date : https://github.com/unaio/una/releases

@@ -1,0 +1,56 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Agora_Project
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/others/Agora_Project
+	</ratings>
+	<space>
+		18040176
+	</space>
+	<support>
+		https://www.agora-project.net
+	</support>
+	<version>
+		3.7.4.2
+	</version>
+	<mod>46</mod>
+	<release_date>08-12-2020</release_date>
+	<admin>index.php</admin>
+	<min_require>2.0</min_require>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.5.0" />
+	<requirement check="mysql" type="version" operator="lt" value="8.0.0" mariadb="10.5.0" />
+	<requirement check="php" type="extension" name="gd" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Agora-Project</font> Create your own private space to share with your team : files &amp; pictures, personal calendars &amp; resource calendars, News Tasks &amp; Gantt, forums, instant messaging, etc.
+		<br /><br />
+		Agora-Project is released under the <a href="http://directory.fsf.org/wiki/License:GPLv2" target="_blank">GNU / GPL version 2</a>.
+		</english-overview>		
+		<english-features>
+		<ul>
+		<li>File Sharing</li>
+		<li>Calendars</li>
+		<li>Forum</li>
+		<li>Contacts</li>
+		<li>Bookmarks</li>
+		<li>Shared Tasks &amp; Gantt</li>
+		<li>Newsletters</li>
+		<li>News</li>
+		<li>Instant Messaging</li>
+		</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

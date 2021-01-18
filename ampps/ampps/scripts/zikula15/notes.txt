@@ -1,0 +1,4 @@
+1) Please dont change $ZConfig['System']['system.chmod_dir'] = 0777; in config file as it is same i.e. 0777 when installed manually on cPanel also.
+2) We have kept config.php bcoz it is required for upgrade from 1.3.x to 1.4.x. Kindly check upgrade process for 1.4.x to 1.4.x in next update and add it.
+3) Table menu_items in not generated post upgrade from 1.4.x to 1.4.4 because menu module must be manually installed.(Confirmed with vendor)
+4. PHP REQUIREMENT LINK : https://github.com/zikula/core/blob/1.5/INSTALL-Core1.x.md

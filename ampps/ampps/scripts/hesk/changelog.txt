@@ -1,0 +1,70 @@
+Changes in 3.1.2 - 18th August 2020
+- the "Submit as" control in staff reply form now supports all statuses
+- don't change the "last updated" value of tickets when deleting a custom field
+- prevent a corrupted hesk_kb_categories table causing an infinite loop
+- show ticket subject and notes at the top with "Newest reply at top" setting selected
+- when submitting a ticket from the admin panel Hesk will now pre-select default category priority
+- implemented SameSite cookie attribute support
+- fix: the top "Re-send email notification" should send new ticket notification, not new reply
+- fix: language string with a single quote breaks calendar translation
+- fix: use quoting mechanism for special interpretation characters in mail from header
+- fix: on Profile page cannot select "Show the ticket I just replied to"
+- fix: contact details hidden in languages with a long title translation
+- fix: cannot select a language for service messages
+- fix: parsing of a non-utf8 email fails if Iconv functions are not available
+- fix: only list users whom the ticket can be assigned to when submitting a new ticket
+- updated third party libraries to the latest version
+- minor styling and usability changes
+
+Changes in 3.1.1 - 3rd May 2020
+- knowledgebase now shows full category structure in breadcrumbs
+- added custom favicon for better display on different devices
+- fix: saving general settings resets sending emails to PHP mail()
+- fix: sub-categories with no articles are hidden in customer side
+- fix: in customer side knowledgebase votes show views
+- fix: knowledgebase sub-category preview shows 1 article too many
+- fix: knowledgebase views show 1 less than actual when viewing an article
+- fix: non-default time format may show staff replies as "50 years ago" in customer-side
+- fix: custom header and footer are outside of the main wapper
+- minor styling and usability changes
+
+Changes in 3.1.0 - 7th April 2020
+- [CLOUD ONLY] Statistics module: insight into help desk usage and staff performance
+- choose the desired ticket reply hiding logic
+- added tooltips to action icons without a label
+- descriptive timestamps in ticket details (e.g., 5 hours ago)
+- improved ticket content readability, including adjustable max-width
+- improved formatting of WYSIWYG-generated content
+- improved customer-side display in Internet Explorer 9
+- security: fixed a reflected XSS, reported by Mostafa Gamal & Ahmed Sherif
+- fix: hide the link to Export tickets page if the user has no export permission
+- fix: HTML header code printed twice on the knowledgebase results page
+- fix: properly strip slashes and encode HTML in service messages
+- fix: custom text and hidden fields don't display a default value in admin panel > New ticket
+- fix: custom text field maxlength not working in customer side
+- fix: ticket replies not hidden correctly with "Newest reply at top"
+- fix: if a settings label is long it doesn't align nicely
+- fix: some hard-coded text cannot be translated
+- fix: show full custom field names in customer submit a ticket form
+- fix: when multiple languages are allowed, cannot add a custom status
+- fix: when multiple languages are allowed, editing a custom field shows empty field names
+- fix: IMAP "Keep a copy" checkbox not saving
+- fix: cannot allow single char attachment extensions
+- minor styling and usability changes
+
+Changes in 3.0.3 - 8th March 2020
+- fix: customer ticket reminder form not working in 3.0.2
+
+Changes in 3.0.2 - 3rd March 2020
+- fix: settings for POP3 fetching not saving
+- fix: the style of subject and message inputs changes when selecting a ticket template
+- fix: issues with selecting drop-down select box values
+- fix: cannot change ticket status to "New"
+- fix: unable to append or select canned responses in some situations
+- fix: Javascript not escaping converted HTML code properly
+- fix: duplicate "Assign this ticket to myself" in the reply form
+- fix: ticket details not responsive in Edge
+- fix: Undefined offset notice in ticket history
+- tickets with status "Critical" now have a distinctive background color in ticket list
+- minor styling and usability changes
+

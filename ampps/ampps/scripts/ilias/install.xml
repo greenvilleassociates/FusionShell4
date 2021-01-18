@@ -1,0 +1,53 @@
+<softinstall xmlns="http://www.softaculous.com">
+	<settings>
+		<group>
+			<heading>{{site_set}}</heading>
+			<input type="text" name="client_id" size="30" value="DefaultClient">
+			<head>{{client_id}}</head>
+			<exp>{{exp_client_id}}</exp>
+			<handle>__client_id</handle>
+			</input>
+			<input type="text" name="convert" size="30" value="/usr/bin/convert">
+				<head>{{convert}}</head>
+				<exp>{{exp_convert}}</exp>
+			</input>
+			<input type="text" name="zip" size="30" value="/usr/bin/zip">
+				<head>{{zip}}</head>
+				<exp>{{exp_zip}}</exp>
+				<handle>__sfile_exists</handle>
+			</input>
+			<input type="text" name="unzip" size="30" value="/usr/bin/unzip">
+				<head>{{unzip}}</head>
+				<exp>{{exp_unzip}}</exp>
+				<handle>__sfile_exists</handle>
+			</input>
+		</group>
+		<group>
+			<heading>{{ad_act}}</heading>
+			<input type="text" name="admin_username" size="30" value="root" disabled="disabled" >
+				<head>{{ad_name}}</head>
+				<optional>true</optional>
+			</input>
+			<input type="text" name="admin_pass" size="30" value="password">
+				<head>{{ad_pass}}</head>
+				<handle>__ad_pass</handle>
+			</input>
+			<input type="text" name="setup_pass" size="30" value="pass">
+				<head>{{setup_pass}}</head>
+				<handle>__setup_pass</handle>
+			</input>
+			<input type="text" name="admin_fname" size="30" value="System">
+				<head>{{f_name}}</head>
+			</input>
+			<input type="text" name="admin_lname" size="30" value="Administrator">
+				<head>{{l_name}}</head>
+			</input>
+			<input type="text" name="admin_email" size="30" value="admin" softmail="true">
+				<head>{{ad_email}}</head>
+				<handle>__email_address</handle>
+			</input>
+		</group>
+	</settings>
+	<db>mysql</db>
+	<datadir>iliasdata</datadir>
+</softinstall>

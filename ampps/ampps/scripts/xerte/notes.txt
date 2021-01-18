@@ -1,0 +1,4 @@
+1)Authentication method:db
+2)In the last step set site title and site name and keep rest of the options default.
+3)Login to Download "http://xerte.org.uk/index.php?lang=en"
+4)PHP REQUIREMENT LINK : https://xot.xerte.org.uk/play.php?template_id=81#page11section2

@@ -1,0 +1,37 @@
+3.6.11 (January 14, 2021)
+
+    Fixed
+    Fix regression in SVG component
+
+3.6.10 (January 11, 2021)
+
+    Changed
+    Refactor Sortable behavior
+
+    Fixed
+    Fix regression in sticky component
+    Fixed
+    Fix calculating max scroll height
+    Fixed
+    Fix regression with calling watchers
+
+3.6.9 (January 7, 2021)
+
+    Fixed
+    Fix component update handling
+    Fixed
+    Fix Tooltip position
+    Fixed
+    Fix Tooltip component applied to button elements in iOS
+    Fixed
+    Fix regression in Switcher component
+
+3.6.8 (January 5, 2021)
+
+    Fixed
+    Fix regression in class util
+
+3.6.7 (January 4, 2021)
+
+    Fixed
+    Fix regression in class util

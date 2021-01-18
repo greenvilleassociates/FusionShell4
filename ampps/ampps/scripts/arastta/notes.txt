@@ -1,0 +1,2 @@
+Install with demo data (Settings option while manual installation)
+PHP REQUIREMENT LINK : https://arastta.org/docs/requirements

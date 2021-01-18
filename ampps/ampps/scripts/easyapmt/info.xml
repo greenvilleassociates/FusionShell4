@@ -1,0 +1,56 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Easy!Appointments
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/others/Easy!Appointments
+	</ratings>
+	<space>
+		54963008 
+	</space>
+	<support>
+		http://easyappointments.org/
+	</support>
+	<version>
+		1.4.1
+	</version>
+	<mod>6</mod>
+	<release_date>14-12-2020</release_date>
+	<admin>index.php/user/login</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.0.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.7.0" />
+	<requirement check="php" type="extension" name="curl" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Easy!Appointments</font> is a highly customizable web application that allows your customers to book appointments with you via the web. Moreover, it provides the ability to sync your data with Google Calendar so you can use them with other services. It is an open source project and it will run smoothly with your existing website, because it can be installed in a single folder of the server and of course, both sites can share the same database.
+		<br /><br />
+		Easy!Appointments is licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GPL v3.0</a>.
+		</english-overview>		
+		<english-features>
+		<ul>
+			<li><b>Appointment and Customer Management</b> : Manage all your appointments with flexible calendar displays and layouts. Handle all the customer information and their booking history more easily than ever. </li>
+			<li><b>Services and Service Providers</b> : Set up your services and the employees/teams/sections which will serve the customers. Each service is completely configurable and every provider has his own schedule.</li>
+			<li><b>Business Workflow and Booking Rules</b> : Configure the system at your own will, apply the business hours and breaks and let customers book, modify or cancel appointments within specific time periods.</li>
+			<li><b>Google Calendar Sync</b> : Synchronize your events with Google Calendar and share them with other applications. Providers and secretaries will be able to schedules their data as well.</li>
+			<li><b>Email Notifications</b> : Get email notifications for any change on the schedule including bookings, modifications and cancellations. Customers are also informed in time for changes in their appointments. </li>
+			<li><b>Multiple Attendants</b> : Enable mutli-attendant slots and handle groups of customers at certain times. No worries, Easy!Appointments can do that too! </li>
+			<li><b>Dedicated Provider and Service Links</b> : Use dedicated URLs in your website that can navigate your customers to book appointments with specific services and/or providers. </li>
+			<li><b>Responsive Design</b> : Launch the app from your mobile phone and handle all the UIs flawlessly in any viewport size.</li>
+			<li><b>REST API</b> : Develop rich content applications by using the flexible REST API endpoint and handle all the application-wide information from your clients. </li>
+		</ul>
+		</english-features>
+		<english-store_phone>Phone Number</english-store_phone>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

@@ -1,0 +1,36 @@
+
+Version 3.5.40 (2019-04-10)
+---------------------------
+
+### Fixed
+Fix the save callback in the back end password module (see #429).
+
+
+Version 3.5.39 (2019-04-09)
+Fixed
+
+Invalidate the user sessions if a password changes (see CVE-2019-10641).
+
+Version 3.5.38 (2018-12-21)
+Fixed
+
+Correctly check the permission to move child records as non-admin user.
+Version 3.5.37 (2018-12-13)
+Fixed
+
+Prevent information disclosure in the back end (see CVE-2018-20028).
+Version 3.5.36 (2018-09-18)
+
+Fixed
+Prevent arbitrary code execution through .phar files (see CVE-2018-17057).
+
+Fixed
+Correctly reset the autologin data upon logout (#8868).
+
+Fixed
+Remove support for deprecated user password hashes (see #8889).
+
+Version 3.5.35 (2018-04-18)
+Fixed
+
+Fix an XSS vulnerability in the system log (see CVE-2018-10125).

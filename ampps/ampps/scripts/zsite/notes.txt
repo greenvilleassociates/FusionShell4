@@ -1,0 +1,9 @@
+1. move system directory to www directory in manual installation and for package
+2. do not install demo
+3. PHP REQUIREMENT LINK : http://www.zsite.net/book/zsitemanual/9.html
+4. After running fileindex remove random admin file name. we add it in install.php while srename.
+5. add this in my.php to see english language default 
+$config->enabledLangs = 'zh-cn,zh-tw,en';
+$config->defaultLang = 'en';
+6. Keep $config->requestType  = 'GET'; in my.php (Confirmed with vendor via email)
+7. Since version 8.0 there are three different packages i.e for PHP 5.3-5.6, PHP 7.0, PHP 7.1. Download PHP 7.1 package from official website.

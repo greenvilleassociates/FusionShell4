@@ -1,0 +1,14 @@
+<softupgrade xmlns="http://www.softaculous.com">
+	<setuplocation>index.php?q=/modules/System%20Admin/systemSettings.php</setuplocation>
+	<settings>		
+		<group>
+			<heading>hidden</heading>
+			<input type="hidden" name="dummy" value="">
+			</input>
+		</group>
+	</settings>
+	<files>
+		<exclude>config.php</exclude>
+		<exclude>/uploads</exclude>
+	</files>
+</softupgrade>

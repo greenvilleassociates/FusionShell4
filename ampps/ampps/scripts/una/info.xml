@@ -1,0 +1,93 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/una
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/socialnetworking/una
+	</ratings>
+	<space>
+		125687695
+	</space>
+	<support>
+		https://una.io/page/discussions-home
+	</support>
+	<version>
+		11.0.4
+	</version>
+	<mod>21</mod>
+	<release_date>23-12-2020</release_date>
+	<admin>studio</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.6.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.5.3" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="json" />
+	<requirement check="php" type="extension" name="fileinfo" />
+	<requirement check="php" type="extension" name="zip" />
+	<requirement check="php" type="extension" name="openssl" />
+	<requirement check="php" type="extension" name="exif" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">UNA</font> is a Community Management System for building and running modern social websites.
+		<br /><br />
+		UNA (United Networking Applications) is a customizable open-source social networking platform. Every component module, tool, template or language is treated as an “app”. Apps control customization of design and navigation; the addition of new features and integration of 3rd-party APIs; site monitoring and configuration; permissions and database structure setup; translation and texts editing.
+		<br /><br />
+		UNA is the “next-generation” social software platform, developed for enterprise-class clients requiring a custom solution, deep integration with existing infrastructure and extended ongoing support. UNA is a fully responsive system, with mobile and tap-friendly layout, optimised for all screens sizes. 
+		<br /><br />
+		UNA is licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
+		</english-overview>		
+		<english-features>
+		<font><b>Multiple Profile Types</b></font> : UNA uniquely supports multiple profile types for each user account, allowing various community structure arrangement, access permissions and options.<br />
+		<font><b>Updates &amp; Extensions</b></font> : The core system supports automatic version updates that can be disabled in favour of manual/controlled updates. All apps can be updated separately, without affecting the main site functionality. Additional apps, design templates, language translations are available via Apps Market and can be activated gradually, as required.<br />
+		<font><b>System Apps</b></font>
+			<ul>
+				<li>Dashboard</li> 
+				<li>Settings</li>
+				<li>Storage</li>
+				<li>Designer</li>
+				<li>Pages</li>
+				<li>Forms</li>
+				<li>Polyglot</li>
+				<li>Navigation</li>
+				<li>Permissions</li>
+				<li>Accounts</li>
+			</ul>
+		<font><b>Core Apps</b></font>
+			<ul>
+				<li>People</li> 
+				<li>Orgs</li>
+				<li>Groups</li>
+				<li>Events</li>
+				<li>Posts</li>
+				<li>Discussions</li>
+				<li>Albums</li>
+				<li>Conversations</li>
+				<li>Timeline</li>
+				<li>Notifications</li>
+				<li>Invitations</li>
+				<li>Contact</li>
+				<li>Developer</li>
+				<li>Antispam</li>
+				<li>SMTP Mailer</li>
+			</ul>
+		<font><b>Premium Apps</b></font>
+			<ul>
+				<li>Market</li> 
+				<li>Payments</li>
+			</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_email>Please provide the email to reset the password</english-err_no_email>
+		<english-err_no_such_email>The Admin email is incorrect and does not exist!</english-err_no_such_email>
+	</languages>
+</soft>

@@ -1,0 +1,78 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Savsoft_Quiz
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/educational/Savsoft_Quiz
+	</ratings>
+	<space>
+		43066713
+	</space>
+	<support>
+		http://savsoftquiz.org/forum/
+	</support>
+	<version>
+		5.0
+	</version>
+	<mod>2</mod>
+	<release_date>17-05-2019</release_date>
+	<admin>index.php/login</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.6.0" />
+	<requirement check="php" type="extension" name="ionCube Loader" />
+	<requirement check="php" type="extension" name="zip" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Savsoft Quiz</font> An open source software to create &amp; manage online quizzes, tests &amp; exams on your website or server.
+		<br /><br />
+		Savsoft Quiz released under <a href="http://savsoftquiz.org/tos.php" target="_blank">The MIT License</a>.
+		</english-overview>		
+		<english-features>
+			<ul>
+				<li><b>Manage users/students</b><br/>
+					Create unlimited users<br/>
+					User can register under group<br/>
+					Further groups can be assigned into quizzes<br/>
+					Advance view to analyse user performance. Find in which area (category) user/student is weak. View questions which was answered incorrectly and many more.
+				</li>
+				<li><b>Create 5 types of question</b><br/>
+					Multiple choice single answer.<br/>
+					Multiple choice multiple answers.<br/>
+					Short answer or Fillups.<br/>
+					Match the columns.<br/>
+					Long answer.<br/>
+				</li>
+				<li><b>Question Bank</b><br/>
+					Create and store unlimited questions in question bank and assign into categories and levels<br/>
+					Add question manually or Import questions from MS excel(.xls) and MS word(.docx) file.<br/>
+					Note: MS Excel supports text only format and Word file support Text &amp; Image format. Fore more download sample files in online demo. It doesn't support special character or drawing content.<br/>
+				</li>
+				<li><b>Quizzes/Tests/Exams</b><br/>
+					Create unlimited quizzes. Set various validations like: Start &amp; end date/time, IP addresses, maximum attempts, assign to groups, view/hide answeres after quiz and many more<br/>
+					User friendly quiz attempt screen. User can switch question by question number or category. Mark for review later
+				</li>
+				<li><b>Result/Report</b><br/>
+					Result display instantly after submitting quiz. user can view correct answers of questions. Column Chart &amp; Pie Chart for user performance.<br/>
+					Administrator can generate CSV report of results by selecting group , quiz name and date range. Option to generate PDF certificate.
+				</li>
+				<li><b>Live Classroom</b><br/>
+					Live classroom to share live text with users. Any text typing by admin will be visible instantly to online users. Admin can attach/share any file (image, pdf, ppt, doc etc..) under live classroom.
+				</li>
+				<li><b>Login with WP</b><br/>
+					Integrated login system with your WordPress website. Your user's don't need to re-register new account with quiz application. Same WP credentials will works with Savsoft Quiz
+				</li>
+			</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_email>Please provide the email to reset the password</english-err_no_email>
+		<english-err_no_such_email>The Admin email is incorrect and does not exist!</english-err_no_such_email>
+	</languages>
+</soft>

@@ -1,0 +1,7 @@
+1. Take dump after login and changing password from Admin->Settings
+2. From next version for demo , no need  to replace the file base/SMEnvironment.class.php(patched one) if vendor has patched the process 
+in next version for file attachments.(which generated warnings).it shall be done by post_install hook. (Not required since 4.2.3)
+3. PHP REQUIREMENT LINK : https://sitemagic.org/Download.html
+4. upgrade.php is not excluded from package because it's password protected and not delete automatically by script
+5. Release date : Official Facebook page - https://www.facebook.com/SitemagicCMS
+6. We have given the package for v4.4.1 with __MACOSX directory. Please check and remove if needed in the next version.

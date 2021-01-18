@@ -1,0 +1,51 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Backdrop_CMS
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/cms/Backdrop_CMS
+	</ratings>
+	<space>
+		35259560
+	</space>
+	<support>
+		https://backdropcms.org/support
+	</support>
+	<version>
+		1.17.4
+	</version>
+	<mod>1</mod>
+	<release_date>26-11-2020</release_date>
+	<admin>user/login</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.3.2" />
+	<requirement check="php" type="extension" name="gd" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Backdrop</font> is a full-featured content management system that allows non-technical users to manage a wide variety of content. It can be used to create all kinds of websites including blogs, image galleries, social networks, intranets, and more.
+		<br /><br />
+		Backdrop CMS is released under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html" target = "_blank">GNU General Public License, Version 2</a>.
+		</english-overview>		
+		<english-features>
+			<ul>
+				<li><b>Serve pages fast, even on shared hosting.</b><br/>Backdrop is lean and mean. With a commitment to performance, you can expect to see continued improvements in each version. Watch your pages fly! </li>
+				<li><b>Add more functionality, quickly.</b><br/>Browse and install add-ons directly from your own website. No need to scour the internet for available modules, themes, and layouts. </li>
+				<li><b>Works great on phones &amp; tablets.</b><br/>Every Backdrop site is always responsive. Visitors enjoy a great mobile experience, and administrators can create and edit content from phones or tablets. </li>
+				<li><b>Create and manage your own content.</b><br/>Easily create content by formatting text and uploading images. It's not necessary to know web programming languages (or hire someone who does) to get your content on the web. </li>
+				<li><b>Control access with permissions.</b><br/>Different people can have different levels of access to your content. Use Backdrop's robust permission system to define roles that exactly match your needs. </li>
+				<li><b>Customize everything, everywhere.</b><br/>Need to add your own special touches? Backdrop has a robust API and can be modified in any number of ways with only a few lines of custom code. </li>
+				<li><b>Security is a priority</b><br/>Backdrop CMS was designed with robust security in mind. New security issues are addressed quickly and responsibly.</li>
+				<li><b>Deploy changes easily.</b><br/>Make configuration changes on a development site. Deploy those changes to production with the easy-to-use Configuration Management interface.</li>
+				<li><b>Backdrop CMS is free software.</b><br/>Backdrop CMS is free and Open Source. There are no acquisition fees or licensing costs.</li>
+			</ul>
+		</english-features>			
+	</languages>
+</soft>

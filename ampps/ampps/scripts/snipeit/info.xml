@@ -1,0 +1,93 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Snipe-IT
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/projectman/Snipe-IT
+	</ratings>
+	<space>
+		137324925
+	</space>
+	<support>
+		https://snipeitapp.com/support
+	</support>
+	<version>
+		5.0.12
+	</version>
+	<mod>64</mod>
+	<release_date>04-01-2021</release_date>
+	<admin>public/login</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.2.0" />
+	<requirement check="php" type="extension" name="openssl" />
+	<requirement check="php" type="extension" name="pdo" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="tokenizer" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="zip" />
+	<requirement check="php" type="extension" name="fileinfo" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="bcmath" />
+	<requirement check="php" type="extension" name="xml" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Snipe-IT</font> is a FOSS project for asset management in IT Operations. Knowing who has which laptop, when it was purchased in order to depreciate it correctly, handling software licenses, etc.
+		<br /><br />
+		Snipe-IT is released under the <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">GNU AFFERO GENERAL PUBLIC LICENSE</a>.
+		</english-overview>		
+		<english-features>
+			<ul>
+				<li><b>Asset Management : </b>Easily see which assets are assigned, to whom, and their physical location. Check them back into inventory with one click, or click through to see the asset's complete history. Seeing what assets are currently deployed, pending (brand new awaiting software installs, out for repair), ready to deploy, or archived (lost/stolen, or broken) is quick and easy.
+					<ul>
+						<li>Easily see which assets are assigned, to whom, and their physical location</li>
+						<li>One-click checkin</li>
+						<li>Asset Models let you group common features</li>
+						<li>Require User Acceptance (End-User EULAs/Terms of Service) on Checkout</li>
+						<li>Email alerts for expiring warrantees and licenses</li>
+						<li>Integrates with most handheld barcode scanners and QR code reader apps</li>
+						<li>Add your own custom fields for additional asset attributes</li>
+						<li>Easily import and export assets</li>
+						<li>Generate QR code labels for easy mobile access and labels</li>
+						<li>Assets marked as requestable can be requested by a user</li>
+						<li>Assets retain full history including checkouts, checkins and maintenance</li>
+					</ul>
+				</li>
+				<li><b>Custom Status Labels : </b> There are lots of reasons why an asset may be undeployable or archived. They may be out for repair, out for diagnostics, lost or stolen, or flat-out busted. You have complete control over the labels you create for assets.
+				</li>
+				<li><b>User Management : </b> Grant users access to reports, or even let them request assets that are available. Perfect for loaning out test devices. Each user profile shows their compelete history including assets, accessories, consumables and licenses.
+					<ul>
+						<li>Import users from CSV</li>
+						<li>Import/Login through Active Directory/LDAP</li>
+						<li>Bulk user actions to make management easy</li>
+						<li>Assignable user roles offer different levels of access</li>
+						<li>Easily generate strong passwords through the UI</li>
+					</ul>
+				</li>
+				<li><b>General Features : </b>
+					<ul>
+						<li>Mobile-friendly for asset updates on the go</li>
+						<li>Runs on Linux, Windows or Mac</li>
+						<li>Web-based software so it works on any device</li>
+						<li>Slack notification integration for checkin/checkout</li>
+						<li>Translated into several languages for easy localization</li>
+						<li>One-click (or cron) backups</li>
+						<li>Custom reports</li>
+						<li>Automated backups</li>
+					</ul>
+				</li>
+			</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+	</languages>
+</soft>

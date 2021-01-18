@@ -1,0 +1,33 @@
+Options -Indexes
+Options -MultiViews
+
+<IfModule mod_expires.c>  
+	ExpiresActive On
+	ExpiresByType application/javascript	"access plus 1 month"
+	ExpiresByType application/x-javascript	"access plus 1 month"
+	ExpiresByType image/gif					"access plus 1 month"
+	ExpiresByType image/jpeg				"access plus 1 month"
+	ExpiresByType image/jpg					"access plus 1 month"
+	ExpiresByType image/png					"access plus 1 month"
+	ExpiresByType image/webp				"access plus 1 month"
+	ExpiresByType text/css					"access plus 1 month"
+	ExpiresByType text/javascript			"access plus 1 month"
+	ExpiresByType video/mp4					"access plus 1 month"
+	ExpiresByType video/webm				"access plus 1 month"
+	ExpiresDefault							"access plus 2 hours"
+</IfModule>
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteBase [[relativeurl]]/
+	RewriteRule ^sitemap\.xml$ sitemap.php [L,NC]
+	RewriteRule file/[^/]+/(\d+)-.*\.(gif|jpe?g|mp4|png|webm|webp)$ file.php?id=$1 [L,NC]
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond $1 !^(favicon\.ico|robots\.txt|sitemap\.php|sitemap\.xml)
+	RewriteRule (.*) index.php?q=$1 [QSA,L]
+</IfModule>
+
+<IfModule mod_security.c>
+	SecFilterEngine Off
+</IfModule>

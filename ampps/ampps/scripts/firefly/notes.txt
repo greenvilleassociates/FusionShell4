@@ -1,0 +1,14 @@
+1. Installation method mentioned here : https://docs.firefly-iii.org/installation/self_hosted#main-command
+ 
+E.g:1. curl -sS https://getcomposer.org/installer | php -- --install-dir=/home/soft/public_html/manual/firefly466 --filename=composer
+	2. php composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist firefly-iii 4.6.6
+	3. Fill up DB details in .env
+	4. php artisan key:generate
+	5. php artisan migrate:refresh --seed
+	6. Visit  http://localhost/firefly-iii/public and Click on “Register a new account” and fill in the form.
+
+2. Remove all entries from preferences table except "viewRange" and "language" entries,inserts after login
+3. Don't remove double quotes from "APP_NAME" it throws error when contain space. ( Requested by vendor )
+4. PHP REQUIREMENT LINK : https://docs.firefly-iii.org/installation/self_hosted#ingredients
+5. We have added openssl in requirement check in info.xml, as it is needed to encrypt public and private keys and store their encrypted entries in database and also it is mentioned in composer.json.
+6. We have explicitly set LOG_CHANNEL=daily in .env file during upgrade as it requires to work on cpanel server even in manual upgrade. Confirmed with vendor via email. Check in next version if it works fine with its default value.

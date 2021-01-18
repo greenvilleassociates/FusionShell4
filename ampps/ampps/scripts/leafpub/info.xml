@@ -1,0 +1,58 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Leafpub
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/blogs/Leafpub
+	</ratings>
+	<space>
+		10018452
+	</space>
+	<support>
+		https://github.com/Leafpub/leafpub
+	</support>
+	<version>
+		1.1.9
+	</version>
+	<mod>1</mod>
+	<mod_files>2</mod_files>
+	<admin>admin/login</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.6.0" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="openssl" />
+	<requirement check="php" type="extension" name="pdo_mysql" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Leafpub</font> is an open source blogging platform with inline editing, handlebar templates, and a beautiful user interface.
+		<br /><br />
+		Introducing the first open source publishing platform to feature a true WYSIWYG editor. Say goodbye to boring forms and rich-text controls. Say hello to inline editing.
+		<br /><br />
+		Leafpub is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GNU GPL version 3</a>.
+		</english-overview>
+		<english-features>
+		<ul>
+			<li><b>Inline Editing</b> : Inline editing is the most immersive and intuitive way to manage content. What you're editing looks exactly like what you'll see when the post is saved.</li>
+			<li><b>Responsive Design</b> : Works on your desktop, laptop, tablet, and phone. Leafpub features a modern, responsive design that molds itself to whatever device you happen to be using.</li>
+			<li><b>Posts &amp; Pages</b> : Leafpub puts your content first. Search or browse your posts from the admin panel. Selecting a post will render a half-size preview of it so you'll always know exactly what you're working with.</li>
+			<li><b>Users</b> : Blog solo or add your team. Leafpub supports admin, editor, and author roles, each with varying levels of privileges. Every user has their own profile, including avatar, cover photo, website, location, and bio.</li>
+			<li><b>Tags</b> : Leafpub uses tags to categorize content. Each tag has its own name, description, cover photo, and meta data. Manage tags from a special section in the admin panel, or create them on the fly as you're writing a post.</li>
+		</ul>
+		</english-features>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+		<english-err_passlen8>The password length should be 8 or more characters</english-err_passlen8>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

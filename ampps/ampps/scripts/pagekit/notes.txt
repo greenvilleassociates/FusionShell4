@@ -1,0 +1,1 @@
+1. Upgrade is added in v1.0.11, check if the extensions are also upgraded via admin panel post upgrade.

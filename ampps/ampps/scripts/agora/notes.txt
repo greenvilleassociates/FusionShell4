@@ -1,0 +1,6 @@
+Space available for the storage of the files is 10gb
+Public space no
+Timezone America/New_york
+Requirements link : https://www.agora-project.net/index.php#contentBlock5
+While manual installation use 'admin_username' for 'Login/Email' , in registration page.(version 3.3.5)
+Release date : https://github.com/xech/agora-project/releases

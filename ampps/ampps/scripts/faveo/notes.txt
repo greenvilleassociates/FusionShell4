@@ -1,0 +1,7 @@
+1. While manual installation need to give write permission to code/app/Http/routes.php ( Not required since version 1.10 )
+2. Please check for the parameters while making the update, since we use API
+Refrence : https://github.com/ladybirdweb/faveo-helpdesk/wiki/Installer-API
+3. PHP REQUIREMENT LINK : https://github.com/ladybirdweb/faveo-helpdesk/wiki/Server-Requirements
+4.Removed mcrypt extension check from info.xml since it is removed in PHP 7.2
+http://php.net/manual/en/migration71.deprecated.php
+5. We have restricted the script on PHP 7.4 as script requires ionCube ext and as of now there is no support for ioncube on PHP 7.4 Remove this once ioncube is released for PHP 7.4

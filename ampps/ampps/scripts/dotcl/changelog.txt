@@ -1,0 +1,58 @@
+Dotclear 2.18 - 2020-11-13
+===========================================================
+* IP is now displayed in backend only for admins
+* Add footnote feature to CKEditor
+* HTML format is now default syntax for new users/blogs
+* Add cancel button (if relevant) to media manager
+* Lib: Update CKEditor to 4.15.1
+* Lib: Update Codemirror from 5.55.0 to 5.58.2
+* 🐛 → Various bugs, a11y concerns and typos fixed
+* 🌼 → Some locales and cosmetic adjustments
+* 📣 Warning: Next major release (2.19) will require PHP 7.0+
+
+Dotclear 2.17.2 - 2020-08-17
+===========================================================
+* Fix: Cope with Safari which does not handle addEventListener method on MediaQueryList object (dark/light OS preference).
+* Fix: Separate CSS background and background-color as some CSS rendering engine (Safari) does not cope with all in same declaration.
+* i18n: Updated translations for occitan.
+
+Dotclear 2.17.1 - 2020-08-15
+===========================================================
+* Fix: revert optional password fields (post/page) to text field to avoid unexpected behavior with Chrome
+
+Dotclear 2.17 - 2020-08-13
+===========================================================
+* 🐘 PHP 5.6+ is required, PHP 7.4 compliance
+* 🛡 Security: Password is now needed to export blog settings and contents (full/simple)
+* Themes can now be cloned
+* New helper button (show/hide) for password fields
+* Enhancement of filter/sort usage for lists (posts, comments, …)
+* 3rd automatic theme for backend theme (which follow OS setting)
+* Authentication (backend) and password form (public for password protected entry) have been redesigned
+* Add a Cancel button wherever relevant in backend
+* PHP files can now be edited in Theme editor
+* Plugins may now use SVG icon rather than JPG/PNG
+* Black/White list names become Block/Allow list (antispam)
+* Wiki: subscript syntax changed from _subscript_ to ,,subscript,,
+* Wiki: add ;;span-content;; syntax
+* Wiki: add §§attributes[|list attributes]§§ for blocks (at end of the 1st line of block)
+* Wiki: add §attributes§ for inline elements (just before closing marker, warning: cannot be nested)
+* Tpl: Add {{tpl:BlogNbEntriesFirstPage}} and {{tpl:BlogNbEntriesPerPage}}
+* Tpl: Add optional even attribute to <tpl:EntryIfOdd>, <tpl:CommentIfOdd> and <tpl:PingIfOdd>
+* Tpl: Add author="…" as attribute of <tpl:EntryIf>
+* Sys: Add several behaviors, coreBeforeImageMetaCreate, themeBeforeClone and themeAfterClone
+* a11y: Reduce motion if required in provided themes and backend
+* Lib: Update jQuery to 3.5.1 (backend and public)
+* Lib: Update Codemirror to 5.55.0
+* Lib: CKEditor new color palette (configurable)
+* Fix: Notification system refactored (now based on db rather than PHP Session)
+* Fix: Missing confirmation before closing modified forms / unecessary confirmation asked before closing not modified forms
+* i18n: Switch from Transifex to Crowdin for localisation purpose (https://dotclear.crowdin.com/)
+* 🐛 → Various bugs, a11y concerns and typos fixed
+* 🌼 → Some locales and cosmetic adjustments
+
+Dotclear 2.16.9 - 2020-06-02
+===========================================================
+* Fix: Check password for export only if necessary
+* Fix: Cope with mod_access_compat plugin inactive with Apache 2.4+
+* Fix: Fix very large font size value (user prefs) with CKEditor

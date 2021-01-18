@@ -1,0 +1,52 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Framadate
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/polls/Framadate
+	</ratings>
+	<space>
+		24411612
+	</space>
+	<support>
+		https://framagit.org/framasoft/framadate/issues
+	</support>
+	<version>
+		1.1.12
+	</version>
+	<mod>6</mod>
+	<release_date>18-12-2020</release_date>
+	<admin>admin/</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.3.0" />
+	<requirement check="php" type="extension" name="intl" />
+	<requirement check="php" type="extension" name="openssl" />
+	<requirement check="php" type="extension" name="pdo_mysql" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Framadate</font> is an online service for planning an appointment or making a decision quickly and easily. No registration is required.
+		<br /><br />
+		Framadate is licensed under the <a href="http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html" target="_blank">CeCILL-B license</a>.
+		</english-overview>		
+		<english-features>
+		<ul>
+			<li>Create a poll</li>
+			<li>Define dates or subjects to choose from</li>
+			<li>Send the poll link to your friends or colleagues</li>
+			<li>Discuss and make a decision</li>
+		</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+	</languages>
+</soft>

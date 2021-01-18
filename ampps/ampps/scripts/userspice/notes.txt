@@ -1,0 +1,9 @@
+1. Use default captcha key.
+2. cookie_name is same for all installation.
+3. enter sitename in "Site Name" Message 
+4. Use default private and public key
+5. After manual install change email and password and check diff with previous dump ( Username is not changing so we have provided email for login ).
+6. Selct Timezone : America/New_York.
+7. PHP REQUIREMENT LINK : install/install/includes/install_settings.php
+8. Use default value "vericode" column of "users" table its hardcoded in install\install\includes\sql.sql"
+9. We Did not added Cron Job because we need cron ip to allow

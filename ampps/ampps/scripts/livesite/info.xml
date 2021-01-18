@@ -1,0 +1,67 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/liveSite
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/cms/liveSite
+	</ratings>
+	<space>
+		43891601
+	</space>
+	<support>
+		https://livesite.com/support
+	</support>
+	<version>
+		2019.1
+	</version>
+	<mod>2</mod>
+	<release_date>13-02-2019</release_date>
+	<admin>livesite</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.3.0" />
+	<requirement check="php" type="version" operator="lt" value="7.2.0" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">liveSite</font> is a cost effective solution for smaller organizations that need enterprise features without the cost and complexity of enterprise solutions.
+		<br /><br />
+		liveSite <a href="https://livesite.com/community" target="_blank">Community Edition</a>.
+		</english-overview>		
+		<english-features>
+			<ul>
+				<li><b>Site Design</b> : Import your entire existing website and any custom responsive HTML design, so you’ll never have to compromise the look of your website for the sake of your website platform again.
+				</li>
+				<li><b>Site Administration</b> : No software or servers to manage or monitor. That’s our job. You get instant access to visitor trends, the most recent site updates and activity across your site as soon as you login.
+				</li>
+				<li><b>User Management</b> : Add unlimited member and client portals, and delegate every aspect of site design, site content, and site management to your staff using amazingly flexible access control.
+				</li>
+				<li><b>Content Management</b> : Integrated CMS features empower your staff to create, publish, and update website content easily. Site maps, tag clouds, full-text search, and SEO metadata are all updated in real-time.
+				</li>
+				<li><b>Forms Management</b> : Create custom web forms to gather information securely for any reason, including event registrations, custom product purchases, trial memberships, and even online quizzes.
+				</li>
+				<li><b>Contact Management</b> : liveSite tracks every user interaction and automatically updates contact information and mailing lists, so you can effortlessly send timed e-mail campaigns to any user or audience segment.
+				</li>
+				<li><b>Membership Management</b> : Create members-only areas within your website. Members can pay for access, sign up for a trial, or register using a security code you provide to access privileged content for a limited time.
+				</li>
+				<li><b>Community &amp; Social Media</b> : Discussions can be enabled on any page so your users, members, staff, or any other group can communicate securely within their own private space to provide feedback or build consensus.
+				</li>
+				<li><b>Calendaring &amp; Scheduling</b> : Create public calendars for visitors, or protected calendars for any group of users so they can quickly find event information, reserve a seat, or purchase a ticket.
+				</li>
+				<li><b>Commerce &amp; Payments</b> : liveSite can process payments for almost any type of product, service, event, fee, or donation. And liveSite doesn't add any transaction fees on top of your own payment gateway.
+				</li>
+				<li><b>Custom Workflow &amp; Apps</b> : Collect any type of data and display through secure and personalized views. Sync with user data, update custom databases, and trigger autoresponders and future e-mail campaigns.
+				</li>
+			</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

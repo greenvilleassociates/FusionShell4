@@ -1,0 +1,4 @@
+1. Download using composer command for zip
+php composer.phar create-project symfony/website-skeleton symfony425 {version}
+2. PHP REQUIREMENT LINK: https://symfony.com/doc/current/reference/requirements.html
+3. Empty the contents of /var/cache/ folder while making zip, as it contains cache files made by composer which have softpaths.

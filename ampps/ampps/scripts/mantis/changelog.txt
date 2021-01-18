@@ -1,0 +1,111 @@
+mantisbt - 2.24.4 Released 2020-12-30
+======================================
+Security and maintenance release, addressing 6 CVEs: an XSS issue, an SQL injection in the SOAP API and several information disclosure issues including a critical one allowing full access to private issues' contents. All installations are strongly advised to upgrade as soon as possible.
+
+Many thanks to randomdhiraj, ethicalhcop and d3vpoo1 (https://gitlab.com/jrckmcsb), for identifying and responsibly reporting these security issues.
+
+This release also includes a few PHP 8.0 compatibility fixes, including a major one causing an access denied error for all users when updating issues.
+0027361: [security] Private category can be access/used by a non member of a private project (IDOR) (dregad)
+0027779: [security] CVE-2020-35571: XSS in helper_ensure_confirmed() calls (dregad)
+0026794: [security] User Account - Takeover (dregad)
+0027363: [security] Fixed in version can be changed to a version that doesn't exist (dregad)
+0027350: [security] When updating an issue, a Viewer user can be set as Reporter (dregad)
+0027357: [security] Attacker can leak private information via different functionality (dregad)
+       0027728: [security] CVE-2020-29604: Full disclosure of private issue contents, including bugnotes and attachments (dregad)
+       0027727: [security] CVE-2020-29605: Disclosure of private issue summary (dregad)
+       0027726: [security] CVE-2020-29603: Disclosure of private project name (dregad)
+0027370: [security] CVE-2020-35849: Revisions allow viewing private bugnotes id and summary (dregad)
+0027495: [security] CVE-2020-28413: SQL injection in the parameter "access" on the mc_project_get_users function throught the API SOAP. (dregad)
+0020690: [bugtracker] inconsistent UI for view bugnote revision (dregad)
+0027444: [security] Printing unsanitized user input in install.php (atrol)
+0027464: [printing] print_manage_user_sort_link Function Parameter Required after Optional (atrol)
+0027465: [code cleanup] Declaring a required parameter after an optional one is deprecated in PHP 8 (atrol)
+0027704: [javascript] Javascript error in View Issues page (dregad)
+0027799: [bugtracker] Adapt Error handler to PHP 8 (dregad)
+0027806: [bugtracker] Impossible to edit issues with PHP8 (dregad)
+
+mantisbt - 2.24.3 Released 2020-09-25
+======================================
+Security release including 3 CVEs. Many thanks to d3vpoo1 (https://gitlab.com/jrckmcsb) for identifying most of the issues.
+0027039: [security] CVE-2020-25781: Access to private bug note attachments (dregad)
+0027268: [security] Admin can get issues assigned to users not allowed to handle them (dregad)
+0027275: [security] CVE-2020-25288: HTML Injection on bug_update_page.php (dregad)
+0027276: [security] Send reminder to viewer (dregad)
+0027283: [security] Admin can set viewer as a tag creator (dregad)
+0027284: [plug-ins] Priority can override to any positive integer (dregad)
+0027299: [code cleanup] Remove code duplication in File API (dregad)
+0027303: [code cleanup] When processing categories, it is not necessary to know the project id (dregad)
+0027304: [security] CVE-2020-25830: HTML Injection in bug_actiongroup_page.php (dregad)
+
+mantisbt - 2.24.2 Released 2020-08-07
+======================================
+Security release
+0027056: [security] CVE-2020-16266: HTML injection (maybe XSS) via custom field on view_all_bug_page.php (dregad)
+0027003: [security] Update PHPMailer from 6.1.4 to 6.1.6 (dregad)
+
+mantisbt - 2.24.1 Released 2020-05-03
+======================================
+0026893: [security] APIs expose private attachments to users who has access to issue but not private notes (vboctor)
+0026781: [bugtracker] changed project order / sequence (dregad)
+0026805: [attachments] Attachments box is invisible when notes are private by default (vboctor)
+0026835: [attachments] Database Server error while adding file to project (atrol)
+0026838: [bugtracker] OS build field not filled in viewing mode (atrol)
+0026880: [administration] Impossible to reset user's password (dregad)
+0026881: [documentation] Documentation for REST API /users/{id}/reset missing (vboctor)
+0026885: [api rest] Resetting password for protected user via REST API should fail (dregad)
+0026921: [bugtracker] View Issue page does not show "Product Build" (wrong key names in code) (atrol)
+
+mantisbt - 2.24.0 Released 2020-03-14
+======================================
+
+0022142: [ui] on mantisbt.org Roadmap progress bar 'data-percent' class could stand out better (syncguru)
+0026439: [ui] Issue list throws warning on every issue without bug notes. (dregad)
+0026441: [api rest] Update GuzzleHttp from 6.4.1 to 6.5.2 (dregad)
+0026473: [ui] Incorrect CSS rules get applied if a word in custom field name matches an existing CSS class (atrol)
+0026475: [email] Update phpmailer/phpmailer from 6.1.3 to 6.1.4 (dregad)
+0026567: [code cleanup] Code Cleanup (atrol)
+0026555: [reports] Wrong number of displayed rows on summary page (atrol)
+0026572: [code cleanup] Remove $g_log_destination 'firebug' option, as the project is dead since 2017 (dregad)
+0026589: [documentation] Admin Guide: remove doc for long-deprecated $g_ldap_port config (dregad)
+0026598: [db mssql] Update ADOdb to 5.20.16 (dregad)
+0009534: [feature] Limit reporter's access to their own issues (cproensa)
+0011365: [plug-ins] New Event: EVENT_MENU_ISSUE_RELATIONSHIP (dregad)
+0011381: [relationships] Dependency Graph crash on circular parent child relationships (dregad)
+0017594: [reports] Display issue Summary inside relation graph nodes (dregad)
+0021133: [rss] Access of non existent image in RSS feeds (dregad)
+0024600: [filters] BugFilterQuery - issue? - trying to add join & where conditions (cproensa)
+0026163: [relationships] Relationship Graph page UI lacks MantisBT 2.x layout (dregad)
+0026164: [relationships] Relationship Graph page is missing legend (dregad)
+0026165: [relationships] Relationship Graph - inconsistency between button label and title (dregad)
+0026612: [plug-ins] Improve MantisColumn sort capability to allow sorting by more complex expressions (cproensa)
+0026621: [filters] Wrong filtering by none-relationship (cproensa)
+0026623: [ui] Generate token with empty name and APPLICATION ERROR #11 (dregad)
+0026632: [api rest] Support user password reset via REST API (community)
+0026636: [installation] Apostrophe in custom_field_string table causes upgrade from < 1.2.0 to fail (dregad)
+0009155: [time tracking] Cell coloring for due date indicates "overdue" when not overdue yet. (dregad)
+0009155: [time tracking] Cell coloring for due date indicates "overdue" when not overdue yet. (dregad)
+0010831: [administration] how can I allow user to view only the issue that assigned to them (cproensa)
+0015466: [bugtracker] Reporter can't see an issue they have been made a monitor of (cproensa)
+0016869: [bugtracker] Change of due date background color (dregad)
+0021201: [localization] lang_get_defaulted does not search for fallback language (dregad)
+0023570: [bugtracker] Implement limit_reporters as a threshold (cproensa)
+0025097: [authentication] login username is not trimmed (dregad)
+0025115: [roadmap] User can't see in roadmap a private issue that they reported (cproensa)
+0026438: [bugtracker] Allow multiple, customizable due date levels (dregad)
+0009155: [time tracking] Cell coloring for due date indicates "overdue" when not overdue yet. (dregad)
+0016869: [bugtracker] Change of due date background color (dregad)
+0026568: [installation] Use appropriate statement to update DB schema when generating SQL (dregad)
+0026542: [api rest] Passing out of range custom field id causes multiple PHP warnings / incorrect response (dregad)
+0026540: [api rest] Passing unsanitized data to type hinted function causes program crash (dregad)
+0026541: [api rest] Passing invalid id to rest api custom field update causes program crash (dregad)
+0026662: [installation] Final statement to set database version not logged in SQL script (dregad)
+0026661: [installation] Add informational comments to SQL script generated by installer (dregad)
+0026663: [installation] improve installer messages when generating SQL script (dregad)
+0026664: [installation] Allow admin to reset table pre/suffix to their default values (dregad)
+0026686: [bugtracker] Make category on bug_report_page a required field when $g_allow_no_category = OFF; (dregad)
+0026687: [bugtracker] Required fields when reporting an issue, should also be when updating it (dregad)
+0026690: [bugtracker] Mass update does not allow setting an empty category (dregad)
+0026712: [ui] Provide a way to 'show content' for all complex items on Manage Configuration Report page (dregad)
+0026747: [plug-ins] No equivalent to lang_get_defaulted() in plugin_api() (dregad)
+0026765: [bugtracker] Inheritance of sub project not read correctly from database (dregad)
+0026778: [customization] Retire bug_change_status_page_fields config option (vboctor)

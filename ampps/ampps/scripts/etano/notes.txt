@@ -1,0 +1,3 @@
+1. Remove the php_value and php_flag from the .htaccess file in the root folder.
+2. PHP REQUIREMENT LINK : http://www.datemill.com/etano/wiki/doku.php?id=requirements
+3. change "_FILEOP_MODE_" "ftp" to "disk" in defines.inc.php and remove FTP details http://forum.datemill.com/index.php?topic=4942.0

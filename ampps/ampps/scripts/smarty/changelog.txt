@@ -1,0 +1,187 @@
+3.1.36] - 2020-08-22
+Fixed
+
+    Smarty::SMARTY_VERSION wasn't updated in v3.1.35 https://github.com/smarty-php/smarty/issues/584
+
+===== 3.1.33 release ===== 12.09.2018
+===== 3.1.33-dev-12 =====
+03.09.2018
+  - bugfix {foreach} using new style property access like {$item@property} on
+    Smarty 2 style named foreach loop could produce errors https://github.com/smarty-php/smarty/issues/484
+
+31.08.2018
+  - bugfix some custom left and right delimiters like '{^' '^}' did not work
+    https://github.com/smarty-php/smarty/issues/450 https://github.com/smarty-php/smarty/pull/482
+
+  - reformating for PSR-2 coding standards https://github.com/smarty-php/smarty/pull/483
+
+  - bugfix on Windows absolute filepathes did fail if the drive letter was followed by a linux DIRECTORY_SEPARATOR
+    like C:/  at Smarty > 3.1.33-dev-5 https://github.com/smarty-php/smarty/issues/451
+
+  - PSR-2 code style fixes for config and template file Lexer/Parser generated with
+    the Smarty Lexer/Parser generator from https://github.com/smarty-php/smarty-lexer
+    https://github.com/smarty-php/smarty/pull/483
+
+26.08.2018
+  - bugfix/enhancement {capture} allow variable as capture block name in Smarty special variable
+    like $smarty.capture.$foo https://github.com/smarty-php/smarty/issues/478 https://github.com/smarty-php/smarty/pull/481
+
+===== 3.1.33-dev-6 =====
+19.08.2018
+  - fix PSR-2 coding standards and PHPDoc blocks https://github.com/smarty-php/smarty/pull/452
+    https://github.com/smarty-php/smarty/pull/475
+    https://github.com/smarty-php/smarty/pull/473
+  - bugfix PHP5.2 compatibility https://github.com/smarty-php/smarty/pull/472
+
+===== 3.1.33-dev-4 =====
+17.05.2018
+ - bugfix strip-block produces different output in Smarty v3.1.32 https://github.com/smarty-php/smarty/issues/436
+ - bugfix Smarty::compileAllTemplates ignores `$extension` parameter https://github.com/smarty-php/smarty/issues/437
+   https://github.com/smarty-php/smarty/pull/438
+ - improvement do not compute total property in {foreach} if not needed https://github.com/smarty-php/smarty/issues/443
+ - bugfix  plugins may not be loaded when setMergeCompiledIncludes is true https://github.com/smarty-php/smarty/issues/435
+
+26.04.2018
+ - bugfix  regarding Security Vulnerability did not solve the problem under Linux.
+   Security issue CVE-2018-16831
+   
+===== 3.1.32 ===== (24.04.2018)
+24.04.2018
+ - bugfix  possible Security Vulnerability in Smarty_Security class.
+
+26.03.2018
+ - bugfix plugins may not be loaded if {function} or {block} tags are executed in nocache mode
+   https://github.com/smarty-php/smarty/issues/371
+
+26.03.2018
+ - new feature {parent} =  {$smarty.block.parent} {child} =  {$smarty.block.child}
+
+23.03.2018
+ - bugfix preg_replace could fail on large content resulting in a blank page https://github.com/smarty-php/smarty/issues/417
+
+21.03.2018
+ - bugfix {$smarty.section...} used outside {section}{/section} showed incorrect values if {section}{/section} was called inside
+   another loop https://github.com/smarty-php/smarty/issues/422
+ - bugfix short form of {section} attributes did not work https://github.com/smarty-php/smarty/issues/428
+
+17.03.2018
+ - improvement Smarty::compileAllTemplates() exit with a non-zero status code if max errors is reached https://github.com/smarty-php/smarty/pull/402
+
+16.03.2018
+ - bugfix extends resource did not work with user defined left/right delimiter https://github.com/smarty-php/smarty/issues/419
+
+22.11.2017
+ - bugfix {break} and {continue} could fail if {foreach}{/foreach} did contain other
+   looping tags like {for}, {section} and {while} https://github.com/smarty-php/smarty/issues/323
+
+20.11.2017
+  - bugfix rework of newline spacing between tag code and template text.
+    now again identical with Smarty2 (forum topic 26878)
+  - replacement of " by '
+
+05.11.2017
+  - lexer/parser optimization
+  - code cleanup and optimizations
+  - bugfix {$smarty.section.name.loop} used together with {$smarty.section.name.total} could produce
+    wrong results (forum topic 27041)
+
+26.10.2017
+  - bugfix Smarty version was  not filled in header comment of compiled and cached  files
+  - optimization replace internal Smarty::$ds property by DIRECTORY_SEPARATOR
+  - deprecate functions Smarty::muteExpectedErrors() and Smarty::unmuteExpectedErrors()
+    as Smarty does no longer use error suppression like @filemtime().
+    for backward compatibility code is moved from Smarty class to an external class and still can be
+    called.
+  - correction of PHPDoc blocks
+  - minor code cleanup
+
+21.10.2017
+  - bugfix custom delimiters could fail since modification of  version 3.1.32-dev-23
+    https://github.com/smarty-php/smarty/issues/394
+
+18.10.2017
+  - bugfix fix implementation of unclosed block tag in double quoted string of 12.10.2017
+    https://github.com/smarty-php/smarty/issues/396 https://github.com/smarty-php/smarty/issues/397
+    https://github.com/smarty-php/smarty/issues/391 https://github.com/smarty-php/smarty/issues/392
+
+12.10.2017
+  - bugfix $smarty.block.child and $smarty.block.parent could not be used like any
+    $smarty special variable https://github.com/smarty-php/smarty/issues/393
+  - unclosed block tag in double quoted string must throw compiler exception.
+     https://github.com/smarty-php/smarty/issues/391 https://github.com/smarty-php/smarty/issues/392
+
+07.10.2017
+  - bugfix modification of 9.8.2017 did fail on some recursive
+    tag nesting. https://github.com/smarty-php/smarty/issues/389
+
+26.8.2017
+  - bugfix chained modifier failed when last modifier parameter is a signed value
+    https://github.com/smarty-php/smarty/issues/327
+  - bugfix templates filepath with multibyte characters did not work
+    https://github.com/smarty-php/smarty/issues/385
+  - bugfix {make_nocache} did display code if the template did not contain other nocache code
+    https://github.com/smarty-php/smarty/issues/369
+
+09.8.2017
+  - improvement repeated delimiter like {{ and }} will be treated as literal
+    https://groups.google.com/forum/#!topic/smarty-developers/h9r82Bx4KZw
+
+05.8.2017
+  - bugfix wordwrap modifier could fail if used in nocache code.
+    converted plugin file shared.mb_wordwrap.php into modifier.mb_wordwrap.php
+  - cleanup of _getSmartyObj()
+
+31.7.2017
+  - Call clearstatcache() after mkdir() failure https://github.com/smarty-php/smarty/pull/379
+
+30.7.2017
+  - rewrite mkdir() bugfix to retry automatically see https://github.com/smarty-php/smarty/pull/377
+    https://github.com/smarty-php/smarty/pull/379
+
+21.7.2017
+  - security possible PHP code injection on custom resources at display() or fetch()
+    calls if the resource does not sanitize the template name
+  - bugfix fix 'mkdir(): File exists' error on create directory from parallel
+    processes https://github.com/smarty-php/smarty/pull/377
+  - bugfix solve preg_match() hhvm parameter problem https://github.com/smarty-php/smarty/pull/372
+
+27.5.2017
+  - bugfix change compiled code for registered function and modifiers to called as callable to allow closures
+    https://github.com/smarty-php/smarty/pull/368, https://github.com/smarty-php/smarty/issues/273
+  - bugfix https://github.com/smarty-php/smarty/pull/368 did break the default plugin handler
+  - improvement replace phpversion() by PHP_VERSION constant.
+    https://github.com/smarty-php/smarty/pull/363
+
+21.5.2017
+  - performance store flag for already required shared plugin functions in static variable or
+    Smarty's $_cache to improve performance when plugins are often called
+    https://github.com/smarty-php/smarty/commit/51e0d5cd405d764a4ea257d1bac1fb1205f74528#commitcomment-22280086
+  - bugfix remove special treatment of classes implementing ArrayAccess in {foreach}
+    https://github.com/smarty-php/smarty/issues/332
+  - bugfix remove deleted files by clear_cache() and clear_compiled_template() from
+    ACP cache if present, add some is_file() checks to avoid possible warnings on filemtime()
+    caused by above functions.
+    https://github.com/smarty-php/smarty/issues/341
+  - bugfix version 3.1.31 did fail under PHP 5.2
+    https://github.com/smarty-php/smarty/issues/365
+
+19.5.2017
+  - change properties $accessMap and $obsoleteProperties from private to protected
+    https://github.com/smarty-php/smarty/issues/351
+  - new feature The named capture buffers can now be accessed also as array
+    See NEWS_FEATURES.txt https://github.com/smarty-php/smarty/issues/366
+  - improvement check if ini_get() and ini_set() not disabled
+    https://github.com/smarty-php/smarty/pull/362
+
+24.4.2017
+  - fix spelling https://github.com/smarty-php/smarty/commit/e3eda8a5f5653d8abb960eb1bc47e3eca679b1b4#commitcomment-21803095
+
+17.4.2017
+  - correct generated code on empty() and isset() call, observe change PHP behaviour since PHP 5.5
+    https://github.com/smarty-php/smarty/issues/347
+
+14.4.2017
+  - merge pull requests https://github.com/smarty-php/smarty/pull/349, https://github.com/smarty-php/smarty/pull/322 and    https://github.com/smarty-php/smarty/pull/337 to fix spelling and annotation
+
+13.4.2017
+  - bugfix array_merge() parameter should be checked https://github.com/smarty-php/smarty/issues/350

@@ -1,0 +1,3 @@
+1. PHP REQUIREMENT LINK : https://github.com/padams/Open-Web-Analytics/wiki/Technical-Requirements#PHP
+2. We have Installed composer in 1.6.8 as it was mentioned in their release notes ( https://github.com/Open-Web-Analytics/Open-Web-Analytics/releases/tag/1.6.8 ).Check and add it in next version if required.
+3. Since 1.6.9 we download the full distribution package from Github releases, named as owa_{{version}}_packaged.tar as it includes the vendor folder and the dependencies in it, so we don't need to do composer install.

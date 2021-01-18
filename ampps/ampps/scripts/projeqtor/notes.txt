@@ -1,0 +1,7 @@
+1. Min length for password : 5
+2. Keep Default time zone : America/New_York
+3. Currency : $
+4. Default password for initialization : projeqtor
+5. Requires files/cron directory writable in manual installation for first login and updating database.
+6. PHP REQUIREMENT LINK : https://www.projeqtor.org/en/product-en/technical-en/64-setup-en/412-product-prerequisites-en
+7. Check and add admin language entry in "parameter" table i.e (200, 1, NULL, 'currentLocale', '[[admin_language]]');. Also change 'AUTO_INCREMENT' value accordingly.

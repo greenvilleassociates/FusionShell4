@@ -1,0 +1,54 @@
+   Version 3.6.2:  (Released: February 17, 2017   ) 
+================================================================== 
+ + Fixed SQL injection vulerabilty with variables $aftertime
+   and $typeof. replace all >'$aftertime' WITH >'".intval($aftertime)."'
+   added if statment at time that if $typeof != "writediv" ) then $typeof="";
+ + Fixed window size problem with template bubble_window
+ + Fixed issue with chat sound not playing when someone is requesting a chat
+   
+ 
+   
+FILES CHANGED: 
+------------------------------------------------------------------
+    setup.php, iphone/functions.php, functions.php, livehelp_js.php
+    admin_users_refresh.php, admin_users_xmlhttp.php, 
+    themes/bubble_window/windowsize.php, themes/bubble_window/chat_window.php
+    , themes/bubble_window/chat_windowlarge.php, departments.php,
+    admin_chat_bot.php
+    
+DATABASE ALTERATIONS:
+------------------------------------------------------------------ 
+NONE
+
+
+   Version 3.6.1:  (Released: June 21, 2016   ) 
+================================================================== 
+ + Added new leads tab to keep track of generated leads.
+ + Added ability to send layer invites when offline to pro-actively gather 
+   lead information from visitors even when operators are offline.
+   
+FILES CHANGED: 
+------------------------------------------------------------------
+    setup.php, autolead.php, functions.php, autoinvite.php, navigation.php
+    send.php, sendemail.php, createemail.php, leads.php, admin.php,
+    layer_invites/layer-Help_buttonoffline.txt, layer_invites/layer-Help_buttonoffline.gif
+
+   Version 3.5.4:  (Released: May 28, 2016   ) 
+================================================================== 
+ + updated graphics to include new logo of Sales Syntax.
+ + Added tab for linking user database for CRM management.
+ + Added ability for support tickets. 
+ + added tab for lead management and added wall for operators to
+   see posts.
+   
+FILES CHANGED: 
+------------------------------------------------------------------
+   setup.php, config_cslh.php, class/mysql_db.php, class/mysqli_db.php, 
+   mobile/mysql_db.php, mobile/mysqli_db.php, images/logo.jpg.
+   images/loginbk.jpg
+
+   Version 3.5.3:  (Released: March 30, 2016   ) 
+================================================================== 
+ + converted the depreciated mysql functions to mysqli functions 
+   for support for php 4+
+   

@@ -1,0 +1,2 @@
+1. forum username and password -> not required as it is optional
+2. We have restricted script on php >= 7.0.0 because script uses "mysql_connect" function which is removed since PHP 7.0.0

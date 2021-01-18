@@ -1,0 +1,4 @@
+1. While manual installation provide database details and change SECRET_KEY in /control/connect.php and admin username and password in /admin/control/access.php before starting with manual installation.
+2. Select Character set as "utf8_general_ci". And Mysql version as "MySQL5".
+3. Install without sample data.
+4. PHP REQUIREMENT LINK: https://www.maiancart.com/system-requirements.html

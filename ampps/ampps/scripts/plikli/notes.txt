@@ -1,0 +1,6 @@
+1. Add [[language]] in sql and settings.php
+2. Remove .default from all language files in the package /languages/ folder.
+3. adcopy_pubkey, adcopy_privkey and adcopy_hashkey are same for all installation.
+4. Move files to manual to package if any change in module files, for check download .zip file mentioned in "intall/install4.php"
+download "https://plikli.com/upgrade/{module.zip}"
+5. In versions 4.1.0 and below we have used salted sha1 password in install.php. We observed that in those versions when we log in with admin username and password for first time , we get error. As script itself converts the salted sha1 password in '[[dbprefix]]users' table to salted bcrypt passsword, and after that when we log in we are able to log in. Latest version 4.1.5 uses salted bcrypt password. This is the reason why we have used the same salted bcrypt password in edit.php to handle older version's password encryption and have not added extend.php.

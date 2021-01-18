@@ -1,0 +1,2 @@
+1. PHP REQUIREMENT LINK: https://omeka.org/s/docs/user-manual/install/#system-requirements
+2. Keep Timezone default i.e : America/New_York in manual installation and also keep locale 'Default'.

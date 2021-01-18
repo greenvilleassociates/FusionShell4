@@ -1,0 +1,10 @@
+1. select MySQL Improved(mysqli)
+2. Check "Always force connection to use UTF-8"
+3. We do not configure the .htaccess file because the SEOfriendly url is disabled by default.
+4. Select database engine = MyISAM & Set up htaccess file = Do nothing during manual installation.
+5. Always lock the installer, setup the website and then take a dump.
+6. PHP REQUIREMENT LINK: https://doc.tiki.org/Requirements#Requirements
+7. we have kept minimum upgrade version to 12.0 as we have tested from 12 only.
+8. Post upgrade from 20.0 to 20.1 the columns `lastlogin_date` and `currentlogin_date` are not created. Vendor has told us in mail that it would take long time to rebuild indexes through browser and that, there is a chance that script might timeout, hence indexes are not rebuilt while upgrade, they can be rebuilt later via command line cron as follows:
+https://doc.tiki.org/Cron-Job-to-Rebuild-Search-Index
+9. Check and add ('language_admin', '[[admin_language]]'); in tiki_preferences for admin languages

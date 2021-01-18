@@ -1,0 +1,90 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Sentrifugo
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/erp/Sentrifugo
+	</ratings>
+	<space>
+		139682640
+	</space>
+	<support>
+		http://www.sentrifugo.com/support/
+	</support>
+	<version>
+		3.2
+	</version>
+	<mod>5</mod>
+	<mod_files>3</mod_files>
+	<release_date>17-04-2017</release_date>
+	<admin>index.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.3.0" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="pdo" />
+	<requirement check="php" type="extension" name="openssl" />
+	<languages>
+	<english-overview>
+	<font size="5" color="#182e7a">Sentrifugo</font> is a <b>Free</b> and <b>Powerful</b> new-age Human Resource Management System that can be easily configured to adapt to your organizational processes.
+	<br /><br />
+	Sentrifugo is released under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GNU GENERAL PUBLIC LICENSE Version 3</a>.
+	</english-overview>		
+	<english-features>
+	<ul>
+	<li>Human Resource
+		<ul>
+		<li>Configure and manage Sentrifugo's full-featured flexible solutions that are unique to your organization.</li>
+		<li>Manage holiday groups, determine leave management options and define employee configurations; all in one place.</li>
+		<li>Maintain roles and privileges for various employee groups within your organization.</li>
+		</ul>
+	</li>
+	<li>Performance Appraisal
+		<ul>
+		<li>Fully equipped performance appraisal module helps you to assess your employee's overall performance over a specific period of time and empowers you to define and build your own appraisal process.</li>
+		<li>Allows employees to provide self-appraisal ratings and comments and managers to provide employee performance feedback and offer suggestions.</li>
+		<li>Managers can define future training needs and provide the employee with a benchmark for objectives.</li>
+		</ul>
+	</li>
+	<li>Employee self-service
+		<ul>
+		<li>Efficient module designed for productivity enabling employees to access and modify information pertinent to them and putting an end to time consuming administration and paperwork.</li>
+		<li>Maximise functionality of your organization by efficiently managing and accurately tracking employee leaves information. Managers can schedule meetings and events based on the availability of their teammates.</li>
+		<li>Empowers manager to view and update team members complete details and enables them to customize and generate reports in PDF or Excel.</li>
+		</ul>
+	</li>
+	<li>Analytics
+		<ul>
+		<li>Publishes a comprehensive series of analytics that represent broad range of features graphically pertaining to key activities in the system and define long term and short term goals to set the course for your organization.</li>
+		<li>User activity, attrition rate, employees by department and other essential reports come inbuilt with the system.</li>
+		<li>Generate customizable reports to view and/or export into excels and /or PDFs.</li>
+		</ul>
+	</li>
+	<li>Background Checks
+		<ul>
+		<li>Associate agencies with your organization to perform background checks and track the status along with the process feedback from them.</li>
+		<li>Increase candidates and employees quality by gathering prior history and determine the accuracy of the provided details.</li>
+		<li>Associate agencies with your organization to perform background checks and track the status along with the process feedback from them.</li>
+		</ul>
+	</li>
+	<li>Leave Management
+		<ul>
+		<li>Define leave management options for a department or an entire business unit by determining weekends, number of working hours, permission to transfer leaves and many such awesome features.</li>
+		<li>Determine leave calendar for holiday groups and associate them with employees individually.</li>
+		<li>Centralized leaves summary of all employees enabling you to view employees leave information.</li>
+		</ul>
+	</li>
+	</ul>		
+	</english-features>
+	<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+	<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+	<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

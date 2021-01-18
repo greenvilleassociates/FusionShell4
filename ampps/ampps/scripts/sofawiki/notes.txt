@@ -1,0 +1,4 @@
+1. Download snapshot.zip from https://www.sofawiki.com/en/download as it contains latest package.
+2. PHP REQUIREMENT LINK: https://www.sofawiki.com/en/software-requirements
+3. Install with 'default' theme.
+4. Release date : https://www.sofawiki.com/site/files/

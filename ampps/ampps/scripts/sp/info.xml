@@ -1,0 +1,520 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.png" style="float:right;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		https://www.softaculous.com/demos/SitePad
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/blogs/SitePad
+	</ratings>
+	<space>
+		44772565
+	</space>
+	<support>
+		https://sitepad.com/
+	</support>
+	<version>
+		1.5.2
+	</version>
+	<mod>26</mod>
+	<mod_files>1</mod_files>
+	<release_date>13-01-2021</release_date>
+	<admin>site-admin/</admin>
+	<softversion>
+		5.4.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.6.20" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">SitePad</font> Build Professional websites using an Easy to Use Editor and Publish static web pages
+380+ Responsive Themes which cover a wide range of categories like Blog, Business, Portfolio, Restaurants, Travel and many more
+<br /><br />
+80+ Widgets like Image/Video Slider, Image Galleries, Rich Text, Video, Audio, Service Box, Google Maps, Contact Form, Social Media and many more to help you build your website.
+		</english-overview>
+		<english-features>
+		
+<style>
+
+.spicons-background{
+float:left;
+}
+
+.spicons{
+line-height: 1.2;
+padding: 20px;
+box-shadow: 1px 1px 12px 1px #e5e5e5;
+margin: 10px 20px;
+border-radius: 4px;
+}
+
+.smeicons{
+display:none;
+}
+</style>
+
+<div id="top_feature">
+			
+	<h3 class="orange text-center">Features</h3><hr class="style-two"></hr>
+	<div class="row">
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="fa sai-download fa-2x spicons"></span></div>
+				<h4>One Click Publish</h4>
+				<p>Just pick a theme, customize the content add images, audio, videos and click <b>Publish</b></p>
+			</div>
+		</div>			
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="fa sai-galleries fa-2x spicons"></span></div>
+				<h4>380+ Themes</h4>
+				<p>380+ Ready to Use themes to use as a base to start building your website</p>
+			</div>
+		</div>			
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="fa sai-gridview fa-2x spicons"></span></div>
+				<h4>80+ Widgets</h4>
+				<p>Easy to use Image/Video Slider, Image Galleries, Rich Text, Video, Audio, Service Box, Google Maps and more</p>
+			</div>
+		</div>
+	</div>		
+	
+	<div class="row">
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="fa sai-files fa-2x spicons"></span></div>
+				<h4>Responsive</h4>
+				<p>Websites created by SitePad are responsive and compatible with all screen sizes</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="fa sai-file fa-2x spicons"></span></div>
+				<h4>Cache System</h4>
+				<p>Pages and Blog articles are served from static cache, so your site performs faster</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="fa sai-success fa-2x spicons"></span></div>
+				<h4>Easy to Use</h4>
+				<p>Simple Drag and Drop Interface to create beautiful websites without any technical knowledge</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+			<div class="col-sm-4 col-sm-6">
+				<div class="feature-wrap">
+					<div class="spicons-background"><span class="fa fa-2x spicons sai-twitch"></span></div>
+					<h4>Social Media</h4>
+					<p>Add links to your social media pages like Facebook, Twitter, LinkedIn, YouTube &amp; many more</p>
+				</div>
+			</div>
+			<div class="col-sm-4 col-sm-6">
+				<div class="feature-wrap">
+					<div class="spicons-background"><span class="fa fa-2x spicons sai-projectman"></span></div>
+					<h4>Blog</h4>
+					<p>Create a blog to publish new posts to your website regularly</p>
+				</div>
+			</div>
+			<div class="col-sm-4 col-sm-6">
+				<div class="feature-wrap">
+					<div class="spicons-background"><span class="fa fa-2x spicons sai-video"></span></div>
+					<h4>Media</h4>
+					<p>Add images, audio and videos to your site and blog using the drag and drop interface</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-4 col-sm-6">
+				<div class="feature-wrap">
+					<div class="spicons-background"><span class="fa sai-copy fa-2x spicons"></span></div>
+					<h4>Replicate Objects</h4>
+					<p>Replicate objects in the drag and drop editor interface to use your customizations multiple times</p>
+				</div>
+			</div>
+			<div class="col-sm-4 col-sm-6">
+				<div class="feature-wrap">
+					<div class="spicons-background"><span class="fa sai-shuffle fa-2x spicons"></span></div>
+					<h4>Flexible</h4>
+					<p>Create Pages, Blogs or both as per your requirement</p>
+				</div>
+			</div>
+			<div class="col-sm-4 col-sm-6">
+				<div class="feature-wrap">
+					<div class="spicons-background"><span class="fa sai-www fa-2x spicons"></span></div>
+					<h4>Multiple Sites</h4>
+					<p>Create multiple sites each having different themes, appearences and content</p>
+				</div>
+			</div>
+		</div>
+</div>
+
+<div id="all_widgets"><br /><br />
+	<h3 class="orange text-center">Widgets</h3><hr class="style-two"></hr>
+	<div class="row">
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_heading"></span></div>
+				<h4>Title</h4>
+				<p>Add a Title to your page to highlight your heading</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_text"></span></div>
+				<h4>Paragraph</h4>
+				<p>Orgainse your text content by using the paragraph widget</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_code"></span></div>
+				<h4>Rich Text</h4>
+				<p>Use Rich Text to add formatting to your content such as <b>bold</b>, <i>italics</i>, <u>underlining</u>, media &amp; much more</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_quote"></span></div>
+				<h4>Quote</h4>
+				<p>Write your favourite quotes, defining you and give the authors name</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_list"></span></div>
+				<h4>List</h4>
+				<p>Create ordered, unordered or custom list of items by using the List widget</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_icon"></span></div>
+				<h4>Icon</h4>
+				<p>Add icons to your content from a wide range of Glyphicons and Font Awesome</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="fa fa-2x fa-image"></span></div>
+				<h4>Image</h4>
+				<p>Use images to add visual/aesthetic appeal to your website</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_image_slider" style="margin-left: 10px"></span></div>
+				<h4>Image Slider</h4>
+				<p>Add image sliders to your website to make it look more dynamic and lively</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_grid_gallery"></span></div>
+				<h4>Grid Gallery</h4>
+				<p>A grid gallery is the best way to showcase your images/portfolio</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-mpce_image_hotspot"></span></div>
+				<h4>Image Hotspot</h4>
+				<p>Image Hotspot widget allows you to place an overlay of hotspot on your images</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_button"></span></div>
+				<h4>Button</h4>
+				<p>Add button(s) to your website that users can click to lead them to appropriate destination from your site</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_button_group"></span></div>
+				<h4>Button Group</h4>
+				<p>Create a group of buttons providing different actions for each one</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_download_button"></span></div>
+				<h4>Download Button</h4>
+				<p>Download Button can be used to lead the user to a Download link</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_social_buttons"></span></div>
+				<h4>Social Share Buttons</h4>
+				<p>Social Share buttons allow users to share your content on their social media pages</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_wp_audio"></span></div>
+				<h4>Audio</h4>
+				<p>Add audio to enliven and enrich your work, adding multi-media variety to your site</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_video"></span></div>
+				<h4>Video</h4>
+				<p>Add a Video to showcase a visual description of your product/company</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-mpceva_video_slider"></span></div>
+				<h4>Video Slider</h4>
+				<p>Video Slider allows you to embed multiple videos in a slideshow</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-mpceva_video_lightbox"></span></div>
+				<h4>Video LightBox</h4>
+				<p>Video LightBox allows you to embed videos on a page using lightbox overlay display</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_service_box"></span></div>
+				<h4>Service Box</h4>
+				<p>Use Service Box to add Image, Heading, Description and Button within a content area</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_tabs"></span></div>
+				<h4>Tabs</h4>
+				<p>A single content area with multiple panels, each associated with a header in a list</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_accordion"></span></div>
+				<h4>Accordian</h4>
+				<p>Display collapsible content panels for presenting information in a limited amount of space</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_table"></span></div>
+				<h4>Table</h4>
+				<p>A structured area to show all your related contents in rows and columns</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_cta"></span></div>
+				<h4>Call to Action</h4>
+				<p>Solicit an action from the user by using call to action widget</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_modal"></span></div>
+				<h4>Modal</h4>
+				<p>Show your text/media content above the main content window</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_popup"></span></div>
+				<h4>Splash Screen</h4>
+				<p>Capture your users attention at their visit by using visual and multimedia effects on a splash screen</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_space"></span></div>
+				<h4>Space</h4>
+				<p>Create vertical space between two elements, make your content look aesthetic</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_embed"></span></div>
+				<h4>Embed</h4>
+				<p>Embed HTML code using the Embed widget</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_google_chart"></span></div>
+				<h4>Chart</h4>
+				<p>Show statistics related to your products or business using various types of charts available</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_google_map"></span></div>
+				<h4>Google Maps</h4>
+				<p>Use Google Maps widget to show your business/office location</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-mpce_countdown_timer"></span></div>
+				<h4>Countdown Timer</h4>
+				<p>Use Countdown timer to add a countdown for your product release or any other event on your website</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-mpce_pta_pricing_table"></span></div>
+				<h4>Pricing Table</h4>
+				<p>Showcase your products pricing &amp; features with attractive table</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-mpce_cfa_contact_form"></span></div>
+				<h4>Contact Form</h4>
+				<p>Create a Contact Form to allow users to contact you to enquire about your products</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_site_title"></span></div>
+				<h4>Site Title</h4>
+				<p>Give your website a Title using this widget</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_primary_nav_menu"></span></div>
+				<h4>Primary Menu</h4>
+				<p>Add a menu to allow users to navigate between pages on your site</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_posts_grid"></span></div>
+				<h4>Posts Grid</h4>
+				<p>Create a content area to show all your posts</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_wp_pages"></span></div>
+				<h4>Pages</h4>
+				<p>Shows all the pages in a content area on your website</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_wp_posts"></span></div>
+				<h4>Recent Posts</h4>
+				<p>Show all your recent posts on your page</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_wp_calendar"></span></div>
+				<h4>Calendar</h4>
+				<p>Calendar widget shows all the posts monthwise</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_posts_slider" style="margin-left: 14px"></span></div>
+				<h4>Posts Slider</h4>
+				<p>Use Posts Slider to showcase all your posts in a slider</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_wp_categories"></span></div>
+				<h4>Categories</h4>
+				<p>Shows all your posts category wise</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_wp_archives"></span></div>
+				<h4>Archives</h4>
+				<p>Show all your records in an archive</p>
+			</div>
+		</div>
+		<div class="col-sm-4 col-sm-6">
+			<div class="feature-wrap">
+				<div class="spicons-background"><span class="smeicons fa-2x smeicons-before spicons smeicons-sm_wp_tagcloud " style="margin-left: 12px;"></span></div>
+				<h4>Tag Cloud</h4>
+				<p>A Tag Cloud shows the posts on the basis of tags used in the post</p>
+			</div>
+		</div>
+	</div>
+</div>
+		</english-features>
+		<english-err_php524>The PHP version is less than the required 5.2.4+ version!</english-err_php524>
+		<english-choose_theme>Choose Theme</english-choose_theme>
+		<english-show_themes>Show Themes</english-show_themes>
+		<english-social_profiles>Social Profile</english-social_profiles>
+		<english-email_address>Email Address</english-email_address>
+		<english-phone>Phone</english-phone>
+		<english-address>Address</english-address>
+		<english-used_contact_page>Used on the Contact page</english-used_contact_page>
+		<english-facebook>Facebook</english-facebook>
+		<english-facebook_exp>Link to your Facebook page</english-facebook_exp>
+		<english-twitter>Twitter</english-twitter>
+		<english-twitter_exp>Link to your Twitter profile</english-twitter_exp>
+		<english-instagram>Instagram</english-instagram>
+		<english-instagram_exp>Link to your Instagram page</english-instagram_exp>
+		<english-linkedin>LinkedIn</english-linkedin>
+		<english-linkedin_exp>Link to your LinkedIn page</english-linkedin_exp>
+		<english-youtube>Youtube</english-youtube>
+		<english-youtube_exp>Link to your YouTube channel</english-youtube_exp>
+		<english-gplus>Google+</english-gplus>
+		<english-gplus_exp>Link to your Google+ page</english-gplus_exp>
+		<english-license_key_exp>Needed if you have chosen a Pro theme</english-license_key_exp>
+	</languages>
+</soft>

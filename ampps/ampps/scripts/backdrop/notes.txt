@@ -1,0 +1,4 @@
+1. Select GMT -5 in install its America/New_York Time Zone
+2. Check and Copy "files/config-*" from manual to package in "files/config" folder
+3. PHP REQUIREMENT LINK: https://backdropcms.org/requirements
+4. CRON command: https://www.drupal.org/docs/7/setting-up-cron/configuring-cron-jobs-using-the-cron-command (As backdrop is a fork of Drupal7 user need to follow drupal7's docs)

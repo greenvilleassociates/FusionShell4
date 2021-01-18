@@ -1,0 +1,17 @@
+.editorconfig
+.env.example
+.gitattributes
+.gitignore
+.php_cs.dist
+README.md
+app
+bin
+composer.json
+composer.lock
+docker-compose.yml
+gpl-3.0.txt
+src
+var
+vendor
+web
+.htaccess

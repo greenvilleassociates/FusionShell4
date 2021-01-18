@@ -1,0 +1,57 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/TangoBB
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/forums/TangoBB
+	</ratings>
+	<space>
+		15856433
+	</space>
+	<support>
+		https://github.com/Codetana/TangoBB/wiki
+	</support>
+	<version>
+	   1.5.1
+	</version>
+	<mod>1</mod>
+	<mod_files>3</mod_files>
+	<release_date>24-07-2015</release_date>
+	<admin>members.php/cmd/signin</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.3.0" />
+	<requirement check="php" type="extension" name="PDO" />
+	<requirement check="php" type="extension" name="mysqli" />
+	<languages>
+	<english-overview>
+	<font size="5" color="#182e7a">TangoBB</font> is a project for a new and simple bulletin board.
+	<br /><br />
+	Bigger improvements, better experience. Continuing to create a forum software that is easy to use.	
+	<br /><br />
+	TangoBB is released under the <a href="https://en.wikipedia.org/wiki/MIT_License" target="_blank">MIT License</a>
+	</english-overview>		
+		<english-features>
+		<ul>
+			<li><b>Customisable</b> : Highly customisable from theme management to usergroup editing. </li>
+			<li><b>User Friendly</b> : The administration interface is easy to use and understand with interchangeable UI. </li>
+			<li><b>Gravatar Support</b> : Use Gravatar as profile picture or upload one directly onto your forum. </li>
+			<li><b>Extension System</b> : Easily create extensions to add additional features to your forum. </li>
+			<li><b>Mutiple Language Support</b> : TangoBB allows you to change or create languages for the front-end of your forum. </li>
+			<li><b>Private Messages</b> : User-to-user private conversations with unread message notifications. </li>
+			<li><b>Admin Terminal</b> : Single-line commands that can be used to do functions without having to click through multiple pages. </li>
+			<li><b>Theme Editor</b> : Edit themes in the administation panel with a simple interface. </li>
+		</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

@@ -1,0 +1,17 @@
+.htaccess
+Dockerfile
+INSTALL.md
+LICENSE
+README.md
+UPGRADE.txt
+WHATS_NEW.txt
+application
+database
+docker
+docker-compose.dev.yml
+docker-compose.test.yml
+docker-compose.yml
+import_customers.csv
+public
+robots.txt
+vendor

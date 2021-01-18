@@ -1,0 +1,4 @@
+1. PHP REQUIREMENT LINK: https://nukeviet.vn/en/download/CMS/NukeViet-4-4-00.html
+2. Check and verify "act_1", "act_2", "act_3" columns for every checksum value in 'authors_module' table and if there is any change then update it in install.php
+3. Remove ftp_user_pass entry from config.global.php and from database config table as it can be created from admin panel --> Configuration --> FTP Configuration. (Confirmed with vendor via email)
+4. config_ini.domain.com.php generates on visiting front page and admin URL.

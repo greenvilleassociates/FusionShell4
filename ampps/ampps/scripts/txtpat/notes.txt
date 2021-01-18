@@ -1,0 +1,6 @@
+1. Database needs to be dumped after login to the admin panel
+2. We have added _index.php which has our changes for auto upgrade and then we revert the file after upgrade
+Check the diff between index.php and _index.php for our changes
+3. Check if files or folders are to be deleted during upgrade and update upgrade.php, You can get the list of files to be deleted from textpattern/update/_to_VERSION.php
+4. Add 'tempdir', '[[softpath]]/textpattern/tmp in `[[dbprefix]]txp_prefs` table.
+5. PHP REQUIREMENT LINK: https://textpattern.com/about/119/system-requirements

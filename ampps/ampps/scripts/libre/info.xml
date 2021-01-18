@@ -1,0 +1,54 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/LibreHealth_EHR
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/others/LibreHealth_EHR
+	</ratings>
+	<space>
+		130422305
+	</space>
+	<support>
+		https://forums.librehealth.io/c/projects/lh-ehr
+	</support>
+	<version>
+		2.0.0
+	</version>
+	<mod>3</mod>
+	<mod_files>1</mod_files>
+	<release_date>03-11-2017</release_date>
+	<admin>interface/login/login.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.4.0" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">LibreHealth EHR</font> application is a clinically-focused electronic health record (EHR) system designed to be both easy to use "out of the box" and also customizable for use in a variety of health care settings.
+		<br /><br />
+		It builds on the strength of the LibreHealth Toolkit, and adapts many of the proven user experiences built over many years in the OpenEMR system. It is designed to be a modern, easy-to-use experience for health care professionals in their daily work.
+		<br /><br />
+		LibreHealth EHR is released under the <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">Mozilla Public License Version 2</a>.
+		</english-overview>
+		<english-features>
+		<ul>
+			<li><b>Openness</b> : LibreHealth is open to all individuals in their individual capacities, and provides the same opportunity to all. Everyone participates with the same rules.</li>
+			<li><b>Outcome-driven</b> : No imagined needs! We focus on design, development and deployment of technology that will have measurable impact on the health of people from around the world.</li>
+			<li><b>Transparency</b> : All discussions, minutes, project plans, designs, plans for new features, and other artifacts shall be open, public, searchable, and easily accessible to everyone.</li>
+			<li><b>Umbrella Organization</b> : LibreHealth is an umbrella organization where multiple health information technology projects collaborate.</li>
+			<li><b>User-Driven</b> : LibreHealth is driven by real needs of patients and last-mile clinicians who want to improve health and health service delivery</li>
+		</ul>
+		</english-features>
+		<english-init_group>Initial Group</english-init_group>
+		<english-exp_init_group>This is the group that will be created for your users. This should be the name of your practice.</english-exp_init_group>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

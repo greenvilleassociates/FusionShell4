@@ -1,0 +1,5 @@
+1) Choose : I want to use HumHub for: "Skip this step, I want to set up everything manually"
+2) Install with sample data i.e TICK Set up example content (recommended)
+3) Move all the images of uploads/profile_image/ from manual to zip.
+4) We have not added upgrade till now becuase script itself provides only command line upgrade. http://docs.humhub.org/admin-updating.html
+5) PHP REQUIREMENT LINK : http://docs.humhub.org/admin-requirements.html#server-requirements

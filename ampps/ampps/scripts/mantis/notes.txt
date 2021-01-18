@@ -1,0 +1,8 @@
+1. config_inc.php has additional data so add it from the previous version.
+2. default admin : administrator pass : root
+3. Select MySQLi as database type.
+4. check edit in all aspect if there is error change where change is required 
+   mantis less than 1.3.0 having default "mantis_" prefix for table
+5. PHP REQUIREMENT LINK :  https://github.com/mantisbt/mantisbt#requirements
+6. Language : if language changed from dashboard it changes for current user only and other user's language remains English. To change language for all user need to add variable in config http://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.config.language
+7. Keep $g_db_table_plugin_prefix and $g_db_table_suffix value to "mantis" only in manual installation to avoid confusion in table names.

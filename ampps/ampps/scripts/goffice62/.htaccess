@@ -1,0 +1,9 @@
+RewriteEngine On
+# The followng two lines are only necessary when using PHP in CGI mode and not an apache module
+RewriteCond %{HTTP:Authorization} ^(.*)
+RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
+# Configure /webdav, /caldav etc. on your domain
+RewriteRule ^webdav(.*)$ [[relativeurl]]/modules/dav/files.php
+RewriteRule ^caldav(.*)$ [[relativeurl]]/modules/caldav/calendar.php
+RewriteRule ^carddav(.*)$ [[relativeurl]]/modules/carddav/addressbook.php
+RewriteRule ^Microsoft-Server-ActiveSync(.*)$ [[relativeurl]]/modules/z-push/index.php

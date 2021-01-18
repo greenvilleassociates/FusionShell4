@@ -1,0 +1,30 @@
+phpMyFAQ 3.0.x
+phpMyFAQ 3.0.7 - 2020-12-23
+
+    fixed XSS vulnerability (advisory)
+    added TOC plugin for TinyMCE
+    removed support for deprecated data-vocabulary.org schema
+    removed Travis CI build, switched to Github Actions
+    fixed minor bugs
+
+phpMyFAQ 3.0.6 - 2020-11-27 
+
+    added support for PHP 8.0
+    fixed minor bugs
+
+phpMyFAQ 3.0.5 - 2020-10-17
+	
+	minor improvements (Thorsten)
+	fixed minor bugs (Thorsten)
+
+phpMyFAQ 3.0.3 - 2020-05-21
+
+    improved FAQ editing
+    updated to Bootstrap v4.5
+    fixed minor bugs
+
+phpMyFAQ 3.0.2 - 2020-04-16
+
+    improved handling of multiple homepage categories
+    improved FAQ editing
+    fixed minor bugs

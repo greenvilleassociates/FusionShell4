@@ -1,0 +1,50 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right; margin:10px" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/net2ftp
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/files/net2ftp
+	</ratings>
+	<space>
+		22429927 
+	</space>
+	<support>
+		http://www.net2ftp.com
+	</support>
+	<version>
+		1.3
+	</version>
+	<mod>2</mod>
+	<release_date>01-07-2019</release_date>
+	<softversion>
+		4.5.4
+	</softversion>
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">net2ftp</font> - a web based FTP client. The normal way to connect to your FTP server is to use an FTP client and to communicate via the FTP protocol. This is however not always possible:<br/> you may be behind a corporate firewall at work, which may block the FTP communications;<br/> you may be on holiday and connecting to the internet via a CyberCafe, where you may not be allowed to install an FTP client.
+		<br/> 
+		When you use net2ftp these problems are solved: you connect to net2ftp using a regular web browser, and net2ftp translates your requests and takes care of the FTP communication.
+		<br /><br />
+		net2ftp is released under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GNU GENERAL PUBLIC LICENSE</a>.
+		</english-overview>		
+		<english-features>
+			<ul>
+			<li>Navigate the FTP server</li>
+			<li>Upload and download files</li>
+			<li>Edit files (WYSIWYG and syntax highlighting)</li>
+			<li>View code with syntax highlighting</li>
+			<li>Copy, move, delete (also to 2nd FTP server)</li>
+			<li>Rename and chmod (also recursive)</li>
+			<li>Zip and unzip files</li>
+			<li>Search for words or phrases</li>
+			<li>Calculate the size of directories and files</li>
+			</ul>
+		</english-features>
+	</languages>
+</soft>

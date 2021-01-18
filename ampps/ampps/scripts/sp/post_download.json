@@ -1,0 +1,7 @@
+{
+	"0": {
+		"file": "editor.zip",
+		"dest": "[[sitepad_editor_path]]",
+		"action": "unzip"
+	}
+}

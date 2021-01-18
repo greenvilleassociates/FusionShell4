@@ -1,0 +1,9 @@
+1. Download zip from their github page and make zip.
+2. Release date : https://github.com/Modernizr/Modernizr/releases
+-----
+1. Download the Development version Uncompressed on the Home page of their site.
+2. Since 3.3.1 download build with "Add CSS class" only.
+3. Release date : https://github.com/Modernizr/Modernizr/releases
+4. Build modernizr from this link https://rejas.uber.space which serves latest version as https://modernizr.com provides older 3.6.0 version, so author himself has suggested to download from the new link. Check this thread :
+https://github.com/Modernizr/Modernizr/issues/2508
+

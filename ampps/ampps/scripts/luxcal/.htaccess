@@ -1,0 +1,6 @@
+# LuxCal - block browser access to .cdb, .log and .txt files
+Options -Indexes
+<FilesMatch '\.(cdb|log|txt)$'>
+ Order deny,allow
+ Deny from all
+</FilesMatch>

@@ -1,0 +1,5 @@
+1. PHP REQUIREMENT LINK : https://livehelperchat.com/requirements-84a.html
+2. We have made small change in lib/core/lhcore/lhupdate.php file given by vendor in 3.14 version because it was giving error on upgrade.
+3. If you get .htaccess: Invalid command 'Header', perhaps misspelled or defined by a module not included in the server configuration on ampps, please enable 'mod_headers' i.e uncomment
+'LoadModule headers_module modules/mod_headers.so' in httpd.conf.
+4. No need to define variable for 'fcm_key' in `lh_chat_config` table as it's same for all installations and is defined in /modules/lhinstall/install.php(Since 3.40).

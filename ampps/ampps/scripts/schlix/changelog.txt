@@ -1,0 +1,27 @@
+Release note (2021 January 10)
+v2.2.6-1
+
+    PHP 8.0 compatibility (now compatible with PHP 5.6 - 8.0) excluding the new JIT flag (there is a bug in PHP itself).
+    Upgraded PHPMailer to v6.2.0 for PHP 8.0 compatibility.
+
+Release note (2020 November 23)
+v2.2.5-5
+
+    Errata #5: Fixed languages file issue
+    Errata #4: Fixed one more SameSite Cookie issue
+    Errata #3: Fix for MySQL 8.0.22 compatibility issue
+    Errata #2: Fixed initial menu regeneration
+    New - Major new feature - OAUTH2 email connection - Google Workspace/GSuite/Gmail, Microsoft Outlook, and Yahoo Mail.
+    New - Settings/Email Setup to authorize XOAUTH2 and test outgoing email connection
+    New - included CA Bundle - path is defined in SCHLIX_DEFAULT_CA_BUNDLE constant. This is required for some shipping plugins in Shoperatus.
+    Adjustment - [Samesite Cookie = None] behaviour has been changed as per new IETF standard
+    Fixed - a more descriptive AJAX error message when the user is logged out instead of just displaying 'undefined error'
+    Fixed - Site Manager - error when changing SMTP SSL type
+    Fixed - Initial menu base path settings
+    Updated - CKEditor 4.11 to 4.15.
+    Updated - Bootstrap 4.3.1 to 4.5.2
+    Updated - TinyMCE 4.9.2 to 4.9.8
+    Updated - CodeMirror 5.25 to 5.57
+    Updated - PHPMailer 6.1.4 to 6.1.7
+    Updated - Fontawesome 5.11.2 to 5.15.1
+    Removed - JQuery 2.2.4, 3.2.1 and 3.4.1

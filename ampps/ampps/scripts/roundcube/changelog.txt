@@ -1,0 +1,56 @@
+CHANGELOG Roundcube Webmail
+===========================
+
+RELEASE 1.4.10
+--------------
+- Fix extra angle brackets in In-Reply-To header derived from mailto: params (#7655)
+- Fix folder list issue whan special folder is a subfolder (#7647)
+- Fix Elastic's folder subscription toggle in search result (#7653)
+- Fix state of subscription toggle on folders list after changing folder state from the search result (#7653)
+- Security: Fix cross-site scripting (XSS) via HTML or Plain text messages with malicious content [CVE-2020-35730]
+
+RELEASE 1.4.9
+-------------
+- Fix HTML editor in latest Chrome 85.0.4183.102, update to TinyMCE 4.9.11 (#7615)
+- Add missing localization for some label/legend elements in userinfo plugin (#7478)
+- Fix importing birthday dates from Gmail vCards (BDAY:YYYYMMDD)
+- Fix restoring Cc/Bcc fields from local storage (#7554)
+- Fix jstz.min.js installation, bump version to 1.0.7
+- Fix incorrect PDO::lastInsertId() use in sqlsrv driver (#7564)
+- Fix link to closure compiler in bin/jsshrink.sh script (#7567)
+- Fix bug where some parts of a message could have been missing in a reply/forward body (#7568)
+- Fix empty space on mail printouts in Chrome (#7604)
+- Fix empty output from HTML5 parser when content contains XML tag (#7624)
+- Fix scroll jump on key press in plain text mode of the HTML editor (#7622)
+- Fix so autocompletion list does not hide on scroll inside it (#7592)
+
+RELEASE 1.4.8
+-------------
+- Security: Fix potential XSS issue in HTML editor of the identity signature input (#7507)
+- Managesieve: Fix too-small input field in Elastic when using custom headers (#7498)
+- Fix support for an error as a string in message_before_send hook (#7475)
+- Elastic: Fix redundant scrollbar in plain text editor on mail reply (#7500)
+- Elastic: Fix deleted and replied+forwarded icons on messages list (#7503)
+- Managesieve: Allow angle brackets in out-of-office message body (#7518)
+- Fix bug in conversion of email addresses to mailto links in plain text messages (#7526)
+- Fix format=flowed formatting on plain text part derived from the HTML content (#7504)
+- Fix incorrect rewriting of internal links in HTML content (#7512)
+- Fix handling links without defined protocol (#7454)
+- Fix paging of search results on IMAP servers with no SORT capability (#7462)
+- Fix detecting special folders on servers with both SPECIAL-USE and LIST-STATUS (#7525)
+- Security: Fix cross-site scripting (XSS) via HTML messages with malicious svg content [CVE-2020-16145]
+- Security: Fix cross-site scripting (XSS) via HTML messages with malicious math content
+
+RELEASE 1.4.7
+-------------
+- Fix bug where subfolders of special folders could have been duplicated on folder list
+- Increase maximum size of contact jobtitle and department fields to 128 characters
+- Fix missing newline after the logged line when writing to stdout (#7418)
+- Elastic: Fix context menu (paste) on the recipient input (#7431)
+- Fix problem with forwarding inline images attached to messages with no HTML part (#7414)
+- Fix problem with handling attached images with same name when using database_attachments/redundant_attachments (#7455)
+- Security: Fix cross-site scripting (XSS) via HTML messages with malicious svg/namespace
+
+RELEASE 1.4.6
+-------------
+- Installer: Fix regression in SMTP test section (#7417)

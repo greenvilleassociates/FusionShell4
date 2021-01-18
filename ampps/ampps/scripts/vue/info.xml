@@ -1,0 +1,45 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:8px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		https://vuejs.org/examples/
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/javascripts/libraries/vuejs
+	</ratings>
+	<space>
+		93670
+	</space>
+	<support>
+		http://forum.vuejs.org/
+	</support>
+	<version>
+		2.6.12
+	</version>
+	<mod>47</mod>
+	<release_date>20-08-2020</release_date>
+	<softversion>
+		4.5.4
+	</softversion>
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Vue.js</font> is a library for building interactive web interfaces. It provides data-reactive components with a simple and flexible API. 
+		<br /><br />
+		Vue.js is licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT license</a>.
+		</english-overview>		
+		<english-features>
+		<font size="3" >Core features include:</font>
+		<ul>
+			<li>Dead simple, unobtrusive reactivity using plain JavaScript objects.</li>
+			<li>Component-oriented development style with tooling support</li>
+			<li>Lean and extensible core</li>
+			<li>Flexible transition effect system</li>
+			<li>Fast without the need for complex optimization</li>
+		</ul>
+		</english-features>
+	</languages>
+</soft>

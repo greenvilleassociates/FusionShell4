@@ -1,0 +1,9 @@
+1. TCP/IP based connection for manual installation (Database details)
+2. check Do nothing, just get me to the Backend.
+3. check and move uploads and inside files/folders from manual to zip
+4. check and move fileadmin and inside files/folders from manual to zip
+5. check and move typo3conf and inside files/folders from manual to zip except (LocalConfiguration.php)
+6. We just copy the index.html to typo3temp/ as it was not created automatically.
+7. Upgrade from 7.6.x to 8.7.x is not given because after unzipping the package, CSS is not loading for install tool password. Do check in next release. https://wiki.typo3.org/Upgrade
+8. PHP REQUIREMENT LINK: https://get.typo3.org/version/9
+9. Upgrade from 8 is not given because "saltedpasswords" extension error after upgrade, Mimimum upgrade version changed from 8.7 to 9.5.0. Check if it works in next version and update it.

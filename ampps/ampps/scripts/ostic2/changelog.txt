@@ -1,0 +1,168 @@
+
+osTicket v1.12.6
+================
+Enhancements
+
+    issue: Edit User Popup Perm (c73877d)
+    format: Strip PUA (Plane 16) (caeda93)
+    issue: New Task Alert (5dd123e, 3283050)
+    lint: Minified JS Warnings (0443715)
+    support: IE Discontinued (699728f)
+    issue: Shared Mailbox Auth (7bb9fd8)
+    plugins: Add Version Column (f86c93e, 5b0f1ce)
+    Issue: User Imports Headers (787417f)
+    Support message/rfc822 as attachments (af1c4a6)
+    tooltip: Email Username (edd1fc3)
+    Issue: Ticket Search Typeahead (9b9a56f)
+    Issue: Ticket Open URL (f2e2403)
+    Inline Edit Fields With Data Integrity (6015d04)
+
+Improvements
+
+    issue: Show Custom Validation Message (ca6ad5c)
+    SLA Grace Period (b373b8f)
+    issue: DynamicForm i18n Instructions Decode (56d3d67)
+    issue: Information Field Help Text Decode (abb9799)
+    i18n: Help Text Formatting (6b8cc9b)
+    issue: ThreadEntryField Help Text (6370484)
+    issue: Department Parent (3f29845)
+    Add support for sub-query based constraints. (c069def, 6579cf4, f61748c, 0eeec7e)
+    Update class.filter.php (#5320) (f42f2baf)
+    Allow external UserAuthenticationBackend … (ffb179f)
+    Issue: New Agent Extended Access and Teams (d4b8b3a)
+    issue: Mass Process Add Users To Organization (6cc7c69)
+    i18n: TextareaField Placeholder (fa9df2b)
+    issue: Confirm Popup Promise (b1f881b)
+    Remove unnecessary PHP Notice in ORM (Fix #5432) (5dac549, 03e25a8)
+    session: Destroy Warning PHP 7.3 (e6f0483)
+    oops: is_numeric Soft Fail (7c9ed61)
+    Oops: User Import Fix (40b40f8)
+    validate: Validation Error Messages From Source (9e21dfd)
+    issue: PasswordField Validation (9cc5cb6)
+    issue: Multiple Choice Export (3005d42)
+    lint: Uninitialized Matches (7873c5b)
+    issue: PDF Global $ost (07878f5)
+    Spelling correction function name (44cbc30)
+    issue: Quotes In User Name (ea6fc44)
+    issue: Add Remote Collaborator (c60e2f3)
+    emoji: Strip From Subject (e3547ea, e24c78c)
+    Issue: DB Error #1054 (18c9311)
+    install: Forum and Docs Links (dddfede)
+    queue: Inherit Columns Option (2e146ad)
+    Issue: Help Topic Number Format (52c9c59)
+    issue: User Manage Org Name (7a6b85c)
+    issue: Require Client Login (5136198)
+    Fix confusing sentence (4e7d12c)
+    issue: Update Staff checkPassword() (0659338)
+    validate: Number Field Edit Zero (e6e4e90)
+    issue: New Agent Welcome Email (1949d4f)
+    queue: Inherit Columns Option (38df2c8, 1a32e2a, 4434a93)
+    Issue: Remove Referrals (2acf9aa)
+    mail: Mail_Parse::getAttachments () (d310740)
+    Issue: Blank Date Time (60ccbb7)
+    Issue: Thread Events for File Field Changes (4d43adf)
+    Issue: New Custom Fields (9591411)
+    Oops: Variable Overwrite (c048768)
+    session: Destroy Warning (8c69891)
+    Issue: DB Error #1064 Queue Counts (f26ce60)
+    notes: Confirm Deletion (0d86e7f)
+
+Performance and Security
+
+    xss: All Reported Vulns (f705001, de41aeb, fc4c860, d54cca0, 6c724ea, 601fdcd)
+
+osTicket v1.12.5
+================
+### Performance and Security
+* Hotfix: File data callback (d3e643d)
+
+osTicket v1.12.4
+================
+### Enhancements
+* issue: Spaces In Username (7c8f557)
+* i18n: KnowledgeBase JS (bce8296)
+* i18n: KnowledgeBase Category (5646e7c)
+* i18n: OpenSSL Error (af6f0e9)
+* Message Variable - %{message} (315c4e7)
+* Datatimepicker: Time format (f0fccbc)
+
+### Improvements
+* Highlight tab with error(s) (b81b703)
+* format: Clickable URLs (4f7569d)
+* Queue Pages Default (dff8bc1, 5105250)
+* Add Time boundaries to Between date range (cbc89b3, 31c97cf)
+* Clear Overdue Flag on Due Date Change (8c76d70)
+* db: System Time Zone (76087fc, d8adf85)
+* Modify Reopen Assignment (d50ebbb)
+* issue: Format File Name (bd427cd)
+* issue: DB Error #1062 (27c925c)
+* Issue: Edit Task Fields (05cbb75)
+* issue: In-Reply-To Header (8849c19)
+* orm: Refetch Failure (eb4bda8)
+* issue: Delete Org Session Failure (bbd0c25)
+* Feature: Mark as Answered permission option (2fcc664, 52aaa0b)
+* issue: Umlauts In Subject (cccdb15)
+* issue: Umlauts In Sender's Name (e3f42c3)
+* Fix use of possibly uninitialised $_SERVER['HTTPS'] (8e9b150)
+* issue: ACL Oopsie (4d774bc)
+* issue: Revert  fefed14 (c9be2e0)
+
+### Performance and Security
+* Arbitrary Method Invocation (4dfb77c)
+* Auth: Authentication Token Bypass (a9834d8)
+* mPDF: Remote Code Execution Vulnerability (6e039ab)
+* issue: Attachment Filter (9f4fbc2)
+
+osTicket v1.12.3
+================
+Enhancements
+
+    Datetime Formats (4709824)
+    issue: Revert 453e815 (ddde34b)
+    Revert "issue: Advanced Search Default Sorting" (d4befcd)
+    feature: Expanded Print View (b2bd45f)
+    i18n: Register Include (9b18dd6)
+    Lint Fix (68f11e1)
+    Update osTicket Requirements (a6a18ee)
+    Update osTicket Requirements (27f1578)
+    issue: Update Installer PHP Requirements (15d678b)
+    issue: Update Outdated Links (25bf88f)
+
+Improvements
+
+    issue: Mbstring Extension Requirement (5a96884)
+    Instantiate StaffDeptAccess (390ec3e)
+    issue: Complete Thread Var Padding (Outlook) (d96285f)
+    Issue: Empty Due Date (30f3b55)
+    issue: PHP 7.3 New Agent Set Password (1bcd0e2)
+    European Date Format Issue (df7306f)
+    issue: CSV Patch Adv. Search Error (6ea7526)
+    Issue: Annul Closed Events (8029b1b)
+    issue: Department Referral Email (26d2990)
+    Date Range Period Timezone (0f06f85)
+    Issue: Undefined Constant Warning (c2ca730)
+    issue: Support Exchange Shared Mailbox Auth (ac9ea5b)
+    Issue: Inline Ticket Assignment (b757ec4)
+    issue: Dashboard No Help Error (ab0cdc6)
+    Organization Update (1588344)
+    issue: Advanced Search Default Sorting (dda483e)
+    issue: Image Attachment View (eb1a4ea)
+    issue: Reset Role Permissions (0c2cecb)
+    issue: Error On QueueSort Config (1b1e742)
+    Required Short Answer Field = '0' (c58916b)
+    Fix Admin Alert (5f6bd42)
+    issue: Set Staff Password On Creation (d9108b1)
+    issue: THIS_VERSION Utilize MAJOR_VERSION (5b4c512)
+    Issue: Reopen Assignment (e73e881)
+
+osTicket v1.12.2
+=============
+Enhancements
+
+    issue: v1.12 Git MAJOR_VERSION (3f80266)
+
+Improvements
+
+    issue: README.md osTicket Logo (7121043)
+    issue: README.md Image Size (8b90010)
+    issue: DatetimeField Remove Unused Vars / Use parseDateTime() (d9aa91b)

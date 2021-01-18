@@ -1,0 +1,49 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right; margin:10px" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Monsta_FTP
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/files/Monsta_FTP
+	</ratings>
+	<space>
+		14302146
+	</space>
+	<support>
+		https://monsta.freshdesk.com/support/home
+	</support>
+	<version>
+		2.10.3
+	</version>
+	<mod>76</mod>
+	<release_date>09-11-2020</release_date>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.1.0" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Monsta FTP</font> is a free web-based FTP/SFTP file manager that connects you to your server to upload, download, and edit files directly from any browser. Features include a responsive interface, login manager, code-friendly editor, zip uploads (to extract on server), drag and drop folders and files from your desktop, download multiple files as a zip, view file properties, and chmod.
+		<br /><br />
+		Monsta FTP is released under the <a href="https://www.monstacdn.com/licenses/monstaftp.txt" target="_blank">License</a>.
+		</english-overview>		
+		<english-features>
+<ul>
+<li>Connect to any remote FTP server from your browser (via client server)</li>
+<li>Drop files from your desktop onto browser to upload in real-time</li>
+<li>Drop folders (in Chrome browser) from your desktop onto browser to upload files</li>
+<li>Download files from remote servers to your desktop</li>
+<li>Zip up multiple files and download to your desktop</li>
+<li>Fetch files from URLs and download directly to remote server</li>
+<li>Create folders and files</li>
+<li>Cut, copy, paste and rename folders and files</li>
+<li>CHMOD folder and files permissions</li>
+</ul>
+		</english-features>
+	</languages>
+</soft>

@@ -1,0 +1,58 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Nuked_Klan
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/games/Nuked_Klan
+	</ratings>
+	<space>
+		20719330
+	</space>
+	<support>
+		http://www.nuked-klan.org/index.php?file=Forum
+	</support>
+	<version>
+		1.7.15 
+	</version>
+	<mod>1</mod>
+	<mod_files>2</mod_files>
+	<release_date>27-01-2016</release_date>
+	<admin>index.php?file=Admin</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.1.2" />
+	<requirement check="php" type="version" operator="lt" value="7.0.0" />
+	<requirement check="php" type="extension" name="mysql" />
+	<requirement check="php" type="extension" name="fileinfo" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="session" />
+	<requirement check="php" type="extension" name="hash" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Nuked Klan</font> is an open source CMS. It allows to administer a website in a simple and interactive way.
+		<br /><br />
+		Nuked-Klan specializes in network games and clan management with its Gamer version.
+		<br /><br />
+		Nuked Klan is released under the <a href="http://www.gnu.org/licenses/gpl.html" target="_blank">GNU GENERAL PUBLIC LICENSE</a>.
+		</english-overview>		
+		<english-features>
+		<ul>
+			<li>Easy</li>
+			<li>Modern</li>
+			<li>User friendly</li>
+			<li>Totally customizable</li>
+			<li>Offers many functionnalites for team gaming</li>
+		</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

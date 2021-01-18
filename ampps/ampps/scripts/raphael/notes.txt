@@ -1,0 +1,2 @@
+Download the minified version and rename it to raphael.js not the uncompressed one.
+Release date : https://github.com/DmitryBaranovskiy/raphael/releases

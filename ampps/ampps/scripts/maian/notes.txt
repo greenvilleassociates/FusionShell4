@@ -1,0 +1,5 @@
+1. While manual installation provide database details in /control/connect.php before starting with manual installation.
+2. Select Character set as "utf8_general_ci". And Mysql version as "MySQL5".
+3. Select timezone "(GMT) London" as its selected by default by script
+4. PHP REQUIREMENT LINK : https://www.maiansupport.com/system-requirements.html
+5. Upgrade is disabled because password needs to reset for all accounts as password method has changed. Enable it from next release with error message for ver < 4.x "Password needs to reset for all accounts" Refer Upgrade notes at ../docs/upgrades1.html ( Upgrade added since 4.1 ) 

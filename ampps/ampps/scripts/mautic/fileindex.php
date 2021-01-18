@@ -1,0 +1,15 @@
+.htaccess
+LICENSE.txt
+SECURITY.md
+app
+bin
+favicon.ico
+index.php
+media
+offline.php
+plugins
+robots.txt
+themes
+translations
+var
+vendor

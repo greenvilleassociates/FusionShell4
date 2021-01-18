@@ -1,0 +1,70 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right; margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/TastyIgniter
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/others/TastyIgniter
+	</ratings>
+	<space>
+		15693599
+	</space>
+	<support>
+		https://forum.tastyigniter.com/
+	</support>
+	<version>
+		2.1.1
+	</version>
+	<mod>1</mod>
+	<mod_files>4</mod_files>
+	<release_date>28-06-2016</release_date>
+	<admin>admin</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.4.0" />
+	<requirement check="php" type="version" operator="lt" value="7.2.0" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="mcrypt" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">TastyIgniter</font> is a free open source restaurant ordering and management system. TastyIgniter provides a professional and reliable platform for restaurants wanting to offer online ordering to their customers.
+		<br /><br />
+		TastyIgniter is licensed under the  <a href="https://www.gnu.org/licenses/gpl.html" target="_blank">GNU General Public License version 3</a>.
+		</english-overview>
+		<english-features>
+			<ul>
+				<li><b>Mobile friendly</b><br/>
+				Our designs seamlessly adapt to look great on any screen – consistently representing your restaurant in the best, pixel-perfect light. They have been built with the mobile user in mind – and as such users now outnumber those browsing from their desktop PC, this is now an essential, rather than a nice to have.</li>
+				<li><b>100% Free</b><br/>
+				TastyIgniter is completely and utterly free. No ifs, no buts. And because it’s Open Source you benefit from a buzzing community of coders whose mission in life is to contribute to TastyIgniter’s advancement.</li>			
+				<li><b>0 Technical skills required</b><br/>
+				TastyIgniter is a ready-to-go system that even the novice can get to grips with. We’ve designed it with every technical ability in mind.
+				Super simple and incredibly straight forward – so managers and restaurant owners can get set up and be ready to go within a matter of hours. </li>
+				<li><b>SEO Supercharged</b><br/>
+				The TastyIgniter platform has been built from the ground up with consideration for SEO in mind.
+				Today the platform is super search engine friendly – allowing your restaurant to be easily found on the world wide web.</li>
+				<li><b>Perfect for chain restaurants</b><br/>
+				TastyIgniter is a super easy to use platform, even where there are multiple restaurant locations to manage – all intuitively presented within one single, easy to use interface. This streamlines the efforts of managers who are spinning many plates at once across numerous restaurant locations; TastyIgniter truly is the essential solution for chain restaurants. </li>
+				<li><b>Super easy to customise</b><br/>
+				Create an online presence that reflects your brand – Add your logo, choose your company colours and customise your store front to tempt customers into your online restaurant. There’s no prior technical knowledge required either, as changes can be made quickly and easily.</li>
+				<li><b>Accept Payments</b><br/>
+				TastyIgniter comes with a range of payment platform options so that you can take payment upfront for online orders. Choose one, or all, payment types, and look forward to delicious looking profit margins.</li>
+				<li><b>Run powerful campaigns</b><br/>
+				The TastyIgniter platform is so much more than an ordering and reservation system – it allows you to run customised e-newsletter campaigns to supercharge your sales, grow what can be an invaluable customer email database and utilised to build strong relationships with your customers. </li>
+				<li><b>Multilingual</b><br/>
+				TastyIgniter is a platform that is as perfect for the English restaurant owner, as it is for the Turkish take away owner – supporting multiple languages through a default language that can be translated. </li>
+			</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

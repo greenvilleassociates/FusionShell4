@@ -1,0 +1,10 @@
+1. Take package from https://framagit.org/framasoft/framadate/framadate/tags latest.zip (this is latest stable version)
+2. Refer https://framagit.org/framasoft/framadate/framadate/wikis/install/Configure for manual installation. ( Create .htaccess and .htpasswd as mentioned in installation )
+Follow the first standard procedure, then Secure admin section, execute the below mentioned command to generate password :
+/usr/local/apps/apache/bin/htpasswd -bc /{soft_path}/admin/.htpasswd username password
+4. rename htaccess.txt to .htaccess in order to create polls
+5. PHP REQUIREMENT LINK: https://framagit.org/framasoft/framadate/framadate/wikis/Install/Requirements
+6. Remove .git folder from zip. It's not needed.
+7. Keep SMTP details 'use_smtp' => false, in config.php. 
+8. Check for release date here :
+https://framagit.org/framasoft/framadate/framadate/releases

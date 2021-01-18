@@ -1,0 +1,131 @@
+####################################
+#   v1.7.7.1 - (2021-01-11)
+####################################
+
+- Back Office:
+  - Improvement:
+    - #22020: Take shop id into account when getting a language list for an order (by @matthieu-rolland)
+    - #22028: Update out of stock mail wording (by @jolelievre)
+  - Bug fix:
+    - #21692: Refresh order products when a product is added or deleted (by @sowbiba)
+    - #22535: Method assertCmsCategoryExists doesn't return anything, it throws an exception (by @PierreRambaud)
+    - #22082: Hide product quantity in Order view page when stock management is disabled (by @jolelievre)
+    - #22299: Use OrderDetail prices when modifying an Order (by @jolelievre)
+    - #21795: Fix wrong product quantity after adding a product triggering a free gift  (by @matthieu-rolland)
+    - #22175: Added error when a customization is not found (by @Progi1984)
+    - #21912: Use language_code when locale is empty to get CLDR data (by @atomiix)
+    - #22171: When refreshing an order, display shipping price if needed (by @Progi1984)
+    - #22406: Fixed pagination in Product Quick Navigation Popup (by @Progi1984)
+    - #21977: Add debounce to quantity change of order create product (by @NeOMakinG)
+    - #22291: Fixed Pagination of Sell > Orders > Credits Slips page (by @Progi1984)
+    - #22214: Fix numeric_iso_code in the upgrade to 1.7.7.1 (by @atomiix)
+    - #22126: Fix bug on displayed price's calculation in BO order page under specific conditions (by @matthieu-rolland)
+    - #22246: Integrate ContextStateManager into refund handlers (by @jolelievre)
+    - #21568: Fixed in Create Order the update of cart rules when changing adress  (by @Progi1984)
+    - #22189: Trigger input when a predefined message is applied (by @Progi1984)
+    - #22077: Create Order - Fix remove cart rule when amount is not reached (by @sowbiba)
+    - #22101: Fix product selections when creating/updating tags (by @atomiix)
+    - #22099: Fix employee filter for the Logs page (by @atomiix)
+    - #22059: Add Payments block refresher - Refresh when product is added or removed from Order (by @sowbiba)
+    - #21992: Make customer note TYPE_STRING instead of TYPE_HTML (by @atomiix)
+    - #21980: Fixed the error message for a combination with a min quantity for sale (by @Progi1984)
+- Front Office:
+  - Bug fix:
+    - #22296: Center products on category list on mobile (by @NeOMakinG)
+    - #22241: Fix duplicated hook data after product page refresh (by @Hlavtox)
+    - #22103: Display combination image in product pack list (by @jolelievre)
+- Core:
+  - Bug fix:
+    - #22532: Hook keys must be in lowercase (by @PierreRambaud)
+    - #22432: Don't redirect to http from https if it is homepage (by @ludoc)
+    - #22293: Use PS cache config as driver.cache (by @atomiix)
+    - #22274: Fix upgrade from ps < 1.7.0.0 (by @atomiix)
+    - #22289: Removed module Linklist update from upgrade script (by @Progi1984)
+    - #21988: Fix order detail total amount update when rounding is per item (by @matthieu-rolland)
+- Tests:
+  - Improvement:
+    - #22198: Add static cache resets (by @matthieu-rolland)
+  - Refactoring:
+    - #22543: Add test 'Page for terms and conditions' (by @nesrineabdmouleh)
+    - #22523: Add test 'Activate merchandise returns' (by @nesrineabdmouleh)
+    - #22521: Refactoring alert blocks in UI tests (by @boubkerbribri)
+    - #22491: Add test 'View customer service message page' (by @nesrineabdmouleh)
+    - #22490: Add new FO tests 'Edit account information' (by @boubkerbribri)
+    - #22433: Add test 'Check to delete shop groups' (by @nesrineabdmouleh)
+    - #22446: Add test 'Quick edit order status' (by @nesrineabdmouleh)
+    - #22454: Add test 'Quick edit alias status' (by @nesrineabdmouleh)
+    - #22455: Add requirement block to README in UI tests (by @boubkerbribri)
+    - #22434: Refactoring FO login page in UI tests and add new page for create account page (by @boubkerbribri)
+    - #22428: Add new command to run all UI tests and check step identifiers in all campaigns (by @boubkerbribri)
+    - #22423: Add new test 'Change carrier position' (by @boubkerbribri)
+    - #22408: Rename functions in UI tests (by @boubkerbribri)
+    - #22345: Add tests on products page (by @boubkerbribri)
+    - #22012: Fix random fails in travis CI (by @boubkerbribri)
+    - #22209: Backport fix on UI sort tests (by @boubkerbribri)
+    - #22172: Backport UI tests (by @boubkerbribri)
+	
+####################################
+#   v1.7.7.0 - (2020-12-02)
+####################################
+
+- Back Office:
+  - Bug fix:
+    - #22191: Validate currency localized names (by @jolelievre)
+    - #22013: Handle parallel updates from CartRules when updating a product in Order (by @jolelievre)
+    - #22018: Order zero ratio for order detail tax (by @matks)
+    - #21781: Remove gifted quantity from product order quantity (by @sowbiba)
+    - #21994: Remove or cancel all products (by @jolelievre)
+    - #21721: Handle Shop context override in order editing (by @jolelievre)
+    - #21816: Remove useless logic Product customization images in Order Page and handle exotic chars in name (by @matks)
+    - #21853: Add missing use in CancelOrderProductHandler (by @matks)
+    - #21830: Correctly generate cart error messages (by @jolelievre)
+    - #21555: Fixed increment button when adding a product out of stock and with allow order (by @Progi1984)
+    - #21526: Improved Error message in New Order Page when adding a minimal product (by @Progi1984)
+    - #21557: Fix product pagination when adding a product in an empty order (by @atomiix)
+- Front Office:
+  - Bug fix:
+    - #21981: Make sure favicon, stores_icon and logo are correctly settled for themes (by @PierreRambaud)
+- Core:
+  - Bug fix:
+    - #22178: Set numeric_iso_code & precision in currency from CLDR when upgrading (by @atomiix)
+    - #22182: Update pear/archive_tar to 1.4.11 (by @PierreRambaud)
+    - #22174: Use displayHeader hook instead of Header (by @atomiix)
+    - #22164: Fix upgrade script from < 1.7.6.0 to 1.7.7.0 (by @atomiix)
+    - #22146: Remove --classmap-authoritative when building release (by @atomiix)
+    - #22130: Fix dependency which is targeting the v1.3.0 instead of the 1.3 branch (by @PierreRambaud)
+    - #21975: Correctly substring fields before update, remove duplicates and add missing sql queries (by @PierreRambaud)
+- Installer:
+  - Improvement:
+    - #21957: Update latest native modules (by @jolelievre)
+  - Bug fix:
+    - #21953: Fix "column count doesn't match value count" error during upgrade (by @okom3pom)
+- Localization:
+  - Improvement:
+    - #22063: Last translation updates (by @jolelievre)
+- Tests:
+  - Refactoring:
+    - #22055: Delete spaces in the end of title name in faker for UI tests (by @boubkerbribri)
+	
+####################################
+#   v1.7.6.9 - (2020-11-16)
+####################################- Core:
+  - Bug fix:
+    - #GHSA-frf2-c9q3-qg9m:  Improper Access Control with submitReorder function (by @PierreRambaud)
+
+####################################
+#   v1.7.6.8 - (2020-09-24)
+####################################
+- Core:
+  - Improvement:
+    - #21124:  Bump version to 1.7.6.8, bump contactform version (by @PierreRambaud)
+  - Bug fix:
+    - #GHSA-rc8c-v7rq-q392: Stored XSS in upload files (by @PierreRambaud)
+    - #GHSA-5cp2-r794-w37w: Potential XSS injection with contact form (by @PierreRambaud)
+    - #GHSA-fghq-8h87-826g: Blind SQLi in Catalog Product edition (by @PierreRambaud)
+
+####################################
+#   v1.7.6.7 - (2020-07-06)
+####################################
+- Front Office:
+  - Bug fix:
+    - #20052: Fix product page event theme sided not getting fired  (by @NeOMakinG)

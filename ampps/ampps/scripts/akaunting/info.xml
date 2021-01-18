@@ -1,0 +1,96 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right; margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Akaunting
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/erp/Akaunting
+	</ratings>
+	<space>
+		131755750
+	</space>
+	<support>
+		https://akaunting.com/forum
+	</support>
+	<version>
+		2.0.26
+	</version>
+	<mod>70</mod>
+	<release_date>11-11-2020</release_date>
+	<admin>auth/login</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.2.5" />
+	<requirement check="php" type="extension" name="PDO" />
+	<requirement check="php" type="extension" name="openssl" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="tokenizer" />
+	<requirement check="php" type="extension" name="xml" />
+	<requirement check="php" type="extension" name="zip" />
+	<requirement check="php" type="extension" name="bcmath" />
+	<requirement check="php" type="extension" name="ctype" />
+	<requirement check="php" type="extension" name="json" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Akaunting</font> is a free, online and open source accounting software designed for small businesses and freelancers. It is built with modern technologies such as Laravel, VueJS, Bootstrap 4, RESTful API, etc. Thanks to its modular structure, Akaunting provides an awesome App Store for users and developers.
+		<br /><br />
+		Akaunting is licensed under the  <a href="https://akaunting.com/license" target="_blank">GNU GPLv3</a>.
+		</english-overview>
+		<english-features>
+			<ul>
+				<li>Free Accounting<br/>
+				Completely Free. No setup fees. No hidden charges. Not a free limited version. Free means free.</li>
+				<li>Online Accounting<br/>
+				See your financials online anytime, anywhere on your Mac, PC, tablet or mobile phone. No limits.</li>
+				<li>Open Source Accounting<br/>
+				Take care about the privacy of your financials. Akaunting is Open Source so you can install on your host.</li>
+				<li>Customer Management<br/>
+				Create clients and send invoices to them. You can also set a password so they could to access the client portal.</li>
+				<li>Easy Invoicing<br/>
+				Send professional invoices to clients and start accepting online payments, no commission/transaction fee.</li>
+				<li>Deposits &amp; Transfers<br/>
+				Add deposits to and transfers between accounts and keep the balance of your bank accounts active.</li>
+				<li>Vendor Management<br/>
+				Create vendors so you could assign bills and payments to them and later filter their transactions easily.</li>
+				<li>Billable Expenses<br/>
+				Create and manage bills so your finances are always accurate and healthy. Know what and when to pay.</li>
+				<li>Various Payments<br/>
+				Add non-billable expenses as payments in order to keep your bank/cash account balances up-to-date.</li>
+				<li>Inventory Management<br/>
+				Enable inventory tracking and manage goods as they come in and go out. Items also speed up invoicing.</li>
+				<li>Bank Accounts<br/>
+				Create unlimited bank and cash accounts and track their opening and current balances.</li>
+				<li>Multi-Currency<br/>
+				Send invoices and add expenses in any currency and let the system convert them in your main currency.</li>
+				<li>Multi-Company<br/>
+				Manage the finances of multiple companies from one admin panel. Assign users to different companies.</li>
+				<li>Powerful Reporting<br/>
+				Get detailed financial reports to help you better visualize all the information you need to improve your business.</li>
+				<li>Client Portal<br/>
+				Share the transactions and invoices with your clients and accept bulk payments, online.</li>
+				<li>Unlimited Attachments<br/>
+				Attach your business files and/or receipts to invoices, expenses, payments for original evidence.</li>
+				<li>Transaction Categories<br/>
+				Create categories for incomes, expenses and items and see the flow of your business at a glance.</li>
+				<li>Tax Rates<br/>
+				Set up different names for each tax, and link specific taxes to specific products or transactions to save you time.</li>
+				<li>App Store<br/>
+				Extend Akaunting without leaving the admin panel, you can install or purchase anything.</li>
+				<li>Multilingual Panel<br/>
+				Manage your finances in your language. Switch between languages easily, instantly.</li>
+				<li>Fine-Grained Permissions<br/>
+				Configure permissions on a Role level to protect and simplify their management experience.</li>
+			</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_email>Please provide the email to reset the password</english-err_no_email>
+		<english-err_no_such_email>The Admin email is incorrect and does not exist!</english-err_no_such_email>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+	</languages>
+</soft>

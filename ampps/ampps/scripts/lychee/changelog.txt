@@ -1,0 +1,117 @@
+v4.0.8
+
+Released Nov 19, 2020
+
+    fixes ♯783 : Can't rename tag album
+
+        Tag-albums were not accessible by albums.getByID
+
+    fixes ♯781 : Fixes a bug which prevented the use of sharing albums between users
+
+        This rare bug was only triggered if a non-admin user was sharing an album with another user.
+
+    fixes ♯779 : Fixes some missing information on Tag Albums in the front end.
+    fixes ♯766 : It is no longer possible to use the 'photo rotation' functionality
+
+        While the buttons are still accessible we now return an error instead of filling up the entire disk space of the server.
+
+    fixes ♯751 : In some rare instance, it was not possible to generate video thumbnails
+
+        this is fixed. We try to reextract the 'aperture' property to get the thumbnail. We also added a warning in the case where FFmpeg was not enabled.
+
+    fixes ♯769 : when moving pictures in Image view, the second try resulted in failure
+
+        we no longer clear the content of json.album when moving an image. This ensure that the required properties are still accessible
+
+    fixes : Settings are accessible in Image view
+
+        There were rare sequence of events which prevented the settings view to open.
+
+    new : /Frame will now display a warning if no pictures are found.
+
+        instead of staying a black screen, we now send an alert()
+
+    new : Share information are no longer displayed in public mode
+
+        They are still available in the Ajax query
+
+    upd ♯773 : Update French localization
+
+        spacing typos in French localization
+
+    new ♯771 : Update French localization
+
+        minor changes in the French localization.
+
+    new ♯764 : Add Diagnotics warnings if the php init values are too low (less than 30M).
+    new ♯757 : Add limits on the number of logs seen.
+
+        Too many logs lines where crashing php by using too much memory.
+
+    new ♯758 : Add the possibility to chose the picture ordering per album
+
+        the admin can now chose whether to order by name etc per album instead of globally.
+
+v4.0.7
+
+Released May 26, 2020
+
+    new ♯588 : add an option to the sync command to 're-sync' images that already exist.
+
+        Since XMP sidecars are now allowed, images with the same checksum will not get updated metadata if the sidecar changes but the checksum remains the same. This adds an optional flag to the lychee:sync command that forces existing images with no change in checksum to get updated metadata from XMP files (if they exist). It only updates the image if the metadata read in differs from the metadata that the image aleady has.
+
+    new ♯599 : Added method to get the full path of albums.
+
+        Specifically in the sharing screen, when albums are sometimes named the same (if they are organized by Year and Month), then it is impossible to tell which album you are actually sharing. This adds the ability to get the album's "full path" and sends it down for the sharing settings.
+
+    fixes ♯596 : Failing xmp file read results in fallback to native exif extraction.
+
+        If the EXIF succeeds but sidecar fails, it reverts falls into the catch.
+
+    new ♯574 : Support of HEIC files and subsequently convert raw files (e.g. .NEF) into jpeg.
+
+        if a raw file is imported such as .nef, php-imagick will try to generate a thumbnail jpeg for it. Note that the extension still needs to be added in your advanced settings.
+
+        Important: Lychee was never meant to convert RAW files such as .nef, .cr2 .arw etc. If you shoot RAW, it is to be able to change exposure, dodge&burn, crop etc. later in a proper image processing software such as Lightroom, > Photoshop, Capture One, Luminar, Darktable … otherwise you better shoot JPEG. Lychee does not intend to provide those functionality.
+
+    new ♯594 : Add debug bar for dev install.
+
+        It is disabled by default, even in debug mode. To enable it, set DEBUGBAR_ENABLED to true in your .env file.
+
+    new ♯579 : Ghostbuster command to clean up dead symlinks.
+
+        The ghostbuster command also parses the database and see if some symlinks are dead. It will delete the photo from the database in such case. As this behaviour can modify the database, we disable it by default.
+
+    new ♯577 : Parse additional xmp sidecars files to update metadata.
+
+        This reads in XMP sidecar files (if they exist). Thankfully, exiftool supports reading in sidecars, so we can use the same technique we're using to read the files. We merge both file and sidecar metadata, taking priority based on user settings (default to prefer image metadata)
+
+    fixes ♯581 : Undefined property errors when migrating from 3.1.6.
+
+        The missing license, lens are now taken care off.
+
+    fixes ♯565 : No Dropbox Import with Lychee 4.0.0.
+
+        The CSP was a bit too tight, preventing the execution of the script from dropbox.
+
+
+v4.0.5
+
+Released May 15, 2020
+
+    new : Add RSS module.
+
+        we provide a RSS feed, available at the /rss address. it will contains the last rss_max_items (default: 100) over the last rss_recent_days (default: 7) days.
+
+    fixes #557 : report files not imported by sync
+
+        When using the command lychee:sync if a file is not imported for some reason, the Log will contains more detailed information instead of just an error message.
+
+    fixes #550 : Version 4.0.4 database is not updated
+
+        Simply forgot to add the bump version.
+
+    fixes #460 : Wrong rotation of photos when imported from server via symlink.
+
+        thumbnails are now also rotated in the proper direction.
+

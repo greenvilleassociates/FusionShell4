@@ -282,7 +282,7 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = '4vpAHi80VrA7hLZ6_WVUebR2Idw5LQsMqePsbV7mMKTRWv5Kt5d-YtL779lHUqJ2t8OgThGnag';
 
 /**
  * Deployment identifier.
@@ -779,3 +779,14 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
+$databases['default']['default'] = array (
+  'database' => 'fusionshell',
+  'username' => 'fusionadmin',
+  'password' => 'fusionadmin',
+  'prefix' => 'fscms2_',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['config_sync_directory'] = 'sites/default/files/config_dTA5rqq6n1DKzgmOiPJpYvgbdUx0Z7sVNQNN_7vf8P5kZZEFhyZXY_UVcRX4fPVNhYYyLSwZsA/sync';

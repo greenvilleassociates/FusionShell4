@@ -1,0 +1,51 @@
+Since 3.8.5.7
+	-----------------
+	bugfix: Fixes to 'Project billing' and 'Project Budget Status' reports
+	bugfix: Fix quickbooks plugin update script
+	 
+	
+	Since 3.8.5.6
+	-----------------
+	feature: Several improvements to 'Project billing' and 'Project Budget Status' reports
+	feature: new plugin for Expense rate schedules dimension
+	feature: Two way synchronization with Quickbooks for invoices and payments
+	feature: Add 'is reimbursable' to product types
+	feature: Improve invoices form, allow property groups to be arranged and improve billing info tab
+
+	
+	Since 3.8.5.5
+	-----------------
+	feature: allow payment receipts to have greater amount than due amount
+	feature: include balance in payment receipt view and form
+	feature: add 'Add payment' feature to invoices and remove mark as paid feature if payment receipts is installed
+	feature: move direct url to the properties box in objects view
+	bugfix: adjust invoice payments table margin
+	bugfix: fix dimension options for payment receitps
+	bugfix: dont recalculate invoices with 0 amount when entering to the edition form of a payment
+	bugfix: apply correct format fot money amounts inside payments form
+	bugfix: performance improvements to tasks getArrayInfo() and more parameters to skip some information
+	bugfix: Don't allow user to create unassinged tasks if user can't see other users tasks
+
+	
+	Since 3.8.5.4
+	-----------------
+	feature: new plugin for invoice payment receipts
+	feature: several modifications to paemfe plugin reports
+	feature: replace old js default prompt with a modal form when reclassifying objects using drag & drop
+	feature: Add a config option to specify the invoice footer text when printing
+	feature: increase config options text inputs width
+	feature: quickbooks integration: add shipping info and match qbo classes with feng dimensions
+	feature: new invoice cp for po number autofilled with project po number, modify lump sum generation to include involved task names
+	bugfix: Don't show date in last activity column if user never used system
+	bugfix: fix notes field misalignment in clients form
+	bugfix: fix add_to_members function when removing members of an object
+	bugfix: fix some comments and ensure that object is correctly built
+	bugfix: fix tasks form subscribers component to use the new permission that checks if user can see other user's tasks
+	bugfix: prevent user sharing table recalculation when deleting member
+	
+	
+	Since 3.8.5.3
+	-----------------
+	bugfix: fix format date function for reports to prevent errors with emtpy or '--' strings
+	bugfix: performance improvements in user edition at permissions section
+	feature: Add permission "Can see other user's expenses"

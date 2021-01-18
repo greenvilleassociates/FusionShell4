@@ -1,0 +1,12 @@
+.htaccess
+Ip
+Plugin
+Theme
+admin.php
+config.php
+favicon.ico
+file
+index.php
+license.html
+readme.md
+robots.txt

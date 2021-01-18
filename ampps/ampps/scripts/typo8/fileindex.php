@@ -1,0 +1,14 @@
+CONTRIBUTING.md
+INSTALL.md
+LICENSE.txt
+README.md
+SECURITY.md
+composer.json
+composer.lock
+fileadmin
+index.php
+typo3
+typo3conf
+vendor
+.htaccess
+typo3temp

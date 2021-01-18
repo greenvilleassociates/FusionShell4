@@ -1,0 +1,128 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Eventum
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/projectman/Eventum
+	</ratings>
+	<space>
+		34973993
+	</space>
+	<support>
+		https://github.com/eventum/eventum
+	</support>
+	<version>
+		3.6.7
+	</version>
+	<mod>31</mod>
+	<release_date>29-04-2019</release_date>
+	<admin>htdocs/index.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.1.0" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="session" />
+	<requirement check="php" type="extension" name="pdo_mysql" />
+	<requirement check="php" type="extension" name="json" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="iconv" />
+	<requirement check="php" type="extension" name="intl" />
+	<requirement check="php" type="extension" name="ctype" />
+	<requirement check="php" type="extension" name="filter" />
+	<requirement check="php" type="extension" name="fileinfo" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Eventum</font> is a user-friendly and flexible issue tracking system that can be used by a support department to track incoming technical support requests, or by a software development team to quickly organize tasks and bugs.
+		<br /><br />
+		Eventum is licensed under <a href="http://www.gnu.org/licenses/gpl-2.0.html" target="_blank">GNU General Public License</a>.
+		</english-overview>		
+		<english-features>
+		<ul>
+		   <li>Projects</li>
+		   <li>
+			  Users
+			  <ul>
+				 <li>Import Users</li>
+			  </ul>
+		   </li>
+		   <li>Email integration</li>
+		   <li>
+			  Administration
+			  <ul>
+				 <li>
+					General Setup
+					<ul>
+					   <li>Tool Caption</li>
+					   <li>SMTP (Outgoing Email) Settings</li>
+					   <li>Open Account Signup</li>
+					   <li>Subject Based Routing</li>
+					   <li>Email Recipient Type Flag</li>
+					   <li>Email Routing Interface</li>
+					   <li>Note Recipient Type Flag</li>
+					   <li>Internal Note Routing Interface</li>
+					   <li>Email Draft Interface</li>
+					   <li>SCM Integration</li>
+					   <li>Email Integration Feature</li>
+					   <li>Daily Tips</li>
+					   <li>Email Spell Checker</li>
+					   <li>IRC Notifications</li>
+					   <li>Allow Un-Assigned Issues?</li>
+					   <li>Options for Notifications</li>
+					   <li>Email Reminder System Status Information</li>
+					   <li>Email Error Logging System</li>
+					</ul>
+				 </li>
+				 <li>Manage Link Filters
+				 </li>
+				 <li>Become Super-Administrator
+				 </li>
+				 <li>Creating and Managing Projects
+				 </li>
+			  </ul>
+		   </li>
+		   <li>
+			  Email Routing Interface
+			  <ul>
+				 <li>Setting up email routing with Sendmail</li>
+				 <li>Setting up email routing with qmail</li>
+				 <li>Setting up email routing with postfix</li>
+				 <li>Setting up email routing with exim</li>
+				 <li>Setting up email routing with 1 email account for multiple projects</li>
+			  </ul>
+		   </li>
+		   <li>Reporting System</li>
+		   <li>RSS feeds</li>
+		   <li>
+			  Configuration
+			  <ul>
+				 <li>Setting up fulltext searching</li>
+				 <li>Extending and Integrating Eventum</li>
+				 <li>Adding a cron entry</li>
+			  </ul>
+		   </li>
+		   <li>
+			  Miscellaneous
+			  <ul>
+				 <li>Using the IRC bot</li>
+				 <li>Deleting Issues (2)</li>
+				 <li>Fulltext Search</li>
+			  </ul>
+		   </li>
+		</ul>
+		</english-features>
+		<english-smtp_exp>Please provide the Server Address you wish to use.<br />
+		You can change this later from the Eventum Admin Panel.</english-smtp_exp>
+		<english-err_php53_com> is not compatible with PHP version 5.3+</english-err_php53_com>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_email>Please provide the email to reset the password</english-err_no_email>
+		<english-err_no_such_email>The Admin email is incorrect and does not exist!</english-err_no_such_email>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+	</languages>
+</soft>

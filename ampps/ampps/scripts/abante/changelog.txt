@@ -1,0 +1,214 @@
+AbanteCart version 1.2.16
+
+In this release, we bring a few new features, such as one-page fast checkout, product collections, email templates, local delivery, and others.
+AbanteCart v1.2.16 also includes a number of improvements and fixes based on customer feedback.
+
+Core:
+- PHP v7.4 support
+- Webp image format support
+- Append php call stack into db-driver exception
+- HTML Cache deprecated
+- Improve tax class
+- Add Mustache library
+- Parameter tampering fix: Price manipulation of products
+- Enforce same-origin iframe use only
+
+Control Panel:
+- Additional settings for local business into the store details page
+- Products/categories/brands collections
+- New product review settings and management
+- Stock auto-disable fix
+- Order edits, currency handling on different browsers
+- Bugfix with multi-currency order recalculation
+- Email templates and management
+- Product import bug fix
+- Listing grid icons and CSS updates
+- Set minimal search chars of 2 for ajax chosen
+- mce-editor JavaScript fix
+
+Storefront:
+- Google Recaptcha V3 support
+- Fast one-page checkout
+- improvement validation of parameters for a few methods of catalog/product model.
+- A country without States issue fix    
+- Google Tag Management
+- Products/categories/brands collections
+
+Core Extensions:
+- New Fast one page checkout
+- New Local Delivery shipment
+- Stripe added 3d-secure support and library updated
+- COD fixes
+- LiqPay upgrade
+- Realex upgrade
+- Authorize.net update
+- Cardconnect upgrade
+- Payza payment deprecated
+
+Improvements and bug fixes reported on the forum and GitHub.
+
+AbanteCart version 1.2.15
+
+This is unplanned release to provide clarity and better interface for multi-location stock management.
+Release includes fixes to multi-location stock management as well
+
+Core:
+- Stock multi-locations support improvement
+- Mysql strict mode improvement (#1236)
+- Added default value for invoice_prefix
+- Add ability to import product option images
+- Added buffering into apdomysql driver
+
+Control Panel:
+- Added multi-locations support to order edit page
+- Menu and dashboard display now reflects user permissions
+- Return to stock order edit page corrections.
+
+Storefront:
+- Shopping Cart page fix related to tax included in the price (#1269)
+- Correction to images display for product options in shopping cart and product details pages
+
+Extensions:
+- PayPal express minor fix (#1267)
+
+Improvements and bug fixes reported on the forum and github.
+
+
+AbanteCart 1.2.14 is now released
+Created by Boris Basara
+
+New AbanteCart v1.2.14 is now ready. This release comes with improvements, bug fixes, and payment extension updates.
+
+Below are the release notes for version 1.2.14:
+
+Core:
+
+    Stock multi-locations support for products and options
+
+    Testing with PHP 7.3 and warnings resolution
+
+    Testing with MySQL 8.0 and warnings resolution
+
+    Error backtrace and handling improvement
+
+    Refactoring related to csrf-tokens and backward compatibility
+
+    Cache related bug fixes and improvements
+
+    MySQL driver improvement
+
+    Fix to get remote IP while server behind Cloudflare or proxy
+
+Admin:
+
+    improvement of scheduled tasks running
+
+    Added column sku into order_products and order_options tables
+
+    Improve product tags filtering on product create and update
+
+    Improved UI for switch (on/off) buttons
+
+    Multi-store custom block content support
+
+    Product tags improvement
+
+    Multi-store blocks handling improvement
+
+    Form Manager fix for checkboxgroup/multiselectbox field type
+
+Storefront:
+
+    Added product listing layout
+
+    Manufacturers listing block fix
+
+    Menu language related bug fix
+
+    added new data-sources for auto-listing block (manufacturers, featured, bestsellers,latest)
+
+    Show options specific image for product in the cart and after purchase
+
+    Set logo container to be fixed width/height
+
+    Embed mode JavaScript error bug fix.
+
+    Google Analytics eCommerce tracking fix
+
+Extensions:
+
+    Deprecated Authorize.net AIM payment and replaced with new one
+
+    Stripe API and SDK update
+
+    Fix for partial payment issue with PayPal payment (in case of partial store credit)
+
+    Resolved issue with PayPal refund with non-default currency.
+
+API:
+
+    Added subcategories handling to Storefront API
+
+AbanteCart version 1.2.13
+
+This release comes with improvements, bug fixes and default extension updates.
+
+Core:
+- Testing with PHP 7.2 and warnings resolution
+- ARouter fix related to \0 at the end of route and further improvement
+- cache file driver minor fix
+- sql fix in store_description table
+- improved error handling in response controllers when not found
+- Fix for duplicating images on import
+- PHP files reformating to PSR
+
+Control Panel:
+- TinyMCE updated to v4.7.10
+- improve SQL error handling in product creation
+- Added save to store ID in case of missing category
+- extension settings saving improvement
+- task modal js-fix related to attempts on fail requests
+
+Storefront:
+- minor fix of product-controller related to "rating" html-field
+- Add activation link resend option
+- Add CSS class to BODY tag to identify pages.
+
+Extensions:
+- PayPal Standard and Express Improvment
+- Avatax integration
+- Fixes in CardConnect
+- Stripe payment update
+- Twilio update
+- Neowize terms and conditions link update
+- Update for encryption extension
+
+API:
+- Add SEO data returned to API
+- Fix for latest product API and currency conversion rounding (rare case)
+
+Number of improvments and bug fixes reported on the forum and github.
+
+AbanteCart version 1.2.12
+
+This release comes with minor improvements and bug fixes.
+
+Core:
+- jQuery update
+- AResponse fix related to compression and embed-js
+- cache file driver minor fix
+
+Control Panel:
+- fixed quantity field in products grid. Now calculation based on option quantity
+
+Storefront:
+- localization/country model improvement
+- minor improvement of guest_step_1 page post-data values validation
+- product page tpl js-improvement
+
+Extensions:
+- banktransfer minor js-fix
+- worldpay fix contribution
+- paypal standart improvements
+
+Other bug fixes and improvements

@@ -1,0 +1,5 @@
+1.Before starting manual installation give writable permissions to log directory.
+2.Select 'Database System' as Mysqli If it does not work then try with Mysql.
+3.Make following changes in .htaccess i.e RewriteBase [[relativeurl]] .
+4.Remove DEFINER=`root`@`localhost` from `[[dbprefix]]view_posts` table in database.
+5.Check for new languages during update, from '/source/languages/' folder and update them in install.xml.

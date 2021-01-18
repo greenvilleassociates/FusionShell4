@@ -1,0 +1,2 @@
+1. Select tomezone as "America/New_york" in "whats time is it?"
+2. Release date : https://github.com/chyrp/chyrp/releases

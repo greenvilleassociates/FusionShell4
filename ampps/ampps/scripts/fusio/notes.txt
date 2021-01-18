@@ -1,0 +1,7 @@
+1. PHP REQUIREMENT LINK : http://fusio-project.org/bootstrap
+2. Execute the installation
+   https://github.com/apioo/fusio/blob/master/README.md
+3. We have disable fetching version number in import because it has multiple version specified. Enable it once vendor solves the issue. Propably in next update.
+4.SET FUSIO_ENV="prod" in '.env' file, before starting the manual installation.
+5. Check and move /apps/fusio/ from manual to zip(except index.html at /apps/fusio/index.html) as it is created post execution of command 'php bin/fusio marketplace:install fusio' mentioned in the docs link above in point no. 2. Check the difference with /cache/app-fusio_{{random_string}}.zip. We can compare apps/fusio/ from https://github.com/apioo/fusio-apps-backend/archive/{{Latestversion}}.zip
+6. Keep FUSIO_HOST as is i.e FUSIO_HOST="127.0.0.1" in manual installation.

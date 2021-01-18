@@ -1,0 +1,66 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right; margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Chevereto_Free
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/galleries/Chevereto_Free
+	</ratings>
+	<space>
+		16371280
+	</space>
+	<support>
+		https://chevereto.com/free
+	</support>
+	<version>
+		1.3.0
+	</version>
+	<mod>19</mod>
+	<release_date>26-10-2020</release_date>  
+	<admin>dashboard</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.0.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.0.0" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="hash" />
+	<requirement check="php" type="extension" name="json" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="PDO" />
+	<requirement check="php" type="extension" name="session" />
+	<requirement check="php" type="extension" name="zip" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Chevereto</font> Free is an application which allows you to setup your own image sharing website and our goal is to allow anyone in the world to host their own image sharing platform. We believe in build a real alternative for those who want a customized white-label image sharing service.
+		<br /><br />
+		Chevereto is released under the <a href="http://www.gnu.org/licenses/" target="_blank">AGPL v3</a>.
+		</english-overview>		
+		<english-features>
+		<ul>
+		<li>Admin panel</li>
+		<li>Basic API</li>
+		<li>Embed codes and sharing options</li>
+		<li>File manager</li>
+		<li>Flood protection</li>
+		<li>Image resizing</li>
+		<li>Multiple image upload</li>
+		<li>Multiple languages available</li>
+		<li>Private mode (password protected website)</li>
+		<li>Small footprint</li>
+		<li>Support for short url services</li>
+		<li>Themes</li>
+		<li>Watermarks</li>
+		</ul>
+		</english-features>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

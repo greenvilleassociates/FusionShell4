@@ -1,0 +1,8 @@
+1. PHP REQUIREMENT LINK : https://github.com/LycheeOrg/Lychee
+2. Installer is at http://{{URL}}/public
+3. Upgrade is disabled as user name and password are reset after upgrade due to major structural changes from 3.1 to 3.2. Mentioned here:
+https://github.com/LycheeOrg/Lychee/issues/278 Provide upgrade in next release as upgrade is possible from 3.2.x to 3.2.x
+4. Comment security policy header in .htaccess in our zip i.e Header set Content-Security-Policy "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://lycheeorg.github.io; form-action 'none'; base-uri 'none'; frame-ancestors 'none'; upgrade-insecure-requests; block-all-mixed-content;" . This is needed to install the script on non https servers.(Needed while manual installation as well). Mentioned here :
+https://github.com/LycheeOrg/Lychee/wiki/Installation
+5. Upgrade method https://lycheeorg.github.io/docs/update.html#update-manually
+6. We have enabled upgrade from 4.0.x versions.

@@ -1,0 +1,3 @@
+1. PHP REQUIREMENT LINK : https://www.espocrm.com/documentation/administration/server-configuration/
+2. Uncheck 'Auth' , 'Is Shared' as well as set 'From Name' to blank  in SMTP settings for outgoing emails() while manual installation) since we don't use smtp configuration.(Since 4.8.2).
+3. Mysql 5.5 doesn't support full-text search for InnoDB tables. 5.6.4 and later versions do support. ( https://github.com/espocrm/documentation/blob/master/user-guide/text-search.md#full-text-search )

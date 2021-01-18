@@ -1,0 +1,47 @@
+2.3.16 (2020-12-18)
+Contributors
+
+    Jerôme Bakker (7)
+
+Bug Fixes
+
+    ci:
+        move PHPUnit tests from Travis to GitHub actions (55d6d893)
+        move documentation test build to GitHub action (25f3f8a6)
+        move coding style and composer checks to GitHub actions (5b8956dc)
+        move lint checks to GitHub actions (eba126ec)
+
+2.3.15 (2020-06-25)
+Contributors
+
+    Jerôme Bakker (2)
+
+2.3.14 (2019-07-24)
+Contributors
+
+    Jerôme Bakker (3)
+    Jeroen Dalsem (1)
+
+Bug Fixes
+
+    groups: no error on notification failure during membership request (2bd72ffc)
+    http: check object for toString function (1cd0809e)
+    installer: detect more https scenarios (05648781)
+
+2.3.13 (2019-06-12)
+Contributors
+
+    Jeroen Dalsem (1)
+
+Bug Fixes
+
+    blog: show correct last saved date (b888e7e1)
+
+2.3.12 (2019-04-16)
+Contributors
+
+    Jerôme Bakker (1)
+
+Bug Fixes
+
+    widgets: improved stability of widget title (904eefc1)

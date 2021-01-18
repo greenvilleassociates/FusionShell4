@@ -1,0 +1,7 @@
+1. make installation with Mail Authentication Type false. To avoid Mail Authentication fill the details of mail_settings_constants.php while installation. 
+2. Move "main_weekdays_aftr_upd" Triggers to end of sql after alter queries
+3. Added the following in SQL header and footer respectively in 3.1 version because extra fields created in `tbl_cities` table has incorrect `state_id`.
+
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */; 
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+4. Check Dates Carefully in sql file

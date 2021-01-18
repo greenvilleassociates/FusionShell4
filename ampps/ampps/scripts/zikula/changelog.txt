@@ -1,0 +1,103 @@
+Zikula Core 3.0.3 released!
+
+The core development team is proud to announce the availabilty of Zikula Core 3.0.3.
+
+Zikula Core 3.0.3 is available as of today, 04 September, 2020.
+
+    Security fixes from Symfony:
+        Prevent RCE when calling untrusted remote with CachingHttpClient (CVE-2020-15094).
+
+    The following bugfixes have been included:
+        [Users] Minor correction in user online block template.
+
+3.0.2 (2020-08-28)
+
+    Fixes:
+        [Categories] Fix hiding registry label in form (#4452).
+        [CoreBundle] More robust autoloader detection.
+        [Menu] Fix error during creation of new menus.
+
+Zikula Core 3.0.0
+
+Zikula Core 3.0.0 is available as of today, 25 June, 2020.
+Most important changes
+
+    Foundation
+        Requires at least PHP 7.2.5; uses scalar type hints.
+        Technology updates: Symfony 5.1, Twig 3, Bootstrap 4 including Bootswatch styles, Font Awesome 5.
+        Utilise autowiring and autoconfiguring functionality from Symfony.
+        Using utf8mb4 charset on MySQL platforms for real utf8 support.
+    Extension handling
+        In general, 'module' and 'theme' are now generically referred to as 'extensions'.
+        Extensions module automatically contributes admin menu item to display Markdown docs for other extensions. Help UI can be configured to use either a modal window or a fixed sidebar.
+        Added "Connections" menu to ExtensionsMenu so extensions can add menu children to other connected extension's admin UI.
+    Administration
+        Added ability to choose a Font Awesome icon for admin categories, categories and extensions.
+        Added support for creating and changing translations on-site using "Edit in Place" and/or a WebUI.
+        Added new fields for optional comments and colours to permission rules.
+        Start page can now be defined much easier (a dropdown allows to choose a route/controller combination).
+        Start page can now be configured for each available language.
+        Added CLI Commands to manage extension installation, upgrade and uninstall and sync.
+        Added CLI Command to import users.
+        Added CLI Command to delete any number of users.
+        Added CLI Command to edit password, email, username properties of ZAuth user mappings (a replacement for the old Zikula Recovery Console).
+    Allow users to delete themselves (with admin setting).
+    Password handling
+        Passwords in the ZAuth module are now always hashed with the the most up-to-date algorithm available (via Symfony security component) and automatically updated on login.
+        Passwords can optionally be validated with Symfony's NonCompromisedPassword validator.
+        A new password strength meter is implemented.
+        Added a simple password generator in all places where a new password might be needed.
+        Added ability to force a group of users to change their password on next login.
+    Developers
+        Added twig-inspector for easy debugging of Twig templates.
+        Introduced a 'site definition' concept.
+            Adds means for site-wide branding.
+            Adds the ability to create dynamic site properties (e.g. titles, meta descriptions etc.).
+        Blocks can now specify default property defaults used for custom form fields.
+        Added @PermissionCheck annotation for use in Controllers.
+        Added UserCreationApi to assist with the manual creation of ZAuth-method users.
+        Moved calling adminHeader() and adminFooter() into theme layer.
+        Added CLI Command to create any number of users for testing purposes.
+        Added CLI command to generate an Extension skeleton with instruction on using Symfony MakerBundle to complete development.
+        Added new Doctrine Paginator wrapper and paginator template.
+        Added new AlphaFilter class and template.
+
+2.0.15 (2019-11-18)
+-------------------
+-Fixes:
+	-Prevent exception caused by invalid return URL during login.
+	-Updated listener priorities in Settings module to fix non-working variable localisation (#3934).
+	-Fixed regression in settings page (#3983).
+	-Updated obsolete HTML Purifier constant names.
+
+2.0.13 (2019-04-17)
+-------------------
+
+ - Security fixes from Symfony:
+    - Check service IDs are valid (CVE-2019-10910).
+    - Fix XSS issues in the form theme of the PHP templating engine (CVE-2019-10909).
+    - Prevent destructors with side-effects from being unserialized (CVE-2019-10912).
+    - Add a separator in the remember me cookie hash (CVE-2019-10911).
+    - Reject invalid method override (CVE-2019-10913).
+
+ - Vendor updates:
+    - components/bootstrap updated from 3.3.7 to 3.4.0
+    - composer/ca-bundle updated from 1.1.3 to 1.1.4
+    - composer/semver updated from 1.4.2 to 1.5.0
+    - elao/web-profiler-extra-bundle updated from 2.3.5 to 2.3.6
+    - gedmo/doctrine-extensions updated from 2.4.36 to 2.4.37
+    - jquery.mmenu updated from 7.2.2 to 7.3.3
+    - paragonie/random_compat updated from 2.0.17 to 2.0.18
+    - sensio/distribution-bundle updated from 5.0.23 to 5.0.24
+    - sensiolabs/security-checker updated from 5.0.1 to 5.0.3
+    - symfony/polyfill-apcu updated from 1.10.0 to 1.11.0
+    - symfony/polyfill-ctype updated from 1.10.0 to 1.11.0
+    - symfony/polyfill-intl-icu updated from 1.10.0 to 1.11.0
+    - symfony/polyfill-mbstring updated from 1.10.0 to 1.11.0
+    - symfony/polyfill-php56 updated from 1.10.0 to 1.11.0
+    - symfony/polyfill-php70 updated from 1.10.0 to 1.11.0
+    - symfony/polyfill-util updated from 1.10.0 to 1.11.0
+    - symfony/symfony updated from 3.4.20 to 3.4.26
+    - twig/twig updated from 1.35.4 to 1.39.1
+    - webmozart/assert updated from 1.3.0 to 1.4.0
+    - zikula/profile-module updated from 3.0.5 to 3.0.6

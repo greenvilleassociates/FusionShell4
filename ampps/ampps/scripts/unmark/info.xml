@@ -1,0 +1,52 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Unmark
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/others/Unmark
+	</ratings>
+	<space>
+		10662116 
+	</space>
+	<support>
+		https://github.com/cdevroe/unmark
+	</support>
+	<version>
+		2020.4
+	</version>
+	<mod>9</mod>
+	<release_date>24-11-2020</release_date>
+	<admin>index.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.6.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.7.0" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Unmark</font> is designed to help you actually do something with your bookmarks, rather than just hoard them. A simple layout puts the focus on your task at hand and friendly reminders keep you in line. Filtering options let you find what you're looking for.
+		<br /><br />
+		Unmark is released under a <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License.</a>
+		</english-overview>		
+		<english-features>
+			<ul>
+			   <li>Preview Content Inline</li>
+			   <li>Tag &amp; Keep Notes</li>
+			   <li>Save from Menu Bar</li>
+			   <li>Chrome Extension</li>
+			   <li>Import &amp; Export</li>
+			   <li>Save Favorite Tweet Links</li>
+			</ul>
+		</english-features>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_email>Please provide the email to reset the password</english-err_no_email>
+		<english-err_no_such_email>The Admin email is incorrect and does not exist!</english-err_no_such_email>
+	</languages>
+</soft>

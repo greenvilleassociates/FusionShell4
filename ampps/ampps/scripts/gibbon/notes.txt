@@ -1,0 +1,8 @@
+1. PHP REQUIREMENT LINK: https://gibbonedu.org/support/administrators/installing-gibbon/
+2. Install without demo data.
+3. Upgrade guide : https://docs.gibbonedu.org/administrators/getting-started/updating-gibbon/
+4. Select Country as United States, Currency as US dollar $, Timezone as America/New_York in Miscellaneous settings while manual installation.
+5. Gibbon works on MySQL 5.5 as well, as docs mention MySQL 5 or higher. But Since Home > System Admin > System Check shows that Gibbon v17.0.00 requires MySQL version 5.6 or higher. So we have changed MySQL requirement to MySQL 5.6 in info.xml(Since v17.0.00). 
+6. Install Type : Production, Statistics Collection : No, Receive Support? : Uncheck. i.e NO
+7. Writable permission required for "i18n" folder to install languages, don't give writable permission while manual installation. ( language can be install from "Admin > System Admin > Manage Languages" option )
+8. Check and move 'USING BTREE' entries in SQL to the left(Since 20.0.00).

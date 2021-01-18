@@ -1,0 +1,25 @@
+Adminer 4.7.8 (released 2020-12-06):
+Support PHP 8
+Disallow connecting to privileged ports (bug #769)
+
+Adminer 4.7.7 (released 2020-05-11):
+Fix open redirect if Adminer is accessible at //adminer.php%2F@
+
+Adminer 4.7.6 (released 2020-01-31):
+Speed up alter table form (regression from 4.4.0)
+Fix clicking on non-input fields in alter table (regression from 4.6.2)
+Display time of procedure execution
+Disallow connecting to ports > 65535 (bug #730)
+MySQL: Always set foreign_key_checks in export
+PostgreSQL: Support exporting views
+Editor: Fix focusing foreign key search in select
+
+Adminer 4.7.5 (released 2019-11-13):
+Add id="" to cells with failed inline edit (bug #708)
+PostgreSQL: Fix getting default value in PostgreSQL 12 (bug #719)
+PostgreSQL, Oracle: Set schema for EXPLAIN queries in SQL command (bug #706)
+ClickHouse: SQL command
+Swedish translation
+
+Adminer 4.7.4 (released 2019-10-22):
+Fix XSS if Adminer is accessible at URL /data:

@@ -1,0 +1,9 @@
+1. schema_signature same for every install
+2. Make script where Database ENGINE is InnoDB
+3. Don't convert ostic.sql and languages files to utf8
+4. PHP REQUIREMENT LINK : https://docs.osticket.com/en/latest/Getting%20Started/Installation.html
+5. Download and update language from "https://osticket.com/download/#ostLang"
+6. Check language update in next version(In 1.14.2 languages weren't properly updated)
+7. If language packs doesn't download from site. Try to download using following URL depending upon script version.
+https://s3.amazonaws.com/downloads.osticket.com/lang/1.14.x/[[LANG_CODE]].phar (languages are not available for 1.15)
+8. Manual installation not working on php 7.0 and 7.1

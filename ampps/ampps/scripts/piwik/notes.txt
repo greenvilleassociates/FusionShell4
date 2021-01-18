@@ -1,0 +1,17 @@
+** Dump SQL at login page only **
+
+1) Use MYSQLI
+2) Delete tables ending with 'archive_blob_2010_03', 'archive_numeric_2010_03' (If any)
+3) Add this in SQL 
+INSERT INTO `[[dbprefix]]user_language` VALUES('[[admin_username]]', '[[language]]', 0); {add 0 for "use_12_hour_clock" that's the default value} from 2.16.0 in last Language table
+4) Choose Timezone America/New york
+5) Choose Not an Ecommerce site
+6) We have added a CRON Job for the script because it requires if there is huge data for the site.
+7) Make script where Database ENGINE is InnoDB
+8) make changes in upgrade.php if script ask for writable permission for config file.
+9) In version 3.0.1 we have added files to be deleted in the pre_unzip() function, because of file integrity check warnings while upgrade. Please check in the next version.
+10) PHP REQUIREMENT LINK : https://piwik.org/docs/requirements/#required-configuration-to-run-piwik
+11) Delete the files or folders(if any) from original zip which fails integrity check during manual installation.
+12) Keep 'useridsalt' value blank in `[[dbprefix]]option` table. It will genreate post loging in.
+13) Remove 'SET time_zone = "+00:00";' line from SQL. This is to solve login issue on windows. ( piwik unable to login if registered date is greater than the date when user login )
+14) Check and Move robots.txt and favicon.ico from manual to zip (Since 3.9.0)

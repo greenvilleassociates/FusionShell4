@@ -1,0 +1,22 @@
+<softinstall xmlns="http://www.softaculous.com">
+	<settings>
+		<group>
+			<heading>{{ad_lang}}</heading>
+			<input type="select">
+				<select name="language">
+					<option value="en_us">English</option>
+					<option value="ar_ye">Arabic</option>
+					<option value="zh_cn">Chinese</option>
+					<option value="fr_fr">French</option>
+					<option value="de_de">German</option>
+					<option value="de_ch">German</option>
+					<option value="hu_hu">Hungarian</option>
+					<option value="it_it">Italian</option>
+					<option value="pt_br">Portuguese</option>
+					<option value="ru_ru">Russian</option>
+				</select>
+			<head>{{select_lang}}</head>
+			</input>
+		</group>
+	</settings>
+</softinstall>

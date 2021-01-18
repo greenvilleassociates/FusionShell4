@@ -1,0 +1,8 @@
+1. Default Login username : admin password : changeme.
+2. change "usr_NeedPasswordChange" to 0 in "user_usr" table because script ask to update password after installation.
+3. We have created blank integrityCheck.json file to write integrity check status.
+	(Go to Admin -> Edit General settings -> System Settings -> set iIntegrityCheckInterval to 1 and reduce one hour to sLastIntegrityCheckTimeStamp -> Save settings. Now check the file should be created.) This is just to check if this file is needed or not.
+4. PHP REQUIREMENT LINK: https://github.com/ChurchCRM/CRM/wiki/Installation
+5. Remove 'DEFINER=`root`@`localhost`' from mysql function
+(added since version 2.10.1 , we remove this because it's made again)(Isn't required since 4.1.0)
+6. Keep $dbPort = ''; as blank in Config.php post installation, since this was mandatory while installing.

@@ -1,0 +1,1 @@
+1. We have set  min PHP requirement to 5.4 because script uses syntax of PHP > 5.4 in classes/ui.class.php

@@ -1,0 +1,1 @@
+<p>This is a Freebox. You can put any valid HTML in here. Or disable this feature if you don't need it.</p>

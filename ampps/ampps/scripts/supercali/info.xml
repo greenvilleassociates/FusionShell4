@@ -1,0 +1,53 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/SuperCali
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/calendars/SuperCali
+	</ratings>
+	<space>
+		344569
+	</space>
+	<support>
+		http://supercali.inforest.com/contact.php
+	</support>
+	<version>
+	   1.1.0
+	</version>
+	<mod>2</mod>
+	<release_date>22-05-2019</release_date>
+	<admin>login.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.0.0" />
+	<languages>
+		<english-overview>
+	<font size="5" color="#182e7a">SuperCali</font> is an event calendar script that supports nested categories of events and multiple moderators, making it a good choice for organizations managing a large number of activities. SuperCali is designed to make data entry as easy and error-free as possible as well as provide a flexible, modular framework for displaying event information.
+	<br /><br />
+	SuperCali is released under the <a href="http://supercali.inforest.com/license.php" target="_blank">GNU General Public License.</a>
+		</english-overview>		
+		<english-features>
+		<ul>
+			 <li>Nested event categories</li>
+			 <li>Multiple moderators and users</li>
+			 <li>Multiple dates for each event</li>
+			 <li>Multiple calendar views</li>
+			 <li>Drop-down venue and contact selection</li>
+			 <li>Javascript to assist data entry</li>
+			 <li>XHTML/CSS output makes it easy for Web designers to customize</li>
+			 <li>Can be configured for different languages</li>
+			 <li>CSV import capability</li>
+		</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_email>Please provide the email to reset the password</english-err_no_email>
+		<english-err_no_such_email>The Admin email is incorrect and does not exist!</english-err_no_such_email>
+	</languages>
+</soft>

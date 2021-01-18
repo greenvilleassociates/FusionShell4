@@ -1,0 +1,28 @@
+[8.5.2]
+[+] Added lang parameter to SSO entry point
+[+] Added ability to insert template into HTML on compose screen
+
+[8.5.1]
+[+] MultipleFilesUploadLimit setting is added
+[+] Improvements related to storing PGP keys in Contacts
+[+] VCF export includes contact groups now
+[*] Various bugfixes
+
+[8.5.0]
+[+] Added conditional forwarding option for Sieve filters
+[+] Added an option for disabling RTL rendering
+[*] Fixed issue with IMAP and SMTP hosts for external mail clients specified when creating mail server
+[*] Various bugfixes
+
+[8.4.0]
+[+] Mobile apps support (Pro/Aurora)
+[+] File sharing feature release (Pro/Aurora)
+[*] PGP functionality rewritten, with keys stored in contacts
+[*] Miscellaneous bugfixes and improvements
+ 
+[8.3.20]
+[*] Minor bugfixes
+
+[8.3.19]
+[*] Minor bugfixes
+

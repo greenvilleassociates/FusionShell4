@@ -1,0 +1,7 @@
+1. select timezone America/New_York
+2. Install/Overwrite without Sample Web Site
+3.Take database dump after logging in and entering valid hostname entry 
+from admin panel and saving it.(from Tools->Configuration)
+4.Remove `sessionid` value entry from `[[dbprefix]]user_attributes` table.(as it is made).
+5.Remove entries from manager_log(change auto increment)
+6.Remove entries from active_users

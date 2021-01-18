@@ -1,0 +1,3 @@
+1. Release date : documentation\changelog.txt
+2. Arfoo has issues working with https protocol. When we visit any pages , or login page post instatllation, we get error i.e page not found . even in manual installation we get the same error. so we have thrown error message in install.php. Check in next version by installing on https protocol , whether it works properly.
+3. PHP REQUIREMENT LINK : http://script.arfooo.net/requirements/

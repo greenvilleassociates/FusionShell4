@@ -1,0 +1,4 @@
+1. Insert [[language]] in config.ini
+2. Insert [[language]] in SQL system_defaults table
+3. Install with demo data
+4. Release date : https://github.com/simpleinvoices/simpleinvoices/releases

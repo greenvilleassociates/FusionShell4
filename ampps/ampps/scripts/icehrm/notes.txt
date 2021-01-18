@@ -1,0 +1,6 @@
+1)Download link : https://github.com/gamonoid/icehrm/releases/download/v23.0.0.OS/icehrm_v23.0.0.OS.zip. Do not use "Source code (zip)"
+2)Default username/password is admin:admin.
+3)Please check for new languages from 'core/lang' folder and update it's entry in our install.xml file.
+4)Keep Log file path default i.e data/icehrm.log in manual installation
+5)Vendor has asked to keep PHP requirement to PHP 5.6 https://github.com/gamonoid/icehrm/issues/115
+6)PHP REQUIREMENT LINK : https://icehrm.gitbook.io/icehrm/getting-started/installation-and-setup#requirements

@@ -1,0 +1,34 @@
+# Disable directory listing
+Options -Indexes
+
+# Force utf-8 charset
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .html .css .js .svg .woff .woff2
+
+# Security
+ServerSignature Off
+
+# Protect .htaccess file
+<Files .htaccess>
+    order allow,deny
+    deny from all
+</Files>
+
+# Protect config.php
+<Files config.php>
+    order allow,deny
+    deny from all
+</Files>
+
+# Protect fusion_error_log.log
+<Files fusion_error_log.log>
+    order allow,deny
+    deny from all
+</Files>
+
+ErrorDocument 400 [[relativeurl]]/error.php?code=400
+ErrorDocument 401 [[relativeurl]]/error.php?code=401
+ErrorDocument 403 [[relativeurl]]/error.php?code=403
+ErrorDocument 404 [[relativeurl]]/error.php?code=404
+ErrorDocument 500 [[relativeurl]]/error.php?code=500
+

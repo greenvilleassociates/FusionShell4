@@ -1,0 +1,6 @@
+1. select MySQL Improved(mysqli)
+2. Check "Always force connection to use UTF-8"
+3. We do not configure the .htaccess file because the SEOfriendly url is disabled by default.
+4. Select database engine = MyISAM & Set up htaccess file = Do nothing during manual installation.
+5. Always lock the installer, setup the website and then take a dump.
+6. PHP REQUIREMENT LINK: https://doc.tiki.org/Requirements#PHP

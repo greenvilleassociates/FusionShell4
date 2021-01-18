@@ -1,0 +1,2 @@
+1. login with FTP user and password
+2. Vendor has told us to keep min PHP version 5.6 and max PHP version 7.1.(Since Ioncube loaders for PHP versions less than PHP 5.6 are no more compatible with the script)

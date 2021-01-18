@@ -1,0 +1,36 @@
+Most important News CMSimple 5.2 => 5.3 (2021-01-14):
+
+    small html bug in the submenu fixed
+    small html bug in the pagemanager fixed
+    design of the pagemanager improved, better handling of drag & drop.
+
+Most important News CMSimple 5.1 => 5.2 (2021-01-04):
+
+    CMSimple 5.2 is ready for php 8, tested under php 8.0.0
+    Setup for "forgotten password" now also active for 5 min
+
+Most important News CMSimple 5.0 => 5.1 (2020-06-15):
+
+    Prevention of "forgotten" installations with default password (5 min)
+    Setup for "forgotten password" (1 min)
+
+Most important News CMSimple 4.8.2 => 5.0 (2020-04-21):
+
+    h1only pagesplitting is standard now
+    improved h1only_pagesplitting conversion script
+    function newsbox(): new regex for h1only_pagesplitting
+    improved accessibility of the page manager for blind people
+    improved accessibility of the standard template for blind people
+    extended language files
+
+Most important News CMSimple 4.8.1 => 4.8.2 (2020-04-08):
+
+    Backup von content.php und pagedata.php bei Umstellung auf h1only Splitting
+    Pagemanager Bug beseitigt: Quotes in Seitennamen möglich
+    Neues Standardtemplate __cmsimple_default__
+
+Wichtigste Neuerungen CMSimple 4.8 => 4.8.1 (30.01.2020):
+
+    Code revised for PHP 7.4.1
+    Bugfix Backend Manager (path for icons in subsites and second languages)
+

@@ -1,0 +1,67 @@
+1.12.18 (2019-04-03)
+Contributors
+
+    Jyoti Raval (1)
+    Wouter van Os (1)
+
+Bug Fixes
+
+    core: revert original libxml_use_internal_errors value after use (bc30e941)
+
+1.12.17 (2017-09-21)
+
+Contributors
+
+    Jerôme Bakker (3)
+    Brett Profitt (1)
+    Steve Clay (1)
+
+Bug Fixes
+
+    likes: listing limit no longer breaks likes counts (abbe2715, closes #11160)
+
+1.12.16 (2017-05-10)
+Contributors
+
+    Steve Clay (3)
+    iionly (2)
+    Jerôme Bakker (1)
+
+Documentation
+
+    admin: start upgrade by logging in/clearing caches (cf78468a, closes #10898)
+
+Bug Fixes
+
+    groups: remove membership request when user is already member (4f158e1d)
+    htaccess: removing of obsolete entry in htaccess.dist incompatible with Apache 2.4 (f2e8efab)
+    search:
+        no longer fatals if comment container hidden (16a753a9, closes #10902)
+        allows get_sql, access hook to be used correctly (98835bc4, closes #10884)
+
+1.12.15 (2017-01-25)
+Contributors
+
+    Johnny Mast (1)
+    jdalsem (1)
+
+Bug Fixes
+
+    views: corrected syntax error in input/date (a7277f30)
+
+1.12.14 (2016-11-08)
+Contributors
+
+    Jerôme Bakker (3)
+    Ismayil Khayredinov (1)
+    Steve Clay (1)
+
+Bug Fixes
+
+    core:
+        outgoing email should have a message-id header (9953687f)
+        _elgg_send_email_notification respects other email handlers (80bd413d)
+        elgg_get_page_owner_entity will return ElggEntity (9f8e8dda)
+    register: consistent forwarding upon login (a62410dd)
+    relationships: ElggRelationship::save returns the ID (25754c76, closes #10373)
+

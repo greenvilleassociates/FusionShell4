@@ -1,0 +1,1 @@
+1. Remove connections table insert and change auto increment

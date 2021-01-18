@@ -1,0 +1,54 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Carbon_Forum
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/forums/Carbon_Forum
+	</ratings>
+	<space>
+		14464893
+	</space>
+	<support>
+		https://github.com/lincanbin/Carbon-Forum
+	</support>
+	<version>
+		5.9.0
+	</version>
+	<mod>1</mod>
+	<mod_files>2</mod_files>
+	<release_date>04-07-2017</release_date>
+	<admin>login</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.4.0" />
+	<requirement check="php" type="extension" name="pdo_mysql" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Carbon Forum</font> is a topic-based high-performance lightweight PHP forum.
+		<br /><br />
+		Carbon Forum released under The <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License, Version 2.0</a>.
+		</english-overview>		
+		<english-features>
+			<ul>
+				<li>Mobile version.</li>
+				<li>Real-time notifications push.</li>
+				<li>Discussions Tags based with Quora/StackOverflow style.</li>
+				<li>High FE&amp;BE performance.</li>
+				<li>Full asynchronous design, improve the loading speed.</li>
+				<li>Excellent search engine optimization (mobile adaptation Sitemap support) .</li>
+				<li>Perfect draft saving mechanism.</li>
+				<li>The modern Notification Center (currently supported and @ replies).</li>
+			</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

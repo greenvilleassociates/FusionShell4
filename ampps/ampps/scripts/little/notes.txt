@@ -1,0 +1,2 @@
+1. Add index.php,lp_test.php and lp_silly.php from previous package. If required then Make the changes in this files.
+2. v1.4 is yet showing 1.3 in import. Check in the next version. We have launched this in v1.4

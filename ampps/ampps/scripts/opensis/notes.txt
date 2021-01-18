@@ -1,0 +1,4 @@
+1. Move "student_report_card_grades" Triggers to the end of sql.
+2. Remove DEFINER=`root`@`localhost` from SQL file.
+3. Move USING BTREE to left in Sql file.
+4. PHP REQUIREMENT LINK: https://support.os4ed.com/hc/en-us/articles/201047836-Installation

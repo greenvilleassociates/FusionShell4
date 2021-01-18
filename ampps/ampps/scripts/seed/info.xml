@@ -1,0 +1,52 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/SeedDMS
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/files/SeedDMS
+	</ratings>
+	<space>
+		85783743
+	</space>
+	<support>
+		http://www.seeddms.org/index.php?id=5
+	</support>
+	<version>
+		6.0.13
+	</version>
+	<mod>20</mod>
+	<release_date>29-09-2020</release_date>
+	<admin>out/out.Login.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.0.0" />
+	<requirement check="php" type="extension" name="fileinfo" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">SeedDMS</font> is an easy to use but powerful Open Source Document Management System based on PHP and MySQL or sqlite3. Many years of development has made it a mature and enterprise ready plattform for sharing and storing documents.
+		<br /><br />
+		SeedDMS is released under the <a href="http://www.gnu.org/licenses/gpl-2.0.html" target="_blank">GNU General Public License Version 2.0</a>.
+		</english-overview>		
+		<english-features>
+		<ul>
+			<li><b>Documents and Folders :</b> SeedDMS manages documents and folders very similar to a file system on your hard disk. But it offers much more when it comes to additional meta data like the author, keywords, a description, and arbitrary attributes.
+			<br/>Each document has at least one version which is the actual content of the document. Any update will create a new version, while keeping all the old ones.
+			</li>
+			<li><b>Meta data, Searching :</b> A document is more than a file. It has extra metadata, can have any number of versions, be related to other documents, may even have attached files, has access rights and can be run through a workflow before it is released. The most common document types like PDF, MS Word, MS Excel can be indexed for full text search.
+			</li>
+			<li><b>Workflow :</b> LetoDMS always had a simple workflow management requesting review and approval before a document is released. Since version 4.0.0 SeedDMS has a fully new workflow engine has been added which allows arbitrary self defined workflows.
+			</li>
+		</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+	</languages>
+</soft>

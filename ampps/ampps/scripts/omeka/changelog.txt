@@ -1,0 +1,184 @@
+Release Notes for 2.7.1
+---------------------------
+
+The minimum required version of PHP is now 5.4.
+Features
+
+    PHP 7.4 support
+
+Bugs Fixed
+
+    Direct upgrades from significantly old versions could fail on the "unEntityTags" migration
+    Tags could not be deleted through the API
+    The link to the Omeka documentation on error pages referred to the older Omeka site structure
+    Mismatched closing tag on login pages
+    Files with large amounts of embedded metadata could fail when uploading
+
+Internationalization
+
+    Updates to Catalan, Esperanto, Spanish, French, Italian, Japanese, Brazilian Portuguese, Albanian, Ukrainian
+
+External Libraries
+
+    getID3 updated to 1.9.18
+    HTML Purifier updated to 4.12.0
+    Removed Zend_Test_PHPUnit and Zend_Tool components
+
+Release Notes for 2.7
+---------------------------
+
+Features
+
+	PHP 7.3 compatibility
+	Version notifications for new releases of plugins and themes
+	Omeka now respects the X-Forwarded-Proto header for determining if it should generate http: or https: absolute URLs. This is primarily useful for users hosting Omeka behind a reverse proxy that's handling the HTTPS connections.
+	A new sslTrustProxy configuration key is available for users using the ssl force-redirect configuration to trust the X-Forwarded-Proto header and not issue unnecessary, looping redirects
+	New forceSSL option for ZendS3 storage adapter to force use of https: addresses for file URLs (#877, contributed by @ebellempire)
+	mail.force_from and mail.force_from_name options for forcing From: address for all outgoing email
+
+Bugs Fixed
+
+	Tag UI javascript error when editing items (#853, contributed by @luku)
+	Inconsistent tag markup for new and existing tags when editing items (#854, contributed by @luku)
+	Deprecation notice when running on PHP 7.2+ (#860, contributed by @Daniel-KM)
+	"Remember me" checkbox on login non-functional on PHP 7.2+ (#872)
+	Invalid SQL mode error when running on MySQL 8 (#858)
+	Migration error when migrating from 1.x using MySQL 5.7+ (#831)
+	item_next and item_prev filters had no way to indicate the end of the sequence (#851)
+	Inconsistent form enctype between collection add and edit forms (#856)
+	items_output_url page detection fails on "items" pages added by plugins, leading to incorrect feed URLs (#880)
+
+Improvements
+
+	"Simple" item search converted to use subqueries, leads to a significant observed speed increase on modern MySQL versions
+	Public-side file show page now includes a link back to the parent item
+	"Browse by tag" view for items now sorts tags alphabetically by default
+	New "back to top" link in admin footer
+	ZendS3 storage adapter now leaves slashes unencoded in URLs
+	ZendS3 storage adapter will "chunk" expiration times, allowing for some end-user caching by preventing the URL from changing on every request
+	reCAPTCHA text specifies that v2 keys must be used
+
+For Developers
+
+	New html_purifier_config_setup filter (#857, contributed by @luku)
+	New image_tag_attributes filter (#871)
+	New files_for_item filter
+	New option filesForItem passed through to file_markup helper to indicate when files are being rendered as part of a call to files_for_item
+	New file_markup_options filter for modifying the options passed to file_markup
+	New file_markup_files filter for modifying the list of files to be rendered by file_markup
+	
+Bundled Add-ons
+
+	Thanks, Roy 2.5.1 (fixed visual spacing issues with featured blocks on homepage)
+	Exhibit Builder 3.4.2 (updated translations)
+	Simple Pages 3.1.2 (updated translations)
+	
+Internationalization
+
+	Updated translations for Bengali, Catalan, Czech, Danish, Esperanto, Spanish, Estonian, French, Galician, Hebrew, Hungarian, Indonesian, Italian, Japanese, Lithuanian, Portuguese (Brazil), Slovak, Serbian, Turkish, Ukrainian
+
+
+Release Notes for 2.6.1
+---------------------------
+Security Fixes
+
+    Added CSRF protection to users/api-keys (#842, reported by @JosiahPierce)
+    Fixed XSS issues with adding and editing tags (reported by Zekvan Arslan of Netsparker)
+
+Bug Fixes
+
+    Fixed bottom direct pagination input on admin items browse
+    "Encountered an error" pages now correctly report an HTTP error status code
+    Minor appearance fix to new TinyMCE toolbar
+
+Changes
+
+    Switched Javascript used for in-place editing on tag browse, users may notice slightly different apperance/behavior
+
+Bundled Plugins
+
+    Exhibit Builder 3.4.1 (fixes a bug preventing source code editing for captions)
+    Simple Pages 3.1.1 (restores several removed HTML editing options from versions prior to 3.1)
+
+Bundled Themes
+
+    Seasons 2.5.1 (fixes a bug in SASS usage, issues with margins and pagination)
+
+Release Notes for 2.6
+---------------------------
+Major Changes
+
+    reCAPTCHA v2 support (#814, contributed by @luku)
+        Google is shutting down the original reCAPTCHA API that Omeka has used, so we're transitioning to the newer, supported "v2" API. This also transitions to the newer "I'm not a robot" checkbox interface.
+        Users with old reCAPTCHA keys may need to create new ones. You can create a new key at https://www.google.com/recaptcha/admin
+    TinyMCE 4
+        This update brings a new, more modern interface for HTML editors in Omeka, as well as a supported codebase which should lead to improved compatibility with modern browsers now and going forward.
+        Note: internal code and filenames have changed in this version of TinyMCE, so all plugins using HTML editors must be updated. Updated versions of ExhibitBuilder and SimplePages are bundled with the release, but others must be updated, including Commenting, Contribution, Posters, SimpleContactForm, and UserProfiles.
+
+Improvements
+
+    Message linking to items with no item type (#760, contributed by @Daniel-KM)
+    Allow multiple item types or collections to be specified for item search (#760, contributed by @Daniel-KM)
+    Updated tags admin, improving search, pagination and sorting (#784, #787, contributed by @luku)
+    Cachebusting for assets (#790, contributed by @luku)
+    UTF-8 support for snippet (depends on mbstring extension) (#806, contributed by @luku)
+    Improved messaging about data deletion when uninstalling plugins (#824)
+    Admin can choose whether file thumbnails should link to the original file or the file's show page (#759)
+    Clarified default collection show markup and text for listing and linking to items in the collection (#827)
+
+Bugs Fixed
+
+    Fixed bad docblock on random_featured_items (#828, contributed by @apjmason)
+    Removed some outdated and broken "related" properties from Item and Collection records (#809, contributed by @luku)
+    Added pagination when necessary to item types page (#823, contributed by @luku)
+    Fixed browse_default_sort filter for collections/browse
+    Fixed style/clearing issue in Firefox on link from forgot password page (#829)
+    API now correctly retrieves site version from in-code constant, not database
+
+Changes
+
+    PHP 7.2 support
+    Omeka now uses relative URLs for local assets.
+    Auto-orientation now enabled by default for thumbnail creation (#777)
+    omeka-json output format removed
+        The same content is available as the omeka-xml output format, and the API provides a more useful and less verbose JSON format
+    Updated links to point to new omeka.org structure
+    Updated Font Awesome to 4.7.0 (#800, contributed by @luku)
+
+Internationalization
+
+    Updated translations for Bulgarian, Catalan, Czech, Estonian, Japanese, Lithuanian, Mongolian, Occitan, Polish, Portuguese (Brazil), Romanian, Russian, Swedish, Turkish, Ukrainian
+
+Bundled Plugins
+
+    Exhibit Builder 3.4
+    Simple Pages 3.1
+
+Bundled Themes
+
+    Thanks, Roy 2.5
+    Berlin 2.6
+    Seasons 2.5
+
+
+Release Notes for 2.5.1
+---------------------------
+
+Bugs Fixed
+
+    Upgrades could fail for users moving many versions at once due to zeroes in date columns
+    PHP 7.1 compatibility fixed (Storage interface type mismatch)
+    "Full" delete confirmation pages (as opposed to popups) prevented the user from actually clicking the delete button (a regression in 2.5)
+    Admin Appearance navigation had the wrong filter name, it is now the correct admin_navigation_appearance (contributed by @luku)
+    The value 0 (zero) was not allowed in several places as an element text (contributed by @luku)
+    It was impossible to navigate to the "top" link in nested navigation on a touch-enabled device. Now a single tap opens the menu (as before), and tapping again on the top link will actually navigate.
+    is_allowed would cause an error if run in the background (or whenever the ACL is not loaded)
+    TinyMCE would not load correctly in some situations on IE (a regression in 2.5)
+
+Changes
+
+    User delete confirm from browse now uses the popup instead of the full page
+    Sample configuration file now links to new location of Zend's session documentation
+    Composer added, currently for dev/testing purposes only
+    The size column of the files table is now bigint, allowing for file sizes greater than 4 GiB (contributed by @jajm)
+    TinyMCE is downgraded to 3.5.11

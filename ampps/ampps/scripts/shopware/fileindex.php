@@ -1,0 +1,17 @@
+.htaccess
+autoload.php
+bin
+composer.json
+composer.lock
+config.php
+custom
+engine
+files
+license.txt
+media
+recovery
+shopware.php
+themes
+var
+vendor
+web
